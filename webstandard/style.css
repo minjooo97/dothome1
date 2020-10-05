@@ -1,0 +1,64 @@
+/* 스킵 네비게이션 */
+#skip {position: relative;}
+#skip a {
+    position: absolute; 
+    left: 0px; 
+    top: -50px; 
+    color: #fff; 
+    border: 1px solid #fff; 
+    background-color: #333; 
+    line-height: 40px; 
+    width: 200px;
+    height: 40px; 
+    text-align: center;
+}
+#skip a:focus, #skip a:active {top: 0px;}
+/* layout */
+#wrap {}
+#header {height: 325px; background: url(../img/header_bg.jpg) repeat-x center top;}
+#contents {height: 800px; background: #222;}
+#footer {height: 200px; background: #333;}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {height: 200px; background: #444;}
+#cont_tit {height: 200px; background: #555;}
+#cont_ban {height: 200px; background: #666}
+#cont_cont {height: 200px; background: #777}
+
+/* 컨테이너 */
+.container {
+    width: 990px; 
+    margin: 0 auto; 
+    height: inherit; 
+    /* background: rgba(255,255,255,0.3); */
+}
+
+/* header */
+.header {}
+.header .header_menu {text-align: right;}
+.header .header_menu a {
+    color: #fff; 
+    padding: 10px 0 10px 10px; 
+    display: inline-block;
+}
+.header .header_menu a:hover {color: #666;}
+
+.header .header_tit {text-align: center;}
+.header .header_tit h1 {
+    background-color: #4aa8d4; 
+    display: inline-block; 
+    font-size: 28px; color: #fff; 
+    margin-top: 40px; 
+    text-transform: uppercase; 
+    padding: 5px 20px 6px 20px;
+}
+.header .header_tit a {
+    display: inline-block; 
+    background-color: #2698cb; 
+    font-size: 18px; 
+    padding: 5px 20px 6px 20px; 
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+.header .header_icon {}
