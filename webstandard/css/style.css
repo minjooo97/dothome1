@@ -90,6 +90,12 @@
 /* 타이틀 */
 .tit {position: relative;}
 .tit h2 {text-align: center; font-size: 40px; padding: 5px 0; color: #2c94c4; letter-spacing: 2px;}
-.tit .btn {position: absolute; right: 0; top: 0; background-image: url(../img/icon.png); width: 60px; height: 60px; margin-top: 5px;}
-.tit .btn {background-position: 0px -660px;}
+.tit .btn {
+    position: absolute; 
+    right: 0; top: 0; 
+    background-image: url(../img/icon.png); 
+    width: 60px; height: 60px; 
+    margin-top: 5px;
+    background-position: 0px -660px;
+}
 .tit .btn:hover {background-position: -60px -600px;}
