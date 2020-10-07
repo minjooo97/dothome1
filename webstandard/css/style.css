@@ -171,6 +171,29 @@
 .cont .column.col4 .ico_img:hover {background-position: -60px -420px;}
 .cont .column.col5 .ico_img:hover {background-position: -60px -480px;}
 .cont .column.col6 .ico_img:hover {background-position: -60px -540px;} 
-   
+
 .cont .column .ico_tit {padding-left: 70px; font-size: 16px; color: #2c94c4;}
-.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px;}
+.cont .column .ico_desc {
+    padding-left: 70px; 
+    border-bottom: 1px solid #d0d0d0; 
+    padding-bottom: 15px; 
+    margin-bottom: 15px;
+}
+
+/* 게시판 */
+.Notice {position: relative;}
+.Notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.Notice ul {}
+.Notice ul li {
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; /* 한줄 효과 외우기 */ 
+    padding-left: 8px;
+    background: url(../img/dot.gif) no-repeat 0px 8px;
+}
+.Notice ul li a {font-size: 12px;}
+.Notice a.more {
+    position: absolute; 
+    right: 0; top: 0; 
+    width: 17px; height: 17px; 
+    display: block; 
+    background: url(../img/icon.png) -150px -90px;
+}
