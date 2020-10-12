@@ -211,3 +211,19 @@
     display: block; 
     background: url(../img/icon.png) -150px -90px;
 }
+
+/* 게시판3 */
+.Notice3 {position: relative;}
+.Notice3 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.Notice3 ul li {position: relative; padding: 8px 0 14px 60px;}
+.Notice3 ul li a img {width: 50px; position: absolute; left: 0; top: 0; border: 1px solid #0093bd;}
+.Notice3 ul li a strong{display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.Notice3 ul li a span {display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.Notice3 a.more {
+    position: absolute; 
+    right: 0; top: 0; 
+    width: 17px; height: 17px; 
+    display: block; 
+    background: url(../img/icon.png) -150px -90px;
+}
+
