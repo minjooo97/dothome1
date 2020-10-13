@@ -281,7 +281,8 @@
 .tab_menu ul li ul li a {padding: 0 0 3px 0;}
 .tab_menu ul li ul li ul li a {color: #333;}
 .tab_menu ul li.active {background: #2c94c4;}
-.tab_menu ul li.active {color: #fff;}
+.tab_menu ul li.active a {color: #fff;}
+.tab_menu ul li.active ul li a {color: #333;}
 
  
 /* 게시판4 */
