@@ -17,7 +17,7 @@
 #wrap {}
 #header {height: 325px; background: url(../img/header_bg.jpg) repeat-x center top;}
 #contents {}
-#footer {height: 200px; background: #333;}
+#footer {border-top: 1px solid #eee;}
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {background: #f6fdff;}
@@ -294,3 +294,37 @@
 .Notice4 ul li a {float: left; width: 65%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .Notice4 ul li span {float: right; width: 30%; text-align: right;}
 .Notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
+/* 갤러리 */
+.gallery {position: relative; border: 1px solid #ccc; height: 255px; overflow: hidden;}
+.gallery h4 {font-size: 14px; color: #0093bd; padding: 10px 0 8px 11px; border-bottom: 1px solid #ccc;}
+.gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn ul li {float: left; margin: 1px 2px;}
+.gallery .gallery_btn ul li a {display: block; width: 23px; height: 23px; background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px;}
+.gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px;}
+.gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px;}
+.gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px;}
+.gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px;}
+.gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px;}
+.gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px;}
+.gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px;}
+.gallery .gallery_img img {width: 100%;}
+
+/* footer */
+.footer {text-align: center; padding: 25px 0;}
+.footer ul {}
+.footer ul li {display: inline; padding: 0 7px 0 10px; position: relative;}
+.footer ul li::before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 0;}
+/* .footer ul li::after {content: '뒤에--';} */
+.footer ul li:first-child::before {width: 0; height: 0;}
+.footer address {margin-top: 20px;}
+
+/* 팝업 */
+.popup {}
+.popup h4 {font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 3px;}
+.popup ul {overflow: hidden;}
+.popup ul li {width: 93px; float: left; margin-right: 5px;}
+.popup ul li:last-child {margin-right: 0;}
+.popup ul li img {width: 100%;}
