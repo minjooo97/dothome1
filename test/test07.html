@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test07</title>
+    <style>
+        /*  reset */
+        * {margin: 0; padding: 0;}
+        ul {list-style: none;}
+        
+        /* 전체 */
+        #wrap {width: 100%;}
+        #header {width: 1920px; height: 130px; background: #000;}
+        #banner {width: 1920px; height: 750px; background: #333;}
+        #contents {width: 1920px; height: 3700px; background: #555;}
+        #footer {width: 1920px; height: 320px; background: #888;} 
+
+        /* 컨테이너 */
+        .container {width: 1400px; height: inherit; background: rgba(255, 255, 255, 0.4); margin: 0 auto;}
+
+        .content1 {height: 800px; background: rosybrown;}
+        .content2 {height: 500px; background: saddlebrown;}
+        .content3 {height: 960px; background: seagreen;}
+        .content4 {height: 970px; background: slateblue;}
+        .content5 {height: 470px; background: tomato; position: relative;}
+        .footer1 {height: 65px; background: turquoise;}
+        .footer2 {height: 190px; background: wheat;}
+        .footer3 {height: 65px; background: yellow;}
+
+        /* 섹션 box1 */
+        .box1 {width: 620px; height: 260px; position: absolute; top: 150px; left: 300px;}
+        .box1 h4 {font-size: 20px; font-weight: bold; margin-bottom: 15px;}
+        .box1 ul {border: 1px solid #000; padding: 15px;}
+        .box1 ul.b1 {border-bottom: none; }
+        .box1 ul.b2 {border-bottom: none;}
+        .box1 ul li:last-child {border-bottom: none;}
+        .box1 ul li span {float: right;}
+        .box1 a {position: absolute; top: 3px; right: 0;}
+
+        /* 섹션 box2 */
+        .box2 {width: 620px; height: 260px; position: absolute; top: 150px; right: 300px;}
+        .box2 h4 {font-size: 20px; font-weight: bold; margin-bottom: 15px;}
+        .box2 ul {border: 1px solid #000; padding: 15px;}
+        .box2 ul.b1 {border-bottom: none;}
+        .box2 ul.b2 {border-bottom: none;}
+        .box2 ul li:last-child {border-bottom: none;}
+        .box2 ul li span {float: right;}
+        .box2 a {position: absolute; top: 3px; right: 0;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">header</div>
+        </div>
+        <!-- //header -->
+
+        <div id="banner">
+            <div class="container">header</div>
+        </div>
+        <!-- //banner -->
+
+        <div id="contents">
+            <div class="content1">
+                <div class="container">cont1</div>
+            </div>
+            <div class="content2">
+                <div class="container">cont2</div>
+            </div>
+            <div class="content3">
+                <div class="container">cont3</div>
+            </div>
+            <div class="content4">
+                <div class="container">cont4</div>
+            </div>
+            <div class="content5">
+                <div class="container">
+                    <section class="box1">
+                        <h4>펀드공시</h4>
+                        <ul class="b1">
+                            <li>미래에셋코스피200인덱스증권투자신탁1호(주식파생형)<span>2020.10.16</span></li>
+                        </ul>
+                        <ul class="b2">
+                            <li>오늘 시험 너무 어려웠어용. <span>2020.10.16</span></li>
+                        </ul>
+                        <ul class="b3">
+                            <li>오늘 시험 너무 어려웠어용. <span>2020.10.16</span></li>
+                        </ul>
+                        <a href="#">더보기</a>
+                    </section>
+                    <section class="box2">
+                        <h4>펀드공시</h4>
+                        <ul class="b1">
+                            <li>오늘 시험 너무 어려웠어용. <span>2020.10.16</span></li>
+                        </ul>
+                        <ul class="b2">
+                            <li>오늘 시험 너무 어려웠어용. <span>2020.10.16</span></li>
+                        </ul>
+                        <ul class="b3">
+                            <li>오늘 시험 너무 어려웠어용. <span>2020.10.16</span></li>
+                        </ul>
+                        <a href="#">더보기</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- //contents -->
+
+        <div id="footer">
+            <div class="footer1">
+                <div class="container">footer1</div>
+            </div>
+            <div class="footer2">
+                <div class="container">footer2</div>
+            </div>
+            <div class="footer3">
+                <div class="container">footer3</div>
+            </div>
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
