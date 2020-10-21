@@ -6,6 +6,9 @@
 #photoshop study
 <a href="https://minjooo97.github.io/dothome1/photoshop/index.html">바로가기</a>
 
+#illustrator study
+<a href="https://minjooo97.github.io/dothome1/illustrator/index.html">바로가기</a>
+
 #jQuery study <br>
 find(): <a href="https://minjooo97.github.io/dothome1/jquery/jquery04_find2.html">바로가기</a> <br>
 addClass()/removeClass()/toggleClass(): <a href="https://minjooo97.github.io/dothome1/jquery/jquery05_addClass1.html">바로가기</a> <br>
