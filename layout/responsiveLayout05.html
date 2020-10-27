@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃5</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {background: #fff;}
+        .container {width: 1200px; margin: 0 auto;}
+
+        #header {width: 100%; height: 100px; background: #badefb;}
+
+        #banner {width: 100%; height: 300px; background: #8ecbf9;} 
+
+        #contents {overflow: hidden;}
+        #contents .cont1 {width: 30%; height: 300px; background: #61b6f6; float: left;}
+        #contents .cont2 {width: 70%; height: 150px; background: #3da7f5; float: left;}
+        #contents .cont3 {width: 70%; height: 150px; background: #1799f3; float: left;}
+
+        #section1 {overflow: hidden;}
+        #section1 .sec1 {width: 33.33333%; height: 200px; background: #168be5; float: left;}
+        #section1 .sec2 {width: 33.33333%; height: 200px; background: #127ad2; float: left;}
+        #section1 .sec3 {width: 33.33333%; height: 200px; background: #0f69c0; float: left;}
+
+        #section2 {background: #3da7f5; overflow: hidden;} 
+        #section2 article.art1 {width: 23%; height: 150px; margin: 1%; background: #127ad2; float: left; border-radius: 10px;}
+        #section2 article.art2 {width: 23%; height: 150px; margin: 1%; background: #127ad2; float: left; border-radius: 10px;}
+        #section2 article.art3 {width: 23%; height: 150px; margin: 1%; background: #127ad2; float: left; border-radius: 10px;}
+        #section2 article.art4 {width: 23%; height: 150px; margin: 1%; background: #127ad2; float: left; border-radius: 10px;}
+
+        #footer {width: 100%; height: 100px; background: #61b6f6;} 
+
+        @media (max-width: 1280px){
+            .container {width: 100%;}
+            #section1 .sec1 {width: 50%;}
+            #section1 .sec2 {width: 50%;}
+            #section1 .sec3 {display: none;}
+            #section2 article.art1 {width: 31.33333%;}
+            #section2 article.art2 {width: 31.33333%;}
+            #section2 article.art3 {width: 31.33333%;}
+            #section2 article.art4 {display: none;}
+        }
+        @media (max-width: 900px){
+            #section1 .sec1 {width: 100%;}
+            #section1 .sec2 {width: 100%;}
+        }
+        @media (max-width: 480px){
+            #contents .cont1 {width: 100%;}
+            #contents .cont2 {width: 100%;}
+            #contents .cont3 {width: 100%;}
+            #section2 article.art1 {width: 100%;}
+            #section2 article.art2 {width: 100%;}
+            #section2 article.art3 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div id="header"></div>
+            <div id="banner"></div>
+            <div id="contents">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+            </div>
+            <div id="section1">
+                <div class="sec1"></div>
+                <div class="sec2"></div>
+                <div class="sec3"></div>
+            </div>
+            <div id="section2">
+                <article class="art1"></article>
+                <article class="art2"></article>
+                <article class="art3"></article>
+                <article class="art4"></article>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
