@@ -1,0 +1,49 @@
+/* 레이아웃 */
+#header {height: 327px; background: url(../img/header_bg.jpg) repeat-x center;}
+
+/* 컨테이너 */
+.container {width: 1200px; margin: 0 auto; background: rgba(0,0,0,0.3);}
+
+/* 헤더 */
+.header {}
+.header .header_menu {
+    text-align: right;
+}
+.header .header_menu a {
+    color: #fff;
+    transition: color 0.3s; 
+    display: inline-block; 
+    padding: 8px 0 6px 10px; 
+    font-family: 'Abel'
+}
+.header .header_menu a:hover {
+    color: #ccc;
+}
+.header .header_tit {
+    text-align: center; 
+    font-family: 'Abel';
+    margin-top: 55px;
+    text-transform: uppercase;
+}
+.header .header_tit h1 {
+    background: #51b0dc; 
+    padding: 5px 30px;  
+    color: #fff;  
+    letter-spacing: 2px;
+    font-size: 30px; 
+    font-weight: 900; 
+    display: inline-block;
+}
+.header .header_tit a {
+    background: #4a9abf; 
+    padding: 10px 20px;  
+    color: #fff;  
+    font-size: 16px; 
+    display: inline-block; 
+    margin-top: -7px;
+}
+.header .header_icon {}
+
+@media(max-width: 1290px){
+    .container {width: 100%;}
+}
