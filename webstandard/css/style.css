@@ -245,7 +245,7 @@
     visibility: hidden;
 }
 .Notice_hover li a span:hover em {visibility: visible;}
-.Notice_hover li strong {font-size: 12px; padding-top: 3px; display: inline-block;}
+.Notice_hover li strong {font-size: 12px; padding-top: 3px; padding-bottom: 3px; display: inline-block;}
 
 
 /* 콘텐츠 요소를 보이지 않게 하는 방법 */
