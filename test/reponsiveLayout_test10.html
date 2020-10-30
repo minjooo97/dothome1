@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10</title>
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0;}
+        body {background: #fff;}
+
+        /* layout */
+        .container {width: 1200px; margin: 0 auto;}
+
+        #header {width: 100%; height: 100px; background: #fce4ec;}
+
+        #nav {width: 100%; height: 150px; background: #f8bbd0;}
+
+        #section1 {overflow: hidden;}
+        #section1 .sec1-1 {width: 30%; height: 300px; background: #f48fb1; float: left;}
+        #section1 .sec1-2 {width: 70%; height: 150px; background: #f06292; float: left;} 
+        #section1 .sec1-2 > article {width: 46%; margin: 2%; margin-top: 3%; height: 100px; background: #880e4f; float: left; border-radius: 10px;}
+        #section1 .sec1-3 {width: 70%; height: 150px; background: #ec407a; float: left;}
+
+        #section2 {overflow: hidden;}
+        #section2 .sec2-1 {width: 33.33333%; height: 300px; background: #e91e63; float: left;}
+        #section2 .sec2-2 {width: 33.33333%; height: 300px; background: #d81b60; float: left;}
+        #section2 .sec2-3 {width: 33.33333%; height: 300px; background: #c2185b; float: left;}
+
+        #section3 {width: 100%; background: #ad1457; overflow: hidden;}
+        #section3 > article {width: 23%; margin: 1%; height: 175px; background: #880e4f; float: left; border-radius: 10px;}
+
+        #footer {width: 100%; height: 100px; background: #f8bbd0;}
+
+        /* 미티어 쿼리 */
+        @media (max-width: 1280px) {
+            .container {width: 100%;}
+            #section1 .sec1-2 > article {width: 96%;}
+            #section1 .sec1-2 > article:last-child {display: none;}
+            #section2 .sec2-1 {width: 50%;}
+            #section2 .sec2-2 {width: 50%;}
+            #section2 .sec2-3 {display: none;}
+            #section3 > article {width: 31.33333%;}
+            #section3 > article:last-child {display: none;}
+        }
+
+        @media (max-width: 900px) {
+            #section1 .sec1-2 > article {display: none;}
+            #section2 .sec2-1 {width: 100%; height: 100px;}
+            #section2 .sec2-2 {width: 100%; height: 100px;}
+        }
+
+        @media (max-width: 480px) {
+            #section1 .sec1-1 {width: 100%; height: 100px;}
+            #section1 .sec1-2 {width: 100%; height: 100px;}
+            #section1 .sec1-3 {width: 100%; height: 100px;}
+            #section3 > article {width: 96%; margin: 2%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <header id="header"></header>
+            <!-- //header -->
+
+            <nav id="nav"></nav>
+            <!-- //nav -->
+
+            <section id="section1">
+                <div class="sec1-1"></div>
+                <div class="sec1-2">
+                    <article></article>
+                    <article></article>
+                </div>
+                <div class="sec1-3"></div>
+            </section>
+            <!-- //section1 -->
+
+            <section id="section2">
+                <div class="sec2-1"></div>
+                <div class="sec2-2"></div>
+                <div class="sec2-3"></div>
+            </section>
+            <!-- //section2 -->
+
+            <section id="section3">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+            <!-- //section3 -->
+
+            <footer id="footer"></footer>
+            <!-- //fooer -->
+
+        </div>
+        <!-- //container -->
+        
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
