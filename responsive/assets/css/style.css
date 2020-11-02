@@ -1,8 +1,9 @@
 /* 레이아웃 */
 #header {height: 327px; background: url(../img/header_bg.jpg) repeat-x center;}
+#nav {background-color: #f6fdff;}
 
 /* 컨테이너 */
-.container {width: 1200px; margin: 0 auto; background: rgba(0,0,0,0.3);}
+.container {width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.3);*/}
 
 /* 헤더 */
 .header {}
@@ -107,7 +108,59 @@
     .container {width: 100%;}
 }
 
+/* 전체메뉴 */
+.nav {width: 100%; overflow: hidden; padding: 25px 0;}
+.nav > div {width: 40%; display: inline-block; float: left;}
+.nav > div:last-child {width: 20%;}
+.nav > div h3 {font-size: 18; color: #25a2d0; font-weight: bold; margin-bottom: 4px;}
+.nav > div ol {overflow: hidden;}
+.nav > div ol li::before {
+    content: ''; 
+    width: 3px; 
+    height: 3px; 
+    background-color: #25a2d0; 
+    border-radius: 50%; 
+    position: absolute; 
+    left: 0; top: 9px;
+}
+.nav > div:last-child ol li {width: 100%;}
+.nav > div ol li {
+    width: 50%; 
+    float: left; 
+    position: relative; 
+    padding-left: 8px; 
+    box-sizing: border-box;
+}
+.nav > div ol li a {position: relative; transition: all 0.2s ease-out;}
+.nav > div ol li a::after {
+    content: ''; 
+    width: 0; 
+    height: 1px; 
+    background: #25aad0; 
+    position: absolute; 
+    bottom: 0; left: 0;
+    transition: all 0.3s ease-out;
+}
+.nav > div ol li:hover a::after {width: 100%;}
 
-
+/* 타이틀 */
+#title {background-color: #eaf7fd; height: 90px; position: relative;ion: all 0.3s;}
+.title {}
+.title h2 {
+    text-align: center; 
+    font-size: 45px; 
+    line-height: 80px; 
+    color: #2c94c4; 
+    font-family: 'Nanum Pen Script'; 
+    font-weight: lighter;
+}
+.title a {position: absolute; top: 15px; left: 1500px; transition: all 0.3s;}
+.title a i {position: absolute; top: -3px; left: 3px; color: #3192bf; font-size: 65px; }
+.title a i:hover {box-shadow:
+    0 0 0 3px rgba(75, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(68, 56, 56, 0.1) inset;
+    border-radius: 50%; width: 56px; height: 56px;
+    z-index: 100;
+}
 
 
