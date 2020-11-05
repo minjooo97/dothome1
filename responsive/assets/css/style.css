@@ -1,9 +1,16 @@
 /* 레이아웃 */
 #header {height: 327px; background: url(../img/header_bg.jpg) repeat-x center;}
 #nav {background-color: #f6fdff;}
+#title {background-color: #eaf7fd;}
+#contents {}
+#contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
+#cont_left {float: left; width: 250px; height: 1000px;}
+#cont_center {overflow: hidden; height: 1000px; margin-right: 250px; border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
+#cont_right {position: absolute; right: 0; top: 0; width: 250px; height: 1000px;}
+#footer {height: 200px; border-top: 1px solid #dbdbdb;}
 
 /* 컨테이너 */
-.container {width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.3);*/}
+.container {width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.3);*/ position: relative;}
 
 /* 헤더 */
 .header {}
@@ -104,10 +111,6 @@
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
-@media(max-width: 1290px){
-    .container {width: 100%;}
-}
-
 /* 전체메뉴 */
 .nav {width: 100%; overflow: hidden; padding: 25px 0;}
 .nav > div {width: 40%; display: inline-block; float: left;}
@@ -143,33 +146,59 @@
 }
 .nav > div ol li:hover a::after {width: 100%;}
 
+/* 컨텐츠 */
+.column {padding: 15px; border-bottom: 1px solid #dbdbdb;}
+.column .col_tit {font-size: 20px; color: #2f7fa6; padding-bottom: 5px;}
+.column .col_desc {border-bottom: 1px solid #dbdbdb; padding-bottom: 15px; margin-bottom: 15px; color: #878787; line-height: 18px;}
+
+.column.col1 {}
+.column.col2 {}
+.column.col3 {border: none;}
+.column.col4 {}
+.column.col5 {}
+.column.col6 {border: none;}
+.column.col7 {}
+.column.col8 {}
+.column.col9 {border: none;}
+
 /* 타이틀 */
-#title {background-color: #eaf7fd; height: 90px; position: relative;}
-.title {}
+.title {position: relative; text-align: center;}
 .title h2 {
-    text-align: center; 
-    font-size: 45px; 
-    line-height: 80px; 
-    color: #2c94c4; 
+    font-size: 39px; 
+    line-height: 60px; 
+    color: #0093bd; 
     font-family: 'Nanum Pen Script'; 
     font-weight: lighter;
+    padding: 5px 0;
 }
 .title a {
     transition: all 0.3s; 
     position: absolute; 
-    top: 10px; left: 1500px; 
+    top: 5px; right: 0; 
     color: #fff; 
-    font-size: 60px; 
+    font-size: 35px; 
     width: 60px; 
     height: 60px; 
     border-radius: 50%; 
     line-height: 60px; 
-    text-align: center;
-    background: #2c94c4;
+    background: #3192bf;
 }
 .title a:hover {box-shadow:
-    0 0 0 3px rgba(75, 154, 191, 0.9) inset,
-    0 0 0 100px rgba(68, 56, 56, 0.1) inset;  
+    0 0 0 3px rgba(71, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(0, 0, 0, 0.1) inset;  
 }
 
+/* 미디어쿼리 */
+@media(max-width: 1290px){
+    .container {width: 100%;}
+}
 
+@media(max-width: 900px) {
+    #cont_right {position: static; width: 100%; height: 400px;}
+    #cont_center {margin-right: 0;}
+}
+
+@media(max-width: 768px) {
+    #cont_left {float: none; width: 100%; height: 400px;}
+    #cont_center {height: 400px;}
+}
