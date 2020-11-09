@@ -110,29 +110,30 @@
 
 /* 배너 */
 .ban {position: relative; padding: 24px 0;}
-.ban a.prev {
+/* .ban a.prev {
     position: absolute; 
     left: -80px; top: 60px; 
     width: 43px; height: 43px; 
     background-image: url(../img/icon.png);
     background-position: 350px 0px;
-}
-.ban a.next {
+} */
+/* .ban a.next {
     position: absolute; 
     right: -80px; 
     top: 60px; 
     width: 43px; height: 43px; 
     background-image: url(../img/icon.png);
     background-position: 350px -43px;
-}
+} */
 .ban a.prev:hover {background-position: 307px 0px;}
 .ban a.next:hover {background-position: 307px -43px;}
-.ban ul {overflow: hidden;}
-.ban ul li {float: left; width: 330px;}
+.ban ul {overflow: hidden; position: relative;}
+.ban ul li {width: 330px;}
 .ban ul li img {border: 4px solid #dcdcdc;}
-.ban ul li.ban_img1 {text-align: left;}
-.ban ul li.ban_img2 {text-align: center;}
-.ban ul li.ban_img3 {text-align: right;}
+.ban ul li.ban_img1 {}
+.ban ul li.ban_img2 {}
+.ban ul li.ban_img3 {}
+
 
 /* 컨텐츠 */
 .cont {overflow: hidden; padding-top: 30px;}

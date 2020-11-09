@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.css">
 
     <!-- webfonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -248,14 +249,7 @@
                     </article>
                 </section>
                 <section id="cont_center">
-                    <h3 class="ir_so">반응형 사이트 가운데 컨텐츠</h3>
                     <article class="column col4">
-                        <h4 class="col_tit">Slick Slider</h4>
-                        <p class="col_desc">Slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
-                        <!--  -->
-                        <!-- // -->
-                    </article>
-                    <article class="column col5">
                         <h4 class="col_tit">Title</h4>
                         <p class="col_desc">이곳은 타이틀 영역입니다. 타이틀과 관련된 부분입니다.</p>
                         <!-- 이미지 슬라이드 -->
@@ -289,6 +283,25 @@
                             </div>
                         </div>
                         <!-- //이미지 슬라이드 -->
+                    </article>
+                    <h3 class="ir_so">반응형 사이트 가운데 컨텐츠</h3>
+                    <article class="column col5">
+                        <h4 class="col_tit">Blend Effect</h4>
+                        <p class="col_desc">background-blend-mode와 Mix-blend-mode</p>
+                        <!-- 라이트 박스 -->
+                        <div class="lightbox square">
+                            <a href="assets/img/light01_s.jpg"><img src="assets/img/light01.jpg" alt="이미지"></a>
+                            <a href="assets/img/light02_s.jpg"><img src="assets/img/light02.jpg" alt="이미지"></a>
+                            <a href="assets/img/light03_s.jpg"><img src="assets/img/light03.jpg" alt="이미지"></a>
+                            <a href="assets/img/light04_s.jpg"><img src="assets/img/light04.jpg" alt="이미지"></a>
+                            <a href="assets/img/light05_s.jpg"><img src="assets/img/light05.jpg" alt="이미지"></a>
+                            <a href="assets/img/light06_s.jpg"><img src="assets/img/light06.jpg" alt="이미지"></a>
+                            <a href="assets/img/light07_s.jpg"><img src="assets/img/light07.jpg" alt="이미지"></a>
+                            <a href="assets/img/light08_s.jpg"><img src="assets/img/light08.jpg" alt="이미지"></a>
+                            <a href="assets/img/light09_s.jpg"><img src="assets/img/light09.jpg" alt="이미지"></a>
+                            <a href="assets/img/light10_s.jpg"><img src="assets/img/light10.jpg" alt="이미지"></a>
+                        </div>
+                        <!-- //라이트 박스 -->
                     </article>
                     <article class="column col6">
                         <h4 class="col_tit">Title</h4>
@@ -332,6 +345,12 @@
     <!-- Javascript Libraries -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <!-- 라이트 박스 -->
+    <script>
+            $(".lightbox").lightGallery(); 
+    </script>
+    <!-- 이미지 슬라이드 -->
     <script>
         $('.slider').slick({
             autoplay: true,
