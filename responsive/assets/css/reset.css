@@ -18,6 +18,9 @@ body, input, textarea, select, button, table {
 /* 블릿기호 초기화 */
 ul, ol {list-style: none;}
 
+/* 이미지 초기화 */
+img {width: 100%; vertical-align: top;}
+
 
 /* IR 효과 */
 .ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
