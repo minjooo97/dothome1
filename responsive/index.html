@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
 
     <!-- webfonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -226,7 +227,7 @@
                     </article>
                     <article class="column col3">
                         <h4 class="col_tit">Blog</h4>
-                        <p class="col_desc">해상도에 |따라 이미지를 다르게 표현하는 방법입니다.</p>
+                        <p class="col_desc">해상도에 따라 이미지를 다르게 표현하는 방법입니다.</p>
                         <!-- blog1 -->
                         <div class="blog1">
                             <h5 class="ir_so">image1</h5>
@@ -238,11 +239,10 @@
                         <!-- //blog1 -->
                         <!-- blog2 -->
                         <div class="blog2">
-                            <h5 class="ir_so">image2</h5>
-                            <figure>
-                                <img src="assets/img/blog1_@2.jpg" srcset="assets/img/blog4_@1.jpg 1x, assets/img/blog4_@2 2x, assets/img/blog4_@3.jpg 3x" alt="이미지">
-                                <figcaption></figcaption>
-                            </figure>
+                            <div class="img-retina">
+                                <h5>image2</h5>
+                            </div>
+                            <p>반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.</p>
                         </div>
                         <!-- //blog2 -->
                     </article>
@@ -250,16 +250,45 @@
                 <section id="cont_center">
                     <h3 class="ir_so">반응형 사이트 가운데 컨텐츠</h3>
                     <article class="column col4">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이곳은 타이틀 영역입니다. 타이틀과 관련된 부분입니다.</p>
+                        <h4 class="col_tit">Slick Slider</h4>
+                        <p class="col_desc">Slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
                         <!--  -->
                         <!-- // -->
                     </article>
                     <article class="column col5">
                         <h4 class="col_tit">Title</h4>
                         <p class="col_desc">이곳은 타이틀 영역입니다. 타이틀과 관련된 부분입니다.</p>
-                        <!--  -->
-                        <!-- // -->
+                        <!-- 이미지 슬라이드 -->
+                        <div class="slider">
+                            <div>
+                                <figure>
+                                    <div><img src="assets/img/slider001.jpg" alt="이미지1"></div>
+                                    <figcaption>
+                                        <em>Responsive Site1</em>
+                                        <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <div><img src="assets/img/slider001.jpg" alt="이미지2"></div>
+                                    <figcaption>
+                                        <em>Responsive Site2</em>
+                                        <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <div><img src="assets/img/slider001.jpg" alt="이미지3"></div>
+                                    <figcaption>
+                                        <em>Responsive Site3</em>
+                                        <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드입니다.</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- //이미지 슬라이드 -->
                     </article>
                     <article class="column col6">
                         <h4 class="col_tit">Title</h4>
@@ -301,6 +330,15 @@
     </footer> -->
 
     <!-- Javascript Libraries -->
-    <script src="assets/js/jquery.min_1.12.4"></script>
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: true
+        });
+    </script>
 </body>
 </html>

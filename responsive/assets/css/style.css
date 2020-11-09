@@ -260,8 +260,22 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 .notice2 .more {position: absolute; right: 0; top: 3px; text-transform: uppercase; font-size: 10px; color: #878787;}
 
+/* 블로그 */
+.blog1 figcaption {margin-top: 5px;}
+.blog2 {margin-top: 15px;}
+.blog2 h5 {color: #fff; text-align: center; padding: 30px;}
+.blog2 .img-retina {background-image: url(../img/blog4_@1.jpg); background-size: no-repeat center center / cover;}
+.blog2 figcaption {margin-top: 5px;}
+
+/* 이미지 슬라이드 */
+.slider {}
+.slider figure {position: relative;}
+.slider figcaption {position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background-color: rgba(0, 0, 0, 0.5); color: #fff; font-size: 18px;}
+.slider figcaption em {display: block; font-weight: bold; font-size: 28px; text-transform: uppercase; font-family: 'abel';}
+.slider figcaption span {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
 /* 미디어쿼리 */
-@media(max-width: 1290px){
+@media(max-width: 1220px){
     .container {width: 100%;}
     .row {padding: 0 15px;}
     #contents .container {border: 0;}
