@@ -12,7 +12,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     margin-right: 250px; 
     border-right: 1px solid #dbdbdb; 
     border-left: 1px solid #dbdbdb; 
-    min-height: 1300px;
+    min-height: 1320px;
 }
 #cont_right {position: absolute; right: 0; top: 0; width: 250px;}
 #footer {height: 200px; border-top: 1px solid #dbdbdb;}
