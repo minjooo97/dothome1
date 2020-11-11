@@ -327,7 +327,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     padding: 30px;
 }
 .blog2 .img-retina {
-    background-image: url(img/blog4_@1.jpg) no-repeat center center / cover;
+    background-image: url(../img/blog4_@1.jpg) no-repeat center center / cover;
 }
 .blog2 figcaption {margin-top: 5px;}
 
