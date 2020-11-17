@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10</title>
+    <style>
+        ul li {list-style: none;}
+        a {text-decoration: none; color: #c0c0c0;}
+        * {margin: 0; padding: 0;}
+        #wrap {font-family: 'NanumSquare'}
+        
+        
+        
+        
+
+        .container {margin: 0 auto; width: 1200px; height: inherit;}
+
+        #header {width: 100%; height: 90px; background: #000; position: relative;}
+        #header img {margin-top: 30px;}
+        #header ul {position: absolute; left: 660px; top: 34px; text-align: center; font-size: 16px; font-weight: bold; color: #c0c0c0;}
+        #header ul li {display: inline-block; padding: 0 35px;}
+        #header a.btn1 {position: absolute; right: 455px; top: 30px; font-size: 12px; font-weight: bold; border: 1px solid #c0c0c0; border-radius: 2px; padding: 8px 10px;}
+        #header a.btn2 {position: absolute; right: 355px; top: 30px; font-size: 12px; font-weight: bold; border: 1px solid #c0c0c0; border-radius: 2px; padding: 8px 10px;}
+
+        #nav {width: 100%; height: 630px; background: aquamarine; background: url(img/main_lamp.jpg) no-repeat center center; background-size: 100% 630px; position: relative;}
+        #nav p {font-size: 40px; font-weight: 900; color: #fff;}
+        #nav p.txt1 {text-align: center; padding-top: 160px;}
+        #nav p.txt2 {text-align: center; padding-top: 10px;}
+        #nav a {position: absolute; left: 880px; top: 295px; font-size: 16px; font-weight: 900; color: #fff; border: 1px solid #fff; border-radius: 28px; padding: 17px 31px;}
+
+        #section {width: 100%;}
+        #section .art1 {height: 730px; background: #fff;}
+        #section .art1 h2 {text-align: center; font-size: 35px; font-weight: 900; padding-top: 145px; padding-bottom: 15px;}
+        #section .art1 p {text-align: center; font-size: 19px; padding-top: 10px;}
+        #section .art1 article {width: 280px; height: 295px; display: inline-block; background: #fff; margin-top: 100px; margin-left: 22.6px;}
+        #section .art1 article.box1 {margin-left: 0;}
+        #section .art1 article img {padding-left: 95px;}
+        #section .art1 article h4 {font-size: 25px; text-align: center;}
+        #section .art1 article p {font-size: 17px; color: #333;}
+
+        #section .art2 {height: 750px; background: #f9fbfc; position: relative;}
+        #section .art2 h2 {font-size: 35px; font-weight: 900; padding-top: 280px;}
+        #section .art2 p {font-size: 19px; line-height: 30px; padding-top: 25px;}
+        #section .art2 article {width: 380px; height: 450px; background: #fff; display: inline-block; border-radius: 5px;}
+        #section .art2 article.txb1 {position: absolute; right: 750px; top: 145px;}
+        #section .art2 article.txb2 {position: absolute; right: 355px; top: 145px;}
+        #section .art2 article img {position: absolute; left: 45px; top: 55px;}
+        #section .art2 article h3 {font-size: 25px; margin-top: 190px; padding-left: 45px;}
+        #section .art2 article p {font-size: 17px; color: #333; padding-left: 45px;}
+
+        #section .art3 {height: 295px; background: url(img/sec3.png) no-repeat center; position: relative;}
+        #section .art3 h2 {font-size: 37px; font-weight: 900; color: #fff; text-align: center; padding-top: 65px;}
+        #section .art3 p {font-size: 20px;color: #fff; text-align: center; padding-top: 15px;}
+        #section .art3 a {color: #fff; font-weight: bold; font-size: 15px; border: 1px solid #fff; border-radius: 28px; padding: 13px 27px; position: absolute; left: 890px; bottom: 70px;}
+
+        #section .art4 {height: 930px; background: #fff;}
+        #section .art4 h5 {font-size: 33px; font-weight: 900; text-align: center; padding-top: 150px;}
+        #section .art4 p {font-size: 19px; text-align: center; padding-top: 20px;}
+        #section .art4 article {width: 370px; height: 450px; background: #fff; display: inline-block; overflow: hidden; border: 1px solid #f2f2f2; border-radius: 5px; margin-left: 38px; margin-top: 100px;}
+        #section .art4 article.art4-1 {margin-left: 0;}
+        #section .art4 article img {}
+        #section .art4 article h3 {font-size: 19px; text-align: left; padding-top: 40px; padding-left: 40px;}
+        #section .art4 article p {font-size: 17px; text-align: left; line-height: 28px; color: #333; padding-left: 40px; padding-top: 15px;}
+
+        #section .art5 {height: 296px; background: url(img/sec5.png) no-repeat center; position: relative;}
+        #section .art5 h1 {font-size: 35px; font-weight: 900; text-align: center; padding-top: 70px;}
+        #section .art5 p {font-size: 17px; text-align: center; padding-top: 20px;}
+        #section .art5 a {color: #000; font-weight: bold; border: 1px solid #ccc; border-radius: 28px; padding: 11px 31px; position: absolute; left: 890px; bottom: 80px;}
+
+        #section .art6 {height: 300px; background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); position: relative;}
+        #section .art6 h1 {font-size: 35px; font-weight: 900; text-align: center; padding-top: 70px;}
+        #section .art6 p {font-size: 17px; text-align: center; padding-top: 25px;}
+        #section .art6 a {color: #fff; font-weight: bold; border: 1px solid #fff; border-radius: 28px; padding: 13px 28px; position: absolute; left: 880px; bottom: 60px;}
+
+        #footer {width: 100%; height: 220px; background: #000; color: #c0c0c0; overflow: hidden;} 
+        #footer .left {width: 33.33333%; float: left; padding-top: 45px;} 
+        #footer .left p {display: inline-block; padding-bottom: 15px;}
+        #footer .left h1 {display: inline-block;}
+        #footer .left ul.fir {}
+        #footer .left ul li {display: inline-block;}
+        #footer .center {width: 33.33333%; float: left; text-align: center;} 
+        #footer .center p {padding-top: 90px;} 
+        #footer .right {width: 33.33333%; float: left;} 
+        #footer .right ul.sec {text-align: right; padding-top: 90px;}
+        #footer .right ul.sec li {display: inline-block; padding-left: 10px;}
+        #footer .right ul.sec li a {}
+        #footer .right ul.sns {float: right;} 
+        #footer .right .sns li {display: inline-block;}
+        #footer .right .sns li a {background: url(img/sp_svg_icon.png); display: inline-block; width: 24px; height: 24px; margin-left: 15px; margin-top: 50px;}
+        #footer .right .sns li .s1 {background-position: -127px -86px;}
+        #footer .right .sns li .s2 {background-position: -163px -213px;}
+        #footer .right .sns li .s3 {background-position: -138px -213px;}
+        #footer .right .sns li .s4 {background-position: -200px -166px;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <img src="img/clovalogo.PNG" alt="로고">
+                <ul>
+                    <li>기술·솔루션</li>
+                    <li>제품</li>
+                    <li>플랫폼</li>
+                    <li>파트너</li>
+                    <li>리서치</li>
+                </ul>
+                <a href="#" class="btn1">Biz Start</a>
+                <a href="#" class="btn2">비즈니스 문의</a>
+            </div>
+        </header>
+        <nav id="nav">
+            <div class="container">
+                <p class="txt1">클로바 램프로 시작하는</p>
+                <p class="txt2">책상앞이 좋은아이 프로젝트</p>
+                <a href="#">자세히 보기</a>
+            </div>            
+        </nav>
+        <section id="section">
+            <article class="art1">
+                <div class="container">
+                    <h2>CLOVA AI</h2>
+                    <p>네이버 클로바는 독자적으로 개발한 AI 기술을 통해</p>
+                    <p>세상에 없던 기술,서비스,제품을 만들어가고 있습니다.</p>
+                    <article class="box1">
+                        <img src="img/icon01.JPG" alt="아이콘1">
+                        <h4>Device & Service</h4>
+                        <p>스마트 디바이스,서비스로</p>
+                        <p>더욱 편리한 일상을 만나보세요.</p>
+                    </article>
+                    <article>
+                        <img src="img/icon02.JPG" alt="아이콘2">
+                        <h4>Solution</h4>
+                        <p>비즈니스 맞춤형 AI 솔루션으로</p>
+                        <p>혁신을 경험하세요.</p>
+                    </article>
+                    <article>
+                        <img src="img/icon03.JPG" alt="아이콘3">
+                        <h4>Product</h4>
+                        <p>세계 최고 수준의 AI가 적용된</p>
+                        <p>놀라운 서비스,제품을 제공해보세요.</p>
+                    </article>
+                    <article>
+                        <img src="img/icon04.JPG" alt="아이콘4">
+                        <h4>Research</h4>
+                        <p>CLOVA AI의 독자적인 기술과</p>
+                        <p>세계적인 연구 성과를 확인하세요.</p>
+                    </article>
+                </div>
+            </article>
+            <article class="art2">
+                <div class="container">
+                    <h2>CLOVA AI<br>Special Peature</h2>
+                    <p>네이버,라인의 풍부한 데이터와<br>세계 최고 수준의 AI기술이 만나<br>전에 없던 시너지를 창출합니다.</p>
+                    <article class="txb1">
+                        <img src="img/icon05.JPG" alt="아이콘5">
+                        <h3>Customized Solution</h3>
+                        <p>네이버,라인의 서비스를 통해 축적된<br>데이터와 클로바의 자체 기술로 제작한<br>AI엔진을 활용하여,개별 비즈니스의<br>니즈에 부합하는 Customized Solution<br>을 제공합니다.</p>
+                    </article>
+                    <article class="txb2">
+                        <img src="img/icon06.JPG" alt="아이콘6">
+                        <h3>Intergratecl Ai Engine</h3>
+                        <p>네이버 클로바에서 자체적으로 보유한 AI<br>기술을 복합적으로 활용한 솔루션을 개발<br>할 수 있습니다. 이를 통해 단일 기술을<br>활용한 경우보다 월등한 시너지를 만들어<br>냅니다.</p>
+                    </article>
+                </div>
+            </article>
+            <article class="art3">
+                <div class="container">
+                    <h2>CLOVA Official Blog</h2>
+                    <p>클로바 공식 블로그에서 다양한 소식을 확인해보세요.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </article>
+            <article class="art4">
+                <div class="container">
+                    <h5>Latest News</h5>
+                    <p>좀 더 편리하고 스마트한 삶을 위한 클로바의 다양한 AI 적용사례 및 소식들을 확인해보세요.</p>
+                    <article class="art4-1">
+                        <img src="img/img01.png" alt="1번">
+                        <h3>네이버 B2B,'네이버 클라우드'로 강화</h3>
+                        <p>클로바 스마트홈을 네이버앱에서도 이용할<br>수 있습니다. 네이버앱의 그린닷 음성 검색<br>으로 집안의 lot가전을 제어하고 편리한<br>리모컨 기능도 활용해보세요.</p>
+                    </article>
+                    <article>
+                        <img src="img/img02.png" alt="2번">
+                        <h3>클로바 스마트홈,네이버앱에 적용</h3>
+                        <p>대한민국 대표 클라우드 기업으로 성장한<br>NBP가 그동안의 기술과 경험을 바탕으로<br>'네이버 클라우드'라는 새로운 이름 아래<br>더 큰 도전을 시작합니다.</p>
+                    </article>
+                    <article>
+                        <img src="img/img03.png" alt="3번">
+                        <h3>네이버 뮤직 연동 서비스 종료</h3>
+                        <p>2020년 11월, 네이버 뮤직 서비스 종료에<br>따라, 네이버 클로바에서의 네이버 뮤직<br>연동 기능이 종료됩니다. 12월 1일부터<br>네이버 뮤직 서비스는 VIBE로 전환됩니다.</p>
+                    </article>
+                </div>
+            </article>
+            <article class="art5">
+                <div class="container">
+                    <h1>With NAVER Cloud</h1>
+                    <p>네이버 클라우드 플랫폼에서 네이버 클로바의 기술 제품을 이용하세요.</p>
+                    <a href="#">Biz Start</a>
+                </div>
+            </article>
+            <article class="art6">
+                <div class="container">
+                    <h1>With NAVER CLOVA</h1>
+                    <p>네이버 클로바가 제안하는 AI솔루션을 통해 새로운 성장과 발전을 경험하세요.</p>
+                    <a href="#">비즈니스 문의</a>
+                </div>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="left">
+                    <p>NAVER</p>
+                    <h1>CLOVA</h1>
+                    <ul class="fir">
+                        <li>고객센터 1833-5387</li>
+                        <li>09:00 - 18:00(주말,공휴일 휴무)</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <p>Powered by NAVER·LINE</p>
+                </div>
+                <div class="right">
+                    <ul class="sns">
+                        <li><a href="#" class="s1"></a></li>
+                        <li><a href="#" class="s2"></a></li>
+                        <li><a href="#" class="s3"></a></li>
+                        <li><a href="#" class="s4"></a></li>
+                    </ul>
+                    <ul class="sec">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">CLOVA 채용안내</a></li>
+                        <li><a href="#">CLOVA JP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
