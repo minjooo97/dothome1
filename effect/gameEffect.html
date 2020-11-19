@@ -94,7 +94,7 @@
                 <div class="bs-docs-section">
                     <h2 id="intro1" class="page-header">Quiz1</h2>
                     <p class="bs-callout bs-callout-info">주관식 1문제 스타일(제이쿼리/자바스크립트)</p>
-                    <iframe width="100%" height="600px" src="quizEffect01-jquery.html" frameborder="0"></iframe>
+                    <iframe width="100%" height="600px" src="quizEffect02-jquery.html" frameborder="0"></iframe>
                 </div>
 <pre class="line-numbers language-js"><code>//선택자
 const questionAsk = $(".question");
@@ -125,6 +125,108 @@ questionBtn.click(function(){
     questionBtn.hide()
     questionAnswer.show()
     questionEx.show()
+});
+</code></pre>
+
+<pre class="line-numbers language-js"><code>    //선택자
+const questionAsk = document.querySelector(".question");
+const questionNum = document.querySelector(".num");
+const questionBtn = document.querySelector(".confirm-btn");
+const questionAnswer = document.querySelector(".confirm-answer");
+const questionEx = document.querySelector(".confirm-ex");
+
+const quizNum = 1;
+const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
+const quizAnswer = "&lt;a&gt;";
+const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다.";
+
+questionNum.innerHTML = quizNum;
+questionAsk.innerHTML = quizAsk;
+questionAnswer.innerHTML = quizAnswer;
+questionEx.innerHTML = quizEx;
+
+questionAnswer.style.display = "none";
+questionEx.style.display = "none";
+
+questionBtn.addEventListener("click",(function(){
+    questionBtn.style.display = "none";
+    questionAnswer.style.display = "block";
+    questionEx.style.display = "block";
+}));
+</code></pre>
+                <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">Quiz2</h2>
+                    <p class="bs-callout bs-callout-info">주관식 3문제 스타일(제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="quizEffect02-jquery.html" frameborder="0"></iframe>
+                </div>
+<pre class="line-numbers language-js"><code>//선택자
+const questionAsk = $(".question");
+const questionNum = $(".num");
+const questionBtn = $(".confirm-btn");
+const questionAnswer = $(".confirm-answer");
+const questionEx = $(".confirm-ex");
+
+//문제정보
+// const quizNum = 1;
+// const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
+// const quizAnswer = "&lt;a&gt;";
+// const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다.";
+
+const quizInfo = [{
+        quizNum : 1,
+        quizAsk : "글씨의 색을 변경하는 CSS 속성은 무엇인가요?",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    },{
+        quizNum : 2,
+        quizAsk : "position : relative는 언제 사용하나요?",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    },{
+        quizNum : 3,
+        quizAsk : "콘텐츠 요소를 가운데로 오게 하는 방법 3가지 이상을 설명하시오.",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    }
+];
+
+//문제출력
+// questionNum.eq(0).html(quizInfo[0].quizNum);
+// questionNum.eq(1).html(quizInfo[1].quizNum);
+// questionNum.eq(2).html(quizInfo[2].quizNum);
+
+// questionAsk.eq(0).html(quizInfo[0].quizAsk);
+// questionAsk.eq(1).html(quizInfo[1].quizAsk);
+// questionAsk.eq(2).html(quizInfo[2].quizAsk);
+
+// questionAnswer.eq(0).html(quizInfo[0].quizAnswer);
+// questionAnswer.eq(1).html(quizInfo[1].quizAnswer);
+// questionAnswer.eq(2).html(quizInfo[2].quizAnswer);
+
+// questionEx.eq(0).html(quizInfo[0].quizEx);
+// questionEx.eq(1).html(quizInfo[1].quizEx);
+// questionEx.eq(2).html(quizInfo[2].quizEx);
+
+
+//each()
+$(".quiz-wrap .quiz").each(function(i){
+    $(this).find(questionNum).html(quizInfo[i].quizNum);
+    $(this).find(questionAsk).html(quizInfo[i].quizAsk);
+    $(this).find(questionAnswer).html(quizInfo[i].quizAnswer);
+    $(this).find(questionEx).html(quizInfo[i].quizEx);
+});
+
+//정답 숨기기
+questionAnswer.hide();
+questionEx.hide();
+
+//버튼 누르면 정답확인
+questionBtn.click(function(){
+    $(this).hide();
+    $(this).nextAll().show();
 });
 </code></pre>
 
@@ -161,6 +263,23 @@ const quizInfo = [{
     }
 ];
 
+//문제출력
+// questionNum[0].innerHTML = quizInfo[0].quizNum;
+// questionNum[1].innerHTML = quizInfo[1].quizNum;
+// questionNum[2].innerHTML = quizInfo[2].quizNum;
+
+// questionAsk[0].innerHTML = quizInfo[0].quizAsk;
+// questionAsk[1].innerHTML = quizInfo[1].quizAsk;
+// questionAsk[2].innerHTML = quizInfo[2].quizAsk;
+
+// questionAnswer[0].innerHTML = quizInfo[0].quizAnswer;
+// questionAnswer[1].innerHTML = quizInfo[1].quizAnswer;
+// questionAnswer[2].innerHTML = quizInfo[2].quizAnswer;
+
+// questionEx[0].innerHTML = quizInfo[0].quizEx;
+// questionEx[1].innerHTML = quizInfo[1].quizEx;
+// questionEx[2].innerHTML = quizInfo[2].quizEx;
+
 //foreach
 questionQuiz.forEach((elem, index) => {
     questionNum[index].innerHTML = quizInfo[index].quizNum;
@@ -169,13 +288,14 @@ questionQuiz.forEach((elem, index) => {
     questionEx[index].innerHTML = quizInfo[index].quizEx;
 });
 
+
 //정답 숨기기
+
 for(let i=0; i<quizInfo.length; i++){
     confirmBottom[i].style.display = "none";
-};
+}
 
-
-//버튼 클릭하면
+//버튼 누르면 정답 보여주기
 questionBtn.forEach(elem => {
     elem.addEventListener("click", function(){
         this.style.display = "none";
