@@ -77,8 +77,8 @@
     </div>
     <div class="container bs-docs-container">
         <div class="row">
-            <!-- col-md-9 -->
-            <div class="col-md-9" role="main">
+            <!-- col-md-12 -->
+            <div class="col-md-12" role="main">
                 <!-- 배너 광고 -->
                 <div class="ad">
                     <script src="https://ads-partners.coupang.com/g.js"></script>
@@ -93,115 +93,102 @@
                 <!-- Intro1 -->
                 <div class="bs-docs-section">
                     <h2 id="intro1" class="page-header">Quiz1</h2>
-                    <p class="bs-callout bs-callout-info">주관식 1문제 스타일(자바스크립트/제이쿼리)</p>
-                    <p class="codepen" data-height="550" data-theme-id="light" data-default-tab="result" data-user="minjoo" data-slug-hash="mdEWrOo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Quiz Project1">
-                        <span>See the Pen <a href="https://codepen.io/minjoo/pen/mdEWrOo">
-                        Quiz Project1</a> by JEONMINJOO (<a href="https://codepen.io/minjoo">@minjoo</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-                    <div class="javascriptSource">
-                        <h3 class="btn btn-primary btn-sm">Javascript Source</h3>
-<pre class="line-numbers language-javascript"><code>const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
-const quizNum = "1";
-const quizAnswer = "&lt;a&gt;";
-const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다."
-
-//선택자를 const에 저장
-const question = document.querySelector(".question");
-const questionNum = document.querySelector(".num");
-const questionBtn = document.querySelector(".confirm-btn");
-const questionAnswer = document.querySelector(".confirm-answer");
-const questionEx = document.querySelector(".confirm-ex");
-
-//문제 출력 자바스크립트 선택자
-questionNum.innerText = quizNum;
-questionAnswer.innerHTML = quizAnswer;
-question. innerText = quizAsk;
-questionEx. innerHTML = quizEx;
-
-//정답 숨기기
-questionAnswer.style.display = "none";
-questionEx.style.display = "none";
-
-//버튼 클릭 -> 버튼 숨기기 -> 정답 보여주기
-questionBtn.addEventListener("click",function(){
-questionBtn.style.display = "none";
-questionAnswer.style.display = "block";
-questionEx.style.display = "block";
-})
-</code></pre>
-                    </div>
-                    <div class="jQuerySource">
-                        <h3 class="btn btn-primary btn-sm">jQuery Source</h3>
-<pre class="line-numbers language-javascript"><code>//문제 정보
-const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
-const quizNum = "1";
-const quizAnswer = "&lt;a&gt;";
-const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다."
-
-//선택자
-const question = $(".question");
+                    <p class="bs-callout bs-callout-info">주관식 1문제 스타일(제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="quizEffect01-jquery.html" frameborder="0"></iframe>
+                </div>
+<pre class="line-numbers language-js"><code>//선택자
+const questionAsk = $(".question");
 const questionNum = $(".num");
 const questionBtn = $(".confirm-btn");
 const questionAnswer = $(".confirm-answer");
 const questionEx = $(".confirm-ex");
 
-//문제 출력
+//문제정보
+const quizNum = 1;
+const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
+const quizAnswer = "&lt;a&gt;";
+const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다.";
+
+//문제출력
 questionNum.text(quizNum);
-question.text(quizAsk);
+questionAsk.text(quizAsk);
 questionAnswer.html(quizAnswer);
-questionEx.html(quizEx);
+questionEx.html(quizEx)
 
 //정답 숨기기
 questionAnswer.hide();
 questionEx.hide();
 
-//정답 확인 버튼 클릭 -> 버튼 숨기기 ->정답보여주기
+//정답확인
+//버튼을 누르면 버튼을 사라지고 정답과 해설은 나타나게
 questionBtn.click(function(){
-questionBtn.hide();
-questionAnswer.show();
-questionEx.show();
+    questionBtn.hide()
+    questionAnswer.show()
+    questionEx.show()
 });
 </code></pre>
-                    </div>
-                </div>
-                <!-- //Intro1 -->
 
+<pre class="line-numbers language-js"><code>//선택자
+const questionQuiz = document.querySelectorAll(".quiz");
+const questionAsk = document.querySelectorAll(".question");
+const questionNum = document.querySelectorAll(".num");
+const questionBtn = document.querySelectorAll(".confirm-btn");
+const confirmBottom = document.querySelectorAll(".confirm-bottom")
+const questionAnswer = document.querySelectorAll(".confirm-answer");
+const questionEx = document.querySelectorAll(".confirm-ex");
+
+//문제정보
+const quizNum = 1;
+const quizAsk = "태그 중에서 유일하게 블록 구조를 감쌀 수 있는 태그는?";
+const quizAnswer = "&lt;a&gt;";
+const quizEx = "HTML5에서 &lt;a&gt; 태그는 유일하게 블록 구조를 감쌀 수 있습니다.";
+
+const quizInfo = [{
+        quizNum : 1,
+        quizAsk : "글씨의 색을 변경하는 CSS 속성은 무엇인가요?",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    },{
+        quizNum : 2,
+        quizAsk : "position : relative는 언제 사용하나요?",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    },{
+        quizNum : 3,
+        quizAsk : "콘텐츠 요소를 가운데로 오게 하는 방법 3가지 이상을 설명하시오.",
+        quizAnswer : "color 속성입니다.",
+        quizEx : "글씨 속성은 color 값을 이용합니다."
+    }
+];
+
+//foreach
+questionQuiz.forEach((elem, index) => {
+    questionNum[index].innerHTML = quizInfo[index].quizNum;
+    questionAsk[index].innerHTML = quizInfo[index].quizAsk;
+    questionAnswer[index].innerHTML = quizInfo[index].quizAnswer;
+    questionEx[index].innerHTML = quizInfo[index].quizEx;
+});
+
+//정답 숨기기
+for(let i=0; i<quizInfo.length; i++){
+    confirmBottom[i].style.display = "none";
+};
+
+
+//버튼 클릭하면
+questionBtn.forEach(elem => {
+    elem.addEventListener("click", function(){
+        this.style.display = "none";
+        this.nextElementSibling.style.display = "block";
+    });
+});
+</code></pre>
                 <!-- //Intro2 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">Quiz2</h2>
-                    <p class="bs-callout bs-callout-info">주관식 1문제 스타일(자바스크립트/제이쿼리)</p>
-                </div>
-                <!-- //Intro2 -->
 
-                <!-- //Intro3 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">Quiz2</h2>
-                    <p class="bs-callout bs-callout-info">주관식 1문제 스타일(자바스크립트/제이쿼리)</p>
-                </div>
-                <!-- //Intro3 -->
-
-                <!-- //Intro4 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">Quiz2</h2>
-                    <p class="bs-callout bs-callout-info">주관식 1문제 스타일(자바스크립트/제이쿼리)</p>
-                </div>
-                <!-- //Intro4 -->
 
             </div>
-            <!-- //col-md-9 -->
+            <!-- //col-md-12 -->
             
-            <!-- col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">레이어 마스크</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--//col-md-3 -->
         </div>
         <!-- //row -->
     </div>
