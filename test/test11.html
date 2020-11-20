@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        a {text-decoration: none; color: #333;}
+        ul li {list-style: none;}
+        #wrap {font-family: 'NanumSquare'}
+        #header {width: 100%; height: 110px; background: #fff; position: relative;}
+        #nav {width: 100%; height: 600px; background: url(img/test11-nav.png) no-repeat center; background-size: cover; position: relative;}
+        #contents {width: 100%; background: salmon;}
+        #footer {width: 100%; height: 220px; background: #000; color: #c0c0c0; overflow: hidden;} 
+
+        .container {margin: 0 auto; width: 1390px; height: inherit;}
+
+        
+        
+        
+        
+
+        #header img {position: absolute; left: 250px; top: 35px;}
+        #header ul {font-size: 16px; font-weight: 700; text-align: center;}
+        #header ul li {display: inline-block; padding: 45px 30px;}
+        #header ul li a {}
+        #header a {}
+        #header a.btn1 {border: 1px solid rgba(0,0,0,0.4); border-radius: 3px; padding: 8px 13px; font-size: 12px; font-weight: 700; text-align: center; position: absolute; right: 368px; top: 35px;}
+        #header a.btn2 {border: 1px solid rgba(0,0,0,0.4); border-radius: 3px; padding: 8px 13px; font-size: 12px; font-weight: 700; text-align: center; position: absolute; right: 255px; top: 35px;}
+
+        #nav h1 {font-size: 46px; font-weight: 700; color: #fff; padding-top: 140px; padding-left: 100px;}
+        #nav h5 {font-size: 18px; font-weight: 300; line-height: 32px; color: #fff; margin-top: 30px; margin-left: 100px;}
+        #nav a {font-size: 18px; font-weight: 400; color: #fff; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; padding: 20px 45px;}
+        #nav a.btn3 {position: absolute; left: 355px; bottom: 140px;}
+        #nav a.btn4 {position: absolute; left: 560px; bottom: 140px;}
+
+        #cont1 {height: 1090px; background: #fff; position: relative;}
+        #cont1 img {position: absolute; left: 485px; bottom: 200px;}
+        #cont1 h1 {font-size: 36px; letter-spacing: -.7px; text-align: center; padding-top: 120px;}
+        #cont1 h1 span {color: #05d686; font-size: 42px; font-weight: 400;}
+        #cont1 h3 {font-size: 20px; letter-spacing: -.4px; font-weight: normal; line-height: 34px; text-align: center; padding-top: 20px;}
+        #cont1 a {display: inline-block; padding: 3px 50px; line-height: 60px; background-color: #05d686; border-radius: 4px; font-size: 20px; letter-spacing: -.2px; color: #fff; position: absolute; left: 850px; bottom: 110px;}
+
+        #cont2 {height: 700px; background: #fff; position: relative;}
+        #cont2 .icon01 {position: absolute; left: 810px; top: 330px;}
+        #cont2 .icon02 {position: absolute; left: 1080px; top: 330px;}
+        #cont2 h1 {font-size: 36px; letter-spacing: -.7px; text-align: center; padding-top: 100px;}
+        #cont2 h1 span {color: #05d686; font-size: 42px; font-weight: 400;}
+        #cont2 h3 {font-size: 20px; letter-spacing: -.4px; font-weight: normal; line-height: 34px; text-align: center; padding-top: 20px; padding-bottom: 20px;}
+        #cont2 .art1 {width: 300px; height: 400px; display: inline-block; margin-left: 250px;}
+        #cont2 .art1 img {margin-left: 40px;}
+        #cont2 .art1 h1 {font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px; padding-top: 28px;}
+        #cont2 .art1 h3 {font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+        #cont2 .art2 {width: 300px; height: 400px; display: inline-block;}
+        #cont2 .art2 img {margin-left: 55px;}
+        #cont2 .art2 h1 {font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px; padding-top: 28px;}
+        #cont2 .art2 h3 {font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+        #cont2 .art3 {width: 300px; height: 400px; display: inline-block;}
+        #cont2 .art3 img {margin-left: 23px;}
+        #cont2 .art3 h1 {font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px; padding-top: 28px;}
+        #cont2 .art3 h3 {font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+
+        #cont3 {height: 620px; background: #fff;}
+        #cont3 h3 {font-size: 20px; letter-spacing: -.4px; font-weight: normal; line-height: 34px; text-align: center; padding-top: 60px; padding-bottom: 50px;}
+        #cont3 .art1 {width: 300px; height: 400px; display: inline-block; margin-left: 250px; text-align: center;}
+        #cont3 .art1 h1 {margin-top: 27px; font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px;}
+        #cont3 .art1 h3 {font-size: 20px; font-weight: 700; line-height: 40px; letter-spacing: -.6px; color: rgba(118,118,118,.9); padding-top: 2px;}
+        #cont3 .art1 h4 {margin-top: 20px; font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+        #cont3 .art2 {width: 300px; height: 400px; display: inline-block; text-align: center;}
+        #cont3 .art2 h1 {margin-top: 27px; font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px;}
+        #cont3 .art2 h3 {font-size: 20px; font-weight: 700; line-height: 40px; letter-spacing: -.6px; color: rgba(118,118,118,.9); padding-top: 2px;}
+        #cont3 .art2 h4 {margin-top: 20px; font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+        #cont3 .art3 {width: 300px; height: 400px; display: inline-block; text-align: center;}
+        #cont3 .art3 h1 {margin-top: 27px; font-size: 26px; font-weight: 700; line-height: 40px; letter-spacing: -.5px;}
+        #cont3 .art3 h3 {font-size: 20px; font-weight: 700; line-height: 40px; letter-spacing: -.6px; color: rgba(118,118,118,.9); padding-top: 2px;}
+        #cont3 .art3 h4 {margin-top: 20px; font-size: 20px; line-height: 32px; letter-spacing: -.4px; color: #767676;}
+
+        #cont4 {height: 400px; background: #fff; position: relative;}
+        #cont4 h3 {font-size: 20px; letter-spacing: -.4px; font-weight: normal; line-height: 34px; text-align: center; padding-top: 150px;}
+        #cont4 a {display: inline-block; padding: 3px 50px; line-height: 60px; background-color: #05d686; border-radius: 4px; font-size: 20px; letter-spacing: -.2px; color: #fff; position: absolute; left: 820px; bottom: 120px;}
+
+        #footer .left {width: 33.33333%; float: left; padding-top: 45px;} 
+        #footer .left p {display: inline-block; padding-bottom: 15px;}
+        #footer .left h1 {display: inline-block;}
+        #footer .left ul.fir {}
+        #footer .left ul li {display: inline-block;}
+        #footer .center {width: 33.33333%; float: left; text-align: center;} 
+        #footer .center p {padding-top: 90px;} 
+        #footer .right {width: 33.33333%; float: left;} 
+        #footer .right ul.sec {text-align: right; padding-top: 90px;}
+        #footer .right ul.sec li {display: inline-block; padding-left: 10px;}
+        #footer .right ul.sec li a {}
+        #footer .right ul.sns {float: right;} 
+        #footer .right .sns li {display: inline-block;}
+        #footer .right .sns li a {background: url(img/sp_svg_icon.png); display: inline-block; width: 24px; height: 24px; margin-left: 15px; margin-top: 50px;}
+        #footer .right .sns li .s1 {background-position: -127px -86px;}
+        #footer .right .sns li .s2 {background-position: -163px -213px;}
+        #footer .right .sns li .s3 {background-position: -138px -213px;}
+        #footer .right .sns li .s4 {background-position: -200px -166px;}
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <img src="img/test11-logo.JPG" alt="logo">
+                <ul>
+                    <li><a href="#">기술·솔루션</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">플랫폼</a></li>
+                    <li><a href="#">파트너</a></li>
+                    <li><a href="#">리서치</a></li>
+                </ul>
+                <a href="#" class="btn1">Biz Start</a>
+                <a href="#" class="btn2">비즈니스 문의</a>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="container">
+                <h1>CLOVA Skill Tools</h1>
+                <h5>클로바는 CLOVA Extension Kit와 Chatbot Builder를 제공하여<br>새로운 Skill을 쉽고 빠르게 클로바에 추가할 수 있도록 도와드립니다.<br>클로바에서 제공하는 개발자 도구들을 통해 새로운 음성 기술을 개발하고<br>특별한 서비스로 더 많은 고객을 만나보세요.</h5>
+                <a href="#" class="btn3">콘솔 바로가기</a>
+                <a href="#" class="btn4">챗봇 빌더 바로가기</a>
+            </div> 
+        </div>
+        <div id="contents">
+            <div id="cont1">
+                <div class="container">
+                    <img src="img/test11-cont1.png" alt="cont1">
+                    <h1><span>CLOVA</span> Extension Kit</h1>
+                    <h3>CLOVA Extension Kit는 외부 서비스나 lot 기기를 제어할 수 있는<br>'CLOVA Skill'을 서비스할 수 있도록 필요한 도구와 인터페이스를 제공합니다.</h3>
+                    <a href="#">콘솔 바로가기</a>
+                </div>
+            </div>
+            <div id="cont2">
+                <div class="container">
+                    <img class="icon01" src="img/test11-cont2-icon.JPG" alt="icon">
+                    <img class="icon02" src="img/test11-cont2-icon.JPG" alt="icon">
+                    <h1><span>CLOVA</span> Chatbot Builder</h1>
+                    <h3>Chatbot Builder를 통해 개발자가 아닌 일반 사용자도<br>쉽고 빠르게 챗봇을 만들고 서비스 할 수 있습니다.</h3>
+                    <article class="art1">
+                        <img src="img/test11-cont2-1.JPG" alt="cont2-1">
+                        <h1>대화 등록</h1>
+                        <h3>10개~15개의 대화 등록<br>적은 데이터로도 챗봇 생성 가능</h3>
+                    </article>
+                    <article class="art2">
+                        <img src="img/test11-cont2-2.JPG" alt="cont2-2">
+                        <h1>학습</h1>
+                        <h3>방대한 네이버 DB와 함께<br>빠르게 학습하고 바로 확인 가능</h3>
+                    </article>
+                    <article class="art3">
+                        <img src="img/test11-cont2-3.JPG" alt="cont2-3">
+                        <h1>서비스 연결</h1>
+                        <h3>스마트 스피커, LINE, 네이버 톡톡에서<br>음성과 텍스트 모두 즉시 연동</h3>
+                    </article>
+                </div>
+            </div>
+            <div id="cont3">
+                <div class="container">
+                    <h3>CLOVA Chatbot은 기업의 상담 콜센터를 대체하고,<br>사용자의 흥미를 자극하는 재미있는 콘텐츠로 만들어지고 있습니다.</h3>
+                    <article class="art1">
+                        <img src="img/test11-cont3-1.JPG" alt="cont3-1">
+                        <h1>마케팅 챗봇</h1>
+                        <h3>U+ 우리집AI β</h3>
+                        <h4>유플러스 스피커 사용 고객에게<br>우리집AI 상품을 소개해주는 챗봇</h4>
+                    </article>
+                    <article class="art2">
+                        <img src="img/test11-cont3-2.JPG" alt="cont3-2">
+                        <h1>정보성 챗봇</h1>
+                        <h3>네이버 고객센터 β</h3>
+                        <h4>네이버 주요 서비스에 대해<br>도움말을 알려주는 챗봇</h4>
+                    </article>
+                    <article class="art3">
+                        <img src="img/test11-cont3-3.JPG" alt="cont3-3">
+                        <h1>FUN  챗봇</h1>
+                        <h3>동물소리 번역기</h3>
+                        <h4>동물 소리 발화를 유도하는<br>사용 재미를 주는 챗봇</h4>
+                    </article>
+                </div>
+            </div>
+            <div id="cont4">
+                <div class="container">
+                    <h3>클로바 챗봇 빌더에서 나만의 챗봇을 만들어 보세요.</h3>
+                    <a href="#">챗봇 빌더 바로가기</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="left">
+                    <p>NAVER</p>
+                    <h1>CLOVA</h1>
+                    <ul class="fir">
+                        <li>고객센터 1833-5387</li>
+                        <li>09:00 - 18:00(주말,공휴일 휴무)</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <p>Powered by NAVER·LINE</p>
+                </div>
+                <div class="right">
+                    <ul class="sns">
+                        <li><a href="#" class="s1"></a></li>
+                        <li><a href="#" class="s2"></a></li>
+                        <li><a href="#" class="s3"></a></li>
+                        <li><a href="#" class="s4"></a></li>
+                    </ul>
+                    <ul class="sec">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">CLOVA 채용안내</a></li>
+                        <li><a href="#">CLOVA JP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
