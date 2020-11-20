@@ -442,6 +442,27 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .video {position: relative; width: 100%; padding-bottom: 56.25%;}
 .video iframe {border: 0; position: absolute; width: 100%; height: 100%;}
 
+/* 마우스 오버 */
+.side1 .hover1 {height: 310px; overflow: hidden; position: relative;}
+.side1 .hover1 img {}
+.side1 .hover1 h3 {font-size: 16px; text-align: center; padding-top: 2px;}
+.side1 .hover1 p {font-size: 12px; text-align: center; padding-bottom: 5px;}
+.side1 .hover1 .fig1 {width: 100%; height: 100%; background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); opacity: 0; transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0; padding-top: 120px;}
+.side1 .hover1 .fig1:hover {opacity: 1;}
+
+.side2 .hover2 {height: 310px; overflow: hidden; position: relative;}
+.side2 .hover2 h3 {font-size: 16px; text-align: center;}
+.side2 .hover2 p {font-size: 12px; text-align: center; padding-bottom: 5px;}
+.side2 .hover2 .fig2 {width: 100%; height: 100%; background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); opacity: 0; transform: translateY(150px); transition: all .5s ease-in-out; position: absolute; left: 0; top: 0; padding-top: 120px;}
+.side2 .hover2 .fig2:hover {opacity: 1; transform: translateY(0px);}
+
+.side3 .hover3 {height: 310px; overflow: hidden; position: relative;}
+.side3 .hover3 h3 {font-size: 16px; text-align: center;}
+.side3 .hover3 p {font-size: 12px; text-align: center; padding-bottom: 5px;}
+.side3 .hover3 .fig3 {width: 100%; height: 100%; background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%); opacity: 1; transform: skewX(0deg); transition: all .5s ease-in-out; position: absolute; left: 0; top: 0; padding-top: 120px;}
+.side3 .hover3 .fig3:hover {opacity: 0; transform: skewX(20deg);}
+
+
 /* 푸터 */
 .footer {text-align: center; padding: 30px 50px;}
 .footer li {position: relative; display: inline; padding: 0 7px 0 10px; word-break: keep-all;}
