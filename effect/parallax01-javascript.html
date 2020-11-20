@@ -315,17 +315,10 @@
 
     <!-- script -->
     <script>
-        // 제이쿼리
-        // $(window).scroll(function(){
-        //     const scrollTop = $(window).scrollTop();    
-        // });
-        // 자바스크립트
         window.addEventListener("scroll", function(){
             let pageYOffset = window.pageYOffset;
-
-            //출력용(브라우저의 스크롤 탑값 출력하기)
+            // 출력용
             document.querySelector(".pageYOffset").innerText = pageYOffset;
-
             document.querySelector(".s1OffsetTop").innerText = document.getElementById("section1").offsetTop;
             document.querySelector(".s2OffsetTop").innerText = document.getElementById("section2").offsetTop;
             document.querySelector(".s3OffsetTop").innerText = document.getElementById("section3").offsetTop;
@@ -335,9 +328,7 @@
             document.querySelector(".s7OffsetTop").innerText = document.getElementById("section7").offsetTop;
             document.querySelector(".s8OffsetTop").innerText = document.getElementById("section8").offsetTop;
             document.querySelector(".s9OffsetTop").innerText = document.getElementById("section9").offsetTop;
-            //for문
-            for(let i=1; i<=document.querySelector(".content-item").length)
-            //글씨 색 바꿔주기
+            // 출력용 글씨 색
             if(pageYOffset > document.getElementById("section1").offsetTop){
                 document.querySelector(".s1OffsetTop").style.color = "red";
             } else {

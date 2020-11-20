@@ -82,17 +82,13 @@
     </div>
     <div class="container bs-docs-container">
         <div class="row">
-            <div class="col-md-9" role="main">
-                <!-- 배너 광고 -->
-                <div class="ad">
-                    <script src="https://ads-partners.coupang.com/g.js"></script>
-                    <script>
-                        new PartnersCoupang.G({
-                            id: 347692
-                        });
-                    </script>
-                </div>
-                <!-- //배너 광고 -->
+            <div class="col-md-12" role="main">
+                <!-- 배너 광고1140 -->
+                <script src="https://ads-partners.coupang.com/g.js"></script>
+                <script>
+                    new PartnersCoupang.G({ id:348414 });
+                </script>
+                <!-- //배너 광고1140 -->
 
                 
                 
@@ -103,7 +99,7 @@
                     <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
                     <p><a class="btn btn-primary btn-lg" href="parallax01-jquery.html" role="button">확인하기</a></p>
 
-<pre class="line-numbers language-css"><code>$(window).scroll(function(){
+<pre class="line-numbers language-js"><code>$(window).scroll(function(){
     const scrollTop = $(window).scrollTop()+ $(window).height()/2;
     $(".scrollTop").text(parseInt(scrollTop));
 
@@ -127,12 +123,70 @@
                 <!-- Intro2-->
                 <div class="bs-docs-section">
                     <h2 id="intro2" class="page-header">Parallax - JavaScript</h2>
-                    <p class="bs-callout bs-callout-info"></p>
-                    <p><a class="btn btn-primary btn-lg" href="parallax01-jquery.html" role="button">확인하기</a></p>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax01-javascript.html" role="button">확인하기</a></p>
 
-                    <pre class="line-numbers language-css"><code>
-
-                    </code></pre>
+<pre class="line-numbers language-js"><code>window.addEventListener("scroll", function(){
+    let pageYOffset = window.pageYOffset;
+    // 출력용
+    document.querySelector(".pageYOffset").innerText = pageYOffset;
+    document.querySelector(".s1OffsetTop").innerText = document.getElementById("section1").offsetTop;
+    document.querySelector(".s2OffsetTop").innerText = document.getElementById("section2").offsetTop;
+    document.querySelector(".s3OffsetTop").innerText = document.getElementById("section3").offsetTop;
+    document.querySelector(".s4OffsetTop").innerText = document.getElementById("section4").offsetTop;
+    document.querySelector(".s5OffsetTop").innerText = document.getElementById("section5").offsetTop;
+    document.querySelector(".s6OffsetTop").innerText = document.getElementById("section6").offsetTop;
+    document.querySelector(".s7OffsetTop").innerText = document.getElementById("section7").offsetTop;
+    document.querySelector(".s8OffsetTop").innerText = document.getElementById("section8").offsetTop;
+    document.querySelector(".s9OffsetTop").innerText = document.getElementById("section9").offsetTop;
+    // 출력용 글씨 색
+    if(pageYOffset > document.getElementById("section1").offsetTop){
+        document.querySelector(".s1OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s1OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section2").offsetTop){
+        document.querySelector(".s2OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s2OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section3").offsetTop){
+        document.querySelector(".s3OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s3OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section4").offsetTop){
+        document.querySelector(".s4OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s4OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section5").offsetTop){
+        document.querySelector(".s5OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s5OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section6").offsetTop){
+        document.querySelector(".s6OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s6OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section7").offsetTop){
+        document.querySelector(".s7OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s7OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section8").offsetTop){
+        document.querySelector(".s8OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s8OffsetTop").style.color = "white";
+    }
+    if(pageYOffset > document.getElementById("section9").offsetTop){
+        document.querySelector(".s9OffsetTop").style.color = "red";
+    } else {
+        document.querySelector(".s9OffsetTop").style.color = "white";
+    }
+});
+</code></pre>
                     
                 </div>
                 <!-- //Intro2 -->
@@ -148,19 +202,8 @@
                 <!-- //figma -->
                 
             </div>
-            <!-- //col-md-9 -->
+            <!-- //col-md-12 -->
             
-            <!-- col-md-3 -->
-            <div class="col-md-3">
-                <div class="bs-sidebar hidden-print" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">Parallax01 - jQuery01</a></li>
-                        <li><a href="#intro1">Parallax01 - JavaScript01</a></li>
-                        <li><a href="#intro1">Parallax01 - figma</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--//col-md-3 -->
         </div>
         <!-- //row -->
     </div>
