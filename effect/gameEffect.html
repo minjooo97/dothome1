@@ -92,6 +92,7 @@
                     <p class="bs-callout bs-callout-info">주관식 1문제 스타일(제이쿼리/자바스크립트)</p>
                     <iframe width="100%" height="600px" src="quizEffect01-jquery.html" frameborder="0"></iframe>
                 </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
 <pre class="line-numbers language-js"><code>//선택자
 const questionAsk = $(".question");
 const questionNum = $(".num");
@@ -123,7 +124,7 @@ questionBtn.click(function(){
     questionEx.show()
 });
 </code></pre>
-
+                <h2 id="intro1" class="page-header">JavaScript</h2>
 <pre class="line-numbers language-js"><code>    //선택자
 const questionAsk = document.querySelector(".question");
 const questionNum = document.querySelector(".num");
@@ -158,6 +159,7 @@ questionBtn.addEventListener("click",(function(){
                     <p class="bs-callout bs-callout-info">주관식 3문제 스타일(제이쿼리/자바스크립트)</p>
                     <iframe width="100%" height="600px" src="quizEffect02-jquery.html" frameborder="0"></iframe>
                 </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
 <pre class="line-numbers language-js"><code>//선택자
 const questionAsk = $(".question");
 const questionNum = $(".num");
@@ -225,7 +227,7 @@ questionBtn.click(function(){
     $(this).nextAll().show();
 });
 </code></pre>
-
+                <h2 id="intro1" class="page-header">JavaScript</h2>
 <pre class="line-numbers language-js"><code>//선택자
 const questionQuiz = document.querySelectorAll(".quiz");
 const questionAsk = document.querySelectorAll(".question");
@@ -287,7 +289,7 @@ questionQuiz.forEach((elem, index) => {
 
 //정답 숨기기
 
-for(let i=0; i<quizInfo.length; i++){
+for(let i=0; i glt; quizInfo.length; i++){
     confirmBottom[i].style.display = "none";
 }
 
