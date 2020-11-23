@@ -143,6 +143,69 @@ setInterval(() => {
 </code></pre>
             <!-- //intro2 -->
 
+            <!-- Intro3 -->
+            <div class="bs-docs-section">
+                <h2 id="intro3" class="page-header">Slider Effect02</h2>
+                <p class="bs-callout bs-callout-info">Slider Effect02 (제이쿼리)</p>
+                <iframe width="100%" height="600px" src="sliderEffect02-jquery.html" frameborder="0"></iframe>
+            </div>
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+const sliderImg = $(".slider-img");
+const slider = $(".slider");
+
+let currentIndex = 0;
+let sliderCount = slider.length;  //이미지 갯수
+
+setInterval(function(){
+    // if(currentIndex < sliderCount - 1){
+    //     currentIndex++; // 0 1 2 3 4 0
+    // } else {
+    //     currentIndex = 0;
+    // }
+    currentIndex < sliderCount - 1 ? currentIndex++ : currentIndex = 0;
+    let sliderPosition = currentIndex * (-800) + "px";
+                            //   0 * -800px -> 0
+                            //   1 * -800px -> -800px
+                            //   2 * -800px -> -1600px (3번째)
+                            //   3 * -800px -> -2400px
+    sliderImg.animate({left: sliderPosition},400); 
+},3000)
+</code></pre>
+            <!-- //Intro3 -->
+
+            <!-- Intro4 -->
+            <div class="bs-docs-section">
+                <h2 id="intro4" class="page-header">Slider Effect02</h2>
+                <p class="bs-callout bs-callout-info">Slider Effect02 (자바스크립트)</p>
+                <iframe width="100%" height="600px" src="sliderEffect02-javascript.html" frameborder="0"></iframe>
+            </div>
+
+<pre class="line-numbers language-js"><code>const sliderWrap = document.querySelector(".slider-wrap");
+const sliderImg = document.querySelector(".slider-img");
+const slider = document.querySelectorAll(".slider");
+
+let currentIndex = 0;
+let sliderCount = slider.length;
+let sliderWidth = sliderWrap.offsetWidth;
+console.log(sliderWidth);
+
+setInterval(function(){
+    // if(currentIndex < sliderCount - 1){
+    //     currentIndex++;
+    // } else {
+    //     currentIndex = 0;
+    // }
+    currentIndex < sliderCount - 1 ? currentIndex++ : currentIndex = 0;
+    let sliderPosition = currentIndex * (-sliderWidth)+"px";
+    //sliderImg.animate({left: sliderPosition},400);
+    // sliderImg.style.left = sliderPosition;
+    // sliderImg.style.transition = "all 0.6s";
+
+    gsap.to(sliderImg, {duration: 0.6, left: sliderPosition});
+},3000);
+</code></pre>
+        <!-- //intro4 -->
+
             </div>
             <!-- //col-md-12 -->
             
