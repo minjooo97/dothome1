@@ -282,42 +282,32 @@ $("h1").hover(function(){
 });
 </code></pre>
                 <h2 id="intro1" class="page-header">JavaScript</h2>
-<pre class="line-numbers language-js"><code>//출력용
-document.addEventListener("mousemove", e => {
-    document.querySelector(".pageX").textContent = e.pageX
-    document.querySelector(".pageY").textContent = e.pageY
-});
-
-//
+<pre class="line-numbers language-js"><code>//선택자
 const cursor = document.querySelector(".cursor");
-const follower = document.querySelector(".cursor-follower");
-const cursorText = document.querySelectorAll(".contents em");
-const cursorWidth = cursor.clientWidth / 2;
-const followerWidth = follower.clientWidth / 2;
-
-//마우스 움직이기
-document.addEventListener("mousemove", e => {
-    gsap.to(cursor, {duration: 0.3, left: e.pageX-cursorWidth, top: e.pageY-cursorWidth})
-    gsap.to(follower, {duration: 0.8, left: e.pageX-followerWidth, top: e.pageY-followerWidth})
+const contentEm = document.querySelectorAll(".contents em");
+const infoLi = document.querySelectorAll(".info.bottom li");
+//움직임 효과
+document.addEventListener("mousemove", function(e) {
+    gsap.to(cursor, {duration: 0.5, left: e.pageX, top: e.pageY});
 });
-
-//마우스 오버효과
-// cursorText.addEventListener("mouseenter", function(){
-//     cursor.classList.add("active");
-//     follower.classList.add("active");
-// });
-// cursorText.addEventListener("mouseleave", function(){
-//     cursor.classList.remove("active");
-//     follower.classList.remove("active");
-// });
-cursorText.forEach(elem => {
+//오버 효과
+contentEm.forEach(elem => {
     elem.addEventListener("mouseenter", ()=>{
         cursor.classList.add("active");
-        follower.classList.add("active");
     });
     elem.addEventListener("mouseleave", ()=>{
         cursor.classList.remove("active");
-        follower.classList.remove("active");
+    });
+});
+//출력용
+infoLi.forEach(info => {
+    info.addEventListener("click", function(){
+        const text = this.textContent || this.innerHTML;
+        cursor.style.mixBlendMode = text;
+        infoLi.forEach(li => {
+            li.classList.remove("active");
+            this.classList.add("active");
+        });
     });
 });
 </code></pre>
