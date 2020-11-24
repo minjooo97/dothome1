@@ -244,6 +244,85 @@ cursorText.forEach(elem => {
 </code></pre>
                 <!-- //Intro2 -->
 
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">Mouse Effect03</h2>
+                    <p class="bs-callout bs-callout-info">Mouse Effect03 (제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="mouseEffect03-jquery.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
+<pre class="line-numbers language-js"><code>//움직임
+$(document).mousemove(function(e){
+    gsap.to(".cursor",{duration: 0.4, left: e.pageX, top: e.pageY})
+});
+
+//오버 효과
+$(".contents em").hover(function(){
+    $(".cursor").addClass("active");
+},function(){
+    $(".cursor").removeClass("active");
+});
+
+//출력용
+$(".info.bottom li").click(function(){
+    //클릭한 글씨 값을 가져와서 alert으로 출력
+    const text = $(this).text();
+    //alert(text);
+    //클릭한 글씨를 커서에 클래스로 추가
+    $(".info.bottom li").removeClass("active");
+    $(this).addClass("active")
+    $(".cursor").css("mix-blend-mode", text);
+});
+
+//제목에 마우스 오버했을 때 효과
+$("h1").hover(function(){
+    $(".cursor").addClass("acti");
+},function(){
+    $(".cursor").removeClass("acti");
+});
+</code></pre>
+                <h2 id="intro1" class="page-header">JavaScript</h2>
+<pre class="line-numbers language-js"><code>//출력용
+document.addEventListener("mousemove", e => {
+    document.querySelector(".pageX").textContent = e.pageX
+    document.querySelector(".pageY").textContent = e.pageY
+});
+
+//
+const cursor = document.querySelector(".cursor");
+const follower = document.querySelector(".cursor-follower");
+const cursorText = document.querySelectorAll(".contents em");
+const cursorWidth = cursor.clientWidth / 2;
+const followerWidth = follower.clientWidth / 2;
+
+//마우스 움직이기
+document.addEventListener("mousemove", e => {
+    gsap.to(cursor, {duration: 0.3, left: e.pageX-cursorWidth, top: e.pageY-cursorWidth})
+    gsap.to(follower, {duration: 0.8, left: e.pageX-followerWidth, top: e.pageY-followerWidth})
+});
+
+//마우스 오버효과
+// cursorText.addEventListener("mouseenter", function(){
+//     cursor.classList.add("active");
+//     follower.classList.add("active");
+// });
+// cursorText.addEventListener("mouseleave", function(){
+//     cursor.classList.remove("active");
+//     follower.classList.remove("active");
+// });
+cursorText.forEach(elem => {
+    elem.addEventListener("mouseenter", ()=>{
+        cursor.classList.add("active");
+        follower.classList.add("active");
+    });
+    elem.addEventListener("mouseleave", ()=>{
+        cursor.classList.remove("active");
+        follower.classList.remove("active");
+    });
+});
+</code></pre>
+                <!-- //Intro3 -->
+
             </div>
             <!-- //col-md-12 -->
 
