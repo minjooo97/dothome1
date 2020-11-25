@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax03 - jQuery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* reset */
+        @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box; 
+            margin: 0; padding: 0;
+        }
+        a, ul {
+            text-decoration: none; 
+            transition: all 0.2s;
+            list-style: none;
+        }
+        img {width: 100%; 
+            vertical-align: top; /* 여백초기화 */
+        }
+
+        /* info */
+        .info {position: fixed; z-index: 1000;}
+        .info.left {left: 20px; top: 20px;}
+        .info.right {right: 20px; top: 20px;}
+        .info.bottom {right: 20px; bottom: 20px;}
+        .info h1 {font-size: 2rem; line-height: 1.4;}
+        .info p {font-size: 1rem;}
+        .info li {font-size: 1rem; line-height: 1.4;}
+        .info li a {
+            color: #fff; 
+            width: 25px; 
+            height: 25px; 
+            border: 1px dashed #fff; 
+            display: inline-block; 
+            border-radius: 50%; 
+            text-align: center; 
+            line-height: 25px; 
+            font-size: 0.8rem;
+            margin: 3px;
+        }
+        .info li a.active {background: #fff; color: #000;}
+
+        @media (max-width: 800px){
+            .info h1 {display: none;}
+        }
+
+        /* main */
+        body {
+            /* 변수선언 */
+            --color-h1 : #dc6e25;
+            --color-title : #fff;
+            --color-sub : #999;
+            --color-link : #000;
+            --color-bg : #111;
+            --font-cafe : 'S-CoreDream-3Light';
+            --font-lato : 'Lato', sans-serif;
+            --aspect-ratio : 33/17;
+            
+            background-color: var(--color-bg);
+            color: var(--color-title);
+            font-family: var(--font-cafe);
+        }
+
+        #Parallax-wrap h1 {
+            color: var(--color-h1);
+            font-family: var(--font-lato); 
+            font-size: 8vw;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 10vw 8vw 0 8vw;
+        }
+        #Parallax-wrap h1 em {
+            display: block; 
+            font-weight: 100; 
+            padding-left: 18vw;
+        }
+        .contents {
+            margin: 0 auto 35vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .content-item {
+            width: 1200px;
+            max-width: 90vw;
+            margin: 60vh 0 60vh;
+            position: relative;
+        }
+        .content-item:nth-last-child(even) {margin-left: auto;}
+        .content-item-num {
+            font-size: 25vw;
+            font-weight: 100;
+            font-family: var(--font-lato);
+            position: absolute;
+            right: -5vw;
+            top: -20vw;
+            opacity: 0.2;
+        }
+        .content-item:nth-last-child(even) .content-item-num {
+            right: auto;
+            left: -5vw;
+        }
+        .content-item-title {text-align: right; padding-bottom: 5px;}
+        .content-item:nth-last-child(even) .content-item-title {text-align: left;}
+        .content-item-imgWrap {
+            position: relative;
+            --width: 100%;
+            width: var(--width);
+            /* padding-bottom: 50%; */
+            padding-bottom: calc(var(--width) / (var(--aspect-ratio)));
+            overflow: hidden;
+        }
+        .content-item-img {
+            width: var(--width);
+            --overflow: 60px;
+            position: absolute;
+            top: calc(-1 * var(--overflow));
+            height: calc(100% + (3 * var(--overflow)));
+            background-size: cover;
+            background-position: 50% 0;
+        }
+        .content-item-desc {
+            font-size: 5vw;
+            line-height: 1.4;
+            text-align: right;
+            word-break: keep-all;
+            margin-right: -4vw;
+            margin-top: -6vw;
+            padding-left: 8vw;
+            z-index: 100;
+            position: relative;
+        }
+        /* position: relative;
+        1. position: absolute 기준점 역할
+        2. position: absolute를 사용하지 않고 z-index를 사용할 경우
+        3. absolute를 사용하지 않고 left, top을 통해서 위치를 설정할 경우 */
+        .content-item:nth-last-child(even) .content-item-desc {
+            text-align: left;
+            margin-right: auto;
+            padding-left: 0;
+             /* 여기서auto는 기본값을 초기화 padding은 auto가 없음*/
+            padding-right: 10vw;
+            margin-left: -4vw;
+        }
+        #section1 .content-item-img {
+            background: url(img/img01.jpg);
+            background-size: cover;
+        }
+
+        #section2 .content-item-img {
+            background: url(img/img02.jpg);
+            background-size: cover;
+        }
+        #section3 .content-item-img {
+            background: url(img/img03.jpg);
+            background-size: cover;
+        }
+        #section4 .content-item-img {
+            background: url(img/img04.jpg);
+            background-size: cover;
+        }
+        #section5 .content-item-img {
+            background: url(img/img05.jpg);
+            background-size: cover;
+        }
+        #section6 .content-item-img {
+            background: url(img/img06.jpg);
+            background-size: cover;
+        }
+        #section7 .content-item-img {
+            background: url(img/img07.jpg);
+            background-size: cover;
+        }
+        #section8 .content-item-img {
+            background: url(img/img08.jpg);
+            background-size: cover;
+        }
+        #section9 .content-item-img {
+            background: url(img/img09.jpg);
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="info left">
+        <h1>Parallax Effect03 - jQuery</h1>
+        <p>패랠랙스 스크롤링 효과 - 이질감 느끼기</p>
+    </div>
+    <div class="info right">
+        <ul>
+            <li><a href="parallax01-jquery.html">1</a><a href="parallax01-javascript.html">1</a></li>
+            <li><a href="parallax02-jquery.html">2</a><a href="parallax02-javascript.html">2</a></li>
+            <li><a href="parallax03-jquery.html" class="active">3</a><a href="parallax03-javascript.html">3</a></li>
+            <li><a href="parallax04-jquery.html">4</a><a href="parallax04-javascript.html">4</a></li>
+            <li><a href="parallax05-jquery.html">5</a><a href="parallax05-javascript.html">5</a></li>
+            <li><a href="parallax06-jquery.html">6</a><a href="parallax06-javascript.html">6</a></li>
+            <li><a href="parallax07-jquery.html">7</a><a href="parallax07-javascript.html">7</a></li>
+            <li><a href="parallax08-jquery.html">8</a><a href="parallax08-javascript.html">8</a></li>
+            <li><a href="parallax09-jquery.html">9</a><a href="parallax09-javascript.html">9</a></li>
+            <li><a href="parallax10-jquery.html">10</a><a href="parallax10-javascript.html">10</a></li>  
+        </ul>
+    </div>
+
+    <div class="info bottom">
+        <ul>
+            <li>scrollTop() : <span class="scrollTop">0</span>px</li>
+        </ul>
+    </div>
+
+    <!-- //info -->
+
+    <main>
+        <section id="Parallax-wrap">
+            <h1>Parallax <em>Scrolling</em></h1>
+            <div class="contents">
+                <section id="section1" class="content-item">
+                    <span class="content-item-num">01</span>
+                    <h2 class="content-item-title">section1</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">높은 목표를 세우고, 스스로 채찍질 한다.</p>
+                </section>
+                <section id="section2" class="content-item">
+                    <span class="content-item-num">02</span>
+                    <h2 class="content-item-title">section2</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">긍정적인 생각과 긍정적인 행동은 성공을 불러온다.</p>
+                </section>
+                <section id="section3" class="content-item">
+                    <span class="content-item-num">03</span>
+                    <h2 class="content-item-title">section3</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">최후의 성공을 거둘 때까지 밀고 나가자.</p>
+                </section>
+                <section id="section4" class="content-item">
+                    <span class="content-item-num">04</span>
+                    <h2 class="content-item-title">section4</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">성공은 결과이지 목적은 아니다.</p>
+                </section>
+                <section id="section5" class="content-item">
+                    <span class="content-item-num">05</span>
+                    <h2 class="content-item-title">section5</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">성공은 수만 번의 실패를 감싸준다.</p>
+                </section>
+                <section id="section6" class="content-item">
+                    <span class="content-item-num">06</span>
+                    <h2 class="content-item-title">section6</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">우리가 실패에서 배우면 실패는 성공이 된다.</p>
+                </section>
+                <section id="section7" class="content-item">
+                    <span class="content-item-num">07</span>
+                    <h2 class="content-item-title">section7</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">계획을 세우지 않는 것은 실패를 계획하는 것이다.</p>
+                </section>
+                <section id="section8" class="content-item">
+                    <span class="content-item-num">08</span>
+                    <h2 class="content-item-title">section8</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">행운은 계획에서 비롯된다.</p>
+                </section>
+                <section id="section9" class="content-item">
+                    <span class="content-item-num">09</span>
+                    <h2 class="content-item-title">section9</h2>
+                    <figure class="content-item-imgWrap">
+                        <div class="content-item-img"></div>
+                    </figure>
+                    <p class="content-item-desc">시간은 우리를 변화시키지 않는다.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="jquery.min_1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        let scrollTop = $(window).scrollTop();
+        function scroll(){
+            const newScrollTop = $(window).scrollTop();
+            const different = newScrollTop-scrollTop;
+
+            console.log("scrollTop:" + scrollTop);
+            console.log("newScrollTop:" + newScrollTop);
+            console.log("different:" + different);
+
+            //$(".content-item-imgWrap").css({"transform":"skewY("+different+"deg)"})
+            gsap.to(".content-item-imgWrap", {duration: .3, skewY: different * 0.1, ease: Power1.ease});
+            gsap.to(".content-item-num", {duration: .6, x: different * 0.3, ease: Power1.ease});
+            gsap.to(".content-item-desc", {duration: .6, skewX: different * 0.2, ease: Power4.ease});
+
+            scrollTop = newScrollTop;
+            requestAnimationFrame(scroll);
+        }
+        scroll();
+    </script>
+</body>
+</html>

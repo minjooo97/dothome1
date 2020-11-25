@@ -115,8 +115,7 @@
         }
     });
 });
-</code></pre>
-                    
+</code></pre>    
                 </div>
                 <!-- //Intro1 -->
 
@@ -253,8 +252,7 @@
         }
     });
 });
-</code></pre>
-                    
+</code></pre>  
                 </div>
                 <!-- //Intro2 -->
 
@@ -319,8 +317,7 @@
     //출력용
     $(".scrollTop").text(scrollTop);
 });
-</code></pre>
-                    
+</code></pre>   
                 </div>
                 <!-- //Intro4 -->
 
@@ -361,19 +358,119 @@
     });
 });
 </code></pre>
-                    
                 </div>
                 <!-- //Intro5 -->
 
-                <!-- figma -->
+                <!-- Intro6 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro6" class="page-header">figma</h2>
-                    <p><a class="btn btn-primary btn-lg" href="https://www.figma.com/proto/9YPtrz40DJa8KlimA84299/SCRIPT?node-id=82%3A0&viewport=-1006%2C-1024%2C1&scaling=min-zoom" role="button">확인하기</a></p>
-                    <div class="iframe">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9YPtrz40DJa8KlimA84299%2FSCRIPT%3Fnode-id%3D82%253A0%26viewport%3D-1006%252C-1024%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
-                    </div>                   
+                    <h2 id="intro6" class="page-header">Parallax03 - jQuery</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax03-jquery.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>let scrollTop = $(window).scrollTop();
+function scroll(){
+    const newScrollTop = $(window).scrollTop();
+    const different = newScrollTop-scrollTop;
+
+    console.log("scrollTop:" + scrollTop);
+    console.log("newScrollTop:" + newScrollTop);
+    console.log("different:" + different);
+
+    //$(".content-item-imgWrap").css({"transform":"skewY("+different+"deg)"})
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY: different * 0.1, ease: Power1.ease});
+    gsap.to(".content-item-num", {duration: .6, x: different * 0.3, ease: Power1.ease});
+    gsap.to(".content-item-desc", {duration: .6, skewX: different * 0.2, ease: Power4.ease});
+
+    scrollTop = newScrollTop;
+    requestAnimationFrame(scroll);
+}
+scroll();
+</code></pre>
                 </div>
-                <!-- //figma -->
+                <!-- //Intro6 -->
+
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Parallax03 - JavaScript</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax03-javascript.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>let pageYOffset = window.pageYOffset;
+
+const scroll = () => {
+    const newPageYOffset = window.pageYOffset;
+    const different = newPageYOffset - pageYOffset;
+
+    console.log("scrollTop:" + pageYOffset);
+    console.log("newScrollTop:" + newPageYOffset);
+    console.log("different:" + different);
+
+    let target = document.querySelectorAll(".content-item-img");
+    // target.style.transform = "rotate("+different+"deg)"
+    // target.forEach((elem)=>{
+    //     elem.style.transform = "rotate("+different+"deg)"
+    // });
+    gsap.to(".content-item-imgWrap", {duration: .3, skewY: different * 0.1, ease: Power1.ease});
+    gsap.to(".content-item-num", {duration: .6, x: different * 0.3, ease: Power1.ease});
+    gsap.to(".content-item-desc", {duration: .6, skewX: different * 0.2, ease: Power4.ease});
+    
+    pageYOffset = newPageYOffset;
+    requestAnimationFrame(scroll);
+}
+scroll();
+</code></pre>  
+                </div>
+                <!-- //Intro7 -->
+
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">Parallax04 - jQuery</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax04-jquery.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>// let text = $("#section1 .content-item-desc").text();
+// let split = text.split("").join("</span><span>");
+//       split = "<span>"+split+"</span>";
+
+//글씨 쪼개기
+$(".content-item-desc").each(function(){
+    let text = $(this).text();
+    let split = text.split("").join("</span><span aria-hidden = 'true'>");
+    split = "<span aria-hidden = 'true'>"+split+"</span>";
+    $(this).html(split).attr("aria-label", text);
+});
+
+//나타나기
+$(window).scroll(function(){
+//     //한번에 나오게 하기
+// $(".content-item").each(function(){
+//     if($(window).scrollTop() > $(this).offset().top){
+//         $(this).find(".content-item-desc").addClass("show");
+//     } else {
+//         $(this).find(".content-item-desc").removeClass("show");
+//     }
+// });
+    //나타나기 (한 글자씩)
+    // if($(window).scrollTop() > $("#section1").offset().top){
+    //     $("#section1 .content-item-desc span").each(function(i){
+    //         setTimeout(()=>{
+    //             $("#section1 .content-item-desc span").eq(i).addClass("show");
+    //         },50 * (i+1));
+    //     })
+    // }
+
+    //나타나기 (한 글자씩) 9개
+    $(".content-item").each(function(){
+        if($(window).scrollTop() > $(this).offset().top){
+            gsap.to($(this).find(".content-item-desc span"),
+            {duration: .3, opacity: 1, y: 0, stagger: 0.05, ease: Power1.ease})
+        }
+    });
+});
+</code></pre>
+                </div>
+                <!-- //Intro8 -->
+
                 
             </div>
             <!-- //col-md-12 -->
