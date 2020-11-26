@@ -471,6 +471,100 @@ $(window).scroll(function(){
                 </div>
                 <!-- //Intro8 -->
 
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">Parallax04 - JavaScript</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax04-javascript.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>// let text = document.querySelector("#section1 .content-item-desc");
+// let splitText = text.innerText;
+// let splitWrap = splitText.split("").join("&lt;/span>&lt;span aria-hidden:'true'>");
+//     splitWrap = " &lt;span aria-hidden:'true'>"+ splitWrap + "&lt;/span>";
+
+// text.innerHTML = splitWrap;
+// text.setAttribute("aria-label", splitText);
+
+//글씨 쪼개기(한번에)
+document.querySelectorAll(".content-item-desc").forEach(elem=>{
+    let splitText = elem.innerText;
+    let splitWrap = splitText.split("").join("&lt;/span>&lt;span aria-hidden:'true'>");
+        splitWrap = "&lt;span aria-hidden:'true'>"+ splitWrap + "&lt;/span>";
+
+        elem.innerHTML = splitWrap;
+        elem.setAttribute("aria-label", splitText);
+});
+
+window.addEventListener("scroll", ()=>{
+    let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+    if(pageYOffset > document.getElementById("section1").offsetTop){
+        document.querySelectorAll("#section1 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section2").offsetTop){
+        document.querySelectorAll("#section2 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section3").offsetTop){
+        document.querySelectorAll("#section3 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section4").offsetTop){
+        document.querySelectorAll("#section4 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section5").offsetTop){
+        document.querySelectorAll("#section5 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section6").offsetTop){
+        document.querySelectorAll("#section6 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section7").offsetTop){
+        document.querySelectorAll("#section7 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section8").offsetTop){
+        document.querySelectorAll("#section8 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+    if(pageYOffset > document.getElementById("section9").offsetTop){
+        document.querySelectorAll("#section9 .content-item-desc span").forEach((elem,index)=>{
+            setTimeout(()=>{
+                elem.classList.add("show");
+            }, 50 * (index + 1)); //딜레이
+        });
+    }
+});
+</code></pre>  
+                </div>
+                <!-- //Intro9 -->
+
                 
             </div>
             <!-- //col-md-12 -->

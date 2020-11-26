@@ -36,14 +36,71 @@
         #contents .btnB {width: 160px; height: 33px; position: absolute; left: 1352px; top: 40px;}
         #contents a.eng {float: left;width: 76px; height: 32px; margin: -1px; border: 1px solid #dbdbdb; border-radius: 2px; font-size: 13px; line-height: 34px; text-align: center; color: #888; background: #dfdfdf;}
         #contents a.kor {float: left;width: 76px; height: 32px; margin: -1px; border: 1px solid #dbdbdb; border-radius: 2px; font-size: 13px; line-height: 34px; text-align: center; color: #2ebc76; background: #fff;}
-        #contents .texB {margin-left: 440px; width: 1050px; position: relative;}
+        
+        #contents .texB {margin-left: 440px; width: 1050px; margin-bottom: 20px;}
         #contents .texB h4 {padding-top: 40px; padding-bottom: 40px; font-size: 19px; letter-spacing: .7px; text-align: left; color: #000; font-weight: 400; border-bottom: 1px solid #ccc;}
         #contents .texB1 h4 {padding-top: 180px;}
-        #contents .texB .icon {width: 20px; height: 12px; background: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png) no-repeat; background-position: -654px -256px;}
-        #contents .texB1 .icon {position: absolute; top: 183px; right: 0;}
-        #contents .texB2 .icon {position: absolute; top: 290px; right: 0;}
-        #contents .texB3 .icon {position: absolute; top: 390px; right: 0;}
-        #contents .texB4 .icon {position: absolute; top: 490px; right: 0;}
+        #contents .texB .icon {width: 20px; height: 12px; }
+        #contents .texB1 {position: relative;}
+        #contents .texB2 {position: relative;}
+        #contents .texB3 {position: relative;}
+        #contents .texB4 {position: relative;}
+        #contents .texB1 .icon::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 183px; right: 0;
+            background-position: -654px -256px;
+        }
+        #contents .texB2 .icon::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -654px -256px;
+        }
+        #contents .texB3 .icon::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -654px -256px;
+        }
+        #contents .texB4 .icon::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -654px -256px;
+        }
+        #contents .texB1 .icon.on::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 183px; right: 0;
+            background-position: -614px -282px;
+        }
+        #contents .texB2 .icon.on::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -614px -282px;
+        }
+        #contents .texB3 .icon.on::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -614px -282px;
+        }
+        #contents .texB4 .icon.on::after {
+            content: '';
+            background-image: url(https://static-clova.pstatic.net/static/4b722fb/img/sprite/sp_icon.png); 
+            width: 20px; height: 12px;
+            position: absolute; top: 50px; right: 0;
+            background-position: -614px -282px;
+        }
         #contents .texB a {width: 25px; height: 20px;}
 
         #contents .hide1 {display: none;}
@@ -54,13 +111,13 @@
         #contents .hide2.on {display: block;}
         #contents .hide3.on {display: block;}
         #contents .hide4.on {display: block;}
-        #contents .showB {width: 910px; display: block; padding: 60px 70px 60px 70px; border: 1px solid #e8e8e8; border-bottom: 0; position: relative;}
+        #contents .showB {width: 910px; display: block; padding: 60px 70px 0px 70px; border: 1px solid #e8e8e8; position: relative; margin-top: -13px; height: 1360px;}
         #contents .showB h5 {color: #2ebc76; font-size: 17px; text-align: left; padding-bottom: 10px; padding-top: 20px;}
         #contents .showB ul {font-size: 15px; padding-bottom: 43px; text-align: left;}
         #contents .showB ul li {}
         #contents .showB h6 {font-size: 15px; padding-top: 19px; padding-bottom: 0; color: #000;}
         #contents .showB p {font-size: 15px; padding: 8px 0 0 10px; line-height: 23px; color: #333;}
-        #contents .showB a {display: inline-block; width: 200px; height: 60px; border-radius: 4px; background: #36d488; font-weight: 500; line-height: 63px; letter-spacing: 1px; color: #fff; text-align: center; position: absolute; left: 400px; bottom: -50px; margin-bottom: 40px;}
+        #contents .showB a {display: inline-block; width: 200px; height: 60px; border-radius: 4px; background: #36d488; font-weight: 500; line-height: 63px; letter-spacing: 1px; color: #fff; text-align: center; position: absolute; left: 400px; bottom: -50px; margin-bottom: 60px;}
         #contents .smallB {width: 700px; height: 300px; margin-top: 2px; padding: 31px 35px 8px; background: #f8f8f8; margin-left: 70px;}
         #contents .smallB h6 {font-size: 16px; padding-bottom: 2px; color: #000;}
         #contents .smallB p {font-size: 14px; padding: 3px 0 0 10px; color: #333;}
@@ -314,24 +371,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $("#contents .texB .a1").click(function(event){
-
         event.preventDefault();
         $("#contents .hide1").slideToggle();
         $(this).toggleClass("on");
+        $("#contents .texB1 .icon").toggleClass("on");
     })
     $("#contents .texB .a2").click(function(event){
         event.preventDefault();
         $("#contents .hide2").slideToggle();
         $(this).toggleClass("on");
+        $("#contents .texB2 .icon").toggleClass("on");
     })
     $("#contents .texB .a3").click(function(event){
         event.preventDefault();
         $("#contents .hide3").slideToggle();
         $(this).toggleClass("on");
+        $("#contents .texB3 .icon").toggleClass("on");
     })
     $("#contents .texB .a4").click(function(event){
         event.preventDefault();
         $("#contents .hide4").slideToggle();
         $(this).toggleClass("on");
+        $("#contents .texB4 .icon").toggleClass("on");
     })
 </script>
