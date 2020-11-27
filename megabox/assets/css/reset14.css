@@ -20,7 +20,7 @@ ul,li,ol {list-style:none;}
 h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
 
 /* 테두리 초기화 */
-img,fieldset {border:0 none;}
+img,fieldset {border:0 none; width: 100%;}
 
 /* clearfix */
 .clearfix {*zoom: 1;}

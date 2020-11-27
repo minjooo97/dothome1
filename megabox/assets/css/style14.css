@@ -115,7 +115,7 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 
 /* 이벤트 */
 .event {overflow: hidden; padding: 100px 0;}
-.event img {display: block;}
+.event img {display: block; width: 100%;}
 .event h2 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
 .event .event_left {overflow: hidden; float: left; width: 66%; margin-right: 2%;}
 .event .event_left .event_box1 {float: left; width: 50%;}
@@ -148,9 +148,9 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 .new .new_right .star {padding: 14px 0;}
 .new .new_right .star strong {font-size: 15px; padding-left: 5px;}
 .new .new_right .star span {display: inline-block; width: 20px; height: 20px; vertical-align: -3px;}
-.new .new_right .star span .star1 {background-position: -393px 0;}
-.new .new_right .star span .star2 {background-position: -412px 0;}
-.new .new_right .star span .star0 {background-position: -374px 0;}
+.new .new_right .star span.star1 {background-position: -393px 0;}
+.new .new_right .star span.star2 {background-position: -412px 0;}
+.new .new_right .star span.star0 {background-position: -374px 0;}
 
 .new .new_right .summary {font-size: 14px;}
 .new .new_right .genre {padding-bottom: 3px;}
@@ -236,7 +236,7 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 
     #opening {margin: 0;}
 
-    #new {padding: 0 24px;}
+    #new {padding: 0;}
     .new {padding: 24px; background-color: #fff; margin-top: 24px;}
     .new h2 {font-size: 24px; font-weight: 700; height: 27px; margin-bottom: 20px; padding-bottom: 10px;}
     .new .new_right {padding: 24px;}
