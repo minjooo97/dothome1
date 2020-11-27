@@ -141,7 +141,7 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 .new .new_left {position: relative; height: 500px; margin-right: 423px; background: #ccc url(../img/new01.jpg) center center; background-size: cover;}
 .new .new_left .play {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px;}
 .new .new_left .play .st0 {fill: #fff; opacity: 0.3;}
-.new .new_left .play .st0 {fill: #fff;}
+.new .new_left .play .st1 {fill: #fff;}
 .new .new_right {position: absolute; right: 0; top: 165px; width: 400px; height: 500px; padding: 34px; box-sizing: border-box; background: #f0f0f0;}
 .new .new_right .title {font-size: 28px; color: #000;}
 .new .new_right .release {font-size: 12px; color: #333;}
