@@ -445,16 +445,18 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 /* 마우스 오버 */
 .side1 .hover1 {height: 310px; overflow: hidden; position: relative;}
 .side1 .hover1 img {}
-.side1 .hover1 h3 {font-size: 16px; text-align: center; padding-top: 2px;}
-.side1 .hover1 p {font-size: 12px; text-align: center; padding-bottom: 5px;}
-.side1 .hover1 .fig1 {width: 100%; height: 100%; background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); opacity: 0; transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0; padding-top: 120px;}
-.side1 .hover1 .fig1:hover {opacity: 1;}
+.side1 .hover1 h3 {font-size: 16px; text-align: center; padding-top: 2px; color: #fff;}
+.side1 .hover1 p {font-size: 12px; text-align: center; padding-bottom: 5px; color: #fff;}
+.side1 .hover1 .fig1 {width: 100%; height: 50px; background-color: rgba(0, 0, 0, 0.4); position: absolute; bottom: 1px; left: 0; opacity: 0;}
+.side1 .hover1 .fig1:hover {opacity: 1; transition: all 0.33s ease-in-out;}
 
 .side2 .hover2 {height: 310px; overflow: hidden; position: relative;}
-.side2 .hover2 h3 {font-size: 16px; text-align: center;}
-.side2 .hover2 p {font-size: 12px; text-align: center; padding-bottom: 5px;}
-.side2 .hover2 .fig2 {width: 100%; height: 100%; background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); opacity: 0; transform: translateY(150px); transition: all .5s ease-in-out; position: absolute; left: 0; top: 0; padding-top: 120px;}
-.side2 .hover2 .fig2:hover {opacity: 1; transform: translateY(0px);}
+.side2 .hover2 img {opacity: 1; transition: all .3s ease-in-out;}
+.side2 .hover2:hover img {opacity: 0.5;}
+.side2 .hover2::before {content: ''; width: 60px; height: 1px; background: #fff; position: absolute; left: -100%; top: 50%; transform: translate(-50%, -50%); transition: all 0.33s ease-in-out; z-index: 10;}
+.side2 .hover2::after {content: ''; width: 1px; height: 60px; background: #fff; position: absolute; left: 50%; top: -100%; transform: translate(-50%, -50%); transition: all 0.33s ease-in-out;} 
+.side2 .hover2:hover::before {left: 50%; top: 50%;}
+.side2 .hover2:hover::after {left: 50%; top: 50%;}
 
 .side3 .hover3 {height: 310px; overflow: hidden; position: relative;}
 .side3 .hover3 h3 {font-size: 16px; text-align: center;}
