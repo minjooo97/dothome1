@@ -377,27 +377,27 @@
 
                 <!-- Intro5 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro5" class="page-header">라인(line, polyline))</h2>
+                    <h2 id="intro5" class="page-header">라인(line, polyline)</h2>
 
                     <div class="sample">
                         <h3><span></span><em class="sr-only">svg</em></h3>
                         <div class="svgBox svg5">
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <line x1="0" y1="0" x2="200" y2="200" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <line x1="50" y1="50" x2="200" y2="200" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <line x1="100" y1="100" x2="200" y2="200" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <polyline points="21,17.2 21,139.2 117,52.2" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <polyline points="21,17.2 21,139.2 122,28.2 141,139.2" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>                       
-                            <svg style="background: #E3F3FD">
+                            <svg>
                                 <polyline points="21,17.2 21,139.2 122,28.2 141,139.2 23.5,11.7" stroke="#0D47A1" stroke-width="2" fill="none"/>
                             </svg>
                         </div>
@@ -425,6 +425,189 @@
 </code></pre>
                 </div>
                 <!-- //Intro5 -->
+
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">클리핑 마스크(clip-path)</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">svg</em></h3>
+                        <div class="svgBox svg6">
+                            <svg>
+                                <image xlink:href="img/image 113.png" width="160" height="160"/>
+                            </svg>
+                            <svg>
+                                <image xlink:href="img/image 113.png" width="160" height="160" clip-path="circle(60px at center)"/>
+                            </svg>
+                            <svg>
+                                <clipPath id="clipPath1">
+                                    <polygon points="136,141 10,101.82 108,12"/>
+                                </clipPath>
+                                <image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath1)"/>
+                            </svg>
+                            <svg>
+                                <clipPath id="clipPath2">
+                                    <polygon points="121,131 56,140 15,89 39,27 104,18 145,70"/>
+                                </clipPath>
+                                <image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath2)"/>
+                            </svg>
+                            <svg>
+                                <clipPath id="clipPath3">
+                                    <polygon points="115,134 71,144 30,124 12,82 26,39 64,14 108,20 139,53 142,98"/>
+                                </clipPath>
+                                <image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath3)"/>
+                            </svg>
+                            <svg>
+                                <clipPath id="clipPath4">
+                                    <polygon points="133,129 87,115 50,144 49,96 9,70 54,54 67,8 96,47 144,45 116,84"/>
+                                </clipPath>
+                                <image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath4)"/>
+                            </svg>
+                        </div>
+                    </div>
+<pre class="line-numbers language-html"><code> &lt;div class="svgBox svg6"&gt;
+    &lt;svg&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="circle(60px at center)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath1"&gt;
+            &lt;polygon points="136,141 10,101.82 108,12"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath1)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath2"&gt;
+            &lt;polygon points="121,131 56,140 15,89 39,27 104,18 145,70"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath2)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath3"&gt;
+            &lt;polygon points="115,134 71,144 30,124 12,82 26,39 64,14 108,20 139,53 142,98"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath3)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath4"&gt;
+            &lt;polygon points="133,129 87,115 50,144 49,96 9,70 54,54 67,8 96,47 144,45 116,84"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath4)"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+</code></pre>
+                </div>
+                <!-- //Intro6 -->
+
+                <style>
+                    @font-face {
+                        font-family: 'S-CoreDream-8Heavy';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                    .svg7 {display: flex;}
+                    .text-wrap {
+                        background-color: #E3F3FD;
+                        width: 160px; height: 160px;
+                        margin: 6px;
+                        display: inline-block;
+                    }
+                    .text-clip {
+                        font-size: 70px;
+                        text-align: center;
+                        font-family: 'S-CoreDream-8Heavy';
+                        text-transform: uppercase; 
+                        line-height: 160px;  
+                        -webkit-text-fill-color: #0d47a1                
+                    }
+                    .text-clip.c2 {
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        background-image: url(img/image\ 113.png);
+                        background-size: cover;
+                    }
+                    .text-clip.c3 {
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        background-image: linear-gradient(60deg, #ff5858, #f09819);
+                    }
+                    .text-clip.c4 {
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        -webkit-text-stroke: 2px #0d47a1;
+                    }
+                </style>
+
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">클리핑 마스크(clip-path)</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">svg</em></h3>
+                        <div class="svgBox svg7">
+                            <svg>
+                                <text fill="#f48fb1" x="8" y="110" font-size="70" font-weight="800" font-family="S-CoreDream-8Heavy" >SVG clip-path</text>
+                            </svg>
+                            <svg>
+                                <pattern id="pattern1" patternunites="useSpaceOuUse" width="100%" height="100%">
+                                    <image xlink:href="img/image 113.png" width="160" height="160"/>
+                                </pattern>
+                                <text fill="url(#pattern1)" x="8" y="110" font-size="70" font-weight="800" font-family="S-CoreDream-8Heavy" >SVG clip-path</text>
+                            </svg>
+                            <div class="text-wrap">
+                                <div class="text-clip c1">svg</div>
+                            </div>
+                            <div class="text-wrap">
+                                <div class="text-clip c2">svg</div>
+                            </div>
+                            <div class="text-wrap">
+                                <div class="text-clip c3">svg</div>
+                            </div>
+                            <div class="text-wrap">
+                                <div class="text-clip c4">svg</div>
+                            </div>
+                        </div>
+                    </div>
+<pre class="line-numbers language-html"><code> &lt;div class="svgBox svg6"&gt;
+    &lt;svg&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="circle(60px at center)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath1"&gt;
+            &lt;polygon points="136,141 10,101.82 108,12"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath1)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath2"&gt;
+            &lt;polygon points="121,131 56,140 15,89 39,27 104,18 145,70"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath2)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath3"&gt;
+            &lt;polygon points="115,134 71,144 30,124 12,82 26,39 64,14 108,20 139,53 142,98"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath3)"/&gt;
+    &lt;/svg&gt;
+    &lt;svg&gt;
+        &lt;clipPath id="clipPath4"&gt;
+            &lt;polygon points="133,129 87,115 50,144 49,96 9,70 54,54 67,8 96,47 144,45 116,84"/&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="img/image 113.png" width="160" height="160" clip-path="url(#clipPath4)"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+</code></pre>
+                </div>
+                <!-- //Intro7 -->
+
+
             </div>
             <!-- //col-md-12 -->
             
