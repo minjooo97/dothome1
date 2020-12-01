@@ -166,6 +166,36 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 .new .new_right .btn a.white {background-color: #fff; margin-right: 2%; color: #3a0e6a; border: 1px solid #3a0e6a;}
 .new .new_right .btn a.purple {background-color: #3a0e6a; color: #fff; border: 1px solid #6e40c4;}
 
+/* help */
+.help {overflow: hidden; padding-bottom: 200px;}
+.help article {float: left; width: 32%; margin-right: 2%; height: 350px;}
+.help article > div {border: 1px solid #dbdbdb; height: 350px;}
+.help article.help_box3 {margin-right: 0;}
+.help article h3 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+
+/* 공지사항 */
+.notice {position: relative; padding: 17px;}
+.notice ul {overflow: hidden;}
+.notice ul li {float: left; text-align: center; margin-right: -1px;}
+.notice ul li a {border: 1px solid #dbdbdb; font-size: 15px; color: #666; display: block; width: 80px; padding: 10px 20px; background: #dddcdc;}
+.notice ul li.active a {background: #fff;}
+.notice ul li ul {position: absolute; left: 17px; top: 70px; width: 90%;}
+.notice ul li ul li {width: 100%; box-sizing: border-box; text-align: left; padding: 17px; border-bottom: 1px solid #dbdbdb;}
+.notice ul li ul li:last-child {border-bottom: 0;}
+.notice ul li ul li dt em {color: #999;}
+.notice ul li ul li dt .bar {position: relative; padding-right: 14px;}
+.notice ul li ul li dt .bar:after {content: ''; position: absolute; right: 4px; top: 5px; width: 1px; height: 10px; background: #999;}
+.notice ul li ul li dd {color: #777; padding-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* 할인카드 */
+.card {padding: 17px;}
+.card ul {}
+.card ul li {position: relative; border: 1px solid #d7d7d7; padding: 15px; margin-bottom: 15px; min-height: 102px; box-sizing: border-box;}
+.card ul li span {position: absolute; left: 17px; top: 17px;}
+.card ul li span img {width: 105px;}
+.card ul li strong {display: block; font-size: 18px; color: #777; padding-left: 120px;}
+.card ul li em {display: block; font-size: 14px; color: #777; font-weight: 300; padding-left: 120px;}
+
 /* 미디어쿼리 */
 @media (max-width: 1290px) {
     .container {width: 100%;}
