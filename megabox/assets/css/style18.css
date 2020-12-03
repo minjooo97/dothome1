@@ -206,6 +206,10 @@ body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleS
 .service li:nth-child(2) {border-bottom: 0;}
 .service li:nth-child(3) {border-right: 0;}
 
+/* 푸터 */
+.footer_sns {}
+.footer_info {}
+
 
 /* 미디어쿼리 */
 @media (max-width: 1290px) {
