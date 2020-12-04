@@ -279,8 +279,7 @@
     //결과 확인하기
     function showResults(){
             const selectContainers = questionQuiz.querySelectorAll(".selects");
-            const questionEx = document.querySelectorAll(".Ex");
-            const confirmContainers = questionQuiz.querySelectorAll(".confirm");
+            const questionEx = document.querySelector(".Ex");
             let numCorrect = 0;
             //사용자가 정답을 체크 == 문제의 정답
             quizInfo.forEach((currentQuestion, questionNumber ) => { 
