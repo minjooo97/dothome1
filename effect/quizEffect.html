@@ -429,6 +429,173 @@ questionBtn.addEventListener("click", answerQuiz);
 </code></pre>
                 <!-- //Intro3 -->
 
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">Quiz4</h2>
+                    <p class="bs-callout bs-callout-info">주관식 3문제 스타일(제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="quizEffect04-jquery.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
+<pre class="line-numbers language-js"><code>//선택자
+const questionAsk = $(".question");
+const questionNum = $(".num");
+const questionBtn = $(".confirm-btn");
+const questionAnswer = $(".confirm-answer");
+const questionEx = $(".confirm-ex");
+const questionBottom = $(".confirm-bottom");
+const questionSelect = $(".select");
+const questionChoice = $(".choice");
+
+//문제 정보
+const quizInfo = [
+    {
+        quizNum : 1,
+        quizAsk : "다음 중 시멘틱 태그는 무엇인가요?",
+        quizChoice : ["div 태그","h1 태그","span 태그","main 태그"],
+        quizAnswer : "4",
+        quizEx : "시멘틱 태그는 의미가 부여된 태그로서 main태그는 사이트에서 중요한 컨텐츠에 한번만 사용할 수 있습니다."
+    }
+]
+
+function updataQuiz (){
+    questionNum.html(quizInfo[0].quizNum)
+    questionAsk.html(quizInfo[0].quizAsk)
+    questionAnswer.html(quizInfo[0].quizAnswer)
+    questionEx.html(quizInfo[0].quizEx)
+    //보기 출력
+    questionChoice.each(function(i){
+        $(this).html(quizInfo[0].quizChoice[i]);
+    });
+    //정답 감추기
+    questionAnswer.hide();
+    questionEx.hide();
+};
+updataQuiz();
+
+//정답 확인
+function answerQuiz(){
+    //사용자가 체크한 choice를 선별
+    questionSelect.each(function(index){
+        if(questionSelect[index].checked == true){
+        //정답과 사용자의 정답이 일치하는지 확인
+            if(questionSelect[index].value == quizInfo[0].quizAnswer){
+                //정답인 경우
+                questionAnswer.html("정답");
+                questionBtn.hide();
+                questionAnswer.show();
+                questionEx.show();
+            } else {
+                //오답인 경우
+                questionAnswer.html("오답");
+                questionBtn.hide();
+                questionAnswer.show();
+                questionEx.show();
+            }
+        }
+    });      
+}
+answerQuiz();
+questionBtn.click(function(){});
+
+questionBtn.on("click", answerQuiz);
+</code></pre>
+                <h2 id="intro1" class="page-header">JavaScript</h2>
+<pre class="line-numbers language-js"><code>const questionQuiz = document.querySelector(".quiz")
+const questionBtn = document.querySelector(".confirm-btn");
+const questionResult = document.querySelector(".confirm-result");
+
+//문제 정보
+const quizInfo = [
+    {
+        quizNum : 1,
+        quizAsk : "다음 중 시멘틱 태그는 무엇인가요?",
+        quizChoice : {
+            1: "&lt;a&gt; 태그",
+            2: "&lt;br&gt; 태그",
+            3: "&lt;em&gt; 태그",
+            4: "&lt;main&gt; 태그",
+        },
+        quizAnswer : 4,
+        quizEx : "&lt;main&gt; 태그는 시멘틱 태그입니다."
+    },{
+        quizNum : 2,
+        quizAsk : "다음 중 CSS의 단위로 맞지 않는 것은 무엇인가요?",
+        quizChoice : {
+            1: "em",
+            2: "rem",
+            3: "vm",
+            4: "ch",
+        },
+        quizAnswer : 4,
+        quizEx : "vm단위는 없습니다."
+    },{
+        quizNum : 3,
+        quizAsk : "다음 중 자바스크립트 언어와 관련이 없는 것은 무엇인가요?",
+        quizChoice : {
+            1: "react.js",
+            2: "jquery.js",
+            3: "vue.js",
+            4: "c++",
+        },
+        quizAnswer : 4,
+        quizEx : "c++은 자바스크립트 언어와 관련이 없습니다."
+    }
+];
+
+//문제 만들기
+function updataQuiz(){
+    const output = [];
+
+    quizInfo.forEach((currentQuestion, questionNumber)=>{
+        output.push(`
+        <h2>&lt; 문제<span class="num">${currentQuestion.quizNum}</span> &gt;</h2>
+        <p class="question">${currentQuestion.quizAsk}</p>
+        <div class="selects">
+            <label>
+                <input class="select" type="radio" name="select${questionNumber}" id="select1" value="1">
+                <span class="choice">${currentQuestion.quizChoice[1]}</span>
+            </label>
+            <label>
+                <input class="select" type="radio" name="select${questionNumber}" id="select2" value="2">
+                <span class="choice">${currentQuestion.quizChoice[2]}</span>
+            </label>
+            <label>
+                <input class="select" type="radio" name="select${questionNumber}" id="select3" value="3">
+                <span class="choice">${currentQuestion.quizChoice[3]}</span>
+            </label>
+            <label>
+                <input class="select" type="radio" name="select${questionNumber}" id="select4" value="4">
+                <span class="choice">${currentQuestion.quizChoice[4]}</span>
+            </label>
+        </div>
+        `)
+    });
+    questionQuiz.innerHTML = output.join(' ');
+}
+updataQuiz();
+
+//결과 확인하기
+function showResults(){
+        const selectContainers = questionQuiz.querySelectorAll(".selects");
+        let numCorrect = 0;
+        //사용자가 정답을 체크 == 문제의 정답
+        quizInfo.forEach((currentQuestion, questionNumber ) => { 
+            const selectContainer = selectContainers[questionNumber];
+            const resultSelector = `input[name=select${questionNumber}]:checked`;
+            const resultAnswer = (selectContainer.querySelector(resultSelector) || {}).value;
+            if(resultAnswer == currentQuestion.quizAnswer){
+                numCorrect++;
+                selectContainers[questionNumber].style.color = "blue";
+            } else {
+                selectContainers[questionNumber].style.color = "red";
+            }
+        });
+        questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추셨습니다.`
+    }
+questionBtn.addEventListener("click", showResults);
+</code></pre>
+                <!-- //Intro3 -->
+
 
             </div>
             <!-- //col-md-12 -->
