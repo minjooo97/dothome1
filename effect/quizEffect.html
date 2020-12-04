@@ -500,99 +500,58 @@ questionBtn.click(function(){});
 questionBtn.on("click", answerQuiz);
 </code></pre>
                 <h2 id="intro1" class="page-header">JavaScript</h2>
-<pre class="line-numbers language-js"><code>const questionQuiz = document.querySelector(".quiz")
+<pre class="line-numbers language-js"><code>//선택자
+const questionAsk = document.querySelector(".question");
+const questionNum = document.querySelector(".num")
 const questionBtn = document.querySelector(".confirm-btn");
-const questionResult = document.querySelector(".confirm-result");
+const questionAnswer = document.querySelector(".confirm-answer");
+const questionEx = document.querySelector(".confirm-ex");
+const questionBottom = document.querySelector(".confirm-bottom");
+const questionSelect = document.querySelectorAll(".select");
+const questionChoice = document.querySelectorAll(".choice");
 
 //문제 정보
 const quizInfo = [
     {
         quizNum : 1,
         quizAsk : "다음 중 시멘틱 태그는 무엇인가요?",
-        quizChoice : {
-            1: "&lt;a&gt; 태그",
-            2: "&lt;br&gt; 태그",
-            3: "&lt;em&gt; 태그",
-            4: "&lt;main&gt; 태그",
-        },
-        quizAnswer : 4,
-        quizEx : "&lt;main&gt; 태그는 시멘틱 태그입니다."
-    },{
-        quizNum : 2,
-        quizAsk : "다음 중 CSS의 단위로 맞지 않는 것은 무엇인가요?",
-        quizChoice : {
-            1: "em",
-            2: "rem",
-            3: "vm",
-            4: "ch",
-        },
-        quizAnswer : 4,
-        quizEx : "vm단위는 없습니다."
-    },{
-        quizNum : 3,
-        quizAsk : "다음 중 자바스크립트 언어와 관련이 없는 것은 무엇인가요?",
-        quizChoice : {
-            1: "react.js",
-            2: "jquery.js",
-            3: "vue.js",
-            4: "c++",
-        },
-        quizAnswer : 4,
-        quizEx : "c++은 자바스크립트 언어와 관련이 없습니다."
+        quizChoice : ["div 태그","h1 태그","span 태그","main 태그"],
+        quizAnswer : "4",
+        quizEx : "시멘틱 태그는 의미가 부여된 태그로서 main태그는 사이트에서 중요한 컨텐츠에 한번만 사용할 수 있습니다."
     }
-];
+]
 
-//문제 만들기
-function updataQuiz(){
-    const output = [];
-
-    quizInfo.forEach((currentQuestion, questionNumber)=>{
-        output.push(`
-        <h2>&lt; 문제<span class="num">${currentQuestion.quizNum}</span> &gt;</h2>
-        <p class="question">${currentQuestion.quizAsk}</p>
-        <div class="selects">
-            <label>
-                <input class="select" type="radio" name="select${questionNumber}" id="select1" value="1">
-                <span class="choice">${currentQuestion.quizChoice[1]}</span>
-            </label>
-            <label>
-                <input class="select" type="radio" name="select${questionNumber}" id="select2" value="2">
-                <span class="choice">${currentQuestion.quizChoice[2]}</span>
-            </label>
-            <label>
-                <input class="select" type="radio" name="select${questionNumber}" id="select3" value="3">
-                <span class="choice">${currentQuestion.quizChoice[3]}</span>
-            </label>
-            <label>
-                <input class="select" type="radio" name="select${questionNumber}" id="select4" value="4">
-                <span class="choice">${currentQuestion.quizChoice[4]}</span>
-            </label>
-        </div>
-        `)
-    });
-    questionQuiz.innerHTML = output.join(' ');
-}
+function updataQuiz (){
+    questionNum.innerHTML = quizInfo[0].quizNum;
+    questionAsk.innerHTML = quizInfo[0].quizAsk;
+    questionAnswer.innerHTML = quizInfo[0].quizAnswer;
+    questionEx.innerHTML = quizInfo[0].quizEx;
+    for(let i=0; i &lt; 4; i++){
+        questionChoice[i].innerHTML = quizInfo[0].quizChoice[i]
+    }
+    questionAnswer.style.display = "none";
+    questionEx.style.display = "none";
+};
 updataQuiz();
 
-//결과 확인하기
-function showResults(){
-        const selectContainers = questionQuiz.querySelectorAll(".selects");
-        let numCorrect = 0;
-        //사용자가 정답을 체크 == 문제의 정답
-        quizInfo.forEach((currentQuestion, questionNumber ) => { 
-            const selectContainer = selectContainers[questionNumber];
-            const resultSelector = `input[name=select${questionNumber}]:checked`;
-            const resultAnswer = (selectContainer.querySelector(resultSelector) || {}).value;
-            if(resultAnswer == currentQuestion.quizAnswer){
-                numCorrect++;
-                selectContainers[questionNumber].style.color = "blue";
+function answerQuiz(){
+    for(let i=0; i &lt; questionSelect.length; i++){
+        if(questionSelect[i].checked == true){
+            if(questionSelect[i].value == quizInfo[0].quizAnswer){
+                questionAnswer.innerHTML = "정답 입니다.";
+                questionBtn.style.display = "none";
+                questionAnswer.style.display = "block";
+                questionEx.style.display = "block";
             } else {
-                selectContainers[questionNumber].style.color = "red";
+                questionAnswer.innerHTML = "오답 입니다.";
+                questionBtn.style.display = "none";
+                questionAnswer.style.display = "block";
+                questionEx.style.display = "block";
             }
-        });
-        questionResult.innerHTML = `${quizInfo.length} 문제 중에 ${numCorrect} 문제를 맞추셨습니다.`
+        }
     }
-questionBtn.addEventListener("click", showResults);
+}
+questionBtn.addEventListener("click", answerQuiz);
 </code></pre>
                 <!-- //Intro3 -->
 
