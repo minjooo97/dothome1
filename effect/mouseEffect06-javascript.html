@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse Effect04 - javascript</title>
+    <title>Mouse Effect06 - javascript</title>
     <style>
         @font-face {
             font-family: 'MapoGoldenPier';
@@ -18,7 +18,7 @@
         li {list-style: none;}
 
         body {
-            background: url(img/img06@2.jpg) no-repeat center center;
+            background: url(img/img09@2.jpg) no-repeat center center;
             background-size: cover;
             height: 100vh;
             overflow: hidden;
@@ -26,7 +26,7 @@
             line-height: 1.5;
             font-family: 'MapoGoldenPier';
             background-blend-mode: luminosity;
-            background-color: gray;
+            background-color: rgb(94, 88, 92);
             /* cursor: none; */
             position: relative;
         }
@@ -35,7 +35,7 @@
             position: absolute;
             left: 0; top: 0;
             width: 100%; height: 100vh;
-            background: rgba(rgb(69, 72, 75));
+            background: rgba(rgb(94, 88, 92));
         }
 
         /* info */
@@ -67,63 +67,55 @@
         }
 
         /* main */
-        .move-image {
-            position: absolute;
-            left: 50%; top: 50%;
-            transform: translate(-50%, -50%) perspective(600px) rotateX(0deg) rotateY(0deg);
-            transform-style: preserve-3d;
-            will-change: transform;
-        }
-        .move-image .mimg img {
-            border-radius: 5px;
-        }
-        .move-image .mimg {
+        .contents {
+            display: flex;
             position: relative;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            justify-content: center;
+            align-items: center;
         }
-        .move-image .mimg::before {
-            content: '';
-            position: absolute;
-            left: 5%; bottom: -490px;
-            width: 90%; height: 500px;
-            background: url(img/img05.jpg) no-repeat;
-            background-size: 100% 40px;
-            filter: blur(15px);
-            z-index: -1;
-            opacity: .9;
+        .contents p {
+            max-width: 70vw;
+            font-size: 3vw;
+            text-align: justify;
         }
-        .move-image .mtxt {
-            font-size: 1rem;
-            position: absolute;
-            left: 50%; bottom: 50%;
-            transform: translate3d(-50%, 68%, 150px);
-            background: rgba(0,0,0,0.3);
-            padding: 2vw;
-            text-align: center;
-            border-radius: 2px;
-            white-space: nowrap;
+        .contents p:first-child {
+            font-size: 2vw;
+            line-height: 2;
         }
-        .move-image .mtxt p:nth-child(1) {
-            font-size: 1rem;
+        .contents p em {
+            color: orange;
+            border-bottom: 2px dashed orange;
+            font-style: normal;
+        }
+        .contents p .word {
+            color: orange;
+            font-size: 4vw;
+            /* text-shadow: 5px -10px 0px rgba(255, 165, 0, 0.4),
+                        -5px 10px 0px rgba(255, 35, 251, 0.4),
+                        10px -5px 0px rgba(255,255,73,0.4),
+                        10px 5px 0px rgba(102,249,255,0.4); */
         }
         .cursor {
             position: absolute;
-            width: 10px; height: 10px;
+            width: 20px; height: 20px;
             background: #fff;
             border-radius: 50%;
             z-index: 1000;
+            user-select: none;
             pointer-events: none;
-            transform: scale(1);
+            transform: scale(.5);
             transition: transform 0.3s ease-in-out;
-        }
-        .cursor.active {
-            transform: scale(12);
         }
     </style>
 </head>
 <body>
     <!-- info -->
     <div class="info left">
-        <h1>Mouse Effect04 - javascript</h1>
+        <h1>Mouse Effect06 - javascript</h1>
         <p>마우스 이펙트 효과 - Blend Effect</p>
     </div>
     <div class="info right">
@@ -131,9 +123,9 @@
             <li><a href="MouseEffect01-jquery.html">1</a><a href="MouseEffect01-javascript.html">1</a></li>
             <li><a href="MouseEffect02-jquery.html">2</a><a href="MouseEffect02-javascript.html">2</a></li>
             <li><a href="MouseEffect03-jquery.html">3</a><a href="MouseEffect03-javascript.html">3</a></li>
-            <li><a href="MouseEffect04-jquery.html">4</a><a href="MouseEffect04-javascript.html" class="active">4</a></li>
+            <li><a href="MouseEffect04-jquery.html">4</a><a href="MouseEffect04-javascript.html">4</a></li>
             <li><a href="MouseEffect05-jquery.html">5</a><a href="MouseEffect05-javascript.html">5</a></li>
-            <li><a href="MouseEffect06-jquery.html">6</a><a href="MouseEffect06-javascript.html">6</a></li>
+            <li><a href="MouseEffect06-jquery.html">6</a><a href="MouseEffect06-javascript.html" class="active">6</a></li>
             <li><a href="MouseEffect07-jquery.html">7</a><a href="MouseEffect07-javascript.html">7</a></li>
             <li><a href="MouseEffect08-jquery.html">8</a><a href="MouseEffect08-javascript.html">8</a></li>
             <li><a href="MouseEffect09-jquery.html">9</a><a href="MouseEffect09-javascript.html">9</a></li>
@@ -143,61 +135,58 @@
 
     <div class="info bottom">
         <ul>
-            <li>pageX: <span class="pageX">0</span></li>
-            <li>pageX: <span class="pageY">0</span></li>
-            <li>mouseX: <span class="mouseX">0</span></li>
-            <li>mouseY: <span class="mouseY">0</span></li>
+            <li>clientX: <span class="clientX">0</span></li>
+            <li>clientY: <span class="clientX">0</span></li>
         </ul>
     </div>
     <!-- //info -->
     <main>
-        <div class="cursor"></div>
-
-        <div class="move-image">
-            <div class="mimg"><img src="img/img05.jpg" alt="이미지"></div>
-            <div class="mtxt">
-                <p>Do not try to original <em>just try to be good.</em></p>
-                <p>독특한 사람이 되려 하지 말아라, <em>좋은 사람이 되도록 해라.</em></p>
-            </div>
+        <div class="contents">
+            <p>The way to get started is to quit talking and <em>begin</em> doing</p>
+            <p>무언가를 시작하려면 말은 멈추고 <em>행동</em>해야 한다.</p>
+            <p>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+                <strong class="word">★</strong>
+            </p>
         </div>
     </main>
 
     <!-- script -->
-    <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-         let x = 0,
-             y = 0,
-            mouseX = 0,
-            mouseY = 0,
-            angleX = 0,
-            angleY = 0,
-            fmouseX = 0,
-            fmouseY = 0;
-        document.addEventListener("mousemove", function(e){
-            x = e.pageX;
-            y = e.pageY;
-            //mouseX = window.innerWidth/2 - x;
-            //mouseY = window.innerHeight/2 - y;
-            mouseX = Math.max(-100, Math.min(100, window.innerWidth/2 - x));
-            mouseY = Math.max(-100, Math.min(100, window.innerHeight/2 - y));
-            angleX = (12 * mouseX) / 100;
-            angleY = (12 * mouseY) / 100;
-            fmouseX += (angleX - fmouseX) * 0.1;
-            fmouseY += (angleY - fmouseY) * 0.1;
-            //움직임
-            const move = document.querySelector(".move-image");
-            move.style.transform = "translate(-50%, -50%) perspective(600px) rotateX("+fmouseY+"deg) rotateY("+ -fmouseX+"deg)";
-            //커서
-            gsap.to(".cursor", {duration: 0.3, left: x, top: y});
+        const word = document.querySelector(".word");
+
+        // const shadow = e => {
+        //     const {x, y} = e;
+        //     const rect = word.getBoundingClientRect();
+        //     const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+        //     const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
+
+        //     word.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+        //                             ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+        //                             ${mouseY}px ${-mouseX}px 0px rgba(255,255,73,0.4),
+        //                             ${mouseY}px ${mouseX}px 0px rgba(102,249,255,0.4)`
+        // };
+        // window.addEventListener("mousemove", shadow);
+
+        //다중
+        window.addEventListener("mousemove", e=>{
+            document.querySelectorAll(".word").forEach(elem => {
+                const {x, y} = e;
+                const rect = elem.getBoundingClientRect();
+                const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+                const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
+
+                elem.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+                                        ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+                                        ${mouseY}px ${-mouseX}px 0px rgba(255,255,73,0.4),
+                                        ${mouseY}px ${mouseX}px 0px rgba(102,249,255,0.4)`
+            });
         });
-        //출력용
-        document.addEventListener("mousemove", function(){
-            document.querySelector(".pageX").textContent = x;
-            document.querySelector(".pageY").textContent = y;
-            document.querySelector(".mouseX").textContent = mouseX;
-            document.querySelector(".mouseY").textContent = mouseY;
-        });
-    </script> 
+    </script>
+    
 </body>
 </html>

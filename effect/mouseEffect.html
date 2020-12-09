@@ -364,6 +364,38 @@ $(window).mousemove(function(e){
 </code></pre>
                 <h2 id="intro1" class="page-header">JavaScript</h2>
 <pre class="line-numbers language-js"><code>
+let x = 0,
+        y = 0,
+    mouseX = 0,
+    mouseY = 0,
+    angleX = 0,
+    angleY = 0,
+    fmouseX = 0,
+    fmouseY = 0;
+document.addEventListener("mousemove", function(e){
+    x = e.pageX;
+    y = e.pageY;
+    //mouseX = window.innerWidth/2 - x;
+    //mouseY = window.innerHeight/2 - y;
+    mouseX = Math.max(-100, Math.min(100, window.innerWidth/2 - x));
+    mouseY = Math.max(-100, Math.min(100, window.innerHeight/2 - y));
+    angleX = (12 * mouseX) / 100;
+    angleY = (12 * mouseY) / 100;
+    fmouseX += (angleX - fmouseX) * 0.1;
+    fmouseY += (angleY - fmouseY) * 0.1;
+    //움직임
+    const move = document.querySelector(".move-image");
+    move.style.transform = "translate(-50%, -50%) perspective(600px) rotateX("+fmouseY+"deg) rotateY("+ -fmouseX+"deg)";
+    //커서
+    gsap.to(".cursor", {duration: 0.3, left: x, top: y});
+});
+//출력용
+document.addEventListener("mousemove", function(){
+    document.querySelector(".pageX").textContent = x;
+    document.querySelector(".pageY").textContent = y;
+    document.querySelector(".mouseX").textContent = mouseX;
+    document.querySelector(".mouseY").textContent = mouseY;
+});
 </code></pre>
                 <!-- //Intro4 -->
 
@@ -389,8 +421,64 @@ $(window).mousemove(function(e){
 </code></pre>
                 <h2 id="intro1" class="page-header">JavaScript</h2>
 <pre class="line-numbers language-js"><code>
+let x = 0;
+let y = 0;
+
+const moveImg = document.querySelector(".move-image");
+
+moveImg.addEventListener("mousemove", function(e){
+    const rect = this.getBoundingClientRect();
+    console.log(rect);
+
+    this.style.setProperty("--x", e.clientX - (rect.width/2 + rect.left));
+    this.style.setProperty("--y", e.clientY - (rect.height/2 + rect.top));
+
+    gsap.to(".cursor", {duration: .2, left: e.pageX, top: e.pageY});
+});
 </code></pre>
                 <!-- //Intro5 -->
+
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Mouse Effect06</h2>
+                    <p class="bs-callout bs-callout-info">Mouse Effect06 (제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="mouseEffect06-javascript.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                <h2 id="intro1" class="page-header">JavaScript</h2>
+<pre class="line-numbers language-js"><code>const word = document.querySelector(".word");
+
+// const shadow = e => {
+//     const {x, y} = e;
+//     const rect = word.getBoundingClientRect();
+//     const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+//     const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
+
+//     word.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+//                             ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+//                             ${mouseY}px ${-mouseX}px 0px rgba(255,255,73,0.4),
+//                             ${mouseY}px ${mouseX}px 0px rgba(102,249,255,0.4)`
+// };
+// window.addEventListener("mousemove", shadow);
+
+//다중
+window.addEventListener("mousemove", e=>{
+    document.querySelectorAll(".word").forEach(elem => {
+        const {x, y} = e;
+        const rect = elem.getBoundingClientRect();
+        const mouseX = (x - rect.left - rect.width/2) / rect.width * 5;
+        const mouseY = (y - rect.top - rect.height/2) / rect.height * 5;
+
+        elem.style.textShadow = `${mouseX}px ${-mouseY}px 0px rgba(255, 165, 0, 0.4),
+                                ${-mouseX}px ${mouseY}px 0px rgba(255, 35, 251, 0.4),
+                                ${mouseY}px ${-mouseX}px 0px rgba(255,255,73,0.4),
+                                ${mouseY}px ${mouseX}px 0px rgba(102,249,255,0.4)`
+    });
+});
+</code></pre>
+                <!-- //Intro6 -->
 
             </div>
             <!-- //col-md-12 -->
