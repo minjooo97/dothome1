@@ -377,6 +377,38 @@
                                 <a href="#" class="stepBtnStop">Stop</a>
                             </span>
                         </div>
+                        <pre class="line-numbers language-css"><code>.step {height: 700px; position: relative; background: #ffe8d9;}
+.step .stepbox {
+    width: 800px; 
+    height: 600px; 
+    background: url(img/img01.gif); 
+    border-radius: 0;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    animation: ani 1s steps(16, start) infinite;
+}
+.step .stepbox.strat {
+    animation-play-state: running;
+}
+.step .stepbox.stop {
+    animation-play-state: paused;
+}
+@keyframes ani {
+    0% {background-position: 0 0;}
+    100% {background-position: -12800px 0;}
+}
+.stepBtn {
+    position: absolute; left: 15px; top: 20px;
+}
+.stepBtn a {
+    background-color: #e16162; 
+    color: #fff; 
+    padding: 10px; 
+    margin: 3px; 
+    border-radius: 3px;
+}
+</code></pre>
                     </div>
                 <!-- //Intro2 -->
 
