@@ -26,6 +26,32 @@
             vertical-align: top; /* 여백초기화 */
         }
 
+        /* info */
+        .info {position: fixed; z-index: 1000;}
+        .info.left {left: 20px; top: 20px;}
+        .info.right {right: 20px; top: 20px;}
+        .info.bottom {right: 20px; bottom: 20px;}
+        .info h1 {font-size: 2rem; line-height: 1.4;}
+        .info p {font-size: 1rem;}
+        .info li {font-size: 1rem; line-height: 1.4;}
+        .info li a {
+            color: #fff; 
+            width: 25px; 
+            height: 25px; 
+            border: 1px dashed #fff; 
+            display: inline-block; 
+            border-radius: 50%; 
+            text-align: center; 
+            line-height: 25px; 
+            font-size: 0.8rem;
+            margin: 3px;
+        }
+        .info li a.active {background: #fff; color: #000;}
+
+        @media (max-width: 800px){
+            .info h1 {display: none;}
+        }
+
         /* main */
         body {
             /* 변수선언 */
@@ -88,6 +114,29 @@
     </style>
 </head>
 <body>
+
+    <div class="info left">
+        <h1>Slider Effect01 - jQuery</h1>
+        <p>이미지 슬라이드 - 3초에 한번씩 번경하기</p>
+    </div>
+    <div class="info right">
+        <ul>
+            <li><a href="sliderEffect01-jquery.html" class="active">1</a><a href="sliderEffect01-javascript.html">1</a></li>
+            <li><a href="sliderEffect02-jquery.html">2</a><a href="sliderEffect02-javascript.html">2</a></li>
+            <li><a href="sliderEffect03-jquery.html">3</a><a href="sliderEffect03-javascript.html">3</a></li>
+            <li><a href="sliderEffect04-jquery.html">4</a><a href="sliderEffect04-javascript.html">4</a></li>
+            <li><a href="sliderEffect05-jquery.html">5</a><a href="sliderEffect05-javascript.html">5</a></li>
+            <li><a href="sliderEffect06-jquery.html">6</a><a href="sliderEffect06-javascript.html">6</a></li>
+            <li><a href="sliderEffect07-jquery.html">7</a><a href="sliderEffect07-javascript.html">7</a></li>
+            <li><a href="sliderEffect08-jquery.html">8</a><a href="sliderEffect08-javascript.html">8</a></li>
+            <li><a href="sliderEffect09-jquery.html">9</a><a href="sliderEffect09-javascript.html">9</a></li>
+            <li><a href="sliderEffect10-jquery.html">10</a><a href="sliderEffect10-javascript.html">10</a></li>  
+        </ul>
+    </div>
+
+
+    <!-- //info -->
+
     <main>
         <div class="slider-wrap">
             <div class="slider-img">
