@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SliderEffect02 - jQuery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* reset */
+        @font-face {
+            font-family: 'MaruBuri-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box; 
+            margin: 0; padding: 0;
+        }
+        a, ul {
+            text-decoration: none; 
+            transition: all 0.2s;
+            list-style: none;
+        }
+        img {width: 100%; 
+            vertical-align: top; /* 여백초기화 */
+        }
+
+
+        /* main */
+        body {
+            /* 변수선언 */
+            --color-h1 : #dc6e25;
+            --color-title : #fff;
+            --color-sub : #999;
+            --color-link : #000;
+            --color-bg : #111;
+            --font-cafe : 'S-CoreDream-3Light';
+            --font-lato : 'Lato', sans-serif;
+            
+            background-color: var(--color-bg);
+            color: var(--color-title);
+            font-family: var(--font-cafe);
+            font-size: 16px;
+            background: url(img/img05@2.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; 
+            height: 100vh;
+            background: rgba(32, 115, 150, 0.5);
+        }
+        
+        /* slider */
+        .slider-wrap {
+            width: 800px;
+            height: 480px;
+            overflow: hidden;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+        }
+        .slider-img {
+            overflow: hidden;
+            width: 4000px; height: 480px;
+            position: relative;
+        }
+        .slider-img .slider {
+            width: 800px; 
+            height: 480px;
+            float: left;
+            position: relative;
+        }
+        .slider-img .slider span {
+            position: absolute;
+            left: 5px; top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="slider-wrap">
+            <div class="slider-img">
+                <div class="slider"><img src="img/img18@2.jpg" alt="이미지1"><span>이미지1</span></div>
+                <div class="slider"><img src="img/img17@2.jpg" alt="이미지2"><span>이미지2</span></div>
+                <div class="slider"><img src="img/img16@2.jpg" alt="이미지3"><span>이미지3</span></div>
+                <div class="slider"><img src="img/img15@2.jpg" alt="이미지4"><span>이미지4</span></div>
+                <div class="slider"><img src="img/img13@2.jpg" alt="이미지5"><span>이미지5</span></div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const sliderWrap = $(".slider-wrap");
+        const sliderImg = $(".slider-img");
+        const slider = $(".slider");
+
+        let currentIndex = 0;
+        let sliderCount = slider.length;  //이미지 갯수
+
+        setInterval(function(){
+            // if(currentIndex < sliderCount - 1){
+            //     currentIndex++; // 0 1 2 3 4 0
+            // } else {
+            //     currentIndex = 0;
+            // }
+            currentIndex < sliderCount - 1 ? currentIndex++ : currentIndex = 0;
+
+            console.log(currentIndex);
+
+            let sliderPosition = currentIndex * (-800) + "px";
+                                    //   0 * -800px -> 0
+                                    //   1 * -800px -> -800px
+                                    //   2 * -800px -> -1600px (3번째)
+                                    //   3 * -800px -> -2400px
+            sliderImg.animate({left: sliderPosition},400);
+            
+        },3000)
+    </script>
+    
+</body>
+</html>
