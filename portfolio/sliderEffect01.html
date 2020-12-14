@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SliderEffect01 - jQuery</title>
+    <title>SliderEffect06 - jQuery</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         /* reset */
@@ -67,10 +67,9 @@
             color: var(--color-title);
             font-family: var(--font-cafe);
             font-size: 16px;
-            background: url(img/img05@2.jpg);
+            background: url(img/img05@2.jpg) no-repeat center center;
             background-size: cover;
-            
-
+            height: 100vh;
         }
 
         body::before {
@@ -79,73 +78,69 @@
             left: 0; top: 0;
             width: 100%; 
             height: 100vh;
-            background: rgba(32, 115, 150, 0.5);
+            background: rgba(66, 52, 87, 0.5);
         }
         
         /* slider */
         .slider-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            width: 1200px;
+            overflow: hidden;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
         }
         .slider-img {
-            position: relative;
-            width: 800px;
-            height: 480px;
+            width: 5000px;
             overflow: hidden;
-            box-shadow: 4px 4px 20px rgba(0,0,0,0.5);
-            
+            position: relative;
         }
         .slider-img .slider {
-            position: absolute;
-            left: 0; top: 0;
+            float: left;
+            width: 400px; 
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
         }
         .slider-img .slider span {
             position: absolute;
-            left: 5px; top: 5px;
+            left: 15px; top: 15px;
         }
-        .slider-img .slider:nth-child(1) {z-index: 5;}
-        .slider-img .slider:nth-child(2) {z-index: 4;}
-        .slider-img .slider:nth-child(3) {z-index: 3;}
-        .slider-img .slider:nth-child(4) {z-index: 2;}
-        .slider-img .slider:nth-child(5) {z-index: 1;}
-
+        .slider-btn a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            text-transform: capitalize;
+            color: var(--color-title);
+            font-family: var(--font-cafe);
+        }
+        .slider-btn a.prev {
+            left: 0;
+        }
+        .slider-btn a.next {
+            right: 0;
+        }
     </style>
 </head>
 <body>
 
-    <div class="info left">
-        <h1>Slider Effect01 - jQuery</h1>
-        <p>이미지 슬라이드 - 3초에 한번씩 번경하기</p>
-    </div>
-    <div class="info right">
-        <ul>
-            <li><a href="sliderEffect01-jquery.html" class="active">1</a><a href="sliderEffect01-javascript.html">1</a></li>
-            <li><a href="sliderEffect02-jquery.html">2</a><a href="sliderEffect02-javascript.html">2</a></li>
-            <li><a href="sliderEffect03-jquery.html">3</a><a href="sliderEffect03-javascript.html">3</a></li>
-            <li><a href="sliderEffect04-jquery.html">4</a><a href="sliderEffect04-javascript.html">4</a></li>
-            <li><a href="sliderEffect05-jquery.html">5</a><a href="sliderEffect05-javascript.html">5</a></li>
-            <li><a href="sliderEffect06-jquery.html">6</a><a href="sliderEffect06-javascript.html">6</a></li>
-            <li><a href="sliderEffect07-jquery.html">7</a><a href="sliderEffect07-javascript.html">7</a></li>
-            <li><a href="sliderEffect08-jquery.html">8</a><a href="sliderEffect08-javascript.html">8</a></li>
-            <li><a href="sliderEffect09-jquery.html">9</a><a href="sliderEffect09-javascript.html">9</a></li>
-            <li><a href="sliderEffect10-jquery.html">10</a><a href="sliderEffect10-javascript.html">10</a></li>  
-        </ul>
-    </div>
-
-
-    <!-- //info -->
 
     <main>
         <div class="slider-wrap">
             <div class="slider-img">
-                <div class="slider"><img src="img/img18@2.jpg" alt="이미지1"><span>이미지1</span></div>
-                <div class="slider"><img src="img/img17@2.jpg" alt="이미지2"><span>이미지2</span></div>
-                <div class="slider"><img src="img/img16@2.jpg" alt="이미지3"><span>이미지3</span></div>
-                <div class="slider"><img src="img/img15@2.jpg" alt="이미지4"><span>이미지4</span></div>
-                <div class="slider"><img src="img/img13@2.jpg" alt="이미지5"><span>이미지5</span></div>
+                <div class="slider s1"><img src="img/img02@2.jpg" alt="이미지1"><span>이미지1</span></div>
+                <div class="slider s2"><img src="img/img03@2.jpg" alt="이미지2"><span>이미지2</span></div>
+                <div class="slider s3"><img src="img/img04@2.jpg" alt="이미지3"><span>이미지3</span></div>
+                <div class="slider s4"><img src="img/img05@2.jpg" alt="이미지4"><span>이미지4</span></div>
+                <div class="slider s5"><img src="img/img06@2.jpg" alt="이미지5"><span>이미지5</span></div>
             </div>
+        </div>
+        <div class="slider-btn">
+            <a href="#" class="prev">prev</a>
+            <a href="#" class="next">next</a>
         </div>
     </main>
     <!-- //main -->
@@ -156,18 +151,42 @@
         const sliderWrap = $(".slider-wrap");
         const sliderImg = $(".slider-img");
         const slider = $(".slider");
-        let currentIndex = 0; //현재 첫번째 보이는 이미지
-        let sliderCount = slider.length; //이미지 갯수
-        //3초에 한번씩 함수를 실행
-        setInterval(function(){
-            let nextIndex = (currentIndex + 1) % sliderCount;
-            slider.eq(currentIndex).fadeOut(); //첫 번째 이미지를 사라지게 
-            slider.eq(nextIndex).fadeIn();
-            console.log("currentIndex : " + currentIndex);
-            console.log("nextIndex : " + nextIndex);
-            currentIndex=nextIndex;         
-            
-        },3000);
+        const sliderBtn = $(".slider-btn");
+
+        let sliderCount = slider.length;
+        let sliderWidth = slider.outerWidth();
+        let sliderShowNumber = 3;
+        let currentIndex = 0;
+
+        let sliderCopy = $(".slider:lt("+sliderShowNumber+")").clone();
+        sliderImg.append(sliderCopy);
+
+        function moveLeft(){
+            if(currentIndex == 0){  //처음 이미지
+                currentIndex = sliderCount;
+                sliderImg.css("margin-left", sliderWidth * -currentIndex);
+            }
+            currentIndex--;
+            sliderImg.stop().animate({"margin-left": -sliderWidth * currentIndex}, 400);
+        }
+
+        function moveRight(){
+            if(currentIndex == sliderCount){  //마지막 이미지
+                currentIndex = 0
+                sliderImg.css("margin-left", currentIndex);
+            }
+            currentIndex++;
+            sliderImg.stop().animate({"margin-left": -sliderWidth * currentIndex}, 400);
+        }
+
+        //버튼 클릭하기
+        sliderBtn.on("click","a",function(){
+            if($(this).hasClass("prev")){
+                moveLeft();
+            } else {
+                moveRight();
+            }
+        });
     </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SliderEffect02 - jQuery</title>
+    <title>SliderEffect07 - jQuery</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         /* reset */
@@ -78,7 +78,7 @@
             left: 0; top: 0;
             width: 100%; 
             height: 100vh;
-            background: rgba(32, 115, 150, 0.5);
+            background: rgba(83, 87, 84, 0.5);
         }
         
         /* slider */
@@ -93,54 +93,79 @@
         }
         .slider-img {
             overflow: hidden;
-            width: 4000px; height: 480px;
             position: relative;
         }
         .slider-img .slider {
+            float: left;
             width: 800px; 
             height: 480px;
-            float: left;
             position: relative;
         }
         .slider-img .slider span {
             position: absolute;
             left: 5px; top: 5px;
         }
+        .slider-btn a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            text-transform: capitalize;
+            color: var(--color-title);
+            font-family: var(--font-cafe);
+        }
+        .slider-btn a.prev {
+            left: 0;
+        }
+        .slider-btn a.next {
+            right: 0;
+        }
+        .slider-dot {
+            position: absolute;
+            left: 50%; bottom: 30px;
+            transform: translateX(-50%);
+        }
+        .slider-dot a {
+            width: 20px;
+            height: 20px; 
+            display: inline-block;
+            background: rgba(0,0,0,0.3);
+            text-indent: -9999px;
+            border-radius: 50%;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+        .slider-dot a.active {
+            background: rgba(255,255,255,0.9);
+        }
     </style>
 </head>
 <body>
 
-    <div class="info left">
-        <h1>Slider Effect02 - jQuery</h1>
-        <p>이미지 슬라이드 - 가로로 이동하기</p>
-    </div>
-    <div class="info right">
-        <ul>
-            <li><a href="sliderEffect01-jquery.html">1</a><a href="sliderEffect01-javascript.html">1</a></li>
-            <li><a href="sliderEffect02-jquery.html" class="active">2</a><a href="sliderEffect02-javascript.html">2</a></li>
-            <li><a href="sliderEffect03-jquery.html">3</a><a href="sliderEffect03-javascript.html">3</a></li>
-            <li><a href="sliderEffect04-jquery.html">4</a><a href="sliderEffect04-javascript.html">4</a></li>
-            <li><a href="sliderEffect05-jquery.html">5</a><a href="sliderEffect05-javascript.html">5</a></li>
-            <li><a href="sliderEffect06-jquery.html">6</a><a href="sliderEffect06-javascript.html">6</a></li>
-            <li><a href="sliderEffect07-jquery.html">7</a><a href="sliderEffect07-javascript.html">7</a></li>
-            <li><a href="sliderEffect08-jquery.html">8</a><a href="sliderEffect08-javascript.html">8</a></li>
-            <li><a href="sliderEffect09-jquery.html">9</a><a href="sliderEffect09-javascript.html">9</a></li>
-            <li><a href="sliderEffect10-jquery.html">10</a><a href="sliderEffect10-javascript.html">10</a></li>  
-        </ul>
-    </div>
 
-
-    <!-- //info -->
 
     <main>
         <div class="slider-wrap">
             <div class="slider-img">
-                <div class="slider"><img src="img/img18@2.jpg" alt="이미지1"><span>이미지1</span></div>
-                <div class="slider"><img src="img/img17@2.jpg" alt="이미지2"><span>이미지2</span></div>
-                <div class="slider"><img src="img/img16@2.jpg" alt="이미지3"><span>이미지3</span></div>
-                <div class="slider"><img src="img/img15@2.jpg" alt="이미지4"><span>이미지4</span></div>
-                <div class="slider"><img src="img/img13@2.jpg" alt="이미지5"><span>이미지5</span></div>
+                <div class="slider s1"><img src="img/img03@2.jpg" alt="이미지1"><span>이미지1</span></div>
+                <div class="slider s2"><img src="img/img08@2.jpg" alt="이미지2"><span>이미지2</span></div>
+                <div class="slider s3"><img src="img/img09@2.jpg" alt="이미지3"><span>이미지3</span></div>
+                <div class="slider s4"><img src="img/img05@2.jpg" alt="이미지4"><span>이미지4</span></div>
+                <div class="slider s5"><img src="img/img06@2.jpg" alt="이미지5"><span>이미지5</span></div>
             </div>
+        </div>
+        <div class="slider-btn">
+            <a href="#" class="prev">prev</a>
+            <a href="#" class="next">next</a>
+        </div>
+        <div class="slider-dot">
+            <!-- <a href="#" class="dot active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a> -->
         </div>
     </main>
     <!-- //main -->
@@ -151,29 +176,52 @@
         const sliderWrap = $(".slider-wrap");
         const sliderImg = $(".slider-img");
         const slider = $(".slider");
+        const sliderBtn = $(".slider-btn");
+        const sliderDot = $(".slider-dot");
 
+        let sliderCount = slider.length;
+        let sliderWidth = slider.outerWidth();
+        let sliderHeight = slider.outerHeight();
+        let sliderTotalWidth = sliderWidth * sliderCount;
         let currentIndex = 0;
-        let sliderCount = slider.length;  //이미지 갯수
+        let dotIndex = "";
 
-        setInterval(function(){
-            // if(currentIndex < sliderCount - 1){
-            //     currentIndex++; // 0 1 2 3 4 0
-            // } else {
-            //     currentIndex = 0;
-            // }
-            currentIndex < sliderCount - 1 ? currentIndex++ : currentIndex = 0;
+        sliderImg.css({width: sliderTotalWidth, height: sliderHeight});
 
-            console.log(currentIndex);
+        function gotoSlider(index){
+            sliderImg.animate({left: -sliderWidth * index}, 400);
+            currentIndex = index;
+            sliderDot.find("a").removeClass("active").eq(currentIndex).addClass("active");
+        };
+        
+        //이미지 갯수만큼 닷 버튼 만들기
+        slider.each(function(elem, index){
+            dotIndex += "<a href='#'></a>";
+        });
+        sliderDot.html(dotIndex);
+        sliderDot.find("a").eq(0).addClass("active");
 
-            let sliderPosition = currentIndex * (-800) + "px";
-                                    //   0 * -800px -> 0
-                                    //   1 * -800px -> -800px
-                                    //   2 * -800px -> -1600px (3번째)
-                                    //   3 * -800px -> -2400px
-            sliderImg.animate({left: sliderPosition},400);
-            
-        },3000)
+        //닷 버튼 클릭하기
+        sliderDot.on("click","a",function(e){
+            e.preventDefault();
+            gotoSlider($(this).index());
+        });
+
+        //버튼 클릭하기
+        sliderBtn.on("click","a", function(e){
+            e.preventDefault();
+            let nextIndex = (currentIndex + 1) % sliderCount;
+            let prevIndex = (currentIndex - 1) % sliderCount;
+            if(currentIndex == 0) prevIndex = sliderCount - 1;
+
+            console.log("nextIndex:" + nextIndex)
+            console.log("prevIndex:" + prevIndex)
+            if($(this).hasClass("prev")){
+                gotoSlider(prevIndex);
+            } else {
+                gotoSlider(nextIndex);
+            }
+        });
     </script>
-    
 </body>
 </html>
