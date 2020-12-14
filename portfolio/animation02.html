@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+        height: 100vh;
+        }
+        .bar {
+            width: 5px; 
+            height: 400px; 
+            background: #fff; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            right: 0;
+            bottom: 0; 
+            margin: auto;
+            animation: bar 2s ease 100;
+        }
+        @keyframes bar {
+            0% {transform: rotate(0deg); height: 0px;}
+            25% {transform: rotate(0deg); height: 400px;}
+            75% {transform: rotate(180deg); height: 400px;}
+            100% {transform: rotate(360deg); height: 0px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bar"></div>
+</body>
+</html>
