@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {margin: 0; padding: 0; font-family: 'Poppins', sans-serif;}
+
+        #section1 {height: 100vh; background: #111;}
+        #section2 {height: 100vh; background: #000;}
+        #section3 {height: 100vh; background: #111;}
+        #section4 {height: 100vh; background: #000;}
+        #section5 {height: 100vh; background: #111;}
+        #section6 {height: 100vh; background: #000;}
+
+        #section1 .imgWrap .img {background: url(img/img05@2.jpg); background-size: cover;}
+        #section2 .imgWrap .img {background: url(img/img06@2.jpg); background-size: cover;}
+        #section3 .imgWrap .img {background: url(img/img07@2.jpg); background-size: cover;}
+        #section4 .imgWrap .img {background: url(img/img08@2.jpg); background-size: cover;}
+        #section5 .imgWrap .img {background: url(img/img09@2.jpg); background-size: cover;}
+        #section6 .imgWrap .img {background: url(img/img10@2.jpg); background-size: cover;}
+
+        .content-item {
+            position: relative;
+        }
+        .content-item .num {
+            position: absolute; left: 70%; top: 30%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1222;
+            z-index: 90;
+            font-size: 20vw;
+            color: #fff;
+            font-weight: 100;
+            letter-spacing: -2vw;
+        }
+        .content-item .imgWrap {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50vw; height: 50vh;
+            z-index: 110;
+        }
+        .content-item .imgWrap .img {
+            width: 100%; height: 100%;
+        }
+        .content-item .title {
+            position: absolute; left: 40%; top: 60%;
+            transform: translate(-50%, -50%);
+            width: 50vw;
+            z-index: 110;
+            color: #fff;
+            font-size: 4vw;
+            line-height: 1.4;
+            word-break: keep-all;
+            font-family: 'NEXON Lv2 Gothic';
+        }
+
+        /* 기본 셋팅 */
+        body {
+            height: 10000px;
+        }
+        #contents {
+            width: 600vw;
+            overflow: hidden;
+            position: fixed;
+            left: 0; top: 0;
+        }
+        #contents > section {
+            float: left;
+            width: 1200px;
+        }
+        .character {
+            width: 200px; height: 200px;
+            position: fixed;
+            left: 50%; bottom: 0;
+            margin-left: -90px;
+            z-index: 200;
+            background-image: url(img/robby-slides.png);
+            background-size: 1800px;
+        }
+        .character.walking {
+            animation: walk 0.8s steps(9, start) infinite;
+        }
+        .character.left {
+            background-position: 0 -200px;
+            animation: walk2 0.8s steps(9, start) infinite;
+        }
+        @keyframes walk {
+            0% {background-position: 0px 0px;}
+            100% {background-position: -1800px 0px;}
+        }
+        @keyframes walk2 {
+            0% {background-position: 0px -200px;}
+            100% {background-position: -1800px -200px;}
+        }
+
+        #section3 .imgWrap {
+             
+            
+        }
+        #section3 .title {
+            
+        }
+        #section3 .num {
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="character"></div>
+
+    <section id="contents">
+        <section id="section1" class="content-item">
+            <span class="num">01</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section1 --> 
+        <section id="section2" class="content-item">
+            <span class="num">02</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section2 -->
+        <section id="section3" class="content-item">
+            <span class="num">03</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section3 -->
+        <section id="section4" class="content-item">
+            <span class="num">04</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section4 -->
+        <section id="section5" class="content-item">
+            <span class="num">05</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section5 -->
+        <section id="section6" class="content-item">
+            <span class="num">06</span>
+            <div class="imgWrap">
+                <div class="img"></div>
+            </div>
+            <div class="title">결과도 중요하지만 과정을 더 중요하게 생각합니다.</div>
+        </section>
+        <!-- //section6 -->
+    </section>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    // const totalWidth = $("#contents").width();
+    // $("body").css("height", totalWidth);
+
+
+    //일반 가로모드,
+    // $(window).scroll(function(){
+    //     const scroll = $(window).scrollTop();
+
+    //     $("#contents").css("left", -scroll);
+    // });
+    
+    let lastScrolltop = 0;
+    const totalWidth = $("#contents").width();
+    $("body").css("height", totalWidth);
+
+    $(window).scroll(function(){
+        let wScroll = $(window).scrollTop();
+        let wWidth = $(window).width();
+        let wHeight = $(window).height();
+        let dHeight = $("body").height() - wHeight; //전체 세로 값 - 현재 화면의 세로 값
+        let dWidth = totalWidth - wWidth; //전게 가로 값 - 현재 화면의 가로 값
+        let step = dWidth/dHeight;
+        let goleft = wScroll * step;
+        //console.log(goleft)
+        $("#contents").css("left", -wScroll);
+
+        clearTimeout($.data(this, "scrollCheck")); //움직이지 않을 때는 감지하지 말아라
+
+        $.data(this, "scrollCheck", setTimeout(function(){  //현재 데이터를 감지하는 방법 $.data
+            $(".character").removeClass("walking");
+        },100))
+
+        $.data(this, "scrollCheck", setTimeout(function(){
+            $(".character").removeClass("left");
+        },100))
+
+        if(wScroll > lastScrolltop) {
+            $(".character").removeClass("left");
+            $(".character").css("background-position","0px 0px");
+            $(".character").addClass("walking");
+        } else {
+            $(".character").addClass("left");  
+            $(".character").css("background-position","0px -200px");
+            $(".character").addClass("walking");
+        }
+        lastScrolltop = wScroll;  //lastScrolltop값이 0에 머무르는 것을 방지
+
+        if(wScroll > $("#section3").offset().left + $(window).width()){
+            gsap.to("#section3 .imgWrap", {duration: 0.4, opacity:1})
+        }
+    });   
+    $(document).keydown(function(e){
+        if(e.which == 39){
+            let scrollTop = $(document).scrollTop();
+            $(window).scrollTop(scrollTop + 50);
+        }
+        if(e.which == 37){
+            let scrollTop = $(document).scrollTop();
+            $(window).scrollTop(scrollTop - 50);
+        }
+    })
+</script>
