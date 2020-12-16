@@ -92,8 +92,14 @@
                     <h2 id="intro1" class="page-header">Slider Effect01</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect01 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect01-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 let currentIndex = 0; //현재 첫번째 보이는 이미지
@@ -109,16 +115,9 @@ setInterval(function(){
     
 },3000);
 </code></pre>
-                <!-- //Intro1 -->
-
-                <!-- Intro2 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">Slider Effect01</h2>
-                    <p class="bs-callout bs-callout-info">Slider Effect01 (자바스크립트)</p>
-                    <iframe width="100%" height="600px" src="sliderEffect01-javascript.html" frameborder="0"></iframe>
-                </div>
-
-                <pre class="line-numbers language-js"><code>const sliderWrap = document.querySelector(".slider-wrap");
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+<pre class="line-numbers language-js"><code>const sliderWrap = document.querySelector(".slider-wrap");
 const sliderImg = document.querySelector(".slider-img");
 const slider = document.querySelectorAll(".slider");
 
@@ -143,15 +142,25 @@ setInterval(() => {
     currentIndex = nextIndex;
 },3000);
 </code></pre>
-                <!-- //intro2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro1 -->
 
-                <!-- Intro3 -->
+                <!-- Intro2 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro3" class="page-header">Slider Effect02</h2>
+                    <h2 id="intro2" class="page-header">Slider Effect02</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect02 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect02-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home2">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 
@@ -173,48 +182,29 @@ setInterval(function(){
     sliderImg.animate({left: sliderPosition},400); 
 },3000)
 </code></pre>
-                <!-- //Intro3 -->
-
-                <!-- Intro4 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro4" class="page-header">Slider Effect02</h2>
-                    <p class="bs-callout bs-callout-info">Slider Effect02 (자바스크립트)</p>
-                    <iframe width="100%" height="600px" src="sliderEffect02-javascript.html" frameborder="0"></iframe>
-                </div>
-
-                <pre class="line-numbers language-js"><code>const sliderWrap = document.querySelector(".slider-wrap");
-const sliderImg = document.querySelector(".slider-img");
-const slider = document.querySelectorAll(".slider");
-
-let currentIndex = 0;
-let sliderCount = slider.length;
-let sliderWidth = sliderWrap.offsetWidth;
-console.log(sliderWidth);
-
-setInterval(function(){
-    // if(currentIndex &lt; sliderCount - 1){
-    //     currentIndex++;
-    // } else {
-    //     currentIndex = 0;
-    // }
-    currentIndex &lt; sliderCount - 1 ? currentIndex++ : currentIndex = 0;
-    let sliderPosition = currentIndex * (-sliderWidth)+"px";
-    //sliderImg.animate({left: sliderPosition},400);
-    // sliderImg.style.left = sliderPosition;
-    // sliderImg.style.transition = "all 0.6s";
-
-    gsap.to(sliderImg, {duration: 0.6, left: sliderPosition});
-},3000);
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile2">
+<pre class="line-numbers language-js"><code>
 </code></pre>
-                <!-- //intro4 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro2 -->
 
-                <!-- Intro5 -->
+                <!-- Intro3 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro5" class="page-header">Slider Effect03</h2>
+                    <h2 id="intro3" class="page-header">Slider Effect03</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect03 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect03-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home3" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile3" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home3">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 
@@ -225,15 +215,29 @@ setInterval(function(){
     });
 },3000);
 </code></pre>
-                <!-- //Intro5 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile3">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro3 -->
 
-                <!-- Intro6 -->
+                <!-- Intro4 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro6" class="page-header">Slider Effect04</h2>
+                    <h2 id="intro4" class="page-header">Slider Effect04</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect04 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect04-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home4" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile4" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home4">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 
@@ -257,15 +261,29 @@ setInterval(function(){
     });
 }, 3000);
 </code></pre>
-                <!-- //Intro6 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile4">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro4 -->
 
-                <!-- Intro7 -->
+                <!-- Intro5 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro7" class="page-header">Slider Effect05</h2>
+                    <h2 id="intro5" class="page-header">Slider Effect05</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect05 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect05-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home5" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile5" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home5">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 const sliderBtn = $(".slider-btn")
@@ -300,15 +318,29 @@ sliderBtn.find(".next").click(function(){
     moveRight();
 });
 </code></pre>
-                <!-- //Intro7 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile5">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
 
-                <!-- Intro8 -->
+                <!-- Intro6 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro8" class="page-header">Slider Effect06</h2>
+                    <h2 id="intro6" class="page-header">Slider Effect06</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect06 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect06-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home6" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile6" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home6">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 const sliderBtn = $(".slider-btn");
@@ -348,15 +380,29 @@ sliderBtn.on("click","a",function(){
     }
 });
 </code></pre>
-                <!-- //Intro8 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile6">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro6 -->
 
-                <!-- Intro9 -->
+                <!-- Intro7 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro9" class="page-header">Slider Effect07</h2>
+                    <h2 id="intro7" class="page-header">Slider Effect07</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect07 (제이쿼리)</p>
                     <iframe width="100%" height="600px" src="sliderEffect07-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home7" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile7" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home7">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 const sliderBtn = $(".slider-btn");
@@ -406,15 +452,29 @@ sliderBtn.on("click","a", function(e){
     }
 });
 </code></pre>
-                <!-- //Intro9 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile7">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro7 -->
 
-                <!-- Intro10 -->
+                <!-- Intro8 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro10" class="page-header">Slider Effect08</h2>
+                    <h2 id="intro8" class="page-header">Slider Effect08</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect08 (제이쿼리)</p>
                     <iframe width="100%" height="750px" src="sliderEffect08-jquery.html" frameborder="0"></iframe>
-                </div>
-                <pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home7" aria-controls="home" role="tab" data-toggle="tab">jQuery</a></li>
+                            <li role="presentation"><a href="#profile7" aria-controls="profile" role="tab" data-toggle="tab">JavaScript</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home7">
+<pre class="line-numbers language-js"><code>const sliderWrap = $(".slider-wrap");
 const sliderImg = $(".slider-img");
 const slider = $(".slider");
 const sliderBtn = $(".slider-btn");
@@ -468,11 +528,19 @@ sliderBtn.on("click","a", function(e){
     }
 });
 </code></pre>
-                <!-- //Intro10 -->
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile7">
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro8 -->
 
-                <!-- Intro11 -->
+                <!-- Intro9 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro11" class="page-header">Slider Effect-3d</h2>
+                    <h2 id="intro9" class="page-header">Slider Effect-3d</h2>
                     <p class="bs-callout bs-callout-info">Slider Effect-3d</p>
                     <iframe width="100%" height="750px" src="sliderEffect-3d.html" frameborder="0"></iframe>
                 </div>
@@ -519,7 +587,7 @@ window.onmousemove = (e) =&gt; {
     gsap.to('.box', {duration: 0.6, rotationY: (i)=&gt;45+i/n*206.5+90*(e.clientX/window.innerWidth)});
 }
 </code></pre>
-                <!-- //Intro11 -->
+                <!-- //Intro9 -->
 
             </div>
             <!-- //col-md-12 -->
