@@ -793,6 +793,54 @@
                 </div>
                 <!-- //Intro8 -->
 
+                <style>
+                    .svg123 {
+                        width: 100px; 
+                        height: 100px; 
+                        background: #ffebee;
+                        margin: 6px;
+                    }
+                </style>
+
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">마스크</h2>
+
+                    <div class="sample">
+                        <h3><span></span><em class="sr-only">svg</em></h3>
+                        <svg class="svg123">
+                            <mask id="myMask">
+                              <!-- Everything under a white pixel will be visible -->
+                              <rect x="0" y="0" width="100" height="100" fill="white" />
+                          
+                              <!-- Everything under a black pixel will be invisible -->
+                              <path d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z" fill="black" />
+                            </mask>
+                          
+                            <polygon points="-10,110 110,110 110,-10" fill="orange" />
+                          
+                            <!-- with this mask applied, we "punch" a heart shape hole into the circle -->
+                            <circle cx="50" cy="50" r="50" mask="url(#myMask)" />
+                        </svg>
+                    </div>
+<pre class="line-numbers language-html"><code> &lt;svg class="svg123"&gt;
+    &lt;mask id="myMask"&gt;
+      &lt;!-- Everything under a white pixel will be visible --&gt;
+      &lt;rect x="0" y="0" width="100" height="100" fill="white" /&gt;
+  
+      &lt;!-- Everything under a black pixel will be invisible --&gt;
+      &lt;path d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z" fill="black" /&gt;
+    &lt;/mask&gt;
+  
+    &lt;polygon points="-10,110 110,110 110,-10" fill="orange" /&gt;
+  
+    &lt;!-- with this mask applied, we "punch" a heart shape hole into the circle --&gt;
+    &lt;circle cx="50" cy="50" r="50" mask="url(#myMask)" /&gt;
+&lt;/svg&gt;
+</code></pre>
+                </div>
+                <!-- //Intro9 -->
+
                 <!-- sample01 -->
                 <div class="bs-docs-section">
                     <h2 id="sample01" class="page-header">애니메이션</h2>
@@ -828,6 +876,18 @@
                     <script async src="https://cpwebassets.sfo2.cdn.digitaloceanspaces.com/assets/embed/ei.js"></script>
                 </div>
                 <!-- //sample03 -->
+
+                <!-- sample04 -->
+                <div class="bs-docs-section">
+                    <h2 id="sample04" class="page-header">애니메이션</h2>
+                    <p class="codepen" data-height="600" data-theme-id="light" data-default-tab="result" data-user="minjoo" data-slug-hash="gOwmyKm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="svg wave mask">
+                        <span>See the Pen <a href="https://codepen.io/minjoo/pen/gOwmyKm">
+                        svg wave mask</a> by JEONMINJOO (<a href="https://codepen.io/minjoo">@minjoo</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <!-- //sample04 -->
 
 
             </div>
