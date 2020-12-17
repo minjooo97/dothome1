@@ -187,7 +187,7 @@
     // }
 
     //출력 for문
-    for(let i=1; i<=9; i++){
+    for(let i=1; i&lt;=9; i++){
         document.querySelector(".s"+i+"OffsetTop").textContent = document.getElementById("section"+i).offsetTop;
         if(pageYOffset > document.getElementById("section9").offsetTop){
         document.querySelector(".s"+i+"OffsetTop").style.color = "red";
@@ -429,14 +429,14 @@ scroll();
                     <p><a class="btn btn-primary btn-lg" href="parallax04-jquery.html" role="button">확인하기</a></p>
 
 <pre class="line-numbers language-js"><code>// let text = $("#section1 .content-item-desc").text();
-// let split = text.split("").join("</span><span>");
-//       split = "<span>"+split+"</span>";
+// let split = text.split("").join("&lt;/span>&lt;span>");
+//       split = "&lt;span>"+split+"&lt;/span>";
 
 //글씨 쪼개기
 $(".content-item-desc").each(function(){
     let text = $(this).text();
-    let split = text.split("").join("</span><span aria-hidden = 'true'>");
-    split = "<span aria-hidden = 'true'>"+split+"</span>";
+    let split = text.split("").join("&lt;/span>&lt;span aria-hidden = 'true'>");
+    split = "&lt;span aria-hidden = 'true'>"+split+"&lt;/span>";
     $(this).html(split).attr("aria-label", text);
 });
 
@@ -561,6 +561,40 @@ window.addEventListener("scroll", ()=>{
         });
     }
 });
+</code></pre>  
+                </div>
+                <!-- //Intro9 -->
+
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">Parallax05 - jQuery</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax05-jquery.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>$("a[href^='#']").click(function(e){
+    e.preventDefault();
+    let target = $($(this).attr("href"));
+    
+    $("html,body").animate({scrollTop:target.offset().top},800)
+});
+</code></pre>
+                </div>
+                <!-- //Intro10 -->
+
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">Parallax05 - JavaScript</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax05-javascript.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>document.querySelectorAll("a[href^='#']").forEach(elem => {
+    elem.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior : 'smooth'
+        })
+    })
+})
 </code></pre>  
                 </div>
                 <!-- //Intro9 -->
