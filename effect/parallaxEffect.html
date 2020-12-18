@@ -597,7 +597,61 @@ window.addEventListener("scroll", ()=>{
 })
 </code></pre>  
                 </div>
-                <!-- //Intro9 -->
+                <!-- //Intro11 -->
+
+                <!-- Intro12 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro12" class="page-header">Parallax06 - jQuery</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax06-jquery.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+    // if(scrollTop > $("#section2").offset().top){
+    //     $("#section2").addClass("show");
+    // }
+
+    $(".reveal").each(function(){
+        if(scrollTop + $(window).height()/2 > $(this).offset().top){
+            $(this).addClass("show");
+        }
+    });
+});
+</code></pre>
+                </div>
+                <!-- //Intro12 -->
+
+                <!-- Intro13 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro13" class="page-header">Parallax06 - JavaScript</h2>
+                    <p class="bs-callout bs-callout-info">scrollTop과 offsetTop을 이용하여 패럴랙스 스크롤링 효과를 완성하였습니다.</p>
+                    <p><a class="btn btn-primary btn-lg" href="parallax06-javascript.html" role="button">확인하기</a></p>
+
+<pre class="line-numbers language-js"><code>// $(window).scroll(function(){
+    //     let scrollTop = $(window).scrollTop();
+    //     // if(scrollTop > $("#section2").offset().top){
+    //     //     $("#section2").addClass("show");
+    //     // }
+
+    //     $(".reveal").each(function(){
+    //         if(scrollTop + $(window).height()/2 > $(this).offset().top){
+    //             $(this).addClass("show");
+    //         }
+    //     });
+    // });
+    window.addEventListener("scroll", () => {
+        let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+        let wHeight = window.innerHeight;
+        document.querySelectorAll(".reveal").forEach((elem) => {
+            if (pageYOffset + wHeight / 2 > elem.parentElement.offsetTop) {
+                elem.classList.add("show");
+            }
+            console.log(elem)
+        });
+    });
+</code></pre>  
+                </div>
+                <!-- //Intro13 -->
 
                 
             </div>

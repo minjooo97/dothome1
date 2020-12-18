@@ -208,6 +208,24 @@
             z-index: 100;
             background: #fff;
         }
+        .reveal.reveal-TTB::before {
+            content: '';
+            position: absolute;
+            right: 0; top: 0;
+            width: 100%;
+            height: 0;
+            z-index: 100;
+            background: #fff;
+        }
+        .reveal.reveal-BTT::before {
+            content: '';
+            position: absolute;
+            right: 0; top: 0;
+            width: 100%;
+            height: 0;
+            z-index: 100;
+            background: #fff;
+        }
         .reveal.reveal-two::after {
             content: '';
             position: absolute;
@@ -264,16 +282,16 @@
             100% {width: 0; right: 100%;}
         }
         @keyframes reveal-TTB {
-            0% {width: 0; top: 0;}
-            50% {width: 100%; top: 0;}
-            80% {width: 100%; top: 0;}
-            100% {width: 0; top: 100%;}
+            0% {height: 0; top: 0;}
+            50% {height: 100%; top: 0;}
+            80% {height: 100%; top: 0;}
+            100% {height: 0; top: 100%;}
         }
         @keyframes reveal-BTT {
-            0% {width: 0; bottom: 0;}
-            50% {width: 100%; bottom: 0;}
-            80% {width: 100%; bottom: 0;}
-            100% {width: 0; bottom: 100%;}
+            0% {height: 0; top: 100%;}
+            50% {height: 100%; top: 0;}
+            80% {height: 100%; top: 0;}
+            100% {height: 0; top: 0;}
         }
         @keyframes opacitiy {
             0% {opacity: 0;}
