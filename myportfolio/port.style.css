@@ -1,0 +1,27 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {}
+
+/* layout */
+#wrap {}
+#main {width: 100%;height: 1107px;background: #035dff;}
+#about {width: 100%; height: 1830px; background: lightcoral;}
+#website {width: 100%; height: 5560px; background: lightblue;}
+#animation {width: 100%; height: 3363px; background: lightgreen;}
+#script {width: 100%; height: 2186px; background: lightpink;}
+#contact {width: 100%; height: 976px; background: lightslategray;}
+#end {width: 100%; height: 1030px; background: lightsteelblue;}
+
+/* main */
+.logoBox .logo {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.logoBox .icon1 {position: absolute; left: 33%; top: 33%;}
+.logoBox .icon2 {position: absolute; right: 28%; top: 50%;}
+.logoBox .icon3 {position: absolute; left: 28%; top: 45%;}
+.logoBox .icon4 {position: absolute; right: 34%; top: 27%;}
+.logoBox .icon5 {position: absolute; right: 33%; bottom: 30%;}
+.logoBox .icon6 {position: absolute; left: 33%; bottom: 29%;}
+
+/* about */
