@@ -1,14 +1,7 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
-/* reset */
-* {margin: 0; padding: 0;}
-body {}
-
 /* layout */
 #wrap {}
 #main {width: 100%;height: 1107px;background: #035dff;}
-#about {width: 100%; height: 1830px; background: lightcoral;}
+#about {width: 100%; height: 1830px;}
 #website {width: 100%; height: 5560px; background: lightblue;}
 #animation {width: 100%; height: 3363px; background: lightgreen;}
 #script {width: 100%; height: 2186px; background: lightpink;}
@@ -25,3 +18,13 @@ body {}
 .logoBox .icon6 {position: absolute; left: 33%; bottom: 29%;}
 
 /* about */
+.top {position: relative; height: 654px; background:#ffb4ce; font-family: 'Rammetto One', cursive;}
+.top img {position: absolute; left: 15%; top: 0;}
+.top ul {text-align: right; padding-right: 15%;font-size: 15px; letter-spacing: 0.75px;}
+.top ul li {display: inline-block; padding: 2% 0 0 5%;}
+.top .about_icon1 {position: absolute; left: 42%; top: 5%;}
+.top .about_icon2 {position: absolute; left: 50%; top: 4.5%;}
+.top .about_icon3 {position: absolute; left: 59.5%; top: 5%;}
+.top .about_icon4 {position: absolute; left: 70.2%; top: 5%;}
+.top .about_icon5 {position: absolute; left: 78.2%; top: 4.5%;}
+.top h1 {font-size: 85px; line-height: 1; color: #035dff; text-align: center; letter-spacing: 4.25px; margin-top: 9%;}

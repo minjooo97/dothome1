@@ -1,7 +1,14 @@
-/* 여백 초기화 */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
+/* 여백 초기화 */
+* {margin: 0; padding: 0;}
+body {}
 
 /* a 링크 초기화 */
+a {text-decoration: none; color: #000;}
 
 
 /* 블릿기호 초기화 */
+ul,li {list-style: none;}
