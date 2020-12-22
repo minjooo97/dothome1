@@ -217,7 +217,30 @@ setInterval(function(){
 </code></pre>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="profile3">
-<pre class="line-numbers language-js"><code>
+<pre class="line-numbers language-js"><code>const sliderWrap = document.querySelector(".slider-wrap");
+const sliderImg = document.querySelector(".slider-img");
+const slider = document.querySelectorAll(".slider");
+let sliderCount = slider.length;
+let sliderWidth = sliderImg.clientWidth / 6;
+
+let currentIndex = 0;
+let clone = sliderImg.firstElementChild.cloneNode(true);
+sliderImg.appendChild(clone);
+
+function sliderEffect(){
+    currentIndex++;
+    sliderImg.style.transition = "0.3s";
+    sliderImg.style.transform = `translateX(${-sliderWidth*currentIndex}px)`
+
+    if(currentIndex == 5){
+        setTimeout(()=>{
+            sliderImg.style.transition = "0s";
+            sliderImg.style.transform = "translate(0)"
+        },301);
+        currentIndex = 0;
+    }
+}
+setInterval(sliderEffect, 2100);
 </code></pre>
                             </div>
                         </div>

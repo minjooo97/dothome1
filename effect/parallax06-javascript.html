@@ -253,7 +253,7 @@
         .reveal.reveal-two.show::after {
             animation: reveal-two 1000ms 300ms cubic-bezier(.77,0,.18,1);
         }
-        /* .reveal.reveal-two.reveal-RTL.show::after {
+        .reveal.reveal-two.reveal-RTL.show::after {
             animation: reveal-two-RTL 1000ms 300ms cubic-bezier(.77,0,.18,1);
         }
         .reveal.reveal-two.reveal-TTB.show::after {
@@ -261,7 +261,7 @@
         }
         .reveal.reveal-two.reveal-BTT.show::after {
             animation: reveal-two-BTT 1000ms 300ms cubic-bezier(.77,0,.18,1);
-        } */
+        }
 
         @keyframes reveal {
             0% {width: 0; left: 0;}
@@ -401,7 +401,7 @@
                 <section id="section9" class="content-item">
                     <span class="content-item-num">09</span>
                     <h2 class="content-item-title">section9</h2>
-                    <figure class="content-item-imgWrap reveal reveal-TTB">
+                    <figure class="content-item-imgWrap reveal reveal-RTL">
                         <div class="content-item-img"></div>
                     </figure>
                     <p class="content-item-desc reveal reveal-RTL"><span>시간은 우리를 변화시키지 않는다.</span></p>
@@ -413,28 +413,20 @@
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
-        // $(window).scroll(function(){
-        //     let scrollTop = $(window).scrollTop();
-        //     // if(scrollTop > $("#section2").offset().top){
-        //     //     $("#section2").addClass("show");
-        //     // }
+        function scrollReveal(){
+            const reveal = document.querySelectorAll(".reveal");
+            reveal.forEach(elem => {
+                let scrollTop = document.documentElement.scrollTop+window.innerHeight/2;
+                let offsetTop = elem.offsetTop+elem.parentElement.offsetTop;
+                console.log(offsetTop);
 
-        //     $(".reveal").each(function(){
-        //         if(scrollTop + $(window).height()/2 > $(this).offset().top){
-        //             $(this).addClass("show");
-        //         }
-        //     });
-        // });
-        window.addEventListener("scroll", () => {
-            let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
-            let wHeight = window.innerHeight;
-            document.querySelectorAll(".reveal").forEach((elem) => {
-                if (pageYOffset + wHeight / 2 > elem.parentElement.offsetTop) {
+                if(scrollTop > offsetTop){
                     elem.classList.add("show");
                 }
-                console.log(elem)
-            });
-        });
+            })
+        }
+
+        window.addEventListener("scroll", scrollReveal)
     </script>
 </body>
 </html>
