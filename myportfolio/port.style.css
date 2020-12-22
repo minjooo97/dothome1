@@ -48,5 +48,7 @@
 .bottom .pic2 {width: 442px; height: 534px; background: #fff; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 15%; bottom: 15%; z-index: 1500;}
 .bottom .pic3 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 14%; bottom: 13%; z-index: 1400;}
 .bottom .pic4 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 13%; bottom: 11%; z-index: 1300;}
-.bottom h1 {width: 45%; font-family: 'Jua', sans-serif; font-size: 54px; color: #035dff; text-align: center; margin-left: 43%; padding-top: 28%;}
-.bottom h5 {width: 50%; font-family: 'S-CoreDream-3Light'; font-size: 28px; text-align: center; font-weight: normal; line-height: 1.61; margin-left: 40%; padding-top: 4%;}
+.bottom h1 {width: 45%; font-family: 'Jua', sans-serif; font-size: 55px; color: #035dff; text-align: center; margin-left: 43%; padding-top: 28%;}
+.bottom h5 {width: 50%; font-family: 'S-CoreDream-3Light'; font-size: 28px; text-align: center; font-weight: normal; line-height: 1.61; margin-left: 40.5%; padding-top: 4%;}
+
+/* website */
