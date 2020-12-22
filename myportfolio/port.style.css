@@ -35,7 +35,18 @@
 
 .img_box1 {width: 512px; height: 800px; border-radius: 300px; background: url(img/main_img.png) no-repeat; position: absolute; left: 37%; top: 146%; z-index: 900;}
 .img_box1 p {font-family: 'Nothing You Could Do', cursive; font-size: 40px; color: #fff; letter-spacing: 2px; transform: rotate(-30deg); position: absolute; left: 27%; bottom: 25%;}
-.img_box2 {width: 373px; height: 461px; border-radius: 50px; background: url(img/left_img.jpg) no-repeat; background-size: cover; position: absolute; left: 8.5%; top: 160%;}
-.spin_icon {width: 193px; height: 193px; background: url(img/spin.png) no-repeat; position: absolute; right: 20%; bottom: -92%;}
+.img_box2 {width: 373px; height: 461px; border-radius: 50px; background: url(img/left_img.jpg) no-repeat; background-size: cover; position: absolute; left: 8.5%; top: 160%; z-index: 1700;}
+.spin_icon {width: 193px; height: 193px; background: url(img/spin.png) no-repeat; position: absolute; right: 20%; bottom: -92%; z-index: 1700;}
 
-.bottom {height: 1176px; background:#fff460;}
+.bottom {position: relative; height: 1176px; background:#fff460;}
+.bottom .cir1 {position: absolute; left: 10%; top: 35%;}
+.bottom .cir2 {position: absolute; left: 10%; bottom: 5%;}
+.bottom .cir3 {position: absolute; right: 10%; top: 35%;}
+.bottom .cir4 {position: absolute; right: 10%; bottom: 5%;}
+.bottom .crown {position: absolute; left: 32.5%; top: 37%; z-index: 1700;}
+.bottom .pic1 {width: 420px; height: 519px; background: url(img/hi_pic.png) no-repeat; background-size: contain; transform: rotate(-0.4deg); position: absolute; left: 15.7%; bottom: 15%; z-index: 1600;}
+.bottom .pic2 {width: 442px; height: 534px; background: #fff; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 15%; bottom: 15%; z-index: 1500;}
+.bottom .pic3 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 14%; bottom: 13%; z-index: 1400;}
+.bottom .pic4 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 13%; bottom: 11%; z-index: 1300;}
+.bottom h1 {width: 45%; font-family: 'Jua', sans-serif; font-size: 54px; color: #035dff; text-align: center; margin-left: 43%; padding-top: 28%;}
+.bottom h5 {width: 50%; font-family: 'S-CoreDream-3Light'; font-size: 28px; text-align: center; font-weight: normal; line-height: 1.61; margin-left: 40%; padding-top: 4%;}
