@@ -27,4 +27,15 @@
 .top .about_icon3 {position: absolute; left: 59.5%; top: 5%;}
 .top .about_icon4 {position: absolute; left: 70.2%; top: 5%;}
 .top .about_icon5 {position: absolute; left: 78.2%; top: 4.5%;}
-.top h1 {font-size: 85px; line-height: 1; color: #035dff; text-align: center; letter-spacing: 4.25px; margin-top: 9%;}
+.top .about_tw1 {position: absolute; left: 23%; top: 27%;}
+.top .about_tw2 {position: absolute; left: 30%; top: 65%;}
+.top .about_tw3 {position: absolute; left: 65%; top: 80%;}
+.top .img_box {width: 245px; height: 354px; border-radius: 50px; background: url(img/top_img.png) no-repeat; position: absolute; right: 14%; top: 20%;}
+.top h1 {font-size: 85px; line-height: 1; color: #035dff; text-align: center; letter-spacing: 4.25px; position: absolute; left: 20%; top: 32%; z-index: 1000;}
+
+.img_box1 {width: 512px; height: 800px; border-radius: 300px; background: url(img/main_img.png) no-repeat; position: absolute; left: 37%; top: 146%; z-index: 900;}
+.img_box1 p {font-family: 'Nothing You Could Do', cursive; font-size: 40px; color: #fff; letter-spacing: 2px; transform: rotate(-30deg); position: absolute; left: 27%; bottom: 25%;}
+.img_box2 {width: 373px; height: 461px; border-radius: 50px; background: url(img/left_img.jpg) no-repeat; background-size: cover; position: absolute; left: 8.5%; top: 160%;}
+.spin_icon {width: 193px; height: 193px; background: url(img/spin.png) no-repeat; position: absolute; right: 20%; bottom: -92%;}
+
+.bottom {height: 1176px; background:#fff460;}
