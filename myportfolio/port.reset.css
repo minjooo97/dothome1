@@ -19,3 +19,6 @@ a {text-decoration: none; color: #000;}
 
 /* 블릿기호 초기화 */
 ul,li {list-style: none;}
+
+/* 폰트 초기화 */
+h1,h2,h3,h4,h5,h6 {font-style: none; font-weight: normal; font-stretch: normal;}
