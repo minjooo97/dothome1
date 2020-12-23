@@ -222,8 +222,10 @@
 	padding:35px 0; 
 	font-family: 'Gaegu', cursive; font-size: 40px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 #contents_tit p a {
-	color:#2c94c4; 
+	color:#000;
+	font-family: 'Kaushan Script', cursive; 
 }
 
 
@@ -280,9 +282,9 @@
 }
 
 .gridly .webstandard a {
-	color: #157ed3;
+	color: #ec407a;
 	display: block;
-	border-bottom: 3px solid #a5d5fa;
+	border-bottom: 3px solid #f8bbd0;
 	margin-right: 20px;
 } 
 .gridly .html5 a {
@@ -384,7 +386,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #f2a1d1;
+	background: #ff80ab;
 	color: #FFFFFF;
 	font-size: 25px;
 	font-weight: 300;

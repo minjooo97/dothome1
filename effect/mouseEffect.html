@@ -438,14 +438,27 @@ moveImg.addEventListener("mousemove", function(e){
 </code></pre>
                 <!-- //Intro5 -->
 
-                <!-- Intro5 -->
+                <!-- Intro6 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro5" class="page-header">Mouse Effect06</h2>
+                    <h2 id="intro6" class="page-header">Mouse Effect06</h2>
                     <p class="bs-callout bs-callout-info">Mouse Effect06 (제이쿼리/자바스크립트)</p>
                     <iframe width="100%" height="600px" src="mouseEffect06-javascript.html" frameborder="0"></iframe>
                 </div>
                 <h2 id="intro1" class="page-header">jQuery</h2>
-<pre class="line-numbers language-js"><code>
+<pre class="line-numbers language-js"><code>$(window).mousemove(function(e){
+    let x = e.pageX;
+    let y = e.pageY;
+    let mouseX = (x - $(".word").offset().left - $(".word").width()/2) / $(".word").width() * 5;
+    let mouseY = (x - $(".word").offset().top - $(".word").height()/2) / $(".word").height() * 5;
+    $(".word").css({textShadow:"10px -20px 0px rgba(255, 165, 9, 0.4), -10px 20px 0px rgba(255, 35, 251, 0.4), 20px -10px 0px rgba(255, 255, 73, 0.4), -20px 10px 0px rgba(102, 249, 255, 0.4)"});
+    $(".word").css({textShadow:""+mouseX+"px -"+mouseY+"px 0px rgba(255, 165, 9, 0.4), -"+mouseX+"px "+mouseY+"px 0px rgba(255, 35, 251, 0.4)"});
+})
+//제이쿼리로는 구현이 어려움
+//출력용
+$(".mouseX").text(parseInt(mouseX));
+$(".mouseY").text(parseInt(mouseY));
+$(".mouseX2").text(parseInt(-mouseX));
+$(".mouseY2").text(parseInt(-mouseY));
 </code></pre>
                 <h2 id="intro1" class="page-header">JavaScript</h2>
 <pre class="line-numbers language-js"><code>const word = document.querySelector(".word");
@@ -479,6 +492,120 @@ window.addEventListener("mousemove", e=>{
 });
 </code></pre>
                 <!-- //Intro6 -->
+
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">Mouse Effect07</h2>
+                    <p class="bs-callout bs-callout-info">Mouse Effect07 (제이쿼리)</p>
+                    <iframe width="100%" height="600px" src="MouseEffect07-jquery.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
+<pre class="line-numbers language-js"><code>const cursorWidth = $(".cursor").outerWidth()/2;
+const cursorHeight = $(".cursor").outerHeight()/2;
+
+$(window).mousemove(function(e){
+    gsap.to(".cursor", {duration: 0.5, left: e.pageX - cursorWidth, top: e.pageY - cursorHeight})
+})
+</code></pre>
+                <!-- //Intro7 -->
+
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">Mouse Effect07</h2>
+                    <p class="bs-callout bs-callout-info">Mouse Effect07 (자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="MouseEffect07-javascript.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">JavaScript</h2>
+<pre class="line-numbers language-js"><code>class MaskSVG {
+constructor(obj){
+    this.el = document.body.querySelector('#svg-mask');
+    this.rect = document.body.querySelectorAll('.svg-mask--rect');
+    this.circle = document.body.querySelectorAll('.svg-mask--circle');
+    this.clicked = false;
+    this.init();
+}
+init(){
+    this.handleResize();
+    this.binds();
+    this.events();
+}
+
+binds(){
+    this.handleResize = this.handleResize.bind(this);
+    this.handleMouse = this.handleMouse.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+}
+
+events(){
+    window.addEventListener('resize', this.handleResize);
+    window.addEventListener('mousemove', this.handleMouse);
+    window.addEventListener('touchmove', this.handleMouse);
+    window.addEventListener('click', this.handleClick);
+}
+
+handleMouse(e){
+    gsap.to(this.circle, {
+        duration: 0.7,
+        cx: e.clientX || e.touches[0].clientX,
+        cy: e.clientY || e.touches[0].clientY,
+        ease: 'power2.out'
+    });
+}
+
+handleResize(){
+    this.minRadius = window.innerWidth * 0.1;
+    this.maxRadius = window.innerWidth * 1.1;
+
+    gsap.set([this.el, this.rect],{
+        width: `${window.innerWidth}px`,
+        height: `${window.innerHeight}px`
+    });
+
+    gsap.set(this.circle,{
+        r: `${this.minRadius}px`
+    });
+}
+
+handleClick(){
+    this.clicked = !this.clicked;
+    gsap.to(this.circle,{
+        duration: 1,
+        r: this.clicked ? this.maxRadius : this.minRadius,
+        ease: 'power3.inOut'
+    })
+}
+}
+new MaskSVG();
+</code></pre>
+                <!-- //Intro8 -->
+
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">Mouse Effect08</h2>
+                    <p class="bs-callout bs-callout-info">Mouse Effect08 (제이쿼리/자바스크립트)</p>
+                    <iframe width="100%" height="600px" src="MouseEffect08-jquery.html" frameborder="0"></iframe>
+                </div>
+                <h2 id="intro1" class="page-header">jQuery</h2>
+<pre class="line-numbers language-js"><code>$(window).on("mousemove", mouseMove);
+
+function mouseMove(e){
+    let positionSlow = (e.pageX - ($(window).width()/2))* 0.1;
+    let positionFast = (e.pageX - ($(window).width()/2))* 0.2;
+
+    gsap.to(".span-slow", {
+        duration: .4,
+        x: positionSlow
+    })
+    gsap.to(".span-fast", {
+        duration: .4,
+        x: -positionFast
+    })
+}
+</code></pre>
+                <h2 id="intro1" class="page-header">JavaScript</h2>
+<pre class="line-numbers language-js"><code>
+</code></pre>
+                <!-- //Intro9 -->
 
             </div>
             <!-- //col-md-12 -->
