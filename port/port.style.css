@@ -2,7 +2,7 @@
 #wrap {}
 #main {width: 100%;height: 1107px;background: #035dff;}
 #about {width: 100%; height: 1830px;}
-#website {width: 100%; height: 5560px;}
+#website {width: 100%; height: 5552px;}
 #animation {width: 100%; height: 3363px; background: lightgreen;}
 #script {width: 100%; height: 2186px; background: lightpink;}
 #contact {width: 100%; height: 976px; background: lightslategray;}
@@ -56,7 +56,12 @@
 .getstart h1 {font-size: 200px; text-align: center; font-family: 'Rammetto One', cursive; line-height: 1.3; padding-top: 9%;}
 .getstart .webi {position: absolute; left: 13%; top: 25%;}
 
-.website1 {height: 1168px; background: #ffb4ce; font-family: 'Rammetto One', cursive;}
+.website1 {position: relative; height: 1168px; background: #ffb4ce; font-family: 'Rammetto One', cursive;}
+
+.website1 .icon1-1 {position: absolute; right: 7%; top: 15%; z-index: 1;}
+.website1 .icon1-2 {position: absolute; left: 5%; bottom: 0; z-index: 1;}
+.website1 .icon1-3 {position: absolute; left: 40%; top: 41%; z-index: 1;}
+
 .site-wrap {width: 1450px; height: 833px; border: 1px solid #000; position: relative; left: 12.3%; top: 14%;}
 .site-wrap .box1 {width: 574px; height: 216px; border: 1px solid #000; margin: -1px;}
 .site-wrap .box2 {width: 574px; height: 194px; border: 1px solid #000; margin: -1px;}
@@ -72,10 +77,43 @@
 .site-wrap .box2 .hours {width: 45px; height: 45px; background: #035dff; border-radius: 50%; position: absolute; left: 30%; top: 28%;}
 .site-wrap .box2 .hours p {color: #fff; text-align: center; margin-left: 0; line-height: 1.9;}
 .site-wrap .box2 .hoursi {position: absolute; left: 4%; top: 35%;}
-
+.site-wrap .box3 h1 {font-size: 50px; text-align: center; color: #ff6541; letter-spacing: -1; padding-top: 25%;}
+.site-wrap .box3 h4 {font-size: 40px; text-align: center; color: #ff6541; padding-top: 47%;}
+.site-wrap .box3 .htmlBtn {position: absolute; left: 25%; top: 45%;}
+.site-wrap .box4 h1 {font-size: 50px; text-align: center; color: #035dff; letter-spacing: -1; padding-top: 25%;}
+.site-wrap .box4 h4 {font-size: 40px; text-align: center; color: #035dff; padding-top: 47%;}
+.site-wrap .box4 .cssBtn {position: absolute; left: 25%; top: 45%;}
+.site-wrap .box5 h1 {font-size: 60px; text-align: center; color: #fff; letter-spacing: -1; padding-top: 21%; text-shadow: 5px 6px 0 #000;}
+.site-wrap .box5 h4 {font-size: 30px; text-align: center; color: #fff; padding-top: 47%; text-shadow: 3px 5px 0 #000;}
+.site-wrap .box5 .clickBtn {position: absolute; left: 35%; top: 45%;}
 .site-wrap .box6 h5 {font-size: 28px; font-family: 'S-CoreDream-3Light'; line-height: 1.36; color: #fff460; margin: 4.5% 0 0 5%;}
 .site-wrap .box7 p {font-size: 18px; font-family: 'S-CoreDream-3Light'; line-height: 2; margin: 3% 0 0 5%;}
+/* //website1 */
 
-.website2 {height: 1168px; background: #fff460;}     
-.website3 {height: 1168px; background: #ffb4ce;}
-.website4 {height: 1168px; background: #fff460;} 
+.website2 {height: 1168px; background: #fff460; font-family: 'Rammetto One', cursive;}
+.website2 .site-wrap {width: 1448px;}
+.website2 .site-wrap .box5 {width: 291px;}
+.website2 .site-wrap .box1 {background: #ffb4ce;}
+.website2 .site-wrap .box2 {background: #ffb4ce;}
+.website2 .webstandard img {margin: -1px -1px 0 -1px;}
+
+.website2 .site-wrap .box1 h1 {margin: 9% 0 0 10%;}
+.website2 .site-wrap .box6 h5 {margin: 8% 0 0 5%;}
+.website2 .site-wrap .box7 p {margin: 5% 0 0 5%;}
+/* //website2 */
+
+.website3 {height: 1168px; background: #ffb4ce; font-family: 'Rammetto One', cursive;}
+.website3 .site-wrap {width: 1448px;}
+.website3 .site-wrap .box5 {width: 291px;}
+.website3 .webstandard img {margin: -1px -1px 0 -1px;}
+
+.website3 .site-wrap .box1 h1 {margin: 9% 0 0 10%;}
+.website3 .site-wrap .box6 h5 {margin: 8% 0 0 5%;}
+.website3 .site-wrap .box7 p {margin: 5% 0 0 5%;}
+/* //website3 */
+
+.website4 {height: 1168px; background: #fff460; font-family: 'Rammetto One', cursive;} 
+.website4 .site-wrap .box1 h1 {margin: 9% 0 0 10%;}
+.website4 .site-wrap .box6 h5 {margin: 8% 0 0 5%;}
+.website4 .site-wrap .box7 p {margin: 3% 0 0 5%;}
+/* //website4 */
