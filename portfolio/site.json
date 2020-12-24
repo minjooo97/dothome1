@@ -8,7 +8,7 @@
         {
           "id": 1,
           "link": "http://jmj9703.dothome.co.kr/webstandard/index.html",
-          "image": "img/site1.png",
+          "image": "..img/site1.png",
           "title": "PORTFOLIO SITE1",
           "category": "PORTFOLIO1",
           "rating": 5
@@ -16,7 +16,7 @@
         {
           "id": 2,
           "link": "http://jmj9703.dothome.co.kr/responsive/index.html",
-          "image": "img/site2.png",
+          "image": "..img/site2.png",
           "title": "PORTFOLIO SITE2",
           "category": "PORTFOLIO2",
           "rating": 4.9
@@ -24,7 +24,7 @@
         {
           "id": 3,
           "link": "http://jmj9703.dothome.co.kr/megabox/index22.html",
-          "image": "img/site3.png",
+          "image": "..img/site3.png",
           "title": "PORTFOLIO SITE3",
           "category": "PORTFOLIO3",
           "rating": 5
@@ -32,7 +32,7 @@
         {
           "id": 4,
           "link": "https://minjooo97.github.io/dothome1/test/test10-port.html",
-          "image": "img/site4.png",
+          "image": "..img/site4.png",
           "title": "PORTFOLIO SITE4",
           "category": "PORTFOLIO4",
           "rating": 5
@@ -40,7 +40,7 @@
         {
           "id": 5,
           "link": "https://minjooo97.github.io/dothome1/test/test11-port.html",
-          "image": "img/site5.png",
+          "image": "..img/site5.png",
           "title": "PORTFOLIO SITE5",
           "category": "PORTFOLIO5",
           "rating": 4.9
@@ -48,7 +48,7 @@
         {
           "id": 6,
           "link": "https://minjooo97.github.io/dothome1/test/test14-port.html",
-          "image": "img/site1.png",
+          "image": "..img/site1.png",
           "title": "PORTFOLIO SITE6",
           "category": "PORTFOLIO6",
           "rating": 4.9
