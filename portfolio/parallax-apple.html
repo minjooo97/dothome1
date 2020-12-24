@@ -191,7 +191,7 @@
         }
 
         /* section3 */
-        .s2Txt01 {
+        .s3Txt01 {
             width: 100vw; 
             height: 100vh;
             background: #000;
@@ -230,6 +230,67 @@
         .aniBox4 {display: none;}
         .aniBox5 {display: none;}
         .aniBox6 {display: none;}
+
+        /* section4 */
+        .s4Txt01 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            border: 8px solid #ec407a;
+            border-radius: 50%;
+        }
+        .s4Txt02 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            border: 8px solid #f06292;
+            border-radius: 50%;
+        }
+        .s4Txt03 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            border: 8px solid #f48fb1 ;
+            border-radius: 50%;
+        }
+        .s4Txt04 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            background-color: #f8bbd0;
+            border-radius: 50%;
+        }
+        .s4Txt05 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            border: 8px solid #f8bbd0;
+            border-radius: 50%;
+        }
+        .s4Txt06 {
+            display: none;
+            width: 10vw;
+            height: 20vh;
+            background-color: #ec407a;
+            border-radius: 50%;
+        }
+        .s4txtBox1 {
+            display: none;
+            font-size: 5vw;
+            font-weight: 500;
+        }
+        .s4txtBox2 {
+            display: none;
+            font-size: 5vw;
+            font-weight: 500;
+        }
+        .s4txtBox3 {
+            display: none;
+            font-size: 4.5vw;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
@@ -274,9 +335,12 @@
             data-7899 = "display:none"
             data-7900 = "display:block"
             data-17000 = "display:block"
-            data-70001 = "display:none"
+            data-47000 = "display:none"
         >
-        <div class="s2Txt01 fixed"></div>
+        <div class="s2Txt01 fixed"
+            data-46000 = "opacity: 1"
+            data-47000 = "opacity: 0"
+        ></div>
         <div class="s2Txt02">
             <h2 class="fixed"
                 data-7900 = "opacity:0; top: 50%;"
@@ -377,10 +441,11 @@
             data-23000 = "display:none"
             data-23400 = "display:block"
             data-40000 = "display:block" 
-            data-60000 = "display:none"   
+            data-46000 = "display:none"   
         ><div class="s3Txt01 fixed" data-titlt="검은색 원"
             data-20001 = "width:200vw; height: 200vw"
-            data-23000 = "width:30vw; height: 30vw"    
+            data-23000 = "width:30vw; height: 30vw;"  
+            data-23001 = "display:none"
         ></div>
             <div class="s3Txt02">
                 <h2 class="txtBox fixed"
@@ -388,7 +453,7 @@
                     data-25800 = "opacity: 1; transform: translate(-50%, -50%) scale(0)"
                     data-27000 = "opacity: 1; transform: translate(-50%, -50%) scale(1.5)"
                     data-29000 = "opacity: 1; transform: translate(-50%, -50%) scale(1.5)"
-                    data-30001 = "top: 50%"
+                    data-29001 = "top: 50%"
                     data-31000 = "top: -50%"
                 ><span>Animation</span></h2>
                 <h2 class="txtBox1 fixed"
@@ -400,56 +465,105 @@
                 <h2 class="txtBox2 fixed"
                     data-34001 = "display:block; top: -20%;"
                     data-36500 = "top: 20%;"
-                    data-38000 = "top: -20%;"
+                    data-38500 = "top: -20%;"
                 ><span>Animation2</span></h2>
                 <h2 class="txtBox3 fixed"
-                    data-38001 = "display:block; left: 200%"
-                    data-40000 = "left: -80%"
+                    data-38501 = "display:block; left: 200%"
+                    data-41000 = "left: -80%"
                 ><span>Animation3</span></h2>
                 <h2 class="txtBox4 fixed"
-                    data-38001 = "display:block; left: 200%"
-                    data-42000 = "left: -100%"
+                    data-38501 = "display:block; left: 200%"
+                    data-43000 = "left: -100%"
                 ><span>Animation4</span></h2>
                 <h2 class="txtBox5 fixed"
-                    data-38001 = "display:block; left: 250%"
-                    data-44000 = "left: -100%"
+                    data-38501 = "display:block; left: 250%"
+                    data-45000 = "left: -100%"
                 ><span>Animation5</span></h2>
                 <h2 class="txtBox6 fixed"
-                    data-38001 = "display:block; left: 300%"
-                    data-46000 = "left: -100%"
+                    data-38501 = "display:block; left: 300%"
+                    data-47000 = "left: -100%"
                 ><span>Animation6</span></h2>
             </div>
             <div class="s3Txt03">
                 <div class="aniBox1 fixed"
                     data-31000 = "display:block; left: 150%"
                     data-32500 = "left: 50%"
-                    data-34000 = "left: -150%"
+                    data-34500 = "left: -50%"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation01.html" frameborder="0" width="300vw" height="200vh" scrolling="no"></iframe></div>
                 <div class="aniBox2 fixed"
                     data-34001 = "display:block; transform: translate(-50%, -50%) scale(0)"
                     data-36500 = "transform: translate(-50%, -50%) scale(1.5)"
-                    data-38000 = "transform: translate(-50%, -50%) scale(0)"
+                    data-38500 = "transform: translate(-50%, -50%) scale(0)"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation02.html" frameborder="0" width="400vw" height="300vh" scrolling="no"></iframe></div>
                 <div class="aniBox3 fixed"
-                    data-38001 = "display:block; left: 200%; top: 70%"
-                    data-40000 = "left: -80%;"
+                    data-38501 = "display:block; left: 200%; top: 70%"
+                    data-41000 = "left: -80%;"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation03.html" frameborder="0" width="500vw" height="250vh" scrolling="no"></iframe></div>
                 <div class="aniBox4 fixed"
-                    data-38001 = "display:block; left: 200%; top: 30%"
-                    data-42000 = "left: -100%"
+                    data-38501 = "display:block; left: 200%; top: 30%"
+                    data-43000 = "left: -100%"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation04.html" frameborder="0" width="500vw" height="250vh" scrolling="no"></iframe></div>
                 <div class="aniBox5 fixed"
-                    data-38001 = "display:block; left: 250%; top: 70%"
-                    data-44000 = "left: -100%"
+                    data-38501 = "display:block; left: 250%; top: 70%"
+                    data-45000 = "left: -100%"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation05.html" frameborder="0" width="500vw" height="250vh" scrolling="no"></iframe></div>
                 <div class="aniBox6 fixed"
-                    data-38001 = "display:block; left: 300%; top: 30%"
-                    data-46000 = "left: -100%"
+                    data-38501 = "display:block; left: 300%; top: 30%"
+                    data-47000 = "left: -100%"
                 ><iframe src="https://minjooo97.github.io/dothome1/portfolio/animation06.html" frameborder="1" width="500vw" height="250vh" scrolling="no"></iframe></div>
             </div>
         </section>
         <!-- //section3 -->
-        <section id="section4"></section><!-- //section4 -->
+
+        <section id="section4"
+            data-0 = ""
+            data-47000 = "">
+            <div class="s4Txt01 fixed"
+                data-47000 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-50000 = "transform: translate(-50%, -50%) scale(13)"
+            ></div>
+            <div class="s4Txt02 fixed"
+                data-47500 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-50500 = "transform: translate(-50%, -50%) scale(13)"
+            ></div>
+            <div class="s4Txt03 fixed"
+                data-48000 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-51000 = "transform: translate(-50%, -50%) scale(13)"
+            ></div>
+            <div class="s4Txt04 fixed"
+                data-48500 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-51500 = "transform: translate(-50%, -50%) scale(13)"
+            ></div>
+            <div class="s4Txt05 fixed"
+                data-49000 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-52000 = "transform: translate(-50%, -50%) scale(13)"
+            ></div>
+            <div class="s4Txt06 fixed"
+                data-55000 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-57000 = "transform: translate(-50%, -50%) scale(4.5)"
+            ></div>
+            <div class="s4txtBox1 fixed"
+                data-50000 = "display: block; opacity: 0; top: 35%"
+                data-51000 = "opacity: 1; top: 43%"
+                data-52000 = "opacity: 1; top: 43%"
+                data-52500 = "opacity: 1; top: 43%"
+                data-54500 = "opacity: 0"
+            ><h1>Thank you</h1>
+            </div>
+            <div class="s4txtBox2 fixed"
+                data-51000 = "display: block; opacity: 0; top: 50%"
+                data-52000 = "opacity: 1; top: 58%"
+                data-52500 = "opacity: 1; top: 58%"
+                data-54500 = "opacity: 0"
+            ><h1>for comming!</h1>
+            </div>
+            <div class="s4txtBox3 fixed"
+                data-56500 = "display: block; transform: translate(-50%, -50%) scale(0)"
+                data-58000 = "transform: translate(-50%, -50%) scale(1)"
+            ><h1>Please contact me</h1>
+            </div>
+        </section>
+        <!-- //section4 -->
         <section id="section5"></section><!-- //section5 -->
         <section id="section6"></section><!-- //section6 -->
     </div>
