@@ -143,9 +143,32 @@
 .goanimation {height: 880px; background: url(img/aniBack.png) no-repeat; background-size: cover; margin-top: -1px;}
 .goanimation h1 {font-family: 'Rammetto One', cursive; font-size: 200px; text-align: center; line-height: 1.25; color: #035dff; text-shadow: 20px 20px 0 #000; padding-top: 9%;}
 
-.pick {height: 2483px; background: #000; margin-top: -1px;}
+.pick {position: relative; height: 2483px; background: #000; margin-top: -1px; font-family: 'Rammetto One', cursive;}
 
-.pick .card-wrap {width: 1450px; height: 1643px; background: #fff; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 21%; justify-content: space-between;}
+.pick .aniIcon1 {position: absolute; right: 1%; top: 0.8%;}
+.pick .aniIcon2 {position: absolute; left: 1%; top: 0.8%;}
+.pick .aniIcon3 {position: absolute; right: 1%; bottom: 0.8%;}
+.pick .aniIcon4 {position: absolute; left: 0.5%; bottom: 0.4%;}
+.pick .anidot1 {position: absolute; right: 1%; top: 20%;}
+.pick .anidot2 {position: absolute; left: 5%; top: 50%;}
+.pick .anidot3 {position: absolute; right: 25%; bottom: 8%;}
+.pick .anidot4 {position: absolute; left: 30%; top: 20%;}
+.pick .anidot5 {position: absolute; right: 8%; top: 57%;}
+
+.pick h1 {font-size: 150px; text-align: center; line-height: 4;}
+.pick h1 span:nth-child(1) {color: #234ebd; border-bottom: 5px solid #234ebd;}
+.pick h1 span:nth-child(2) {color: #c5a3d8; border-bottom: 5px solid #c5a3d8;}
+.pick h1 span:nth-child(3) {color: #234ebd; border-bottom: 5px solid #234ebd;}
+.pick h1 span:nth-child(4) {color: #45795f; border-bottom: 5px solid #45795f;}
+.pick h1 span:nth-child(5) {color: #ff6541; border-bottom: 5px solid #ff6541;}
+.pick h1 span:nth-child(6) {color: #234ebd; border-bottom: 5px solid #234ebd;}
+.pick h1 span:nth-child(7) {color: #c5a3d8; border-bottom: 5px solid #c5a3d8;}
+.pick h1 span:nth-child(8) {color: #234ebd; border-bottom: 5px solid #234ebd;}
+.pick h1 span:nth-child(9) {color: #45795f; border-bottom: 5px solid #45795f;}
+.pick h1 span:nth-child(10) {color: #ff6541; border-bottom: 5px solid #ff6541;}
+.pick h1 span:nth-child(11) {color: #234ebd; border-bottom: 5px solid #234ebd;}
+
+.pick .card-wrap {width: 1450px; height: 1643px; background: #000; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 0%; justify-content: space-between;}
 .pick .card-wrap > div {width: 473px; height: 801px; border-radius: 20px;}
 .card-wrap .card1 {background: #5226f0;}
 .card-wrap .card2 {background: #f25a25;}
@@ -153,3 +176,33 @@
 .card-wrap .card4 {background: #f25a25;}
 .card-wrap .card5 {background: #ffb322;}
 .card-wrap .card6 {background: #5226f0;}
+
+.card1 .ract {width: 418px; height: 750px; border: 2px solid #ffb322; margin: 5%;}
+.card2 .ract {width: 418px; height: 750px; border: 2px solid #000; margin: 5%;}
+.card3 .ract {width: 418px; height: 750px; border: 2px solid #5226f0; margin: 5%;}
+.card4 .ract {width: 418px; height: 750px; border: 2px solid #000; margin: 5%;}
+.card5 .ract {width: 418px; height: 750px; border: 2px solid #5226f0; margin: 5%;}
+.card6 .ract {width: 418px; height: 750px; border: 2px solid #ffb322; margin: 5%;}
+
+.card1 .ract h3 {font-size: 33px; text-align: center; color: #ffb322;}
+.card1 .ract h5 {font-size: 33px; text-align: center; color: #ffb322; line-height: 2.7;}
+.card2 .ract h3 {font-size: 33px; text-align: center; color: #000;}
+.card2 .ract h5 {font-size: 33px; text-align: center; color: #000; line-height: 2.7;}
+.card3 .ract h3 {font-size: 33px; text-align: center; color: #5226f0;}
+.card3 .ract h5 {font-size: 33px; text-align: center; color: #5226f0; line-height: 2.7;}
+.card4 .ract h3 {font-size: 33px; text-align: center; color: #000;}
+.card4 .ract h5 {font-size: 33px; text-align: center; color: #000; line-height: 2.7;}
+.card5 .ract h3 {font-size: 33px; text-align: center; color: #5226f0;}
+.card5 .ract h5 {font-size: 33px; text-align: center; color: #5226f0; line-height: 2.7;}
+.card6 .ract h3 {font-size: 33px; text-align: center; color: #ffb322;}
+.card6 .ract h5 {font-size: 33px; text-align: center; color: #ffb322; line-height: 2.7;}
+
+.card1 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg1.png); border: 2px solid #ffb322; margin-left: -2px;}
+.card2 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg2.png); border: 2px solid #000; margin-left: -2px;}
+.card3 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg3.png); border: 2px solid #5226f0; margin-left: -2px;}
+.card4 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg4.png); border: 2px solid #000; margin-left: -2px;}
+.card5 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg5.png); border: 2px solid #5226f0; margin-left: -2px;}
+.card6 .ract .imgwrap {position: relative; width: 418px; height: 600px; background: url(img/aniImg6.png); border: 2px solid #ffb322; margin-left: -2px;}
+
+.card-wrap .ract .imgwrap .clickBox {width: 372px; height: 100px; background: #fff; border-radius: 50px; position: absolute; left: 5%; bottom: 5%;}
+.card-wrap .ract .imgwrap .clickBox a p {font-size: 40px; text-align: center; line-height: 2.5;}
