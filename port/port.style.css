@@ -1,11 +1,11 @@
 /* layout */
-#wrap {}
+#wrap {margin: 0; padding: 0;}
 #main {width: 100%;height: 1107px;background: #035dff;}
 #about {width: 100%; height: 1830px;}
 #website {width: 100%; height: 5552px;}
 #animation {width: 100%; height: 3363px;}
-#script {width: 100%; height: 2186px; background: lightpink;}
-#contact {width: 100%; height: 976px; background: lightslategray;}
+#script {width: 100%; height: 2185px;}
+#contact {width: 100%; height: 976px; background: #ffb4ce;}
 #end {width: 100%; height: 1030px; background: lightsteelblue;}
 
 /* main */
@@ -206,3 +206,59 @@
 
 .card-wrap .ract .imgwrap .clickBox {width: 372px; height: 100px; background: #fff; border-radius: 50px; position: absolute; left: 5%; bottom: 5%;}
 .card-wrap .ract .imgwrap .clickBox a p {font-size: 40px; text-align: center; line-height: 2.5;}
+/* //animation */
+
+/* script */
+.script {position: relative; height: 877px; background: url(img/scriptBack.png) no-repeat; margin-top: -3px; margin-left: -3px; font-family: 'Rammetto One', cursive;}
+.script h1 {font-size: 200px; color: #fff88e; text-align: center; padding-top: 15%;}
+.script .what {width: 588px; height: 133px; border: 2px solid #000; background: #fff88e; transform: rotate(11deg); position: absolute; right: 7%; top: 12%;}
+.script .what h3 {font-size: 50px; text-align: center; padding-top: 4%;}
+
+.see {position: relative; height: 1308px; background: url(img/scriptBack2.png) no-repeat; margin-left: -6px;}
+.see img {position: absolute; left: 50%; bottom: 25%;}
+.see h1 {font-family: 'Balsamiq Sans', cursive; font-size: 45px; font-weight: bold; position: absolute; left: 38%; bottom: 20%;}
+
+.script1 {font-family: 'Rammetto One', cursive; width: 464px; height: 628px; background: #4be0f8; border: 2px solid #000; border-radius: 20px; transform: rotate(-9deg); position: absolute; left: 10%; top: 18.9%; z-index: 10;}
+.script1 .img-wrap {width: 410px; height: 410px; border: 2px solid #000; border-radius: 20px; background: url(img/scriptImg1.png) no-repeat; margin: 10% 0 0 5%;}
+.script1 h2 {font-size: 45px; text-align: center; padding-top: 12%;}
+.script1 img {position: absolute; left: 35%; bottom: 20%;}
+.script1-1 {width: 464px; height: 628px; background: #4be0f8; border: 2px solid #000; border-radius: 20px; transform: rotate(-9deg); position: absolute; left: 9.5%; top: 19%; z-index: 9;}
+
+.script2 {font-family: 'Rammetto One', cursive; width: 464px; height: 628px; background: #f8c901; border: 2px solid #000; border-radius: 20px; transform: rotate(-1deg); position: absolute; left: 29%; top: 15.5%; z-index: 8;}
+.script2 .img-wrap {width: 410px; height: 410px; border: 2px solid #000; border-radius: 20px; background: url(img/scriptImg2.png) no-repeat; margin: 10% 0 0 5%;}
+.script2 h2 {font-size: 45px; text-align: center; padding-top: 16%; line-height: 1;}
+.script2 img {position: absolute; left: 35%; bottom: 20%;}
+.script2-1 {width: 464px; height: 628px; background: #f8c901; border: 2px solid #000; border-radius: 20px; transform: rotate(-1deg); position: absolute; left: 28.5%; top: 15.5%; z-index: 7;}
+
+.script3 {font-family: 'Rammetto One', cursive; width: 464px; height: 628px; background: #f59a01; border: 2px solid #000; border-radius: 20px; transform: rotate(6deg); position: absolute; left: 48%; top: 15.9%; z-index: 6;}
+.script3 .img-wrap {width: 410px; height: 410px; border: 2px solid #000; border-radius: 20px; background: url(img/scriptImg3.png) no-repeat; margin: 10% 0 0 5%;}
+.script3 h2 {font-size: 45px; text-align: center; padding-top: 16%; line-height: 1;}
+.script3 img {position: absolute; left: 35%; bottom: 20%;}
+.script3-1 {width: 464px; height: 628px; background: #f59a01; border: 2px solid #000; border-radius: 20px; transform: rotate(6deg); position: absolute; left: 47.5%; top: 15.8%; z-index: 5;}
+
+.script4 {font-family: 'Rammetto One', cursive; width: 464px; height: 628px; background: #f26c69; border: 2px solid #000; border-radius: 20px; transform: rotate(12deg); position: absolute; left: 67%; top: 19.5%; z-index: 4;}
+.script4 .img-wrap {width: 410px; height: 410px; border: 2px solid #000; border-radius: 20px; background: url(img/scriptImg4.png) no-repeat; margin: 10% 0 0 5%;}
+.script4 h2 {font-size: 45px; text-align: center; padding-top: 16%; line-height: 1;}
+.script4 img {position: absolute; left: 35%; bottom: 20%;}
+.script4-1 {width: 464px; height: 628px; background: #f26c69; border: 2px solid #000; border-radius: 20px; transform: rotate(12deg); position: absolute; left: 66.5%; top: 19.35%; z-index: 3;}
+/* //script */
+
+/* contact */
+.contact {height: 976px; background: #ffb4ce; position: relative;}
+.contact .pic1 {width: 420px; height: 519px; background: url(img/hi_pic.png) no-repeat; background-size: contain; transform: rotate(-0.4deg); position: absolute; left: 17.6%; top: 24.5%; z-index: 4;}
+.contact .pic2 {width: 442px; height: 534px; background: #fff; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 17%; top: 23%; z-index: 3;}
+.contact .pic3 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 16%; top: 25%; z-index: 2;}
+.contact .pic4 {width: 442px; height: 534px; background: #ffb4ce; border: 1px solid #000; transform: rotate(-4deg); position: absolute; left: 15%; top: 27%; z-index: 1;}
+
+.contact .punch {position: absolute; left: 4.5%; top: 5%;}
+.contact .contact_I1 {position: absolute; left: 15%; top: 30%; z-index: 5;}
+.contact .contact_I2 {position: absolute; left: 35.5%; top: 25%; z-index: 5;}
+.contact .contact_I3 {position: absolute; left: 15%; top: 48%; z-index: 5;}
+.contact .contact_I4 {position: absolute; left: 38%; top: 50%; z-index: 5;}
+.contact .contact_I5 {position: absolute; left: 16%; top: 73%; z-index: 5;}
+.contact .contact_I6 {position: absolute; left: 34%; top: 68%; z-index: 5;}
+
+.contact h1 {font-family: 'Rammetto One', cursive; font-size: 95px; color: #0053dc; -webkit-text-stroke: 3px #000; line-height: 1; position: absolute; right: 13%; top: 28%;}
+.contact .bar {width: 732px; height: 3px; background: #fff; position: absolute; right: 13.2%; top: 54%;}
+.contact .contactBox {width: 742px; height: 111px; border: 3px solid #000; box-shadow: -8px 8px 0 #000; position: absolute; right: 12.8%; top: 62%;}
+.contact h3 {font-size: 38px; font-family: 'Jua', sans-serif; position: absolute;  right: 21.5%; top: 78%;}
