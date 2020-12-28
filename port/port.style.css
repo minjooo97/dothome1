@@ -270,7 +270,7 @@
 
 /* end */
 .end {position: relative; height: 1020px; background: #000; font-family: 'Rammetto One', cursive;}
-.end h1 {font-size: 200px; color: #fff; text-align: center;}
+.end h1 {font-size: 200px; color: #fff; text-align: center; padding-top: 12%;}
 
 .end .end-react {width: 258px; height: 258px; background: #fff460; border-radius: 50%; position: absolute; left: 5%; bottom: 0;}
 .end .end-react p {font-size: 40px; color: #0053dc; text-align: center; padding-top: 38%;}
@@ -291,4 +291,6 @@
 .end .end-animation {width: 276px; height: 276px; background: #FF6541; border-radius: 50%; position: absolute; left: 86%; bottom: 17.1%;}
 .end .end-animation p {font-size: 30px; color: #fff460; text-align: center; padding-top: 41%;}
 .end .ball1 {width: 150px; height: 150px; background: #9EF3F3; border-radius: 50%; position: absolute; left: -2.5%; bottom: 0;}
-.end .ball2 {width: 130px; height: 130px; background: #fff; border-radius: 50%; position: absolute; left: 18%; bottom: 0;}
+.end .ball2 {width: 131px; height: 131px; background: #fff; border-radius: 50%; position: absolute; left: 18.1%; bottom: 0;}
+.end .ball3 {width: 180px; height: 180px; background: #fff; border-radius: 50%; position: absolute; right: -1%; bottom: 0;}
+.end img {position: absolute; right: 2%; top: 8%;}
