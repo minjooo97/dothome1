@@ -52,7 +52,7 @@ body {background:#f1f4fb url(../img/body_bg.gif)}
 /* Header  */
 
 #header{
-	background:#f8bbd0 center 57px;
+	background:#283593 center 57px;
 	padding: 10px 0 10px 0px;
 }
 #header.sub {
@@ -133,24 +133,24 @@ pre.pre-show{
 
 .header_icon {text-align: center;}
 .header_icon li {display: inline; margin: 0 2px;}
-.header_icon li a {position: relative; background-color: #f48fb1 ; width: 60px; height: 60px; border-radius: 50%; display: inline-block; font-size: 28px; color: #fff; line-height: 60px; transition: box-shadow 0.3s ease;}
+.header_icon li a {position: relative; background-color: #8c9eff; width: 60px; height: 60px; border-radius: 50%; display: inline-block; font-size: 28px; color: #fff; line-height: 60px; transition: box-shadow 0.3s ease;}
 .header_icon li a span {
     position: absolute; left: 50%; top: -40px; transform: translateX(-50%);
-    font-size: 12px; line-height: 1.6; background: #f06292; padding: 3px 9px;
+    font-size: 12px; line-height: 1.6; background: #8c9eff; padding: 3px 9px;
     border-radius: 6px 0; opacity: 0; transition: opacity 0.3s ease, top 0.3s ease;
 }
 .header_icon li a span:before {
     content: '';
     position: absolute; left: 50%; bottom: -5px;
     transform: translateX(-50%);
-    border-top: 5px solid #f06292;
+    border-top: 5px solid #8c9eff;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 }
 .header_icon li a:hover span {opacity: 1; top: -33px;}
 .header_icon li a:hover {
     box-shadow: 
-        0 0 0 3px rgba(218, 199, 212, 0.9) inset,
+        0 0 0 3px rgba(215, 182, 230, 0.9) inset,
         0 0 0 100px rgba(0,0,0,0.1) inset;
 }
 

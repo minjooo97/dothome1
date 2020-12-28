@@ -282,9 +282,9 @@
 }
 
 .gridly .webstandard a {
-	color: #ec407a;
+	color: #311b92;
 	display: block;
-	border-bottom: 3px solid #f8bbd0;
+	border-bottom: 3px solid #b39ddb;
 	margin-right: 20px;
 } 
 .gridly .html5 a {
@@ -332,8 +332,6 @@
 
 /* 마우스 오버 효과 */
 .image-wrap {
-	background: url(../img/sooguk.PNG) no-repeat;
-	background-size: cover;
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
@@ -1944,7 +1942,7 @@
 }
 
 
-.donutImg {text-align: center; padding-top: 200px;}
+.donutImg {text-align: center;}
 .donutImg h5 {color: #000; font-size: 23px; padding-top: 22px; text-transform: uppercase;}
 .donutImg p {color: #565656; font-size: 18px; }
 .donutImg span {color: #999; font-size: 12px; text-transform: uppercase;}
