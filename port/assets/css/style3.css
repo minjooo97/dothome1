@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+#section1 {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #FFB4CD 80%, #FFF460 20%);
+}
+
+/* section2 */
+#section2 {
+    height: 100vh;
+    background: #FFF460;
+}
+
+
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* content */
+#content {
+}
+
+/* header */
+#header {
+    width: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000000;
+}
+#header h1 {
+    font-size: 2vw;
+    line-height: 0.9;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding: 20px;
+}
+#header h1 span:last-child {
+    padding-left: 2vw;
+}
+#header nav {}
+#header nav ul {
+    padding: 20px;
+}
+#header nav ul li {
+    display: inline-block;
+}
+#header nav ul li a {
+    padding: 2.2vw;
+    font-size: 0.8vw;
+    font-family: 'Rammetto One';
+}
+nav .about_1 {
+    width: 20px;
+    position: absolute;
+    left: 54%; top: 20%;
+}
+nav .about_2 {
+    width: 23px;
+    position: absolute;
+    right: 36.3%; top: 17%;
+}
+nav .about_3 {
+    width: 20px;
+    position: absolute;
+    right: 27.3%; top: 20%;
+}
+nav .about_4 {
+    width: 20px;
+    position: absolute;
+    right: 16.5%; top: 20%;
+}
+nav .about_5 {
+    width: 20px;
+    position: absolute;
+    right: 8.2%; top: 20%;
+}
+/* //header */
+
+/* sec1 */
+.sec1 h1 {
+    font-size: 5vw;
+    font-family: 'Rammetto One';
+    text-align: center;
+    line-height: 1.2;
+    position: absolute; 
+    left: 50%; top: 30%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1000;
+    color: #fcedd8;
+    text-shadow: 5px 5px 0px #eb452b, 
+              10px 10px 0px #efa032, 
+              15px 15px 0px #46b59b, 
+              20px 20px 0px #017e7f, 
+              25px 25px 0px #052939, 
+              30px 30px 0px #035dff;
+}
+.sec1 .img1 img {
+    width: 370px;
+    height: 560px;
+    position: absolute;
+    left: 50%; top: 67%;
+    transform: translate(-50%, -50%);
+    border-radius: 205px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0px #eb452b, 
+              10px 10px 0px #efa032, 
+              15px 15px 0px #46b59b, 
+              20px 20px 0px #017e7f, 
+              25px 25px 0px #052939; 
+}
+.sec1 .img2 img {
+    width: 300px;
+    position: absolute;
+    left: 10vw;
+    top: 50%;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0px #eb452b, 
+              10px 10px 0px #efa032, 
+              15px 15px 0px #46b59b, 
+              20px 20px 0px #017e7f, 
+              25px 25px 0px #052939; 
+}
+.sec1 .img3 img {
+    width: 200px;
+    position: absolute;
+    left: auto; right: 10%;
+    top: 30%;
+    border-radius: 33px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0px #eb452b, 
+              10px 10px 0px #efa032, 
+              15px 15px 0px #46b59b, 
+              20px 20px 0px #017e7f, 
+              25px 25px 0px #052939; 
+}
+/* .sec1 svg {
+    width: 250px;
+    position: absolute;
+    right: 20%; bottom: 7%;
+    z-index: 1100;
+    font-size: 2vw;
+    letter-spacing: 20px;
+    font-weight: bold;
+} */
+.sec1 .about_tw1 {
+    width: 40px;
+    position: absolute;
+    left: 30%; top: 45%;
+    z-index: 1100;
+}
+.sec1 .about_tw2 {
+    width: 50px;
+    position: absolute;
+    right: 32%; bottom: 25%;
+}
+.sec1 .about_tw3 {
+    width: 60px;
+    position: absolute;
+    right: 20%; top: 20%;
+    z-index: 1100;
+}
+.sec1 .about_tw4 {
+    width: 40px;
+    position: absolute;
+    left: 25%; top: 15%;
+    z-index: 1100;
+}
+.sec1 .about_tw5 {
+    width: 50px;
+    position: absolute;
+    right: 10%; top: 58%;
+    z-index: 1100;
+}
+.sec1 .about_tw6 {
+    width: 45px;
+    position: absolute;
+    left: 7%; bottom: 22%;
+    z-index: 1100;
+}
+.sec1 .about_tw7 {
+    width: 150px;
+    position: absolute;
+    left: 55%; bottom: 6%;
+    z-index: 1100;
+}
+.sec1 .about_tw8 {
+    width: 150px;
+    position: absolute;
+    left: 5%; top: 30%;
+    z-index: 1100;
+}
+.sec1 .about_tw9 {
+    width: 100px;
+    position: absolute;
+    right: 3%; bottom: 15%;
+    z-index: 1100;
+}
+.sec1 .about_tw10 {
+    width: 70px;
+    position: absolute;
+    left: 22%; bottom: 9%;
+    z-index: 1100;
+}
+.sec1 .about_tw11 {
+    width: 100px;
+    position: absolute;
+    left: 38%; bottom: 40%;
+    z-index: 1100;
+}
+.sec1 .about_tw12 {
+    width: 55px;
+    position: absolute;
+    left: 12%; top: 5%;
+    z-index: 1100;
+}
+.sec1 .about_tw13 {
+    width: 50px;
+    position: absolute;
+    right: 3%; top: 15%;
+    z-index: 1100;
+}
+.sec1 .about_tw14 {
+    width: 40px;
+    position: absolute;
+    right: 20%; bottom: 53%;
+    z-index: 1100;
+}
+
+
