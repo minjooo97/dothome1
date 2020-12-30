@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
 @font-face {
     font-family: 'NanumSquareRound';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
@@ -23,8 +24,14 @@
     background: #FFF460;
 }
 
-#section3 {}
-#section4 {}
+#section3 {
+    height: 878px;
+}
+
+#section4 {
+    height: 4679px;
+    background: #000;
+}
 #section5 {}
 #section6 {}
 
@@ -149,15 +156,6 @@ nav .about_5 {
               20px 20px 0px #017e7f, 
               25px 25px 0px #052939; 
 }
-/* .sec1 svg {
-    width: 250px;
-    position: absolute;
-    right: 20%; bottom: 7%;
-    z-index: 1100;
-    font-size: 2vw;
-    letter-spacing: 20px;
-    font-weight: bold;
-} */
 .sec1 .about_tw1 {
     width: 40px;
     position: absolute;
@@ -257,10 +255,6 @@ nav .about_5 {
     line-height: 1.2;
     text-align: center;
     color: #035dff;
-    text-shadow: 3px 3px #eb452b,
-                 6px 6px #efa032,
-                 9px 9px #46b59b,
-                 12px 12px #fcedd8;
 }
 .sec2 .text-wrap p {
     font-size: 1.2vw;
@@ -269,17 +263,105 @@ nav .about_5 {
     text-align: center;
     padding-top: 6%;
 }
+.sec2 .text-wrap button {
+    position: absolute;
+    right: 11%; bottom: -72%;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+.sec2 .text-wrap button.see-more {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.3em 0.7em;
+    background: #ffe9e9;
+    border: 2px solid #F875A2;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.sec2 .text-wrap button.see-more::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+      box-shadow: 0 0 0 2px #F875A2;
+      transform: translate3d(0, 0.75em, -1em);
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.sec2 .text-wrap button.see-more:hover {
+    background: #f0d0d0;
+    transform: translate(0, 0.25em);
+}
+.sec2 .text-wrap button.see-more:hover::before {
+    box-shadow: 0 0 0 2px #F875A2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+/* .sec2 .text-wrap button.see-more:active {
+    background: #f9c4d2;
+    transform: translate(0em, 0.75em);
+}
+.sec2 .text-wrap button.see-more:active::before {
+    box-shadow: 0 0 0 2px #F875A2, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+} */
 .sec2 .img-wrap {
    
 }
-.sec2 .img-wrap .img-box {
-    width: 440px;
-    height: 520px;
-    background: url(../img/hi_pic.png) no-repeat;
-    position: absolute;
-    left: 19.8%; top: 127%;
-    z-index: 11;
+.sec2 .img-wrap .hi_pic {
+    width: 300px;
+    height: 400px;
 }
+.sec2 .img-wrap .hi {
+    position: absolute;
+    left: 21%; top: 128.4%;
+    z-index: 20;
+    transition: all 0.8s;
+    transform: rotate(-3.5deg);
+}
+.sec2 .img-wrap .hi:nth-child(1) {
+    z-index: 20;
+}
+.sec2 .img-wrap .hi:nth-child(2) {
+    z-index: 19;
+    opacity: 0;
+}
+.sec2 .img-wrap .hi:nth-child(3) {
+    z-index: 18;
+    opacity: 0;
+}
+
+/* .sec2 .img-wrap .hi_pic2 {
+    width: 394px;
+    height: 495px; 
+    background: url(../img/hi_pic2.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 20.8%; top: 128.4%;
+    z-index: 19;
+    transform: rotate(-3.5deg);
+}
+.sec2 .img-wrap .hi_pic3 {
+    width: 394px;
+    height: 495px; 
+    background: url(../img/hi_pic3.png) no-repeat;
+    position: absolute;
+    left: 20.8%; top: 128.4%;
+    z-index: 18;
+    transform: rotate(-3.5deg);
+} */
 .sec2 .img-wrap .img-boxWrap1 {
     width: 448px;
     height: 539px;
@@ -333,43 +415,31 @@ nav .about_5 {
     width: 150px;
     position: absolute;
     left: 36%; top: 120%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .pageI2 {
     width: 110px;
     position: absolute;
     left: 15%; top: 160%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .pageI2-1 {
     width: 100px;
     position: absolute;
     left: 17%; top: 165%;
-    z-index: 12;
-}
-.sec2 .cam {
-    width: 120px;
-    position: absolute;
-    left: 40%; top: 170%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .thing {
     width: 50px;
     position: absolute;
     right: 15%; top: 133%;
-    z-index: 12;
-}
-.sec2 .pageI4 {
-    width: 130px;
-    position: absolute;
-    left: 35%; top: 177%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .pageI5 {
     width: 200px;
     position: absolute;
     left: 14%; top: 124%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .pageI6 {
     width: 120px;
@@ -380,55 +450,89 @@ nav .about_5 {
 .sec2 .pageI7 {
     width: 200px;
     position: absolute;
-    left: 15%; top: 177%;
-    z-index: 12;
+    left: 36%; top: 173%;
+    z-index: 21;
 }
 .sec2 .snow1 {
     width: 30px;
     position: absolute;
     left: 15%; top: 110%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .snow2 {
     width: 40px;
     position: absolute;
     right: 45%; top: 120%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .snow3 {
     width: 40px;
     position: absolute;
     left: 5%; top: 177%;
-    z-index: 12;
+    z-index: 21;
 }
 .sec2 .snow4 {
     width: 50px;
     position: absolute;
     right: 3%; top: 160%;
-    z-index: 12;
+    z-index: 21;
 }
-.sec2 .snow2-1 {
-    width: 40px;
-    position: absolute;
-    right: 50%; top: 195%;
-    z-index: 12;
-}
-.sec2 .snow2-2 {
-    width: 40px;
-    position: absolute;
-    right: 30%; top: 180%;
-    z-index: 12;
-}
-.sec2 .snow2-3 {
-    width: 40px;
-    position: absolute;
-    left: 0%; top: 140%;
-    z-index: 12;
-}
-.sec2 .snow2-4 {
-    width: 40px;
-    position: absolute;
-    right: 22%; top: 115%;
-    z-index: 12;
-}
+/* //sec2 */
 
+.sec3 {
+    position: relative;
+    height: 878px;
+    background: url(../img/webBack.PNG) no-repeat;
+    background-size: cover;
+}
+.sec3 h1 {
+    font-size: 10vw;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Rammetto One';
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.sec3 .webi1 {
+    width: 80px;
+    position: absolute;
+    left: 19%; top: 25%;
+}
+.sec3 .webi2 {
+    width: 80px;
+    position: absolute;
+    left: 10%; bottom: 15%;
+}
+.sec3 .webi3 {
+    width: 60px;
+    position: absolute;
+    right: 15%; top: 20%;
+}
+.sec3 .webi4 {
+    width: 70px;
+    position: absolute;
+    right: 5%; bottom: 5%;
+}
+/* //sec3 */
+
+.sec4 {}
+.sec4 .sec4-1 {
+    position: relative;
+    height: 100vh;
+    background: #FFB4CD;
+}
+.sec4 .sec4-1 .wrap {
+    width: 75vw;
+    height: 76vh;
+    border: 1px solid #000;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec4 .sec4-1 .wrap .box1 {}
+.sec4 .sec4-1 .wrap .box2 {}
+.sec4 .sec4-1 .wrap .box3 {}
+.sec4 .sec4-1 .wrap .box4 {}
+.sec4 .sec4-1 .wrap .box5 {}

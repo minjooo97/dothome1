@@ -67,7 +67,11 @@
         <div id="section2">
             <div class="sec2">
                 <div class="img-wrap">
-                    <div class="img-box"></div>
+                    <div class="hi_pic">
+                        <div class="hi"><img src="img/hi_pic1-1.png" alt=""></div>
+                        <div class="hi"><img src="img/hi_pic2-1.png" alt=""></div>
+                        <div class="hi"><img src="img/hi_pic3-1.png" alt=""></div>
+                    </div>
                     <div class="img-boxWrap1"></div>
                     <div class="img-boxWrap2"></div>
                     <div class="img-boxWrap3"></div> 
@@ -80,6 +84,7 @@
                         매일 힘내는 자신을 보며 언젠가는 영향력있는 프론트엔드 개발자가 될 수<br> 
                         있을거라고 생각하며 항상 노력하고 있습니다!<br> 
                     </p>
+                    <button class="see-more">See More</button>
                 </div>
                 <img class="circle circle1" src="img/cir.png" alt="">
                 <img class="circle circle2" src="img/cir.png" alt="">
@@ -88,9 +93,7 @@
                 <img class="crown" src="img/crown.png" alt="">
                 <img class="pageI2" src="img/page_icon2.svg" alt="">
                 <img class="pageI2-1" src="img/page_icon2.svg" alt="">
-                <img class="cam" src="img/contact_Icon3.png" alt="">
                 <img class="thing" src="img/contact_Icon2.png" alt="">
-                <img class="pageI4" src="img/page_icon4.svg" alt="">
                 <img class="pageI5" src="img/page_icon5.svg" alt="">
                 <img class="pageI6" src="img/page_icon6.svg" alt="">
                 <img class="pageI7" src="img/page_icon7.svg" alt="">
@@ -98,17 +101,59 @@
                 <img class="snow2" src="img/snow.png" alt="">
                 <img class="snow3" src="img/snow.png" alt="">
                 <img class="snow4" src="img/snow.png" alt="">
-                <img class="snow2-1" src="img/snow2.png" alt="">
-                <img class="snow2-2" src="img/snow2.png" alt="">
-                <img class="snow2-3" src="img/snow2.png" alt="">
-                <img class="snow2-4" src="img/snow2.png" alt="">
             </div>
         </div>
         <!-- //section2 -->
-        
-        <div id="section3"></div>
-        <div id="section4"></div>
+
+        <div id="section3">
+            <div class="sec3">
+                <h1><span>W</span><span>E</span><span>B</span><span>S</span><span>I</span><span>T</span><span>E</span><br><span>G</span><span>E</span><span>T</span><span></span>  START</h1>
+                <img class="webi1" src="img/webi.png" alt="">
+                <img class="webi2" src="img/about_tw1.PNG" alt="">
+                <img class="webi3" src="img/about_tw1.PNG" alt="">
+                <img class="webi4" src="img/about_tw1.PNG" alt="">
+            </div>
+        </div>
+        <!-- //section3 -->
+
+        <div id="section4">
+            <div class="sec4">
+                <div class="sec4-1">
+                    <div class="wrap">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                        <div class="box4"></div>
+                        <div class="box5"></div>
+                    </div>
+                </div>
+                <div class="sec4-2"></div>
+                <div class="sec4-3"></div>
+                <div class="sec4-4"></div>
+            </div>
+        </div>
+        <div id="section5"></div>
+        <div id="section5"></div>
+        <div id="section5"></div>
         <div id="section5"></div>
     </div>
+
+    <script>
+        const sliderWrap = document.querySelector(".img-wrap");
+        const sliderImg = document.querySelector(".hi_pic");
+        const slider = document.querySelectorAll(".hi");
+
+        let currentIndex = 0;
+        let sliderCount = slider.length;
+
+        document.querySelector(".see-more").addEventListener("click", ()=>{
+            let nextIndex = (currentIndex + 1) % sliderCount;
+
+            slider[currentIndex].style.opacity = "0";
+            slider[nextIndex].style.opacity = "1"
+
+            currentIndex = nextIndex;
+        })
+    </script>
 </body>
 </html>
