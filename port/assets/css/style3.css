@@ -110,7 +110,7 @@ nav .about_5 {
               30px 30px 0px #035dff;
 }
 .sec1 .img1 img {
-    width: 360px;
+    width: 370px;
     height: 500px;
     position: absolute;
     left: 50%; top: 70%;
@@ -304,7 +304,7 @@ nav .about_5 {
     width: 442px;
     height: 534px;
     border: 2px solid #000;
-    background: #e291ac;
+    background: #c7728e;
     transform: rotate(-3.5deg);
     position: absolute;
     left: 16.8%; top: 131.5%;
@@ -330,9 +330,9 @@ nav .about_5 {
     right: 9%; top: 193%;
 }
 .sec2 .crown {
-    width: 100px;
+    width: 150px;
     position: absolute;
-    left: 37.5%; top: 123%;
+    left: 36%; top: 120%;
     z-index: 12;
 }
 .sec2 .pageI2 {
@@ -342,7 +342,7 @@ nav .about_5 {
     z-index: 12;
 }
 .sec2 .pageI2-1 {
-    width: 110px;
+    width: 100px;
     position: absolute;
     left: 17%; top: 165%;
     z-index: 12;
@@ -374,7 +374,7 @@ nav .about_5 {
 .sec2 .pageI6 {
     width: 120px;
     position: absolute;
-    right: 17%; top: 170%;
+    right: 12%; top: 180%;
     z-index: 12;
 }
 .sec2 .pageI7 {
@@ -384,19 +384,19 @@ nav .about_5 {
     z-index: 12;
 }
 .sec2 .snow1 {
-    width: 50px;
+    width: 30px;
     position: absolute;
     left: 15%; top: 110%;
     z-index: 12;
 }
 .sec2 .snow2 {
-    width: 50px;
+    width: 40px;
     position: absolute;
     right: 45%; top: 120%;
     z-index: 12;
 }
 .sec2 .snow3 {
-    width: 50px;
+    width: 40px;
     position: absolute;
     left: 5%; top: 177%;
     z-index: 12;
@@ -404,7 +404,7 @@ nav .about_5 {
 .sec2 .snow4 {
     width: 50px;
     position: absolute;
-    right: 5%; top: 160%;
+    right: 3%; top: 160%;
     z-index: 12;
 }
 .sec2 .snow2-1 {
@@ -422,7 +422,7 @@ nav .about_5 {
 .sec2 .snow2-3 {
     width: 40px;
     position: absolute;
-    left: 5%; top: 140%;
+    left: 0%; top: 140%;
     z-index: 12;
 }
 .sec2 .snow2-4 {
