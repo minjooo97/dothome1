@@ -114,10 +114,10 @@
                     <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
                     <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
                 </div>
-                <img class="webi1" src="img/webi.png" alt="">
-                <img class="webi2" src="img/about_tw1.PNG" alt="">
-                <img class="webi3" src="img/about_tw1.PNG" alt="">
-                <img class="webi4" src="img/about_tw1.PNG" alt="">
+                <img class="webi webi1" src="img/about_tw1.PNG" alt="">
+                <img class="webi webi2" src="img/about_tw1.PNG" alt="">
+                <img class="webi webi3" src="img/about_tw1.PNG" alt="">
+                <img class="webi webi4" src="img/about_tw1.PNG" alt="">
             </div>
         </div>
         <!-- //section3 -->
@@ -182,7 +182,7 @@
         };
 
         to(".sec3 h1", {
-        y: -30,
+        y: -42,
         duration: 0.35,
         ease: "sine.inOut",
         stagger: STAGGER_DEFAULTS,
@@ -193,6 +193,21 @@
         duration: 1,
         ease: "sine.InOut",
         };
+
+        to(".sec3 .webi", {
+        ...STAR_DEFAULTS,
+        scale: 1.5,
+        stagger: STAGGER_DEFAULTS,
+        });
+
+        to(".sec3 .webi", {
+        ...STAR_DEFAULTS,
+        rotation: 180,
+        stagger: {
+            ...STAGGER_DEFAULTS,
+            yoyo: false,
+        },
+        });
     </script>
 </body>
 </html>

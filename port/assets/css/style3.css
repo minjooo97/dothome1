@@ -503,7 +503,8 @@ nav .about_5 {
     display: inline-block; 
     letter-spacing: -10px;
     -webkit-text-stroke: 3px #000;
-    text-shadow: 10px 15px #DDC9C4;
+    text-shadow: 8px 5px #000,
+                 10px 18px #DDC9C4;
 }
 .sec3 h1:nth-child(1) {
     color: #efa032;
@@ -526,49 +527,37 @@ nav .about_5 {
 .sec3 h1:nth-child(7) {
     color: #8c21b6;
 }
-.sec3 h1:nth-child(9) {
-    color: #017e7f;
-}
-.sec3 h1:nth-child(10) {
-    color: #1f446d;
-}
-.sec3 h1:nth-child(11) {
-    color: #0139a1;
-}
-.sec3 h1:nth-child(12) {
-    color: #b81a51;
-}
-.sec3 h1:nth-child(13) {
-    color: #8c21b6;
-}
-.sec3 h1:nth-child(14) {
+.sec3 h1:nth-child(8) {
     color: #efa032;
 }
-.sec3 h1:nth-child(15) {
-    color: #46b59b;
-}
-.sec3 h1:nth-child(16) {
+.sec3 h1:nth-child(9) {
     color: #1f446d;
 }
+.sec3 h1:nth-child(10) {
+    color: #0139a1;
+}
+.sec3 h1:nth-child(11) {
+    color: #b81a51;
+}
 .sec3 .webi1 {
-    width: 80px;
+    width: 35px;
     position: absolute;
-    left: 19%; top: 25%;
+    left: 24%; top: 24%;
 }
 .sec3 .webi2 {
-    width: 80px;
+    width: 50px;
     position: absolute;
-    left: 10%; bottom: 15%;
+    left: 30%; bottom: 23%;
 }
 .sec3 .webi3 {
-    width: 60px;
+    width: 40px;
     position: absolute;
-    right: 15%; top: 20%;
+    right: 30%; top: 25%;
 }
 .sec3 .webi4 {
-    width: 70px;
+    width: 30px;
     position: absolute;
-    right: 5%; bottom: 5%;
+    right: 20%; bottom: 30%;
 }
 /* //sec3 */
 
