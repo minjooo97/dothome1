@@ -485,15 +485,70 @@ nav .about_5 {
     background: url(../img/webBack.PNG) no-repeat;
     background-size: cover;
 }
-.sec3 h1 {
-    font-size: 10vw;
-    text-align: center;
-    line-height: 1;
-    font-family: 'Rammetto One';
+.sec3 .h1Box {
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+}
+.sec3 .h1Box1 {
+    padding-left: 8%;
+    padding-top: 3%;
+}
+.sec3 h1 {
+    font-size: 10vw;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Rammetto One';
+    display: inline-block; 
+    letter-spacing: -10px;
+    -webkit-text-stroke: 3px #000;
+    text-shadow: 10px 15px #DDC9C4;
+}
+.sec3 h1:nth-child(1) {
+    color: #efa032;
+}
+.sec3 h1:nth-child(2) {
+    color: #46b59b;
+}
+.sec3 h1:nth-child(3) {
+    color: #017e7f;
+}
+.sec3 h1:nth-child(4) {
+    color: #1f446d;
+}
+.sec3 h1:nth-child(5) {
+    color: #0139a1;
+}
+.sec3 h1:nth-child(6) {
+    color: #b81a51;
+}
+.sec3 h1:nth-child(7) {
+    color: #8c21b6;
+}
+.sec3 h1:nth-child(9) {
+    color: #017e7f;
+}
+.sec3 h1:nth-child(10) {
+    color: #1f446d;
+}
+.sec3 h1:nth-child(11) {
+    color: #0139a1;
+}
+.sec3 h1:nth-child(12) {
+    color: #b81a51;
+}
+.sec3 h1:nth-child(13) {
+    color: #8c21b6;
+}
+.sec3 h1:nth-child(14) {
+    color: #efa032;
+}
+.sec3 h1:nth-child(15) {
+    color: #46b59b;
+}
+.sec3 h1:nth-child(16) {
+    color: #1f446d;
 }
 .sec3 .webi1 {
     width: 80px;
