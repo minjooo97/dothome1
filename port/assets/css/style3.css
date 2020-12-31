@@ -479,6 +479,7 @@ nav .about_5 {
 }
 /* //sec2 */
 
+/* sec3 */
 .sec3 {
     position: relative;
     height: 878px;
@@ -561,6 +562,7 @@ nav .about_5 {
 }
 /* //sec3 */
 
+/* sec4 */
 .sec4 {}
 .sec4 .sec4-1 {
     position: relative;
@@ -575,8 +577,95 @@ nav .about_5 {
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
-.sec4 .sec4-1 .wrap .box1 {}
-.sec4 .sec4-1 .wrap .box2 {}
-.sec4 .sec4-1 .wrap .box3 {}
-.sec4 .sec4-1 .wrap .box4 {}
-.sec4 .sec4-1 .wrap .box5 {}
+.sec4 .sec4-1 .wrap .box1 {
+    width: 30vw;
+    height: 19vh;
+    border: 1px solid #000;
+    margin: -1px;
+}
+.sec4 .sec4-1 .wrap .box1 h1 {
+    font-size: 2.7vw;
+    line-height: 1.1;
+    color: #FF6541;
+    font-family: 'Rammetto One';
+    padding: 1.8% 0 0 15%;
+}
+.sec4 .sec4-1 .wrap .box2 {
+    position: relative;
+    width: 30vw;
+    height: 19vh;
+    border: 1px solid #000;
+    margin: -1px;
+}
+.sec4 .sec4-1 .wrap .box2 h5 {
+    font-size: 1.5vw;
+    color: #035DFF;
+    font-family: 'Rammetto One';
+    padding: 2% 0 0 15%;
+}
+.sec4 .sec4-1 .wrap .box2 .hours {
+    width: 2.5vw;
+    height: 4.8vh;
+    background: #035DFF;
+    color: #fff;
+    font-family: 'Rammetto One';
+    border-radius: 50%;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 1.7;
+    position: absolute;
+    right: 0; top: 0;
+}
+.sec4 .sec4-1 .wrap .box2 img {
+    width: 22vw;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.sec4 .sec4-1 .wrap .box3 {
+    width: 14.9vw;
+    height: 38.1vh;
+    margin-top: -1px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 40%; top: 0;
+}
+.sec4 .sec4-1 .wrap .box4 {
+    width: 15vw;
+    height: 38.1vh;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 60%; top: 0;
+}
+.sec4 .sec4-1 .wrap .box5 {
+    width: 14.95vw;
+    height: 38.1vh;
+    margin: -1px 0 -1px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 80%; top: 0;
+}
+.sec4 .sec4-1 .wrap .box6 {
+    width: 44.95vw;
+    height: 37.8vh;
+    margin: -1px;
+    border: 1px solid #000;
+}
+.sec4 .sec4-1 .wrap .box7 {
+    width: 30vw;
+    height: 19vh;
+    margin: -1px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 60%; bottom: 24.7%;
+}
+.sec4 .sec4-1 .wrap .box8 {
+    width: 30vw;
+    height: 18.7vh;
+    margin: -1px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 60%; bottom: 0%;
+}
+
+/* //sec4 */
