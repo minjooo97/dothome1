@@ -604,30 +604,50 @@ nav .about_5 {
     padding: 2% 0 0 15%;
 }
 .sec4 .sec4-1 .wrap .box2 .hours {
-    width: 2.5vw;
-    height: 4.8vh;
+    width: 50px;
+    height: 50px;
     background: #035DFF;
     color: #fff;
     font-family: 'Rammetto One';
     border-radius: 50%;
     font-size: 1.5vw;
     text-align: center;
-    line-height: 1.7;
+    line-height: 1.8;
     position: absolute;
-    right: 0; top: 0;
+    right: 10%; top: 4%;
 }
 .sec4 .sec4-1 .wrap .box2 img {
-    width: 22vw;
+    width: 23vw;
     position: absolute;
-    left: 0; bottom: 0;
+    left: 14%; bottom: 8%;
 }
 .sec4 .sec4-1 .wrap .box3 {
+    position: relative;
     width: 14.9vw;
     height: 38.1vh;
     margin-top: -1px;
     border: 1px solid #000;
     position: absolute;
     left: 40%; top: 0;
+    background: #FFF460;
+    font-family: 'Rammetto One';
+}
+.sec4 .sec4-1 .wrap .box3 h1 {
+    font-size: 2.7vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 15%;
+}
+.sec4 .sec4-1 .wrap .box3 .htmlB {
+    width: 9vw;
+    position: absolute;
+    left: 20%; bottom: 35%;
+}
+.sec4 .sec4-1 .wrap .box3 h3 {
+    font-size: 2vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 50%;
 }
 .sec4 .sec4-1 .wrap .box4 {
     width: 15vw;
