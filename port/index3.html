@@ -66,15 +66,23 @@
 
         <div id="section2">
             <div class="sec2">
-                <div class="img-wrap">
-                    <div class="hi_pic">
-                        <div class="hi"><img src="img/hi_pic1-1.png" alt=""></div>
-                        <div class="hi"><img src="img/hi_pic2-1.png" alt=""></div>
-                        <div class="hi"><img src="img/hi_pic3-1.png" alt=""></div>
+                <div class="carousel">
+                    <svg id="blob-1" viewbox="0 0 800 800">
+                        <defs>
+                            <clipPath id="mask">
+                                <path id="path-1"/>
+                            </clipPath>
+                        </defs>
+                        <path id="path-2" />
+                    </svg>
+                    <div class="carousel--images">
+                        <img src="img/hi_pic1-1.png" class="active" />
+                        <img src="assets/img/left_img.jpg" />
+                        <img src="assets/img/top_img.png" />
                     </div>
-                    <div class="img-boxWrap1"></div>
-                    <div class="img-boxWrap2"></div>
-                    <div class="img-boxWrap3"></div> 
+                    <div class="carousel--play">
+                        SEE MORE
+                    </div>
                 </div>
                 <div class="text-wrap">
                     <h1>안녕하세요! '웹퍼블리셔'가 되기위해<br>노력중인 전민주 입니다!</h1>
@@ -84,7 +92,7 @@
                         매일 힘내는 자신을 보며 언젠가는 영향력있는 프론트엔드 개발자가 될 수<br> 
                         있을거라고 생각하며 항상 노력하고 있습니다!<br> 
                     </p>
-                    <button class="see-more">See More</button>
+                    <button class="see-more"></button>
                 </div>
                 <img class="circle circle1" src="img/cir.png" alt="">
                 <img class="circle circle2" src="img/cir.png" alt="">
@@ -94,7 +102,6 @@
                 <img class="pageI2" src="img/page_icon2.svg" alt="">
                 <img class="pageI2-1" src="img/page_icon2.svg" alt="">
                 <img class="thing" src="img/contact_Icon2.png" alt="">
-                <img class="pageI5" src="img/page_icon5.svg" alt="">
                 <img class="pageI6" src="img/page_icon6.svg" alt="">
                 <img class="pageI7" src="img/page_icon7.svg" alt="">
                 <img class="snow1" src="img/snow.png" alt="">
@@ -146,12 +153,27 @@
                         </div>
                         <div class="box5">
                             <h1>CLICK</h1>
-                            <img class="clickB" src="img/clickBtn.png" alt="">
+                            <a href="#"><img class="clickB" src="img/clickBtn.png" alt=""></a>
                             <h3>VIEW CODE</h3>
                         </div>
-                        <div class="box6"></div>
-                        <div class="box7"></div>
-                        <div class="box8"></div>
+                        <div class="box6">
+                            <img src="img/webstanrd.png" alt="">
+                        </div>
+                        <div class="box7">
+                            <h2>웹표준을 준수한 사이트 입니다.<br>
+                                웹 표준은 월드 와이드 웹의 측면을<br> 
+                                서술하고 정의하는 공식 표준이나 다른<br> 
+                                기술 규격을 가리키는 일반적인 용어입니다.<br>
+                            </h2>
+                        </div>
+                        <div class="box8">
+                            <p>
+                                (responsive web design, RWD)이란<br> 
+                                하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC<br> 
+                                등 접속하는 디스플레이의 종류에 따라 화면의 크기가<br> 
+                                자동으로 변하도록 만든 웹페이지 접근 기법을 말합니다.<br> 
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="sec4-2"></div>
@@ -230,6 +252,137 @@
             ...STAGGER_DEFAULTS,
             yoyo: false,
         },
+        });
+
+        //hi 이미지
+        class SupahBlob {
+          constructor(obj) {
+            if (!obj.el) return
+
+            this.el = obj.el
+            this.segments = obj.segments || 8
+            this.centerX = obj.centerX || 400
+            this.centerY = obj.centerY || 400
+            this.minRadius = obj.minRadius || 300
+            this.maxRadius = obj.maxRadius || 380
+            this.minDuration = obj.minDuration || 1
+            this.maxDuration = obj.maxDuration || 2
+            this.maskEl = obj.maskEl || null
+            this.maskID = obj.maskID || null
+
+            this.init()
+          }
+  
+          init() {
+            this.points = []
+            const slice = Math.PI * 2 / this.segments
+            const tl = new gsap.timeline({
+              onUpdate: () => {
+                this.update()
+              }
+            })
+    
+            for (let i = 0; i < this.segments; i++) {
+                const angle = slice * i
+                const duration = gsap.utils.random(this.minDuration, this.maxDuration)
+
+            const p = {
+                x: this.centerX + (Math.cos(angle) * this.minRadius),
+                y: this.centerX + (Math.sin(angle) * this.minRadius),
+            }
+      
+            const tween = gsap.to(p, {
+                duration,
+                x: this.centerX + Math.cos(angle) * this.maxRadius,
+                y: this.centerX + Math.sin(angle) * this.maxRadius,
+                ease: 'sine.inOut',
+                repeat: -1,
+                yoyo: true,
+            })
+            tl.add(tween, -duration)
+            this.points.push(p)
+            }
+        }
+            
+        update() {
+            this.el.setAttribute('d', this.createPath())
+            
+            // Force clipPath update
+            if (this.maskEl) {
+            this.maskEl.style.clipPath = 'none'
+            this.maskEl.style.webkitClipPath = 'none'
+            this.maskEl.offsetWidth
+            this.maskEl.style.clipPath = `url("${this.maskID}")`
+            this.maskEl.style.webkitClipPath = `url("${this.maskID}")`
+            }
+        }
+        
+        createPath() {
+            const data = this.points
+            const size = this.points.length
+            
+            let path = `M${data[0].x} ${data[0].y} C`
+            
+            for (let i = 0; i < size; i++) {
+            const p0 = data[(i - 1 + size) % size]
+            const p1 = data[i]
+            const p2 = data[(i + 1) % size]
+            const p3 = data[(i + 2) % size]
+            
+            const x1 = p1.x + (p2.x - p0.x) * 0.15
+            const y1 = p1.y + (p2.y - p0.y) * 0.15
+            const x2 = p2.x - (p3.x - p1.x) * 0.15
+            const y2 = p2.y - (p3.y - p1.y) * 0.15
+            
+            path += ` ${x1} ${y1} ${x2} ${y2} ${p2.x} ${p2.y}`
+            }
+            
+            return `${path}z`
+        }
+        }
+
+
+        /*--------------------
+        Blob Mask
+        --------------------*/
+        const blob1 = new SupahBlob({
+        el: document.querySelector('#path-1'),
+        segments: 6,
+        centerX: 400,
+        centerY: 400,
+        minRadius: 300,
+        maxRadius: 380,
+        minDuration: 1,
+        maxDuration: 3,
+        maskEl: document.querySelector('.carousel--images'),
+        maskID: '#mask'
+        })
+
+
+        /*--------------------
+        Blob Background
+        --------------------*/
+        const blob2 = new SupahBlob({
+        el: document.querySelector('#path-2'),
+        segments: 6,
+        centerX: 400,
+        centerY: 400,
+        minRadius: 320,
+        maxRadius: 400,
+        minDuration: 2,
+        maxDuration: 3
+        })
+
+
+        /*--------------------
+        Fastest Carousel
+        --------------------*/
+        let active = 0
+        const slides = document.querySelectorAll('.carousel--images img')
+        document.querySelector('.carousel--play').addEventListener('click', () => {
+        slides[active].classList.remove('active')
+        active = active < slides.length - 1 ? active + 1 : 0
+        slides[active].classList.add('active')
         });
     </script>
 </body>
