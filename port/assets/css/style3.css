@@ -650,12 +650,32 @@ nav .about_5 {
     padding-top: 50%;
 }
 .sec4 .sec4-1 .wrap .box4 {
+    position: relative;
     width: 15vw;
     height: 38.1vh;
     margin: -1px 0 0 -1px;
     border: 1px solid #000;
     position: absolute;
     left: 60%; top: 0;
+    background: #fff;
+    font-family: 'Rammetto One';
+}
+.sec4 .sec4-1 .wrap .box4 h1 {
+    font-size: 2.7vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 15%;
+}
+.sec4 .sec4-1 .wrap .box4 .cssB {
+    width: 9vw;
+    position: absolute;
+    left: 20%; bottom: 35%;
+}
+.sec4 .sec4-1 .wrap .box4 h3 {
+    font-size: 2vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 50%;
 }
 .sec4 .sec4-1 .wrap .box5 {
     width: 14.95vw;
