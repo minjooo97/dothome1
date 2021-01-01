@@ -537,7 +537,7 @@ nav .about_5 {
     height: 100vh;
     background: #FFB4CD;
 }
-.sec4 .sec4-1 .wrap {
+.sec4 .wrap {
     width: 75vw;
     height: 76vh;
     border: 1px solid #000;
@@ -545,51 +545,51 @@ nav .about_5 {
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
-.sec4 .sec4-1 .wrap .box1 {
+.sec4 .wrap .box1 {
     width: 30vw;
     height: 19vh;
     border: 1px solid #000;
     margin: -1px;
 }
-.sec4 .sec4-1 .wrap .box1 h1 {
+.sec4 .wrap .box1 h1 {
     font-size: 2.7vw;
     line-height: 1.1;
     color: #FF6541;
     font-family: 'Rammetto One';
     padding: 1.8% 0 0 15%;
 }
-.sec4 .sec4-1 .wrap .box2 {
+.sec4 .wrap .box2 {
     position: relative;
     width: 30vw;
     height: 19vh;
     border: 1px solid #000;
     margin: -1px;
 }
-.sec4 .sec4-1 .wrap .box2 h5 {
+.sec4 .wrap .box2 h5 {
     font-size: 1.5vw;
     color: #035DFF;
     font-family: 'Rammetto One';
     padding: 2% 0 0 15%;
 }
-.sec4 .sec4-1 .wrap .box2 .hours {
-    width: 50px;
-    height: 50px;
+.sec4 .wrap .box2 .hours {
+    width: 3vw;
+    height: 2.8vw;
     background: #035DFF;
     color: #fff;
     font-family: 'Rammetto One';
     border-radius: 50%;
     font-size: 1.5vw;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.9;
     position: absolute;
     right: 10%; top: 4%;
 }
-.sec4 .sec4-1 .wrap .box2 img {
+.sec4 .wrap .box2 img {
     width: 23vw;
     position: absolute;
     left: 14%; bottom: 8%;
 }
-.sec4 .sec4-1 .wrap .box3 {
+.sec4 .wrap .box3 {
     position: relative;
     width: 14.9vw;
     height: 38.1vh;
@@ -600,24 +600,24 @@ nav .about_5 {
     background: #FFF460;
     font-family: 'Rammetto One';
 }
-.sec4 .sec4-1 .wrap .box3 h1 {
+.sec4 .wrap .box3 h1 {
     font-size: 2.7vw;
     color: #eb452b;
     text-align: center;
     padding-top: 15%;
 }
-.sec4 .sec4-1 .wrap .box3 .htmlB {
+.sec4 .wrap .box3 .htmlB {
     width: 9vw;
     position: absolute;
     left: 20%; bottom: 35%;
 }
-.sec4 .sec4-1 .wrap .box3 h3 {
+.sec4 .wrap .box3 h3 {
     font-size: 2vw;
     color: #eb452b;
     text-align: center;
     padding-top: 50%;
 }
-.sec4 .sec4-1 .wrap .box4 {
+.sec4 .wrap .box4 {
     position: relative;
     width: 15vw;
     height: 38.1vh;
@@ -628,24 +628,24 @@ nav .about_5 {
     background: #fff;
     font-family: 'Rammetto One';
 }
-.sec4 .sec4-1 .wrap .box4 h1 {
+.sec4 .wrap .box4 h1 {
     font-size: 2.7vw;
     color: #035DFF;
     text-align: center;
     padding-top: 15%;
 }
-.sec4 .sec4-1 .wrap .box4 .cssB {
+.sec4 .wrap .box4 .cssB {
     width: 9vw;
     position: absolute;
     left: 20%; bottom: 35%;
 }
-.sec4 .sec4-1 .wrap .box4 h3 {
+.sec4 .wrap .box4 h3 {
     font-size: 2vw;
     color: #035DFF;
     text-align: center;
     padding-top: 50%;
 }
-.sec4 .sec4-1 .wrap .box5 {
+.sec4 .wrap .box5 {
     position: relative;
     width: 14.95vw;
     height: 38.1vh;
@@ -655,44 +655,51 @@ nav .about_5 {
     left: 80%; top: 0;
     font-family: 'Rammetto One';
 }
-.sec4 .sec4-1 .wrap .box5 h1 {
+.sec4 .wrap .box5 h1 {
     font-size: 3vw;
     color: #035DFF;
     text-align: center;
     text-shadow: 5px 7px #000;
     padding-top: 13%;
 }
-.sec4 .sec4-1 .wrap .box5 .clickB {
+.sec4 .wrap .box5 .clickB {
     width: 6vw;
     position: absolute;
     left: 30%; bottom: 34%;
 }
-.sec4 .sec4-1 .wrap .box5 h3 {
+.sec4 .wrap .box5 h3 {
     font-size: 1.5vw;
     color: #035DFF;
     text-align: center;
     text-shadow: 3px 4px #000;
     padding-top: 51%;
 }
-.sec4 .sec4-1 .wrap .box6 {
+.sec4 .wrap .box6 {
     width: 44.95vw;
     height: 37.8vh;
     margin: -1px;
     border: 1px solid #000;
 }
-.sec4 .sec4-1 .wrap .box6 img {
+.sec4 .wrap .box6 img {
     width: 100%;
     height: 100%;
 }
-.sec4 .sec4-1 .wrap .box7 {
+.sec4 .wrap .box7 {
     width: 30vw;
     height: 19vh;
     margin: -1px;
     border: 1px solid #000;
     position: absolute;
     left: 60%; bottom: 24.7%;
+    background: #FF6541;
 }
-.sec4 .sec4-1 .wrap .box8 {
+.sec4 .wrap .box7 h2 {
+    font-size: 1.3vw;
+    color: #FFF460;
+    font-family: 'S-CoreDream-3Light';
+    padding: 3% 0 0 7%;
+}
+.sec4 .wrap .box8 {
     width: 30vw;
     height: 18.7vh;
     margin: -1px;
@@ -700,5 +707,31 @@ nav .about_5 {
     position: absolute;
     left: 60%; bottom: 0%;
 }
+.sec4 .wrap .box8 p {
+    font-size: 1vw;
+    line-height: 1.7;
+    font-family: 'S-CoreDream-3Light';
+    padding: 2% 0 0 7%;
+}
+.sec4 .ring {
+    width: 6vw;
+    position: absolute;
+    left: 40%; top: 42%;
+}
+.sec4 .tw {
+    width: 5vw;
+    position: absolute;
+    right: 5%; top: 10%;
+}
+.sec4 .spring {
+    width: 13vw;
+    position: absolute;
+    left: 7%; bottom: 7%;
+}
 
+.sec4 .sec4-2 {
+    position: relative;
+    height: 100vh;
+    background: #FFF460;
+}
 /* //sec4 */
