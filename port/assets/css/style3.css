@@ -728,10 +728,41 @@ nav .about_5 {
     position: absolute;
     left: 7%; bottom: 7%;
 }
-
+/* //sec4-1 */
 .sec4 .sec4-2 {
     position: relative;
     height: 100vh;
     background: #FFF460;
 }
+.sec4 .sec4-2 .box1 {
+    background: #FFB4CE;
+}
+.sec4 .sec4-2 .box2 {
+    background: #FFB4CE;
+}
+.sec4 .sec4-2 .box1 h1 {
+    padding-top: 6.5%;
+}
+.sec4 .sec4-2 .box7 h2 {
+    padding-top: 6%;
+}
+.sec4 .sec4-2 .box8 {
+    background: #FFB4CE;
+}
+.sec4 .pink {
+    width: 5vw;
+    position: absolute;
+    right: 10%; top: 6%;
+}
+.sec4 .white1 {
+    width: 4vw;
+    position: absolute;
+    left: 5%; top: 5%;
+}
+.sec4 .white2 {
+    width: 5vw;
+    position: absolute;
+    right: 3%; bottom: 10%;
+}
+/* //sec4-2 */
 /* //sec4 */
