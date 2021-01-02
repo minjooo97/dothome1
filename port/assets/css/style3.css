@@ -15,24 +15,29 @@
 }
 
 #section1 {
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom, #FFB4CD 80%, #FFF460 20%);
 }
 
 #section2 {
-    height: 1500px;
+    width: 100%;
+    height: 1300px;
     background: #FFF460;
 }
 
 #section3 {
-    height: 878px;
+    width: 100%;
+    height: 700px;
 }
 
 #section4 {
+    width: 100%;
     background: #000;
 }
 
 #section5 {
+    width: 100%;
     margin-top: -1px;
 }
 #section6 {}
@@ -136,7 +141,7 @@ nav .about_5 {
     width: 300px;
     position: absolute;
     left: 10vw;
-    top: 50%;
+    top: 65%;
     border-radius: 50px;
     border: 5px solid #fff;
     box-shadow: 5px 5px 0px #eb452b, 
@@ -214,7 +219,7 @@ nav .about_5 {
 .sec1 .about_tw10 {
     width: 70px;
     position: absolute;
-    left: 22%; bottom: 9%;
+    left: 22%; bottom: -6%;
     z-index: 1100;
 }
 .sec1 .about_tw11 {
@@ -249,8 +254,7 @@ nav .about_5 {
     justify-content: space-around;
 }
 .sec2 .text-wrap {
-    padding-top: 37%;
-    padding-right: 5%;
+    padding-top: 29%;
 }
 .sec2 .text-wrap h1 {
     font-size: 2.4vw;
@@ -266,62 +270,30 @@ nav .about_5 {
     text-align: center;
     padding-top: 6%;
 }
-:root {
-    --ease: cubic-bezier(0.29, 0.57, 0.12, 0.99);
-    --duration: .6s;
-    --size: 800px;
-    --scaleMask: 1;
-    --scaleBtn: 1;
+.sec2 .text-wrap button {
+    position: absolute;
+    right: 12.5%; bottom: -92%;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'S-CoreDream-3Light';
+    line-height: 1.5;
 }
-@media (max-width: 900px) {
-    :root {
-    --size: 600px;
-    --scaleMask: .75;
-    --scaleBtn: .8;
-    }
-}
-@media (max-width: 700px) {
-    :root {
-    --size: 400px;
-    --scaleMask: .5;
-    --scaleBtn: .7;
-    }
-}
-@media (max-width: 500px) {
-    :root {
-    --size: 300px;
-    --scaleMask: .375;
-    --scaleBtn: .6;
-    }
-}
-
-.carousel {
-    padding-top: 10%;
-    position: relative;
-    z-index: 1;
-    width: var(--size);
-    height: var(--size);
-}
-.carousel--play {
-    font-weight: bold;
-    font-size: 1.5vw;
-    line-height: 1.9;
-    text-align: center;
+.sec2 .text-wrap button.see-more {
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 0.3em 0.7em;
+    padding: 0.3em 1.5em;
     background: #ffe9e9;
     border: 2px solid #F875A2;
     border-radius: 0.75em;
     transform-style: preserve-3d;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-    width: 5vw;
-    height: 5vh;
-    position: absolute;
-    left: 10%; bottom: -9%;
-    z-index: 1500;
-    font-family: 'NanumSquareRound';
 }
-.carousel--play:before {
+.sec2 .text-wrap button.see-more::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -332,135 +304,160 @@ nav .about_5 {
     bottom: 0;
     background: #f9c4d2;
     border-radius: inherit;
-    box-shadow: 0 0 0 1px #F875A2;
-    transform: translate3d(0, 0.75em, -1em);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+      box-shadow: 0 0 0 2px #F875A2;
+      transform: translate3d(0, 0.75em, -1em);
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
-.carousel--play:active {
-    transform: scale(calc(var(--scaleBtn) * .9)) rotate(-5deg);
+.sec2 .text-wrap button.see-more:hover {
+    background: #f0d0d0;
+    transform: translate(0, 0.25em);
 }
-.carousel svg {
+.sec2 .text-wrap button.see-more:hover::before {
+    box-shadow: 0 0 0 2px #F875A2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+.sec2 .img-wrap .hi_pic {
+    width: 300px;
+    height: 400px;
+}
+.sec2 .img-wrap .hi {
     position: absolute;
-    z-index: 1;
-    bottom: -35%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    fill: #f9c4d2;
-    pointer-events: none;
+    left: 21%; top: 147.5%;
+    z-index: 20;
+    transition: all 0.8s;
+    transform: rotate(-3.5deg);
 }
-.carousel svg #mask {
-    transform: scale(var(--scaleMask));
+.sec2 .img-wrap .hi:nth-child(1) {
+    z-index: 20;
 }
-.carousel--images {
-    position: absolute;
-    z-index: 2;
-    bottom: -45%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-clip-path: url(#mask);
-    clip-path: url(#mask);
-    overflow: hidden;
-}
-.carousel img {
-    position: absolute;
-    z-index: 2;
-    top: 0%;
-    left: 0%;
-    /* width: auto; height: auto; */
-    /* max-width: 100vw;
-    max-height: 200vh; */
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+.sec2 .img-wrap .hi:nth-child(2) {
+    z-index: 19;
     opacity: 0;
-    transform: scale(0.9) translateZ(0);
 }
-.carousel img.active {
-    transform: scale(1) translateZ(0);
-    opacity: 1;
+.sec2 .img-wrap .hi:nth-child(3) {
+    z-index: 18;
+    opacity: 0;
+}
+.sec2 .img-wrap .img-boxWrap1 {
+    width: 448px;
+    height: 539px;
+    border: 2px solid #000;
+    background: #fff;
+    transform: rotate(-3.5deg);
+    position: absolute;
+    left: 19.4%; top: 145%;
+    z-index: 10;
+}
+.sec2 .img-wrap .img-boxWrap2 {
+    width: 442px; 
+    height: 534px;
+    background: #FFB4CD; 
+    border: 2px solid #000; 
+    transform: rotate(-3.5deg); 
+    position: absolute; 
+    left: 18%; top: 148%;
+    z-index: 9;
+}
+.sec2 .img-wrap .img-boxWrap3 {
+    width: 442px;
+    height: 534px;
+    border: 2px solid #000;
+    background: #c7728e;
+    transform: rotate(-3.5deg);
+    position: absolute;
+    left: 16.8%; top: 151%;
+    z-index: 8;
 }
 .sec2 .circle {
-    width: 30px;
+    width: 2vw;
 }
 .sec2 .circle1 {
     position: absolute;
-    left: 9%; top: 150%;
+    left: 9%; top: 140%;
 }
 .sec2 .circle2 {
     position: absolute;
-    left: 9%; top: 230%;
+    left: 9%; top: 210%;
 }
 .sec2 .circle3 {
     position: absolute;
-    right: 9%; top: 150%;
+    right: 9%; top: 140%;
 }
 .sec2 .circle4 {
     position: absolute;
-    right: 9%; top: 230%;
+    right: 9%; top: 210%;
 }
 .sec2 .crown {
-    width: 150px;
+    width: 7.5vw;
     position: absolute;
-    left: 30%; top: 150%;
+    left: 36%; top: 139.5%;
     z-index: 21;
 }
 .sec2 .pageI2 {
-    width: 110px;
+    width: 5vw;
     position: absolute;
-    left: 5%; top: 180%;
+    left: 15%; top: 180%;
     z-index: 21;
 }
 .sec2 .pageI2-1 {
-    width: 100px;
+    width: 5.5vw;
     position: absolute;
-    left: 6%; top: 185%;
+    left: 16%; top: 185%;
     z-index: 21;
 }
 .sec2 .thing {
-    width: 50px;
+    width: 2.5vw;
     position: absolute;
-    right: 9%; top: 168%;
+    right: 12%; top: 153%;
     z-index: 21;
 }
 
 .sec2 .pageI6 {
-    width: 120px;
+    width: 6vw;
     position: absolute;
-    right: 12%; top: 210%;
+    right: 30%; top: 200%;
     z-index: 12;
 }
 .sec2 .pageI7 {
-    width: 200px;
+    width: 10vw;
     position: absolute;
-    left: 32%; top: 210%;
+    left: 35%; top: 190%;
     z-index: 21;
 }
 .sec2 .snow1 {
-    width: 30px;
+    width: 2vw;
     position: absolute;
-    left: 15%; top: 110%;
+    left: 15%; top: 115%;
     z-index: 21;
 }
 .sec2 .snow2 {
-    width: 40px;
+    width: 2.5vw;
     position: absolute;
     right: 45%; top: 120%;
     z-index: 21;
 }
 .sec2 .snow3 {
-    width: 40px;
+    width: 2.5vw;
     position: absolute;
-    left: 50%; top: 177%;
+    left: 48%; top: 177%;
     z-index: 21;
 }
 .sec2 .snow4 {
-    width: 50px;
+    width: 3vw;
     position: absolute;
     right: 3%; top: 160%;
+    z-index: 21;
+}
+.sec2 .snow5 {
+    width: 2.5vw;
+    position: absolute;
+    right: 20%; top: 100%;
+    z-index: 21;
+}
+.sec2 .snow6 {
+    width: 1.5vw;
+    position: absolute;
+    right: 0%; top: 120%;
     z-index: 21;
 }
 /* //sec2 */
@@ -468,9 +465,13 @@ nav .about_5 {
 /* sec3 */
 .sec3 {
     position: relative;
-    height: 878px;
-    background: url(../img/webBack.PNG) no-repeat;
-    background-size: cover;
+    height: inherit;
+    /* background: url(../img/webBack.PNG) no-repeat;
+    background-size: cover; */
+}
+.sec3 .back {
+    width: 100%; 
+    height: 100%;
 }
 .sec3 .h1Box {
     position: absolute;
