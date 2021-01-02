@@ -29,10 +29,12 @@
 }
 
 #section4 {
-    height: 4679px;
     background: #000;
 }
-#section5 {}
+
+#section5 {
+    margin-top: -1px;
+}
 #section6 {}
 
 /* content */
@@ -839,3 +841,10 @@ nav .about_5 {
     right: 11%; bottom: 9%;
 }
 /* //sec4 */
+
+/* sec5 */
+.sec5 {
+    height: 882px;
+    background: url(../img/aniBack.png) no-repeat;
+    background-size: cover;
+}
