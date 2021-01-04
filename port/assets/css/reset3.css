@@ -3,7 +3,7 @@ body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, lege
 
 /* 링크 초기화 */
 a {color: #222; text-decoration: none;}
-a:hover {color: #390;}
+a:hover {}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {

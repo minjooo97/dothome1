@@ -494,25 +494,25 @@ nav .about_5 {
                  10px 18px #fff;
 }
 .sec3 h1:nth-child(1) {
-    color: #efa032;
+    color: #FAC43A;
 }
 .sec3 h1:nth-child(2) {
-    color: #46b59b;
+    color: #34DCB5;
 }
 .sec3 h1:nth-child(3) {
-    color: #017e7f;
+    color: #09C2C3;
 }
 .sec3 h1:nth-child(4) {
-    color: #1f446d;
+    color: #2A71BF;
 }
 .sec3 h1:nth-child(5) {
-    color: #0139a1;
+    color: #205BC8;
 }
 .sec3 h1:nth-child(6) {
-    color: #b81a51;
+    color: #DC306C;
 }
 .sec3 h1:nth-child(7) {
-    color: #8c21b6;
+    color: #A22CD0;
 }
 .sec3 .webi1 {
     width: 35px;
@@ -612,16 +612,46 @@ nav .about_5 {
     text-align: center;
     padding-top: 15%;
 }
-.sec4 .wrap .box3 .htmlB {
-    width: 9vw;
+#switch {
+    width: 8.5vw;
+    height: 10vh;
+    padding: 15px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
     position: absolute;
-    left: 20%; bottom: 35%;
+    left: 22%; top: 35%;
+    background: #FF6541;
+}
+#toggle {
+    width: 3.7vw;
+    height: 7.4vh;
+    background: #FFF460;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -6%; top: -14%;
+    border: 4px solid #000;
+}
+#toggle .toggle {
+    width: 3vw;
+    height: 6vh;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 3.8%; top: 3.8%; 
+}
+#switch.hover #toggle {
+    left: 43%;
 }
 .sec4 .wrap .box3 h3 {
     font-size: 2vw;
     color: #eb452b;
     text-align: center;
-    padding-top: 50%;
+    padding-top: 49%;
 }
 .sec4 .wrap .box4 {
     position: relative;
@@ -640,16 +670,17 @@ nav .about_5 {
     text-align: center;
     padding-top: 15%;
 }
-.sec4 .wrap .box4 .cssB {
-    width: 9vw;
-    position: absolute;
-    left: 20%; bottom: 35%;
+.sec4 .wrap .box4 #switch {
+    background: #FFB4CE;
+}
+.sec4 .wrap .box4 #toggle {
+    background: #035DFF;
 }
 .sec4 .wrap .box4 h3 {
     font-size: 2vw;
     color: #035DFF;
     text-align: center;
-    padding-top: 50%;
+    padding-top: 49%;
 }
 .sec4 .wrap .box5 {
     position: relative;
@@ -668,10 +699,25 @@ nav .about_5 {
     text-shadow: 5px 7px #000;
     padding-top: 13%;
 }
-.sec4 .wrap .box5 .clickB {
-    width: 6vw;
+.sec4 .wrap .box5 .hold {
+    width: 4.5vw;
+    height: 9vh;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 50%;
     position: absolute;
-    left: 30%; bottom: 34%;
+    left: 34%; top: 36%;
+}
+.sec4 .wrap .box5 .hold p {
+    text-align: center;
+    font-size: 1vw;
+    line-height: 1.3;
+    padding-top: 28%;
+}
+.sec4 .wrap .box5 .hold:hover {
+    box-shadow: 5px 5px #000;
+    transition: all .4s;
+    transform: scale(1.05, 1.05);
 }
 .sec4 .wrap .box5 h3 {
     font-size: 1.5vw;
@@ -845,7 +891,33 @@ nav .about_5 {
 
 /* sec5 */
 .sec5 {
-    height: 882px;
-    background: url(../img/aniBack.png) no-repeat;
+    height: 700px;
+    background: #0E0F33;
+    /* background: url(../img/aniBack.png) no-repeat; */
     background-size: cover;
 }
+.sec5 h1 {
+    font-family: 'Rammetto One';
+    font-size: 10vw;
+    text-align: center;
+    padding-top: 12%;
+    color: #FFF;
+    animation: text-shadow 1s linear infinite;
+}
+@keyframes text-shadow {
+    from, 19.9% {
+      text-shadow: 0px 0px #FAC43A, 1px 1px #FAC43A, 2px 2px #FAC43A, 3px 3px #FAC43A, 4px 4px #FAC43A, 5px 5px #FAC43A, 5px 5px #34DCB5, 6px 6px #34DCB5, 7px 7px #34DCB5, 8px 8px #34DCB5, 9px 9px #34DCB5, 10px 10px #34DCB5, 10px 10px #09C2C3, 11px 11px #09C2C3, 12px 12px #09C2C3, 13px 13px #09C2C3, 14px 14px #09C2C3, 15px 15px #09C2C3, 15px 15px #2A71BF, 16px 16px #2A71BF, 17px 17px #2A71BF, 18px 18px #2A71BF, 19px 19px #2A71BF, 20px 20px #2A71BF, 20px 20px #205BC8, 21px 21px #205BC8, 22px 22px #205BC8, 23px 23px #205BC8, 24px 24px #205BC8, 25px 25px #205BC8, 25px 25px #DC306C, 26px 26px #DC306C, 27px 27px #DC306C, 28px 28px #DC306C, 29px 29px #DC306C, 30px 30px #DC306C, 30px 30px #A22CD0, 31px 31px #A22CD0, 32px 32px #A22CD0, 33px 33px #A22CD0, 34px 34px #A22CD0, 35px 35px #A22CD0;
+    }
+    20%, 39.9% {
+      text-shadow: 0px 0px #A22CD0, 1px 1px #A22CD0, 2px 2px #A22CD0, 3px 3px #A22CD0, 4px 4px #A22CD0, 5px 5px #A22CD0, 5px 5px #DC306C, 6px 6px #DC306C, 7px 7px #DC306C, 8px 8px #DC306C, 9px 9px #DC306C, 10px 10px #DC306C, 10px 10px #205BC8, 11px 11px #205BC8, 12px 12px #205BC8, 13px 13px #205BC8, 14px 14px #205BC8, 15px 15px #205BC8, 15px 15px #2A71BF, 16px 16px #2A71BF, 17px 17px #2A71BF, 18px 18px #2A71BF, 19px 19px #2A71BF, 20px 20px #2A71BF, 20px 20px #09C2C3, 21px 21px #09C2C3, 22px 22px #09C2C3, 23px 23px #09C2C3, 24px 24px #09C2C3, 25px 25px #09C2C3, 25px 25px #34DCB5, 26px 26px #34DCB5, 27px 27px #34DCB5, 28px 28px #34DCB5, 29px 29px #34DCB5, 30px 30px #34DCB5, 30px 30px #FAC43A, 31px 31px #FAC43A, 32px 32px #FAC43A, 33px 33px #FAC43A, 34px 34px #FAC43A, 35px 35px #FAC43A;
+    }
+    40%, 59.9% {
+      text-shadow: 0px 0px #34DCB5, 1px 1px #34DCB5, 2px 2px #34DCB5, 3px 3px #34DCB5, 4px 4px #34DCB5, 5px 5px #34DCB5, 5px 5px #09C2C3, 6px 6px #09C2C3, 7px 7px #09C2C3, 8px 8px #09C2C3, 9px 9px #09C2C3, 10px 10px #09C2C3, 10px 10px #2A71BF, 11px 11px #2A71BF, 12px 12px #2A71BF, 13px 13px #2A71BF, 14px 14px #2A71BF, 15px 15px #2A71BF, 15px 15px #205BC8, 16px 16px #205BC8, 17px 17px #205BC8, 18px 18px #205BC8, 19px 19px #205BC8, 20px 20px #205BC8, 20px 20px #DC306C, 21px 21px #DC306C, 22px 22px #DC306C, 23px 23px #DC306C, 24px 24px #DC306C, 25px 25px #DC306C, 25px 25px #A22CD0, 26px 26px #A22CD0, 27px 27px #A22CD0, 28px 28px #A22CD0, 29px 29px #A22CD0, 30px 30px #A22CD0, 30px 30px #205BC8, 31px 31px #205BC8, 32px 32px #205BC8, 33px 33px #205BC8, 34px 34px #205BC8, 35px 35px #205BC8;
+    }
+    60%, 79.9% {
+      text-shadow: 0px 0px #DC306C, 1px 1px #DC306C, 2px 2px #DC306C, 3px 3px #DC306C, 4px 4px #DC306C, 5px 5px #DC306C, 5px 5px #205BC8, 6px 6px #205BC8, 7px 7px #205BC8, 8px 8px #205BC8, 9px 9px #205BC8, 10px 10px #205BC8, 10px 10px #2A71BF, 11px 11px #2A71BF, 12px 12px #2A71BF, 13px 13px #2A71BF, 14px 14px #2A71BF, 15px 15px #2A71BF, 15px 15px #09C2C3, 16px 16px #09C2C3, 17px 17px #09C2C3, 18px 18px #09C2C3, 19px 19px #09C2C3, 20px 20px #09C2C3, 20px 20px #34DCB5, 21px 21px #34DCB5, 22px 22px #34DCB5, 23px 23px #34DCB5, 24px 24px #34DCB5, 25px 25px #34DCB5, 25px 25px #FAC43A, 26px 26px #FAC43A, 27px 27px #FAC43A, 28px 28px #FAC43A, 29px 29px #FAC43A, 30px 30px #FAC43A, 30px 30px #A22CD0, 31px 31px #A22CD0, 32px 32px #A22CD0, 33px 33px #A22CD0, 34px 34px #A22CD0, 35px 35px #A22CD0;
+    }
+    80%, to {
+      text-shadow: 0px 0px #2A71BF, 1px 1px #2A71BF, 2px 2px #2A71BF, 3px 3px #2A71BF, 4px 4px #2A71BF, 5px 5px #2A71BF, 5px 5px #205BC8, 6px 6px #205BC8, 7px 7px #205BC8, 8px 8px #205BC8, 9px 9px #205BC8, 10px 10px #205BC8, 10px 10px #DC306C, 11px 11px #DC306C, 12px 12px #DC306C, 13px 13px #DC306C, 14px 14px #DC306C, 15px 15px #DC306C, 15px 15px #A22CD0, 16px 16px #A22CD0, 17px 17px #A22CD0, 18px 18px #A22CD0, 19px 19px #A22CD0, 20px 20px #A22CD0, 20px 20px #FAC43A, 21px 21px #FAC43A, 22px 22px #FAC43A, 23px 23px #FAC43A, 24px 24px #FAC43A, 25px 25px #FAC43A, 25px 25px #34DCB5, 26px 26px #34DCB5, 27px 27px #34DCB5, 28px 28px #34DCB5, 29px 29px #34DCB5, 30px 30px #34DCB5, 30px 30px #09C2C3, 31px 31px #09C2C3, 32px 32px #09C2C3, 33px 33px #09C2C3, 34px 34px #09C2C3, 35px 35px #09C2C3;
+    }
+  }
