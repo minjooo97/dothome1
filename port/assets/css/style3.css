@@ -891,6 +891,7 @@ nav .about_5 {
 
 /* sec5 */
 .sec5 {
+    position: relative;
     height: 700px;
     background: #0E0F33;
     /* background: url(../img/aniBack.png) no-repeat; */
@@ -921,3 +922,13 @@ nav .about_5 {
       text-shadow: 0px 0px #2A71BF, 1px 1px #2A71BF, 2px 2px #2A71BF, 3px 3px #2A71BF, 4px 4px #2A71BF, 5px 5px #2A71BF, 5px 5px #205BC8, 6px 6px #205BC8, 7px 7px #205BC8, 8px 8px #205BC8, 9px 9px #205BC8, 10px 10px #205BC8, 10px 10px #DC306C, 11px 11px #DC306C, 12px 12px #DC306C, 13px 13px #DC306C, 14px 14px #DC306C, 15px 15px #DC306C, 15px 15px #A22CD0, 16px 16px #A22CD0, 17px 17px #A22CD0, 18px 18px #A22CD0, 19px 19px #A22CD0, 20px 20px #A22CD0, 20px 20px #FAC43A, 21px 21px #FAC43A, 22px 22px #FAC43A, 23px 23px #FAC43A, 24px 24px #FAC43A, 25px 25px #FAC43A, 25px 25px #34DCB5, 26px 26px #34DCB5, 27px 27px #34DCB5, 28px 28px #34DCB5, 29px 29px #34DCB5, 30px 30px #34DCB5, 30px 30px #09C2C3, 31px 31px #09C2C3, 32px 32px #09C2C3, 33px 33px #09C2C3, 34px 34px #09C2C3, 35px 35px #09C2C3;
     }
   }
+.sec5 .wtw1 {
+    width: 3vw;
+    position: absolute;
+    left: 5%; top: 10%;
+} 
+.sec5 .wtw2 {
+    width: 2vw;
+    position: absolute;
+    right: 5%; bottom: 10%;
+} 
