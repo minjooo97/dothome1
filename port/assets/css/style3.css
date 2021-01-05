@@ -28,7 +28,7 @@
 
 #section3 {
     width: 100%;
-    height: 700px;
+    height: 500px;
 }
 
 #section4 {
@@ -38,6 +38,7 @@
 
 #section5 {
     width: 100%;
+    height: 500px;
     margin-top: -1px;
 }
 #section6 {}
@@ -60,14 +61,14 @@
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
     letter-spacing: -2px;
-    padding: 20px;
+    padding: 1vw;
 }
 #header h1 span:last-child {
     padding-left: 2vw;
 }
 #header nav {}
 #header nav ul {
-    padding: 20px;
+    padding: 1vw;
 }
 #header nav ul li {
     display: inline-block;
@@ -78,29 +79,29 @@
     font-family: 'Rammetto One';
 }
 nav .about_1 {
-    width: 20px;
+    width: 1vw;
     position: absolute;
-    left: 54%; top: 20%;
+    left: 53.5vw; top: 1.1vw;
 }
 nav .about_2 {
-    width: 23px;
+    width: 1.1vw;
     position: absolute;
-    right: 36.3%; top: 17%;
+    right: 36vw; top: 0.9vw;
 }
 nav .about_3 {
-    width: 20px;
+    width: 1vw;
     position: absolute;
-    right: 27.3%; top: 20%;
+    right: 27vw; top: 1vw;
 }
 nav .about_4 {
-    width: 20px;
+    width: 1.1vw;
     position: absolute;
-    right: 16.5%; top: 20%;
+    right: 16.5vw; top: 1vw;
 }
 nav .about_5 {
-    width: 20px;
+    width: 1vw;
     position: absolute;
-    right: 8.2%; top: 20%;
+    right: 8vw; top: 1vw;
 }
 /* //header */
 
@@ -111,23 +112,23 @@ nav .about_5 {
     text-align: center;
     line-height: 1.2;
     position: absolute; 
-    left: 50%; top: 30%;
+    left: 50vw; top: 15vw;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     z-index: 1000;
     color: #fcedd8;
-    text-shadow: 5px 5px 0px #eb452b, 
-              10px 10px 0px #efa032, 
-              15px 15px 0px #46b59b, 
-              20px 20px 0px #017e7f, 
-              25px 25px 0px #052939, 
-              30px 30px 0px #035dff;
+    text-shadow: 0.3vw 0.3vw 0px #eb452b, 
+              0.6vw 0.6vw 0px #efa032, 
+              0.9vw 0.9vw 0px #46b59b, 
+              1.2vw 1.2vw 0px #017e7f, 
+              1.5vw 1.5vw 0px #052939, 
+              1.8vw 1.8vw 0px #035dff;
 }
 .sec1 .img1 img {
-    width: 370px;
-    height: 500px;
+    width: 19vw;
+    height: 26vw;
     position: absolute;
-    left: 50%; top: 70%;
+    left: 50vw; top: 35.3vw;
     transform: translate(-50%, -50%);
     border-radius: 205px;
     border: 5px solid #fff;
@@ -138,9 +139,9 @@ nav .about_5 {
               25px 25px 0px #052939; 
 }
 .sec1 .img2 img {
-    width: 300px;
+    width: 15vw;
     position: absolute;
-    left: 10vw;
+    left: 10%;
     top: 65%;
     border-radius: 50px;
     border: 5px solid #fff;
@@ -151,7 +152,7 @@ nav .about_5 {
               25px 25px 0px #052939; 
 }
 .sec1 .img3 img {
-    width: 200px;
+    width: 11vw;
     position: absolute;
     left: auto; right: 10%;
     top: 30%;
@@ -164,72 +165,72 @@ nav .about_5 {
               25px 25px 0px #052939; 
 }
 .sec1 .about_tw1 {
-    width: 40px;
+    width: 2vw;
     position: absolute;
     left: 30%; top: 45%;
     z-index: 1100;
 }
 .sec1 .about_tw2 {
-    width: 50px;
+    width: 2.5vw;
     position: absolute;
     right: 32%; bottom: 25%;
 }
 .sec1 .about_tw3 {
-    width: 60px;
+    width: 3vw;
     position: absolute;
     right: 20%; top: 20%;
     z-index: 1100;
 }
 .sec1 .about_tw4 {
-    width: 40px;
+    width: 2vw;
     position: absolute;
     left: 25%; top: 15%;
     z-index: 1100;
 }
 .sec1 .about_tw5 {
-    width: 50px;
+    width: 2.5vw;
     position: absolute;
     right: 10%; top: 58%;
     z-index: 1100;
 }
 .sec1 .about_tw6 {
-    width: 45px;
+    width: 2vw;
     position: absolute;
     left: 7%; bottom: 22%;
     z-index: 1100;
 }
 .sec1 .about_tw7 {
-    width: 150px;
+    width: 6vw;
     position: absolute;
     left: 55%; bottom: 6%;
     z-index: 1100;
 }
 .sec1 .about_tw8 {
-    width: 150px;
+    width: 6vw;
     position: absolute;
     left: 5%; top: 30%;
     z-index: 1100;
 }
 .sec1 .about_tw9 {
-    width: 100px;
+    width: 5vw;
     position: absolute;
     right: 3%; bottom: 15%;
     z-index: 1100;
 }
 .sec1 .about_tw10 {
-    width: 70px;
+    width: 3.5vw;
     position: absolute;
-    left: 22%; bottom: -6%;
+    left: 21%; bottom: -4%;
     z-index: 1100;
 }
 .sec1 .about_tw11 {
-    width: 100px;
+    width: 5vw;
     position: absolute;
     left: 38%; bottom: 40%;
     z-index: 1100;
 }
 .sec1 .about_tw12 {
-    width: 55px;
+    width: 2.5vw;
     position: absolute;
     left: 12%; top: 5%;
     z-index: 1100;
@@ -272,7 +273,7 @@ nav .about_5 {
 }
 .sec2 .text-wrap button {
     position: absolute;
-    right: 12.5%; bottom: -92%;
+    left: 41%; bottom: -90%;
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -282,6 +283,7 @@ nav .about_5 {
     font-size: 1vw;
     font-family: 'S-CoreDream-3Light';
     line-height: 1.5;
+    z-index: 100;
 }
 .sec2 .text-wrap button.see-more {
     font-weight: 600;
@@ -466,8 +468,6 @@ nav .about_5 {
 .sec3 {
     position: relative;
     height: inherit;
-    /* background: url(../img/webBack.PNG) no-repeat;
-    background-size: cover; */
 }
 .sec3 .back {
     width: 100%; 
@@ -483,15 +483,14 @@ nav .about_5 {
     padding-top: 5%;
 }
 .sec3 h1 {
-    font-size: 12vw;
+    font-size: 9vw;
     text-align: center;
     line-height: 1.2;
     font-family: 'Rammetto One';
     display: inline-block; 
     letter-spacing: -10px;
     -webkit-text-stroke: 3px #000;
-    text-shadow: 8px 5px #000,
-                 10px 18px #fff;
+    text-shadow: 8px 5px #000;
 }
 .sec3 h1:nth-child(1) {
     color: #FAC43A;
@@ -731,10 +730,7 @@ nav .about_5 {
     height: 37.8vh;
     margin: -1px;
     border: 1px solid #000;
-}
-.sec4 .wrap .box6 img {
-    width: 100%;
-    height: 100%;
+    background: url(../img/webstanrd.png) no-repeat;
 }
 .sec4 .wrap .box7 {
     width: 30vw;
@@ -795,6 +791,9 @@ nav .about_5 {
 .sec4 .sec4-2 .box2 {
     background: #FFB4CE;
 }
+.sec4 .sec4-2 .box6 {
+    background: url(../img/responsivesite.png) no-repeat;
+}
 .sec4 .sec4-2 .box7 h2 {
     padding-top: 6%;
 }
@@ -828,6 +827,9 @@ nav .about_5 {
 }
 .sec4 .sec4-3 .box1 h1 {
     padding-top: 6.5%;
+}
+.sec4 .sec4-3 .box6 {
+    background: url(../img/responsivesite2.png) no-repeat;
 }
 .sec4 .sec4-3 .box7 h2 {
     padding-top: 6%;
@@ -866,6 +868,9 @@ nav .about_5 {
 .sec4 .sec4-4 .box2 {
     background: #FFB4CE;
 }
+.sec4 .sec4-4 .box6 {
+    background: url(../img/clovasite.png) no-repeat;
+}
 .sec4 .sec4-4 .box7 h2 {
     padding-top: 6%;
 }
@@ -892,16 +897,16 @@ nav .about_5 {
 /* sec5 */
 .sec5 {
     position: relative;
-    height: 700px;
+    height: inherit;
     background: #0E0F33;
     /* background: url(../img/aniBack.png) no-repeat; */
     background-size: cover;
 }
 .sec5 h1 {
     font-family: 'Rammetto One';
-    font-size: 10vw;
+    font-size: 9vw;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 6%;
     color: #FFF;
     animation: text-shadow 1s linear infinite;
 }
@@ -932,3 +937,14 @@ nav .about_5 {
     position: absolute;
     right: 5%; bottom: 10%;
 } 
+
+
+
+/* 미디어쿼리 */
+/* @media (max-width: 1680px) {
+    .sec4 .wrap .box1 h1 {padding: 4% 0 0 15%;}
+    .sec4 .wrap .box2 img {bottom: 16%;}
+    #switch {height: 9vh; top: 33%;}
+    #toggle {height: 6.6vh; top: -16%;}
+    #toggle .toggle {height: 5.2vh;}
+} */
