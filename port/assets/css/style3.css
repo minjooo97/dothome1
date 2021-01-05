@@ -622,7 +622,7 @@ nav .about_5 {
     border-radius: 200px;
     cursor: pointer;
     position: absolute;
-    left: 22%; top: 35%;
+    left: 21%; top: 35%;
     background: #FF6541;
 }
 #toggle {
@@ -645,7 +645,7 @@ nav .about_5 {
     left: 3.8%; top: 3.8%; 
 }
 #switch.hover #toggle {
-    left: 43%;
+    left: 44%;
 }
 .sec4 .wrap .box3 h3 {
     font-size: 2vw;
@@ -901,7 +901,7 @@ nav .about_5 {
     font-family: 'Rammetto One';
     font-size: 10vw;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 10.5%;
     color: #FFF;
     animation: text-shadow 1s linear infinite;
 }
