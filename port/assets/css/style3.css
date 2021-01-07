@@ -546,6 +546,9 @@ nav .about_5 {
     height: 50vw;
     background: #FFB4CD;
 }
+.sec4 .sec4-1.active {
+    background: #DC5E88;
+}
 .sec4 .wrap {
     width: 75vw;
     height: 38.4vw;
@@ -559,6 +562,7 @@ nav .about_5 {
     height: 9.6vw;
     border: 1px solid #000;
     margin: -1px;
+    background-color: #FFB4CE;
 }
 .sec4 .wrap .box1 h1 {
     font-size: 2.7vw;
@@ -573,6 +577,7 @@ nav .about_5 {
     height: 9.6vw;
     border: 1px solid #000;
     margin: -1px;
+    background-color: #FFB4CE;
 }
 .sec4 .wrap .box2 h5 {
     font-size: 1.5vw;
@@ -615,7 +620,7 @@ nav .about_5 {
     text-align: center;
     padding-top: 2.3vw;
 }
-#switch {
+#switch1 {
     width: 8.5vw;
     height: 5vw;
     padding: 0.8vw;
@@ -628,7 +633,7 @@ nav .about_5 {
     left: 3.4vw; top: 7vw;
     background: #FF6541;
 }
-#toggle {
+#toggle1 {
     width: 3.7vw;
     height: 3.7vw;
     background: #FFF460;
@@ -638,7 +643,7 @@ nav .about_5 {
     left: -0.3vw; top: -0.5vw;
     border: 4px solid #000;
 }
-#toggle .toggle {
+#toggle1 .toggle1 {
     width: 3vw;
     height: 3vw;
     background: #fff;
@@ -647,7 +652,7 @@ nav .about_5 {
     position: absolute;
     left: 0.15vw; top: 0.13vw; 
 }
-#switch.hover #toggle {
+#switch1.hover #toggle1 {
     left: 3vw;
 }
 .sec4 .wrap .box3 h3 {
@@ -673,11 +678,40 @@ nav .about_5 {
     text-align: center;
     padding-top: 2.3vw;
 }
-.sec4 .wrap .box4 #switch {
+#switch2 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
     background: #FFB4CE;
 }
-.sec4 .wrap .box4 #toggle {
+#toggle2 {
+    width: 3.7vw;
+    height: 3.7vw;
     background: #035DFF;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle2 .toggle2 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch2.hover #toggle2 {
+    left: 3vw;
 }
 .sec4 .wrap .box4 h3 {
     font-size: 2vw;
@@ -694,6 +728,7 @@ nav .about_5 {
     position: absolute;
     left: 60vw; top: 0;
     font-family: 'Rammetto One';
+    background-color: #FFB4CE;
 }
 .sec4 .wrap .box5 h1 {
     font-size: 3vw;
@@ -718,14 +753,14 @@ nav .about_5 {
     line-height: 1.3vw;
     padding-top: 1.3vw;
 }
-.sec4 .wrap .box5 .hold2 p {
+.sec4 .wrap .box5 .hold2 {
     display: none;
 } 
-/* .sec4 .wrap .box5 .hold:hover {
+.sec4 .wrap .box5 .hold:hover {
     box-shadow: 5px 5px #000;
     transition: all .4s;
     transform: scale(1.05, 1.05);
-} */
+}
 .sec4 .wrap .box5 h3 {
     font-size: 1.5vw;
     color: #035DFF;
@@ -763,6 +798,7 @@ nav .about_5 {
     border: 1px solid #000;
     position: absolute;
     left: 45vw; top: 28.95vw;
+    background-color: #FFB4CE;
 }
 .sec4 .wrap .box8 p {
     font-size: 1vw;
@@ -822,6 +858,76 @@ nav .about_5 {
 .sec4 .sec4-2 .box2 {
     background: #FFB4CE;
 }
+#switch3 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FF6541;
+}
+#toggle3 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #FFF460;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle3 .toggle3 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch3.hover #toggle3 {
+    left: 3vw;
+}
+#switch4 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FFB4CE;
+}
+#toggle4 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #035DFF;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle4 .toggle4 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch4.hover #toggle4 {
+    left: 3vw;
+}
 .sec4 .sec4-2 .box6 {
     background: url(../img/responsivesite.png) no-repeat;
     background-size: cover;
@@ -859,6 +965,76 @@ nav .about_5 {
 }
 .sec4 .sec4-3 .box1 h1 {
     padding-top: 2vw;
+}
+#switch5 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FF6541;
+}
+#toggle5 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #FFF460;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle5 .toggle5 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch5.hover #toggle5 {
+    left: 3vw;
+}
+#switch6 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FFB4CE;
+}
+#toggle6 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #035DFF;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle6 .toggle6 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch6.hover #toggle6 {
+    left: 3vw;
 }
 .sec4 .sec4-3 .box6 {
     background: url(../img/responsivesite2.png) no-repeat;
@@ -900,6 +1076,84 @@ nav .about_5 {
 }
 .sec4 .sec4-4 .box2 {
     background: #FFB4CE;
+}
+.sec4 .sec4-3 {
+    position: relative;
+    height: 50vw;
+    background: #FFB4CE;
+}
+.sec4 .sec4-3 .box1 h1 {
+    padding-top: 2vw;
+}
+#switch7 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FF6541;
+}
+#toggle7 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #FFF460;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle7 .toggle7 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch7.hover #toggle7 {
+    left: 3vw;
+}
+#switch8 {
+    width: 8.5vw;
+    height: 5vw;
+    padding: 0.8vw;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 200px;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4vw; top: 7vw;
+    background: #FFB4CE;
+}
+#toggle8 {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #035DFF;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    left: -0.3vw; top: -0.5vw;
+    border: 4px solid #000;
+}
+#toggle8 .toggle8 {
+    width: 3vw;
+    height: 3vw;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.15vw; top: 0.13vw; 
+}
+#switch8.hover #toggle8 {
+    left: 3vw;
 }
 .sec4 .sec4-4 .box6 {
     background: url(../img/clovasite.png) no-repeat;
@@ -980,8 +1234,22 @@ nav .about_5 {
     nav .about_4 {padding-top: 0.3vw;}
     nav .about_5 {padding-top: 0.3vw;}
 
-    #toggle {top: -0.6vw;}
-    #toggle .toggle {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle1 {top: -0.6vw;}
+    #toggle1 .toggle1 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle2 {top: -0.6vw;}
+    #toggle2 .toggle2 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle3 {top: -0.6vw;}
+    #toggle3 .toggle3 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle4 {top: -0.6vw;}
+    #toggle4 .toggle4 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle5 {top: -0.6vw;}
+    #toggle5 .toggle5 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle6 {top: -0.6vw;}
+    #toggle6 .toggle6 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle7 {top: -0.6vw;}
+    #toggle7 .toggle7 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
+    #toggle8 {top: -0.6vw;}
+    #toggle8 .toggle8 {width: 2.7vw; height: 2.7vw; left: 0.2vw; top: 0.2vw;}
 
     .sec4 .wrap .box8 p {padding-top: 0.7vw;}
     .sec4 .sec4-2 .wrap .box8 p {padding-top: 1.4vw;}
@@ -997,9 +1265,30 @@ nav .about_5 {
     nav .about_4 {padding-top: 0.5vw;}
     nav .about_5 {padding-top: 0.5vw;}
 
-    #toggle {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
-    #toggle .toggle {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
-    #switch.hover #toggle {left: 2.7vw;}
+    #toggle1 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle1 .toggle1 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch1.hover #toggle1 {left: 2.7vw;}
+    #toggle2 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle2 .toggle2 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch2.hover #toggle2 {left: 2.7vw;}
+    #toggle3 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle3 .toggle3 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch3.hover #toggle3 {left: 2.7vw;}
+    #toggle4 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle4 .toggle4 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch4.hover #toggle4 {left: 2.7vw;}
+    #toggle5 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle5 .toggle5 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch5.hover #toggle5 {left: 2.7vw;}
+    #toggle6 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle6 .toggle6 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch6.hover #toggle6 {left: 2.7vw;}
+    #toggle7 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle7 .toggle7 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch7.hover #toggle7 {left: 2.7vw;}
+    #toggle8 {width: 3.4vw; height: 3.4vw; top: -0.65vw;}
+    #toggle8 .toggle8 {width: 2.3vw; height: 2.3vw; top: 0.15vw;}
+    #switch8.hover #toggle8 {left: 2.7vw;}
 
     .sec1 .img1 img {top: 37vw;}
     .sec1 .img2 img {top: 35vw;}
@@ -1015,9 +1304,30 @@ nav .about_5 {
     nav .about_4 {padding-top: 0.6vw;}
     nav .about_5 {padding-top: 0.6vw;}
 
-    #toggle {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
-    #toggle .toggle {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
-    #switch.hover #toggle {left: 2.8vw;}
+    #toggle1 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle1 .toggle1 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch1.hover #toggle1 {left: 2.8vw;}
+    #toggle2 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle2 .toggle2 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch2.hover #toggle2 {left: 2.8vw;}
+    #toggle3 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle3 .toggle3 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch3.hover #toggle3 {left: 2.8vw;}
+    #toggle4 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle4 .toggle4 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch4.hover #toggle4 {left: 2.8vw;}
+    #toggle5 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle5 .toggle5 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch5.hover #toggle5 {left: 2.8vw;}
+    #toggle6 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle6 .toggle6 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch6.hover #toggle6 {left: 2.8vw;}
+    #toggle7 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle7 .toggle7 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch7.hover #toggle7 {left: 2.8vw;}
+    #toggle8 {width: 3.2vw; height: 3.2vw; top: -0.5vw;}
+    #toggle8 .toggle8 {width: 2.1vw; height: 2.1vw; left: 0.15vw;}
+    #switch8.hover #toggle8 {left: 2.8vw;}
 
     .sec4 .wrap .box6 {height: 19vw;}
     .sec4 .wrap .box7 {width: 30.1vw;}
@@ -1035,7 +1345,14 @@ nav .about_5 {
     .sec4 .sec4-2 .wrap .box9 h2 {padding-top: 3.5vw;}
     .sec4 .sec4-3 .wrap .box9 h2 {padding-top: 3.5vw;}
 
-    #toggle .toggle {width: 2vw; height: 2vw;}
+    #toggle1 .toggle1 {width: 2vw; height: 2vw;}
+    #toggle2 .toggle2 {width: 2vw; height: 2vw;}
+    #toggle3 .toggle3 {width: 2vw; height: 2vw;}
+    #toggle4 .toggle4 {width: 2vw; height: 2vw;}
+    #toggle5 .toggle5 {width: 2vw; height: 2vw;}
+    #toggle6 .toggle6 {width: 2vw; height: 2vw;}
+    #toggle7 .toggle7 {width: 2vw; height: 2vw;}
+    #toggle8 .toggle8 {width: 2vw; height: 2vw;}
 }
 @media (max-width: 768px) {
     nav .about_1 {padding-top: 0.9vw;}
@@ -1044,8 +1361,22 @@ nav .about_5 {
     nav .about_4 {padding-top: 0.8vw;}
     nav .about_5 {padding-top: 0.8vw;}
 
-    #toggle {width: 3vw; height: 3vw; top: -0.55vw;}
-    #toggle .toggle {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle1 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle1 .toggle1 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle2 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle2 .toggle2 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle3 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle3 .toggle3 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle4 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle4 .toggle4 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle5 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle5 .toggle5 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle6 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle6 .toggle6 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle7 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle7 .toggle7 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
+    #toggle8 {width: 3vw; height: 3vw; top: -0.55vw;}
+    #toggle8 .toggle8 {width: 1.6vw; height: 1.6vw; left: 0.18vw; top: 0.2vw;}
 
     .sec2 .text-wrap p {display: none;}
     .sec2 .text-wrap .p2 {display: block;}
@@ -1090,8 +1421,22 @@ nav .about_5 {
     nav .about_4 {padding-top: 0.9vw;}
     nav .about_5 {padding-top: 0.9vw;}
 
-    #toggle {width: 2.9vw; height: 2.9vw;}
-    #toggle .toggle {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle1 {width: 2.9vw; height: 2.9vw;}
+    #toggle1 .toggle1 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle2 {width: 2.9vw; height: 2.9vw;}
+    #toggle2 .toggle2 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle3 {width: 2.9vw; height: 2.9vw;}
+    #toggle3 .toggle3 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle4 {width: 2.9vw; height: 2.9vw;}
+    #toggle4 .toggle4 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle5 {width: 2.9vw; height: 2.9vw;}
+    #toggle5 .toggle5 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle6 {width: 2.9vw; height: 2.9vw;}
+    #toggle6 .toggle6 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle7 {width: 2.9vw; height: 2.9vw;}
+    #toggle7 .toggle7 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
+    #toggle8 {width: 2.9vw; height: 2.9vw;}
+    #toggle8 .toggle8 {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
 
     .sec4 .wrap .box1 {width: 14.7vw;}
     .sec4 .wrap .box9 {width: 14.7vw;}
@@ -1106,9 +1451,30 @@ nav .about_5 {
     #header nav {display: none;}
     #header h1 {font-size: 5vw;}
 
-    #switch {left: 4.7vw;}
-    #toggle {width: 2vw; height: 2vw;}
-    #toggle .toggle {display: none;}
+    #switch1 {left: 4.7vw;}
+    #toggle1 {width: 2vw; height: 2vw;}
+    #toggle1 .toggle1 {display: none;}
+    #switch2 {left: 4.7vw;}
+    #toggle2 {width: 2vw; height: 2vw;}
+    #toggle2 .toggle2 {display: none;}
+    #switch3 {left: 4.7vw;}
+    #toggle3 {width: 2vw; height: 2vw;}
+    #toggle3 .toggle3 {display: none;}
+    #switch4 {left: 4.7vw;}
+    #toggle4 {width: 2vw; height: 2vw;}
+    #toggle4 .toggle4 {display: none;}
+    #switch5 {left: 4.7vw;}
+    #toggle5 {width: 2vw; height: 2vw;}
+    #toggle5 .toggle5 {display: none;}
+    #switch6 {left: 4.7vw;}
+    #toggle6 {width: 2vw; height: 2vw;}
+    #toggle6 .toggle6 {display: none;}
+    #switch7 {left: 4.7vw;}
+    #toggle7 {width: 2vw; height: 2vw;}
+    #toggle7 .toggle7 {display: none;}
+    #switch8 {left: 4.7vw;}
+    #toggle8 {width: 2vw; height: 2vw;}
+    #toggle8 .toggle8 {display: none;}
 
     .sec3 h1 {margin-left: 1.5vw;}
     .sec4 .wrap {width: 55vw;}
@@ -1117,8 +1483,9 @@ nav .about_5 {
     .sec4 .wrap .box4 {width: 18.3vw; left: 18.3vw;}
     .sec4 .wrap .box5 {width: 18.05vw; left: 36.75vw;}
     .sec4 .wrap .box5 .hold {left: 6vw;}
-    .sec4 .wrap .box5 .hold p {display: none; padding-top: 1.8vw; color: #071352; font-size: 1.5vw;}
-    .sec4 .wrap .box5 .hold2 p {display: block;}
+    .sec4 .wrap .box5 .hold p {display: none;} 
+    .sec4 .wrap .box5 .hold2 p {display: block; padding-top: 1.8vw; color: #071352; font-size: 1.5vw;}
+    .sec4 .wrap .box5 .hold2 {display: block;}
     .sec4 .wrap .box6 {width: 55vw;}
     .sec4 .wrap .box9 {display: none;}
     
@@ -1129,4 +1496,49 @@ nav .about_5 {
     .sec4 .sec4-4 .sun {left: 18vw;}
     .sec4 .sec4-4 .mo {right: 19vw;}
     .sec5 .wtw2 {right: 7vw;}
+}
+@media (max-width: 370px) {
+    .sec3 h1 {padding-top: 2.3vw; margin-left: 2.5vw;}
+
+    #toggle1 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle2 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle3 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle4 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle5 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle6 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle7 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle8 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+}
+@media (max-width: 300px) {
+    .sec2 .text-wrap {width: 35vw;}
+    .sec3 h1 {padding-top: 3.5vw;}
+    .sec4 .wrap .box3 h3 {padding-top: 6.5vw;}
+    .sec4 .wrap .box4 h3 {padding-top: 6.5vw;}
+    .sec4 .wrap .box5 {width: 18.5vw; left: 36vw;}
+    .sec4 .wrap .box5 h3 {padding-top: 6.5vw;}
+
+    #switch1 {top: 8vw;}
+    #toggle1 {width: 1vw; height: 1vw; top: -0.6vw;}
+    #switch1.hover #toggle1 {left: 2.2vw;}
+    #switch2 {top: 8vw;}
+    #toggle2 {width: 1vw; height: 1vw; top: -0.6vw;}
+    #switch2.hover #toggle2 {left: 2.2vw;}
+    #switch3 {top: 8vw;}
+    #toggle3 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #switch3.hover #toggle3 {left: 2.2vw;}
+    #switch4 {top: 8vw;}
+    #toggle4 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #switch4.hover #toggle4 {left: 2.2vw;}
+    #switch5 {top: 8vw;}
+    #toggle5 {width: 1vw; height: 1vw; top: -0.6vw;}
+    #switch5.hover #toggle5 {left: 2.2vw;}
+    #switch6 {top: 8vw;}
+    #toggle6 {width: 1vw; height: 1vw; top: -0.6vw;}
+    #switch6.hover #toggle6 {left: 2.2vw;}
+    #switch7 {top: 8vw;}
+    #toggle7 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #switch7.hover #toggle7 {left: 2.2vw;}
+    #switch8 {top: 8vw;}
+    #toggle8 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #switch8.hover #toggle8 {left: 2.2vw;}
 }
