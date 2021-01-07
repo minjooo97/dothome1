@@ -1500,14 +1500,14 @@ nav .about_5 {
 @media (max-width: 375px) {
     .sec3 h1 {padding-top: 2.3vw; margin-left: 2.5vw;}
 
-    #toggle1 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle2 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle3 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle4 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle5 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle6 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle7 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
-    #toggle8 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
+    #toggle1 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle2 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle3 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle4 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle5 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle6 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle7 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
+    #toggle8 {width: 1.2vw; height: 1.2vw; top: -0.5vw;}
 }
 @media (max-width: 320px) {
     .sec2 .text-wrap {width: 35vw;}
