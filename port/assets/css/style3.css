@@ -1509,7 +1509,7 @@ nav .about_5 {
     #toggle7 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
     #toggle8 {width: 1.3vw; height: 1.3vw; top: -0.5vw;}
 }
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     .sec2 .text-wrap {width: 35vw;}
     .sec3 h1 {padding-top: 3.5vw;}
     .sec4 .wrap .box3 h3 {padding-top: 6.5vw;}
@@ -1524,10 +1524,10 @@ nav .about_5 {
     #toggle2 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch2.hover #toggle2 {left: 2.2vw;}
     #switch3 {top: 8vw;}
-    #toggle3 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #toggle3 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch3.hover #toggle3 {left: 2.2vw;}
     #switch4 {top: 8vw;}
-    #toggle4 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #toggle4 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch4.hover #toggle4 {left: 2.2vw;}
     #switch5 {top: 8vw;}
     #toggle5 {width: 1vw; height: 1vw; top: -0.6vw;}
@@ -1536,9 +1536,9 @@ nav .about_5 {
     #toggle6 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch6.hover #toggle6 {left: 2.2vw;}
     #switch7 {top: 8vw;}
-    #toggle7 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #toggle7 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch7.hover #toggle7 {left: 2.2vw;}
     #switch8 {top: 8vw;}
-    #toggle8 {width: 1vw; height: 1vw; top: -0.8vw;}
+    #toggle8 {width: 1vw; height: 1vw; top: -0.6vw;}
     #switch8.hover #toggle8 {left: 2.2vw;}
 }
