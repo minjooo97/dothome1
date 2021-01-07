@@ -1046,7 +1046,6 @@ nav .about_5 {
 
     .sec2 .text-wrap p {display: none;}
     .sec2 .text-wrap .p2 {display: block;}
-    .sec3 h1 {padding-top: 2.5vw;}
 
     .sec4 .wrap .box1 {position: absolute; right: 0; top: 0; width: 14.8vw; height: 19.25vw;}
     .sec4 .wrap .box1 h1 {font-size: 1.8vw; text-align: center; padding: 7vw 0 0 0;}
@@ -1082,6 +1081,12 @@ nav .about_5 {
     #section3 {height: 20vw;}
     #section5 {height: 20vw;}
 
+    nav .about_1 {padding-top: 1vw;}
+    nav .about_2 {padding-top: 0.8vw;}
+    nav .about_3 {padding-top: 0.9vw;}
+    nav .about_4 {padding-top: 0.9vw;}
+    nav .about_5 {padding-top: 0.9vw;}
+
     #toggle {width: 2.9vw; height: 2.9vw;}
     #toggle .toggle {width: 1.4vw; height: 1.4vw; top: 0.15vw;}
 
@@ -1093,4 +1098,18 @@ nav .about_5 {
     .sec4 .wrap .box5 .hold p {font-weight: 100;}
 
     .sec2 .thing {top: 29vw; right: 14vw;}
+}
+@media (max-width: 500px) {
+    #header nav {display: none;}
+
+    #toggle {width: 2vw; height: 2vw;}
+    #toggle .toggle {display: none;}
+
+    .sec3 h1 {margin-left: 1.5vw;}
+    .sec4 .wrap {width: 55vw;}
+    .sec4 .wrap .box1 {display: none;}
+    .sec4 .wrap .box6 {width: 55vw;}
+    .sec4 .wrap .box9 {display: none;}
+    .sec4 .wrap .box5 .hold p {display: none;}
+    
 }
