@@ -331,7 +331,7 @@ nav .about_5 {
 }
 .sec2 .img-wrap .hi img {
     width: 20.5vw;
-    height: 24vw;
+    height: 25.5vw;
 }
 .sec2 .img-wrap .hi:nth-child(1) {
     z-index: 20;
@@ -718,6 +718,9 @@ nav .about_5 {
     line-height: 1.3vw;
     padding-top: 1.3vw;
 }
+.sec4 .wrap .box5 .hold2 p {
+    display: none;
+} 
 /* .sec4 .wrap .box5 .hold:hover {
     box-shadow: 5px 5px #000;
     transition: all .4s;
@@ -1101,15 +1104,29 @@ nav .about_5 {
 }
 @media (max-width: 500px) {
     #header nav {display: none;}
+    #header h1 {font-size: 5vw;}
 
+    #switch {left: 4.7vw;}
     #toggle {width: 2vw; height: 2vw;}
     #toggle .toggle {display: none;}
 
     .sec3 h1 {margin-left: 1.5vw;}
     .sec4 .wrap {width: 55vw;}
     .sec4 .wrap .box1 {display: none;}
+    .sec4 .wrap .box3 {width: 18.3vw;}
+    .sec4 .wrap .box4 {width: 18.3vw; left: 18.3vw;}
+    .sec4 .wrap .box5 {width: 18.05vw; left: 36.75vw;}
+    .sec4 .wrap .box5 .hold {left: 6vw;}
+    .sec4 .wrap .box5 .hold p {display: none; padding-top: 1.8vw; color: #071352; font-size: 1.5vw;}
+    .sec4 .wrap .box5 .hold2 p {display: block;}
     .sec4 .wrap .box6 {width: 55vw;}
     .sec4 .wrap .box9 {display: none;}
-    .sec4 .wrap .box5 .hold p {display: none;}
     
+    .sec4 .ring {left: 53vw;}
+    .sec4 .sec4-3 .flo {left: 18vw;}
+    .sec4 .pink {right: 16vw;}
+    .sec4 .sec4-3 .white4 {right: 16vw;}
+    .sec4 .sec4-4 .sun {left: 18vw;}
+    .sec4 .sec4-4 .mo {right: 19vw;}
+    .sec5 .wtw2 {right: 7vw;}
 }
