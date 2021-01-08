@@ -143,14 +143,16 @@
                             <div id="switch1" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle1"><div class="toggle1"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box4">
                             <h1>CSS</h1>
                             <div id="switch2" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle2"><div class="toggle2"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box5">
                             <h1>CLICK</h1>
@@ -203,14 +205,16 @@
                             <div id="switch3" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle3"><div class="toggle3"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box4">
                             <h1>CSS</h1>
                             <div id="switch4" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle4"><div class="toggle4"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box5">
                             <h1>CLICK</h1>
@@ -263,14 +267,16 @@
                             <div id="switch5" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle5"><div class="toggle5"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box4">
                             <h1>CSS</h1>
                             <div id="switch6" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle6"><div class="toggle6"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box5">
                             <h1>CLICK</h1>
@@ -323,14 +329,16 @@
                             <div id="switch7" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle7"><div class="toggle7"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box4">
                             <h1>CSS</h1>
                             <div id="switch8" class="hover" onclick="this.classList.toggle('hover')">
                                 <div id="toggle8"><div class="toggle8"></div></div>
                             </div>
-                            <h3>YES</h3>
+                            <h3>NO</h3>
+                            <h2>YES</h2>
                         </div>
                         <div class="box5">
                             <h1>CLICK</h1>
@@ -449,11 +457,50 @@
         },
         });
 
-        //html 버튼
-        $(".toggle1").click(function(){
-            $(".sec4 .sec4-1").toggleClass("active");
-        })
+        //html&css 버튼
+        $("#toggle1").click(function(){
+            $(".sec4-1 .box3 h3").toggleClass("yes");
+            $(".sec4-1 .box3 h2").toggleClass("yes");
+            $(".sec4-1 .box6").toggleClass("html");
+        });
+        $("#toggle2").click(function(){
+            $(".sec4-1 .box4 h3").toggleClass("yes");
+            $(".sec4-1 .box4 h2").toggleClass("yes");
+            $(".sec4-1 .box6").toggleClass("css");
+        });
+
+        $("#toggle3").click(function(){
+            $(".sec4-2 .box3 h3").toggleClass("yes");
+            $(".sec4-2 .box3 h2").toggleClass("yes");
+            $(".sec4-2 .box6").toggleClass("html");
+        });
+        $("#toggle4").click(function(){
+            $(".sec4-2 .box4 h3").toggleClass("yes");
+            $(".sec4-2 .box4 h2").toggleClass("yes");
+            $(".sec4-2 .box6").toggleClass("css");
+        });
         
+        $("#toggle5").click(function(){
+            $(".sec4-3 .box3 h3").toggleClass("yes");
+            $(".sec4-3 .box3 h2").toggleClass("yes");
+            $(".sec4-3 .box6").toggleClass("html");
+        });
+        $("#toggle6").click(function(){
+            $(".sec4-3 .box4 h3").toggleClass("yes");
+            $(".sec4-3 .box4 h2").toggleClass("yes");
+            $(".sec4-3 .box6").toggleClass("css");
+        });
+
+        $("#toggle7").click(function(){
+            $(".sec4-4 .box3 h3").toggleClass("yes");
+            $(".sec4-4 .box3 h2").toggleClass("yes");
+            $(".sec4-4 .box6").toggleClass("html");
+        });
+        $("#toggle8").click(function(){
+            $(".sec4-4 .box4 h3").toggleClass("yes");
+            $(".sec4-4 .box4 h2").toggleClass("yes");
+            $(".sec4-4 .box6").toggleClass("css");
+        });
     </script>
 </body>
 </html>

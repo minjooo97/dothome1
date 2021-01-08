@@ -1,8 +1,3 @@
-<?php
-    include '../connect/connect.php';
-    include '../connect/session.php';
-?>
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -24,34 +19,32 @@
 </head>
 <body>
     <!-- skip -->
-        <div id="skip">
-            <a href="#mainCont">콘텐츠 바로가기</a>
-        </div>
+    <div id="skip">
+        <a href="#mainCont">콘텐츠 바로가기</a>
+    </div>
     <!-- //skip -->
    
     <!-- header -->
     <header id="header" class="black">
-        <?php
-            include '../component/header.php';
-        ?>
+    <?php
+        include '../component/header.php';
+    ?>
     </header>
     <!--  //header -->
     <main>
         <!-- mainCont -->
         <section id="mainCont">
-            <div class="mainText">
-                <div>WE PROVIDE</div>
-                <div>VISUAL CODING</div>
-                <div class="white">SOLUTIONS</div>
-                <div>FOR YOU WEBS</div>
-            </div>
+            <?php
+                include '../connect/session.php';
+
+                unset($_SESSION['memberID']);
+                unset($_SESSION['youNickName']);
+
+                echo "<div class='errorAlert'>로그아웃 되었습니다.<a href='../main/index.html'>메인페이지로 이동하기</a></div>";
+                return;
+            ?>
         </section>
         <!-- //mainCont -->
     </main>
-<?php
-    echo '<pre>';
-    var_dump($_SESSION);
-    echo '<pre>';
-?>
 </body>
 </html>

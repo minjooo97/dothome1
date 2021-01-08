@@ -546,9 +546,6 @@ nav .about_5 {
     height: 50vw;
     background: #FFB4CD;
 }
-.sec4 .sec4-1.active {
-    background: #DC5E88;
-}
 .sec4 .wrap {
     width: 75vw;
     height: 38.4vw;
@@ -661,6 +658,19 @@ nav .about_5 {
     text-align: center;
     padding-top: 7.3vw;
 }
+.sec4 .wrap .box3 h2 {
+    font-size: 2vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .wrap .box3 h3.yes {
+    display: none;
+}
+.sec4 .wrap .box3 h2.yes {
+    display: block;
+}
 .sec4 .wrap .box4 {
     position: relative;
     width: 15vw;
@@ -719,6 +729,19 @@ nav .about_5 {
     text-align: center;
     padding-top: 7.3vw;
 }
+.sec4 .wrap .box4 h2 {
+    font-size: 2vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .wrap .box4 h3.yes {
+    display: none;
+}
+.sec4 .wrap .box4 h2.yes {
+    display: block;
+}
 .sec4 .wrap .box5 {
     position: relative;
     width: 14.95vw;
@@ -774,6 +797,14 @@ nav .about_5 {
     margin: -1px;
     border: 1px solid #000;
     background: url(../img/webstanrd.png) no-repeat;
+    background-size: cover;
+}
+.sec4 .wrap .box6.html {
+    background: url(../img/webstandard-html.PNG) no-repeat;
+    background-size: cover;
+}
+.sec4 .wrap .box6.css {
+    background: url(../img/webstandard-css.PNG) no-repeat;
     background-size: cover;
 }
 .sec4 .wrap .box7 {
@@ -858,6 +889,32 @@ nav .about_5 {
 .sec4 .sec4-2 .box2 {
     background: #FFB4CE;
 }
+.sec4 .sec4-2 .box3 h2 {
+    font-size: 2vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .sec4-2 .box3 h3.yes {
+    display: none;
+}
+.sec4 .sec4-2 .box3 h2.yes {
+    display: block;
+}
+.sec4 .sec4-2 .box4 h2 {
+    font-size: 2vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .sec4-2 .box4 h3.yes {
+    display: none;
+}
+.sec4 .sec4-2 .box4 h2.yes {
+    display: block;
+}
 #switch3 {
     width: 8.5vw;
     height: 5vw;
@@ -932,6 +989,14 @@ nav .about_5 {
     background: url(../img/responsivesite.png) no-repeat;
     background-size: cover;
 }
+.sec4 .sec4-2 .box6.html {
+    background: url(../img/responsivesite-html.PNG) no-repeat;
+    background-size: cover;
+}
+.sec4 .sec4-2 .box6.css {
+    background: url(../img/responsivesite-css.PNG) no-repeat;
+    background-size: cover;
+}
 .sec4 .sec4-2 .box7 h2 {
     padding-top: 1.8vw;
 }
@@ -965,6 +1030,32 @@ nav .about_5 {
 }
 .sec4 .sec4-3 .box1 h1 {
     padding-top: 2vw;
+}
+.sec4 .sec4-3 .box3 h2 {
+    font-size: 2vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .sec4-3 .box3 h3.yes {
+    display: none;
+}
+.sec4 .sec4-3 .box3 h2.yes {
+    display: block;
+}
+.sec4 .sec4-3 .box4 h2 {
+    font-size: 2vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .sec4-3 .box4 h3.yes {
+    display: none;
+}
+.sec4 .sec4-3 .box4 h2.yes {
+    display: block;
 }
 #switch5 {
     width: 8.5vw;
@@ -1040,6 +1131,14 @@ nav .about_5 {
     background: url(../img/responsivesite2.png) no-repeat;
     background-size: cover;
 }
+.sec4 .sec4-3 .box6.html {
+    background: url(../img/responsivesite2-html.png) no-repeat;
+    background-size: cover;
+}
+.sec4 .sec4-3 .box6.css {
+    background: url(../img/responsivesite2-css.PNG) no-repeat;
+    background-size: cover;
+}
 .sec4 .sec4-3 .box7 h2 {
     padding-top: 1.8vw;
 }
@@ -1077,13 +1176,31 @@ nav .about_5 {
 .sec4 .sec4-4 .box2 {
     background: #FFB4CE;
 }
-.sec4 .sec4-3 {
-    position: relative;
-    height: 50vw;
-    background: #FFB4CE;
+.sec4 .sec4-4 .box3 h2 {
+    font-size: 2vw;
+    color: #eb452b;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
 }
-.sec4 .sec4-3 .box1 h1 {
-    padding-top: 2vw;
+.sec4 .sec4-4 .box3 h3.yes {
+    display: none;
+}
+.sec4 .sec4-4 .box3 h2.yes {
+    display: block;
+}
+.sec4 .sec4-4 .box4 h2 {
+    font-size: 2vw;
+    color: #035DFF;
+    text-align: center;
+    padding-top: 7.3vw;
+    display: none;
+}
+.sec4 .sec4-4 .box4 h3.yes {
+    display: none;
+}
+.sec4 .sec4-4 .box4 h2.yes {
+    display: block;
 }
 #switch7 {
     width: 8.5vw;
@@ -1157,6 +1274,14 @@ nav .about_5 {
 }
 .sec4 .sec4-4 .box6 {
     background: url(../img/clovasite.png) no-repeat;
+    background-size: cover;
+}
+.sec4 .sec4-4 .box6.html {
+    background: url(../img/clovasite-html.PNG) no-repeat;
+    background-size: cover;
+}
+.sec4 .sec4-4 .box6.css {
+    background: url(../img/clovasite-css.PNG) no-repeat;
     background-size: cover;
 }
 .sec4 .sec4-4 .box7 h2 {
