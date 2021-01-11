@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* section */
+#section1 {width: 100%; height: 50.5vw; background-image: linear-gradient(to bottom, #FFB4CD 80%, #FFF460 20%)}
+#section2 {height: 1400px; background: #FFF460;}
+
+/* container */
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* header */
+#header {width: 100%; position: fixed; left: 0; top: 0; display: flex; justify-content: space-between; z-index: 1000000; opacity: 0;}
+
+#header h1 {font-size: 2vw; line-height: 0.9; font-family: 'Kaushan Script', cursive; font-weight: bold; letter-spacing: -2px; padding: 1vw;}
+#header h1 span:last-child {padding-left: 2vw;}
+
+#header nav ul {padding: 1vw;}
+#header nav ul li {display: inline-block;}
+#header nav ul li a {padding: 2.2vw; font-size: 0.8vw; font-family: 'Rammetto One';}
+
+nav .about_1 {width: 1vw;}
+nav .about_2 {width: 1.1vw;}
+nav .about_3 {width: 1vw;}
+nav .about_4 {width: 1.1vw;}
+nav .about_5 {width: 1vw;}
+/* //header */
+
+.sec1 h1 {
+    font-size: 5vw;
+    font-family: 'Rammetto One';
+    text-align: center;
+    line-height: 1.2;
+    position: absolute; 
+    left: 50vw; top: 15vw;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1000;
+    color: #fcedd8;
+    text-shadow: 0.3vw 0.3vw 0px #eb452b, 
+              0.6vw 0.6vw 0px #efa032, 
+              0.9vw 0.9vw 0px #46b59b, 
+              1.2vw 1.2vw 0px #017e7f, 
+              1.5vw 1.5vw 0px #052939, 
+              1.8vw 1.8vw 0px #035dff;
+}
+.sec1 h1 strong {
+    display: block;
+}
+.sec1 h1 strong span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(20px);
+}
+.sec1 .img1 img.img1 {
+    width: 19vw;
+    height: 26vw;
+    position: absolute;
+    left: 50vw; top: 80%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 205px;
+    border: 5px solid #fff;
+    box-shadow: 0.3vw 0.3vw 0px #eb452b, 
+              0.6vw 0.6vw 0px #efa032, 
+              0.9vw 0.9vw 0px #46b59b, 
+              1.2vw 1.2vw 0px #017e7f, 
+              1.5vw 1.5vw 0px #052939; 
+}
+.sec1 .img2 img.img2 {
+    width: 15vw;
+    position: absolute;
+    left: 10vw;
+    top: 80%;
+    opacity: 0;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    box-shadow: 0.3vw 0.3vw 0px #eb452b, 
+              0.6vw 0.6vw 0px #efa032, 
+              0.9vw 0.9vw 0px #46b59b, 
+              1.2vw 1.2vw 0px #017e7f, 
+              1.5vw 1.5vw 0px #052939;  
+}
+.sec1 .img3 img.img3 {
+    width: 11vw;
+    position: absolute;
+    left: auto; right: 10vw;
+    top: 60%;
+    opacity: 0;
+    border-radius: 33px;
+    border: 5px solid #fff;
+    box-shadow: 0.3vw 0.3vw 0px #eb452b, 
+              0.6vw 0.6vw 0px #efa032, 
+              0.9vw 0.9vw 0px #46b59b, 
+              1.2vw 1.2vw 0px #017e7f, 
+              1.5vw 1.5vw 0px #052939;  
+}
+
+.sec1 .about_tw1 {width: 2vw; position: absolute; left: 30vw; top: 25vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw2 {width: 2.5vw; position: absolute; right: 30vw; top: 35vw; opacity: 0;}
+.sec1 .about_tw3 {width: 2vw; position: absolute; right: 20vw; top: 10vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw4 {width: 2vw; position: absolute; left: 20.5vw; top: 10vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw5 {width: 2.5vw; position: absolute; right: 7vw; top: 25vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw6 {width: 2vw; position: absolute; left: 7vw; top: 36vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw7 {width: 10vw; position: absolute; left: 52vw; top: 41vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw8 {width: 6vw; position: absolute; left: 5vw; top: 15vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw9 {width: 5vw; position: absolute; right: 3vw; top: 38vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw10 {width: 3.5vw; position: absolute; left: 21vw; top: 49vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw11 {width: 6vw; position: absolute; left: 38vw; top: 25vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw12 {width: 2.5vw; position: absolute; left: 12vw; top: 2vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw13 {width: 3vw; position: absolute; right: 3vw; top: 8vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw14 {width: 2vw; position: absolute; right: 20vw; top: 22vw; z-index: 1100; opacity: 0;}
+/* //section1 */
+
+/* section2 */
+.sec2 {position: relative; display: flex; align-items: center; justify-content: space-around;}
+
+.sec2 .text-wrap {padding-top: 28.5vw;}
+.sec2 .text-wrap h1 {font-size: 2.4vw; font-family: 'Jua', sans-serif; line-height: 1.2; text-align: center; color: #035dff;}
+.sec2 .text-wrap p {font-size: 1.2vw; font-family: 'S-CoreDream-3Light'; line-height: 1.5; text-align: center; padding-top: 2vw;}
+.sec2 .text-wrap .p2 {font-size: 1.2vw; font-family: 'S-CoreDream-3Light'; line-height: 1.5; text-align: center; padding-top: 2.5vw; display: none;}
+.sec2 .text-wrap button {position: absolute; left: 41vw; top: 45vw; display: inline-block; cursor: pointer; outline: none; border: 0; vertical-align: middle; text-decoration: none; font-size: 1vw; font-family: 'S-CoreDream-3Light'; line-height: 1.5; z-index: 100;}
+.sec2 .text-wrap button.see-more {font-weight: 600; text-transform: uppercase; padding: 0.3em 1.5em; background: #ffe9e9; border: 2px solid #F875A2; border-radius: 0.75em; transform-style: preserve-3d; transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);}
+.sec2 .text-wrap button.see-more::before {position: absolute; content: ''; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background: #f9c4d2; border-radius: inherit; box-shadow: 0 0 0 2px #F875A2; transform: translate3d(0, 0.75em, -1em); transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);}
+.sec2 .text-wrap button.see-more:hover {background: #f0d0d0; transform: translate(0, 0.25em);}
+.sec2 .text-wrap button.see-more:hover::before {box-shadow: 0 0 0 2px #F875A2; transform: translate3d(0, 0.5em, -1em);}
+
+.sec2 .img-wrap .hi {position: absolute; left: 20.9vw; top: 25vw; z-index: 20; transition: all 0.8s; transform: rotate(-3.5deg);}
+.sec2 .img-wrap .hi img {width: 20.5vw; height: 25.5vw;}
+.sec2 .img-wrap .hi:nth-child(1) {z-index: 20;}
+.sec2 .img-wrap .hi:nth-child(2) {z-index: 19; opacity: 0;}
+.sec2 .img-wrap .hi:nth-child(3) {z-index: 18; opacity: 0;}
+.sec2 .img-wrap .img-boxWrap1 {width: 23.3vw; height: 28vw; border: 2px solid #000; background: #fff; transform: rotate(-3.5deg); position: absolute; left: 19.2vw; top: 23.8vw; z-index: 10;}
+.sec2 .img-wrap .img-boxWrap2 {width: 23.3vw; height: 28vw; background: #FFB4CD; border: 2px solid #000; transform: rotate(-3.5deg); position: absolute; left: 18vw; top: 25vw; z-index: 9;}
+.sec2 .img-wrap .img-boxWrap3 {width: 23.3vw; height: 28vw; border: 2px solid #000; background: #c7728e; transform: rotate(-3.5deg); position: absolute; left: 16.8vw; top: 26.3vw; z-index: 8;}
+
+.sec2 .circle {width: 2vw;}
+.sec2 .circle1 {position: absolute; left: 9vw; top: 20vw;}
+.sec2 .circle2 {position: absolute; left: 9vw; top: 58vw;}
+.sec2 .circle3 {position: absolute; right: 9vw; top: 20vw;}
+.sec2 .circle4 {position: absolute; right: 9vw; top: 58vw;}
+.sec2 .crown {width: 7.5vw; position: absolute; left: 36vw; top: 21vw; z-index: 21;}
+.sec2 .pageI2 {width: 5vw; position: absolute; left: 15vw; top: 41vw; z-index: 21;}
+.sec2 .pageI2-1 {width: 5.5vw; position: absolute; left: 16vw; top: 43vw; z-index: 21;}
+.sec2 .thing {width: 2.5vw; position: absolute; right: 15.5vw; top: 26.5vw; z-index: 21;}
+.sec2 .pageI6 {width: 6vw; position: absolute; right: 30vw; top: 50vw; z-index: 12;}
+.sec2 .pageI7 {width: 10vw; position: absolute; left: 35vw; top: 48vw; z-index: 21;}
+.sec2 .snow1 {width: 2vw; position: absolute; left: 15vw; top: 10vw; z-index: 21;}
+.sec2 .snow2 {width: 2.5vw; position: absolute; right: 45vw; top: 17vw; z-index: 21;}
+.sec2 .snow3 {width: 2.5vw; position: absolute; left: 48vw; top: 60vw; z-index: 21;}
+.sec2 .snow4 {width: 3vw; position: absolute; right: 15vw; top: 5vw; z-index: 21;}
+.sec2 .snow5 {width: 2.5vw; position: absolute; right: 20vw; top: 45vw; z-index: 21;}
+.sec2 .snow6 {width: 1.5vw; position: absolute; left: 0vw; top: 40vw; z-index: 21;}

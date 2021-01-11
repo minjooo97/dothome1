@@ -6,6 +6,9 @@
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style2.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 <body>
    
@@ -27,30 +30,10 @@
         <div id="section1">
             <div class="container">
                 <div class="sec1">
-                    <h1>SONETHING<br>SPECIAL</h1>
-                    
-
-                    <div class="carousel">
-                        <svg id="blob-1" viewbox="0 0 800 800">
-                            <defs>
-                                <clipPath id="mask">
-                                    <path id="path-1"/>
-                                </clipPath>
-                            </defs>
-                            <path id="path-2" />
-                        </svg>
-                        <div class="carousel--images">
-                            <img src="assets/img/main_img.png" class="active" />
-                            <img src="assets/img/left_img.jpg" />
-                            <img src="assets/img/top_img.png" />
-                        </div>
-                        <div class="carousel--play">
-                            Click
-                        </div>
-                    </div>
-
-                    
-                    
+                    <h1>
+                        <strong class="split">SONETHING</strong> 
+                        <strong class="split">SPECIAL</strong> 
+                    </h1>
                     <div class="img img1">
                         <img src="assets/img/main_img.png" alt="나">
                     </div>
@@ -65,8 +48,114 @@
         </div>
         <!-- //section1 -->
         
-        <div id="section2"></div><!-- //section1 -->
-        <div id="section3"></div><!-- //section1 -->
+        <div id="section2"></div><!-- //section2 -->
+        <div id="section3">
+            <div class="sec3">
+                <div class="site-h3">website</div>
+                <div class="site-wrap">
+                    <div class="site">
+                        <div class="conatiner">
+                            <div class="site-top">
+                                <div class="box1">
+                                    <h2>웹 표준 사이트</h2>
+                                </div>
+                                <div class="box2">
+                                    <h3>Click</h3>
+                                    <div>button</div>
+                                    <p>No</p>
+                                </div>
+                                <div class="box3">
+                                    <h3>HTML</h3>
+                                    <div>button</div>
+                                    <p>No</p>
+                                </div>
+                                <div class="box4">
+                                    <h3>CSS</h3>
+                                    <div>button</div>
+                                    <p>No</p>
+                                </div>
+                            </div>
+                            <div class="site-bom">
+                                <div class="box5">
+                                    
+                                </div>
+                                <div class="box6">
+                                    웹표준을 준수한 사이트 입니다.
+                                    웹 표준은 월드 와이드 웹의 측면을
+                                    서술하고 정의하는 공식 표준이나 다른
+                                    기술 규격을 가리키는 일반적인 용어입니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">
+                        <div class="conatiner">
+                            <div class="site-top">
+                                <div class="box1">1</div>
+                                <div class="box2">2</div>
+                                <div class="box3">3</div>
+                                <div class="box4">4</div>
+                                <div class="box5">5</div>
+                            </div>
+                            <div class="site-bom">
+                                <div class="box6">6</div>
+                                <div class="box7">7</div>
+                                <div class="box8">8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">
+                        <div class="conatiner">
+                            <div class="site-top">
+                                <div class="box1">1</div>
+                                <div class="box2">2</div>
+                                <div class="box3">3</div>
+                                <div class="box4">4</div>
+                                <div class="box5">5</div>
+                            </div>
+                            <div class="site-bom">
+                                <div class="box6">6</div>
+                                <div class="box7">7</div>
+                                <div class="box8">8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">
+                        <div class="conatiner">
+                            <div class="site-top">
+                                <div class="box1">1</div>
+                                <div class="box2">2</div>
+                                <div class="box3">3</div>
+                                <div class="box4">4</div>
+                                <div class="box5">5</div>
+                            </div>
+                            <div class="site-bom">
+                                <div class="box6">6</div>
+                                <div class="box7">7</div>
+                                <div class="box8">8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site">
+                        <div class="conatiner">
+                            <div class="site-top">
+                                <div class="box1">1</div>
+                                <div class="box2">2</div>
+                                <div class="box3">3</div>
+                                <div class="box4">4</div>
+                                <div class="box5">5</div>
+                            </div>
+                            <div class="site-bom">
+                                <div class="box6">6</div>
+                                <div class="box7">7</div>
+                                <div class="box8">8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section1 -->
         <div id="section4"></div><!-- //section1 -->
         <div id="section5"></div><!-- //section1 -->
         <div id="section6"></div><!-- //section1 -->
@@ -76,136 +165,24 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script>
-      class SupahBlob {
-          constructor(obj) {
-            if (!obj.el) return
 
-            this.el = obj.el
-            this.segments = obj.segments || 8
-            this.centerX = obj.centerX || 400
-            this.centerY = obj.centerY || 400
-            this.minRadius = obj.minRadius || 300
-            this.maxRadius = obj.maxRadius || 380
-            this.minDuration = obj.minDuration || 1
-            this.maxDuration = obj.maxDuration || 2
-            this.maskEl = obj.maskEl || null
-            this.maskID = obj.maskID || null
+        document.querySelectorAll(".split").forEach(elem => {
+            let splitText = elem.innerText;
+            let splitWrap = splitText.split("").join("</span><span aria-hidden:'true'>");
+                splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>";
+            
+            elem.innerHTML = splitWrap;
+            elem.setAttribute("aria-label", splitText);
+        });
 
-            this.init()
-          }
-  
-          init() {
-            this.points = []
-            const slice = Math.PI * 2 / this.segments
-            const tl = new gsap.timeline({
-              onUpdate: () => {
-                this.update()
-              }
-            })
-    
-            for (let i = 0; i < this.segments; i++) {
-                const angle = slice * i
-                const duration = gsap.utils.random(this.minDuration, this.maxDuration)
-
-            const p = {
-                x: this.centerX + (Math.cos(angle) * this.minRadius),
-                y: this.centerX + (Math.sin(angle) * this.minRadius),
-            }
-      
-      const tween = gsap.to(p, {
-        duration,
-        x: this.centerX + Math.cos(angle) * this.maxRadius,
-        y: this.centerX + Math.sin(angle) * this.maxRadius,
-        ease: 'sine.inOut',
-        repeat: -1,
-        yoyo: true,
-      })
-      tl.add(tween, -duration)
-      this.points.push(p)
-    }
-  }
-    
-  update() {
-    this.el.setAttribute('d', this.createPath())
-    
-    // Force clipPath update
-    if (this.maskEl) {
-      this.maskEl.style.clipPath = 'none'
-      this.maskEl.style.webkitClipPath = 'none'
-      this.maskEl.offsetWidth
-      this.maskEl.style.clipPath = `url("${this.maskID}")`
-      this.maskEl.style.webkitClipPath = `url("${this.maskID}")`
-    }
-  }
-  
-  createPath() {
-    const data = this.points
-    const size = this.points.length
-    
-    let path = `M${data[0].x} ${data[0].y} C`
-    
-    for (let i = 0; i < size; i++) {
-      const p0 = data[(i - 1 + size) % size]
-      const p1 = data[i]
-      const p2 = data[(i + 1) % size]
-      const p3 = data[(i + 2) % size]
-      
-      const x1 = p1.x + (p2.x - p0.x) * 0.15
-      const y1 = p1.y + (p2.y - p0.y) * 0.15
-      const x2 = p2.x - (p3.x - p1.x) * 0.15
-      const y2 = p2.y - (p3.y - p1.y) * 0.15
-      
-      path += ` ${x1} ${y1} ${x2} ${y2} ${p2.x} ${p2.y}`
-    }
-    
-    return `${path}z`
-  }
-}
-
-
-/*--------------------
-Blob Mask
---------------------*/
-const blob1 = new SupahBlob({
-  el: document.querySelector('#path-1'),
-  segments: 6,
-  centerX: 400,
-  centerY: 400,
-  minRadius: 300,
-  maxRadius: 380,
-  minDuration: 1,
-  maxDuration: 3,
-  maskEl: document.querySelector('.carousel--images'),
-  maskID: '#mask'
-})
-
-
-/*--------------------
-Blob Background
---------------------*/
-const blob2 = new SupahBlob({
-  el: document.querySelector('#path-2'),
-  segments: 6,
-  centerX: 400,
-  centerY: 400,
-  minRadius: 320,
-  maxRadius: 400,
-  minDuration: 2,
-  maxDuration: 3
-})
-
-
-/*--------------------
-Fastest Carousel
---------------------*/
-let active = 0
-const slides = document.querySelectorAll('.carousel--images img')
-document.querySelector('.carousel--play').addEventListener('click', () => {
-  slides[active].classList.remove('active')
-  active = active < slides.length - 1 ? active + 1 : 0
-  slides[active].classList.add('active')
-})
-        
+        setTimeout(function(){
+            var tl = gsap.timeline();
+            tl.to(".sec1 h1 strong span", {opacity: 1, duration: 0.4, y: 0, stagger: 0.05});
+            tl.to(".sec1 .img.img2", {opacity: 1, duration: 0.9, top: "70%", ease: "elastic.out(1, 0.3)"});
+            tl.to(".sec1 .img.img1", {opacity: 1, duration: 0.9, top: "70%", ease: "elastic.out(1, 0.3)"}, "-=0.5");
+            tl.to(".sec1 .img.img3", {opacity: 1, duration: 0.9, top: "50%", ease: "elastic.out(1, 0.3)"}, "-=0.5");
+            tl.to("#header", {opacity: 1, duration: 0.9, top: 0,  ease: "power4.out"}, "-=0.4");
+        },2000);
     </script>
     
     
