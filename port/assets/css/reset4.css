@@ -1,5 +1,5 @@
 /* reset */
-body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td, textarea, button, form {margin: 0; padding: 0;}
+body, div, ul, li, ol, dl, dd, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, tr, td, textarea, button, form {margin: 0; padding: 0; box-sizing: border-box;}
 
 /* 링크 초기화 */
 a {color: #222; text-decoration: none;}

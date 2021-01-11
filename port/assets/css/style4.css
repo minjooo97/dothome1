@@ -16,6 +16,7 @@
 /* section */
 #section1 {width: 100%; height: 50.5vw; background-image: linear-gradient(to bottom, #FFB4CD 80%, #FFF460 20%)}
 #section2 {height: 1400px; background: #FFF460;}
+#section3 {height: 5000px;}
 
 /* container */
 .container {
@@ -118,7 +119,7 @@ nav .about_5 {width: 1vw;}
 .sec1 .about_tw4 {width: 2vw; position: absolute; left: 20.5vw; top: 10vw; z-index: 1100; opacity: 0;}
 .sec1 .about_tw5 {width: 2.5vw; position: absolute; right: 7vw; top: 25vw; z-index: 1100; opacity: 0;}
 .sec1 .about_tw6 {width: 2vw; position: absolute; left: 7vw; top: 36vw; z-index: 1100; opacity: 0;}
-.sec1 .about_tw7 {width: 10vw; position: absolute; left: 52vw; top: 41vw; z-index: 1100; opacity: 0;}
+.sec1 .about_tw7 {width: 10vw; position: absolute; left: 52vw; top: 45vw; z-index: 1100; opacity: 0;}
 .sec1 .about_tw8 {width: 6vw; position: absolute; left: 5vw; top: 15vw; z-index: 1100; opacity: 0;}
 .sec1 .about_tw9 {width: 5vw; position: absolute; right: 3vw; top: 38vw; z-index: 1100; opacity: 0;}
 .sec1 .about_tw10 {width: 3.5vw; position: absolute; left: 21vw; top: 49vw; z-index: 1100; opacity: 0;}
@@ -167,3 +168,76 @@ nav .about_5 {width: 1vw;}
 .sec2 .snow4 {width: 3vw; position: absolute; right: 15vw; top: 5vw; z-index: 21;}
 .sec2 .snow5 {width: 2.5vw; position: absolute; right: 20vw; top: 45vw; z-index: 21;}
 .sec2 .snow6 {width: 1.5vw; position: absolute; left: 0vw; top: 40vw; z-index: 21;}
+/* //sec2 */
+
+/* sec3 */
+.sec3 .site-h3 {position: relative; height: 30vw;}
+
+.sec3 .back {width: 100%; height: 100%;}
+
+.sec3 .h1Box {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap;}
+.sec3 .h1Box1 {padding-top: 3vw;}
+
+.sec3 h1 {font-size: 9vw; text-align: center; line-height: 1.2; font-family: 'Rammetto One'; display: inline-block; letter-spacing: -10px; -webkit-text-stroke: 3px #000; text-shadow: 8px 5px #000;}
+.sec3 h1:nth-child(1) {color: #FAC43A;}
+.sec3 h1:nth-child(2) {color: #34DCB5;}
+.sec3 h1:nth-child(3) {color: #09C2C3;}
+.sec3 h1:nth-child(4) {color: #2A71BF;}
+.sec3 h1:nth-child(5) {color: #205BC8;}
+.sec3 h1:nth-child(6) {color: #DC306C;}
+.sec3 h1:nth-child(7) {color: #A22CD0;}
+
+.sec3 .webi1 {width: 2vw; position: absolute; left: 0vw; top: 2vw;}
+.sec3 .webi2 {width: 3vw; position: absolute; left: 15vw; top: 9vw;}
+.sec3 .webi3 {width: 2.5vw; position: absolute; right: 15vw; top: 3vw;}
+.sec3 .webi4 {width: 1.5vw; position: absolute; right: 3vw; top: 10vw;}
+
+.site-wrap {}
+.site-wrap .site {background: #FFB4CD; padding: 10vh 20px;}
+.site-wrap .site:nth-child(even) {background: #FFF460;}
+.site-wrap .site .container {border: 3px solid #000; max-width: 1400px; width: 100%; margin: 0 auto;}
+
+.site-wrap .site .container .site-top {width: 100%; height: 340px; background: #ccc; border-bottom: 3px solid #000; display: flex;}
+.site-wrap .site .container .site-bom {width: 100%; height: 500px; background: #ddd; display: flex; flex-wrap: wrap;}
+
+.site-wrap .site .box1 {width: 40%; border-right: 3px solid #000;}
+.site-wrap .site .box2 {width: 20%; border-right: 3px solid #000;}
+.site-wrap .site .box3 {width: 20%; border-right: 3px solid #000;}
+.site-wrap .site .box4 {width: 20%;}
+.site-wrap .site .box5 {width: 60%; border-right: 3px solid #000;}
+.site-wrap .site .box6 {width: 40%;}
+
+.site-wrap .site .box1 {background: #DC5E88; display: flex; align-items: center; justify-content: center;}
+.site-wrap .site .box2 {background: #035DFF; text-align: center; font-family: 'Rammetto One';}
+.site-wrap .site .box3 {background: #fff; text-align: center; font-family: 'Rammetto One';}
+.site-wrap .site .box4 {background: #FFF460; text-align: center; font-family: 'Rammetto One';}
+.site-wrap .site .box5 {background: url(../img/webstanrd.png) no-repeat; background-size: contain;}
+.site-wrap .site .box6 {background: #FF6541;}
+
+.site-wrap .site .box1 h2 {font-family: 'Jua'; font-size: 2.5vw; text-transform: uppercase; color: #fff; line-height: 1.3;}
+
+.site-wrap .site .box2 h3 {font-size: 2.8vw; color: #fff; text-shadow: 5px 5px 0 #000; padding: 1.5vw 0 0.5vw 0;}
+.site-wrap .site .box2 div {width: 5vw; height: 5vw; background: #fff; border: 3px solid #000; border-radius: 50%; box-shadow: 3px 3px 0 #000; margin: 0 auto;}
+.site-wrap .site .box2 div a {font-size: 1.2vw; line-height: 4.8vw;}
+.site-wrap .site .box2 p {font-size: 1.5vw; color: #fff; text-shadow: 5px 5px 0 #000; padding-top: 1.3vw;}
+
+.site-wrap .site .box3 {position: relative;}
+#switch1 {width: 8.5vw; height: 5vw; padding: 0.8vw; border: 2px solid #000; box-sizing: border-box; transition: all 0.3s; border-radius: 200px; cursor: pointer; margin: 0 auto; background: #FFB4CD; box-shadow: 3px 3px 0 #000;}
+#toggle1 {width: 3.7vw; height: 3.7vw; background: #035dff; border-radius: 50%; transition: all 0.3s; position: relative; left: -0.3vw; top: -0.3vw; border: 4px solid #000;}
+#toggle1 .toggle1 {width: 3vw; height: 3vw; background: #fff; border: 4px solid #000; border-radius: 50%; position: absolute; left: 0.15vw; top: 0.13vw; }
+#switch1.hover #toggle1 {left: 3vw;}
+.site-wrap .site .box3 h3 {font-size: 2.8vw; color: #035dff; padding: 1.5vw 0 0.4vw 0;}
+.site-wrap .site .box3 p {font-size: 2vw; color: #035dff; padding-top: 1.1vw;}
+
+.site-wrap .site .box4 {position: relative;}
+#switch2 {width: 8.5vw; height: 5vw; padding: 0.8vw; border: 2px solid #000; box-sizing: border-box; transition: all 0.3s; border-radius: 200px; cursor: pointer; margin: 0 auto; background: #FF6541; box-shadow: 3px 3px 0 #000;}
+#toggle2 {width: 3.7vw; height: 3.7vw; background: #FFF460; border-radius: 50%; transition: all 0.3s; position: relative; left: -0.3vw; top: -0.3vw; border: 4px solid #000;}
+#toggle2 .toggle2 {width: 3vw; height: 3vw; background: #fff; border: 4px solid #000; border-radius: 50%; position: absolute; left: 0.15vw; top: 0.13vw; }
+#switch2.hover #toggle2 {left: 3vw;}
+.site-wrap .site .box4 h3 {font-size: 2.8vw; color: #FF6541; padding: 1.5vw 0 0.4vw 0;}
+.site-wrap .site .box4 p {font-size: 2vw; color: #FF6541; padding-top: 1.1vw;}
+
+.site-wrap .site .box6 h3 {font-size: 1.5vw; font-family: 'Jua'; text-align: center; word-break: keep-all; color: #FFF460; padding: 2vw 0 2vw 0; border-bottom: 3px solid #000;}
+.site-wrap .site .box6 div {padding-top: 5.5vw;}
+.site-wrap .site .box6 a {font-size: 1.5vw;; font-family: 'Rammetto One','jua'; margin: 6vw 0 0 0.9vw; transition: all 0.3s;}
+.site-wrap .site .box6 a:hover {color: #fff; text-shadow: 3px 3px 0 #000;}
