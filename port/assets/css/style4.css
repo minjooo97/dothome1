@@ -15,8 +15,10 @@
 }
 /* section */
 #section1 {width: 100%; height: 50.5vw; background-image: linear-gradient(to bottom, #FFB4CD 80%, #FFF460 20%)}
-#section2 {height: 1400px; background: #FFF460;}
-#section3 {height: 4000px;}
+#section2 {height: 70vw; background: #FFF460;}
+#section3 {height: 227vw;}
+#section4 {width: 100%; height: 30vw;}
+#section5 {width: 100%; height: 125vw;}
 
 /* container */
 .container {
@@ -169,6 +171,30 @@ nav .about_5 {width: 1vw;}
 .sec2 .snow4 {width: 3vw; position: absolute; right: 15vw; top: 5vw; z-index: 21;}
 .sec2 .snow5 {width: 2.5vw; position: absolute; right: 20vw; top: 45vw; z-index: 21;}
 .sec2 .snow6 {width: 1.5vw; position: absolute; left: 0vw; top: 40vw; z-index: 21;}
+
+.sec2 .snow1 {animation: snow3 2s linear infinite forwards}
+.sec2 .snow2 {animation: snow2 2.5s linear infinite forwards}
+.sec2 .snow3 {animation: snow3 2s linear infinite forwards}
+.sec2 .snow4 {animation: snow2 2.5s linear infinite forwards}
+.sec2 .snow5 {animation: snow3 2s linear infinite forwards}
+.sec2 .snow6 {animation: snow2 2.5s linear infinite forwards}
+.sec2 .pageI6 {animation: pageI6 4s linear infinite forwards;}
+
+@keyframes snow2 {
+    0% {opacity: 0; transform: rotate(0deg);}
+    50% {opacity: 1; transform: rotate(180deg);}
+    100% {opacity: 0; transform: rotate(360deg);}
+}
+@keyframes snow3 {
+    0% {opacity: 0; transform: rotate(0deg);}
+    50% {opacity: 1; transform: rotate(-180deg);}
+    100% {opacity: 0; transform: rotate(-360deg);}
+}
+@keyframes pageI6 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
 /* //sec2 */
 
 /* sec3 */
@@ -212,10 +238,6 @@ nav .about_5 {width: 1vw;}
 .site-wrap .site .box2 {background: #035DFF; text-align: center; font-family: 'Rammetto One';}
 .site-wrap .site .box3 {background: #fff; text-align: center; font-family: 'Rammetto One';}
 .site-wrap .site .box4 {background: #FFF460; text-align: center; font-family: 'Rammetto One';}
-.site-wrap .site .box5 {background: url(../img/webstanrd.png) no-repeat; background-size: cover;}
-.site-wrap .site .box5.box5-2 {background: url(../img/responsivesite.png) no-repeat; background-size: cover;}
-.site-wrap .site .box5.box5-3 {background: url(../img/responsivesite2.png) no-repeat; background-size: cover;}
-.site-wrap .site .box5.box5-4 {background: url(../img/clovasite.png) no-repeat; background-size: cover;}
 .site-wrap .site .box6 {background: #FF6541;}
 
 .site-wrap .site .box1 h2 {font-family: 'Jua'; font-size: 2.5vw; text-transform: uppercase; color: #fff; line-height: 1.3;}
@@ -243,6 +265,134 @@ nav .about_5 {width: 1vw;}
 
 .site-wrap .site .box6 h3 {font-size: 1.5vw; font-family: 'Jua'; text-align: center; word-break: keep-all; color: #FFF460; padding: 2vw 0 2vw 0; border-bottom: 3px solid #000;}
 .site-wrap .site .box6 div {padding-top: 3vw; text-align: center;}
+.site-wrap .site .box6 .div2 {padding-top: 2vw;}
+.site-wrap .site .box6 .div3 {padding-top: 2vw;}
+.site-wrap .site .box6 .div4 {padding-top: 3vw;}
 .site-wrap .site .box6 a {font-size: 1.5vw;; font-family: 'Rammetto One','jua'; margin: 0.5vw; transition: all 0.3s;}
 .site-wrap .site .box6 a:hover {color: #fff; text-shadow: 3px 3px 0 #000;}
 /* //sec3 */
+
+/* sec4 */
+.sec4 {position: relative; height: inherit; background: #0E0F33;}
+.sec4 h1 {font-family: 'Rammetto One'; font-size: 9vw; text-align: center; padding-top: 7vw; color: #FFF; animation: text-shadow 1s linear infinite;}
+
+@keyframes text-shadow {
+    from, 19.9% {text-shadow: 0 0 #FAC43A, 0.1vw 0.1vw #FAC43A, 0.2vw 0.2vw #FAC43A, 0.3vw 0.3vw #FAC43A, 0.4vw 0.4vw #FAC43A, 0.5vw 0.5vw #FAC43A, 0.6vw 0.6vw #34DCB5, 0.7vw 0.7vw #34DCB5, 0.8vw 0.8vw #34DCB5, 0.9vw 0.9vw #34DCB5, 1vw 1vw #34DCB5, 1.1vw 1.1vw #34DCB5, 1.2vw 1.2vw #09C2C3, 1.3vw 1.3vw #09C2C3, 1.4vw 1.4vw #09C2C3, 1.5vw 1.5vw #09C2C3, 1.6vw 1.6vw #09C2C3, 1.7vw 1.7vw  #2A71BF, 1.8vw 1.8vw #2A71BF, 1.9vw 1.9vw #2A71BF, 2vw 2vw #2A71BF, 2.1vw 2.1vw #2A71BF, 2.2vw 2.2vw  #205BC8, 2.3vw 2.3vw #205BC8, 2.4vw 2.4vw #205BC8, 2.5vw 2.5vw #205BC8, 2.6vw 2.6vw #205BC8, 2.7vw 2.7vw #DC306C, 2.8vw 2.8vw #DC306C, 2.9vw 2.9vw #DC306C, 3vw 3vw #DC306C, 3.1vw 3.1vw #DC306C, 3.2vw 3.1vw #A22CD0, 3.2vw 3.2vw #A22CD0, 3.3vw 3.3vw #A22CD0, 3.4vw 3.4vw #A22CD0, 3.5vw 3.5vw #A22CD0, 3.6vw 3.6vw #A22CD0;}
+    20%, 39.9% {text-shadow: 0 0 #A22CD0, 0.1vw 0.1vw #A22CD0, 0.2vw 0.2vw #A22CD0, 0.3vw 0.3vw #A22CD0, 0.4vw 0.4vw #A22CD0, 0.5vw 0.5vw #A22CD0, 0.6vw 0.6vw #DC306C, 0.7vw 0.7vw #DC306C, 0.8vw 0.8vw #DC306C, 0.9vw 0.9vw #DC306C, 1vw 1vw #DC306C, 1.1vw 1.1vw #DC306C, 1.2vw 1.2vw #205BC8, 1.3vw 1.3vw #205BC8, 1.4vw 1.4vw #205BC8, 1.5vw 1.5vw #205BC8, 1.6vw 1.6vw #205BC8, 1.7vw 1.7vw  #2A71BF, 1.8vw 1.8vw #2A71BF, 1.9vw 1.9vw #2A71BF, 2vw 2vw #2A71BF, 2.1vw 2.1vw #2A71BF, 2.2vw 2.2vw  #09C2C3, 2.3vw 2.3vw #09C2C3, 2.4vw 2.4vw #09C2C3, 2.5vw 2.5vw #09C2C3, 2.6vw 2.6vw #09C2C3, 2.7vw 2.7vw #34DCB5, 2.8vw 2.8vw #34DCB5, 2.9vw 2.9vw #34DCB5, 3vw 3vw #34DCB5, 3.1vw 3.1vw #34DCB5, 3.1vw 3.1vw #FAC43A, 3.2vw 3.2vw #FAC43A, 3.3vw 3.3vw #FAC43A, 3.4vw 3.4vw #FAC43A, 3.5vw 3.5vw #FAC43A, 3.6vw 3.6vw #FAC43A;}
+    40%, 59.9% {text-shadow: 0 0 #34DCB5, 0.1vw 0.1vw #34DCB5, 0.2vw 0.2vw #34DCB5, 0.3vw 0.3vw #34DCB5, 0.4vw 0.4vw #34DCB5, 0.5vw 0.5vw #34DCB5, 0.6vw 0.6vw #09C2C3, 0.7vw 0.7vw #09C2C3, 0.8vw 0.8vw #09C2C3, 0.9vw 0.9vw #09C2C3, 1vw 1vw #09C2C3, 1.1vw 1.1vw #09C2C3, 1.2vw 1.2vw #2A71BF, 1.3vw 1.3vw #2A71BF, 1.4vw 1.4vw #2A71BF, 1.5vw 1.5vw #2A71BF, 1.6vw 1.6vw #2A71BF, 1.7vw 1.7vw #205BC8, 1.8vw 1.8vw #205BC8, 1.9vw 1.9vw #205BC8, 2vw 2vw #205BC8, 2.1vw 2.1vw #205BC8, 2.2vw 2.2vw  #DC306C, 2.3vw 2.3vw #DC306C, 2.4vw 2.4vw #DC306C, 2.5vw 2.5vw #DC306C, 2.6vw 2.6vw #DC306C, 2.7vw 2.7vw #A22CD0, 2.8vw 2.8vw #A22CD0, 2.9vw 2.9vw #A22CD0, 3vw 3vw #A22CD0, 3.1vw 3.1vw #A22CD0, 3.1vw 3.1vw #205BC8, 3.2vw 3.2vw #205BC8, 3.3vw 3.3vw #205BC8, 3.4vw 3.4vw #205BC8, 3.5vw 3.5vw #205BC8, 3.6vw 3.6vw #205BC8;}
+    60%, 79.9% {text-shadow: 0 0 #DC306C, 0.1vw 0.1vw #DC306C, 0.2vw 0.2vw #DC306C, 0.3vw 0.3vw #DC306C, 0.4vw 0.4vw #DC306C, 0.5vw 0.5vw #DC306C, 0.6vw 0.6vw #205BC8, 0.7vw 0.7vw #205BC8, 0.8vw 0.8vw #205BC8, 0.9vw 0.9vw #205BC8, 1vw 1vw #205BC8, 1.1vw 1.1vw #205BC8, 1.2vw 1.2vw #2A71BF, 1.3vw 1.3vw #2A71BF, 1.4vw 1.4vw #2A71BF, 1.5vw 1.5vw #2A71BF, 1.6vw 1.6vw #2A71BF, 1.7vw 1.7vw #09C2C3, 1.8vw 1.8vw #09C2C3, 1.9vw 1.9vw #09C2C3, 2vw 2vw #09C2C3, 2.1vw 2.1vw #09C2C3, 2.2vw 2.2vw  #34DCB5, 2.3vw 2.3vw #34DCB5, 2.4vw 2.4vw #34DCB5, 2.5vw 2.5vw #34DCB5, 2.6vw 2.6vw #34DCB5, 2.7vw 2.7vw #FAC43A, 2.8vw 2.8vw #FAC43A, 2.9vw 2.9vw #FAC43A, 3vw 3vw #FAC43A, 3.1vw 3.1vw #FAC43A, 3.1vw 3.1vw #A22CD0, 3.2vw 3.2vw #A22CD0, 3.3vw 3.3vw #A22CD0, 3.4vw 3.4vw #A22CD0, 3.5vw 3.5vw #A22CD0, 3.6vw 3.6vw #A22CD0;}
+    80%, to {text-shadow: 0 0 #2A71BF, 0.1vw 0.1vw #2A71BF, 0.2vw 0.2vw #2A71BF, 0.3vw 0.3vw #2A71BF, 0.4vw 0.4vw #2A71BF, 0.5vw 0.5vw #2A71BF, 0.6vw 0.6vw #205BC8, 0.7vw 0.7vw #205BC8, 0.8vw 0.8vw #205BC8, 0.9vw 0.9vw #205BC8, 1vw 1vw #205BC8, 1.1vw 1.1vw #205BC8, 1.2vw 1.2vw #DC306C, 1.3vw 1.3vw #DC306C, 1.4vw 1.4vw #DC306C, 1.5vw 1.5vw #DC306C, 1.6vw 1.6vw #DC306C, 1.7vw 1.7vw #A22CD0, 1.8vw 1.8vw #A22CD0, 1.9vw 1.9vw #A22CD0, 2vw 2vw #A22CD0, 2.1vw 2.1vw #A22CD0, 2.2vw 2.2vw  #FAC43A, 2.3vw 2.3vw #FAC43A, 2.4vw 2.4vw #FAC43A, 2.5vw 2.5vw #FAC43A, 2.6vw 2.6vw #FAC43A, 2.7vw 2.7vw #34DCB5, 2.8vw 2.8vw #34DCB5, 2.9vw 2.9vw #34DCB5, 3vw 3vw #34DCB5, 3.1vw 3.1vw #34DCB5, 3.1vw 3.1vw #09C2C3, 3.2vw 3.2vw #09C2C3, 3.3vw 3.3vw #09C2C3, 3.4vw 3.4vw #09C2C3, 3.5vw 3.5vw #09C2C3, 3.6vw 3.6vw #09C2C3;}
+}
+/* //sec4 */
+
+/* sec5 */
+.sec5 .pick {position: relative; height: 125vw; background: #000; font-family: 'Rammetto One', cursive;}
+.sec5 .pick h1 {font-size: 8vw; text-align: center; line-height: 4;}
+.sec5 .pick h1 span:nth-child(1) {color: #2154d4; border-bottom: 0.4vw solid #2154d4;}
+.sec5 .pick h1 span:nth-child(2) {color: #b671df; border-bottom: 0.4vw solid #b671df;}
+.sec5 .pick h1 span:nth-child(3) {color: #2154d4; border-bottom: 0.4vw solid #2154d4;}
+.sec5 .pick h1 span:nth-child(4) {color: #44976e; border-bottom: 0.4vw solid #44976e;}
+.sec5 .pick h1 span:nth-child(5) {color: #ff6541; border-bottom: 0.4vw solid #ff6541;}
+.sec5 .pick h1 span:nth-child(6) {color: #2154d4; border-bottom: 0.4vw solid #2154d4;}
+.sec5 .pick h1 span:nth-child(7) {color: #b671df; border-bottom: 0.4vw solid #b671df;}
+.sec5 .pick h1 span:nth-child(8) {color: #2154d4; border-bottom: 0.4vw solid #2154d4;}
+.sec5 .pick h1 span:nth-child(9) {color: #44976e; border-bottom: 0.4vw solid #44976e;}
+.sec5 .pick h1 span:nth-child(10) {color: #ff6541; border-bottom: 0.4vw solid #ff6541;}
+.sec5 .pick h1 span:nth-child(11) {color: #2154d4; border-bottom: 0.4vw solid #2154d4;}
+
+.sec5 .pick .card-wrap {width: 75vw; height: 82vw; background: #000; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 0%; justify-content: space-between;}
+.sec5 .pick .card-wrap > div {width: 24.5vw; height: 40vw; border-radius: 1vw;}
+.sec5 .pick .card-wrap .card1 {background: #5226f0;}
+.sec5 .pick .card-wrap .card2 {background: #f25a25;}
+.sec5 .pick .card-wrap .card3 {background: #ffb322;}
+.sec5 .pick .card-wrap .card4 {background: #f25a25;}
+.sec5 .pick .card-wrap .card5 {background: #ffb322;}
+.sec5 .pick .card-wrap .card6 {background: #5226f0;}
+
+.sec5 .card1 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #ffb322; margin: 5%;}
+.sec5 .card2 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #000; margin: 5%;}
+.sec5 .card3 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #5226f0; margin: 5%;}
+.sec5 .card4 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #000; margin: 5%;}
+.sec5 .card5 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #5226f0; margin: 5%;}
+.sec5 .card6 .ract {width: 21.7vw; height: 37.2vw; border: 0.2vw solid #ffb322; margin: 5%;}
+
+.sec5 .card1 .ract h3 {font-size: 1.8vw; text-align: center; color: #ffb322;}
+.sec5 .card1 .ract h5 {font-size: 1.8vw; text-align: center; color: #ffb322; line-height: 2.7;}
+.sec5 .card2 .ract h3 {font-size: 1.8vw; text-align: center; color: #000;}
+.sec5 .card2 .ract h5 {font-size: 1.8vw; text-align: center; color: #000; line-height: 2.7;}
+.sec5 .card3 .ract h3 {font-size: 1.8vw; text-align: center; color: #5226f0;}
+.sec5 .card3 .ract h5 {font-size: 1.8vw; text-align: center; color: #5226f0; line-height: 2.7;}
+.sec5 .card4 .ract h3 {font-size: 1.8vw; text-align: center; color: #000;}
+.sec5 .card4 .ract h5 {font-size: 1.8vw; text-align: center; color: #000; line-height: 2.7;}
+.sec5 .card5 .ract h3 {font-size: 1.8vw; text-align: center; color: #5226f0;}
+.sec5 .card5 .ract h5 {font-size: 1.8vw; text-align: center; color: #5226f0; line-height: 2.7;}
+.sec5 .card6 .ract h3 {font-size: 1.8vw; text-align: center; color: #ffb322;}
+.sec5 .card6 .ract h5 {font-size: 1.8vw; text-align: center; color: #ffb322; line-height: 2.7;}
+
+.sec5 .card1 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg1.png) no-repeat; background-size: cover; border: 0.2vw solid #ffb322; margin-left: -0.2vw;}
+.sec5 .card2 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg2.png) no-repeat; background-size: cover; border: 0.2vw solid #000; margin-left: -0.2vw;}
+.sec5 .card3 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg3.png) no-repeat; background-size: cover; border: 0.2vw solid #5226f0; margin-left: -0.2vw;}
+.sec5 .card4 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg4.png) no-repeat; background-size: cover; border: 0.2vw solid #000; margin-left: -0.2vw;}
+.sec5 .card5 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg5.png) no-repeat; background-size: cover; border: 0.2vw solid #5226f0; margin-left: -0.2vw;}
+.sec5 .card6 .ract .imgwrap {position: relative; width: 21.7vw; height: 29.5vw; background: url(../img/aniImg6.png) no-repeat; background-size: cover; border: 0.2vw solid #ffb322; margin-left: -0.2vw;}
+
+.sec5 .card-wrap .ract .imgwrap .clickBox {width: 19.3vw; height: 5vw; background: #fff; border-radius: 5vw; border: 0.1vw solid #000; position: absolute; left: 1.1vw; bottom: 1vw; transition: all 0.3s;}
+.sec5 .card-wrap .ract .imgwrap .clickBox a p {font-size: 2.1vw; text-align: center; line-height: 2.5;}
+.sec5 .card-wrap .ract .imgwrap .clickBox:hover {transform: scale(1.05);}
+
+.sec5 .pick .aniIcon1 {width: 4vw; position: absolute; right: 1.1vw; top: 0.9vw; animation: aniIcon 2.5s linear infinite;}
+.sec5 .pick .aniIcon2 {width: 4vw; position: absolute; left: 1.1vw; top: 0.9vw; animation: aniIcon 2.5s linear infinite;}
+.sec5 .pick .aniIcon3 {width: 4vw; position: absolute; right: 1.1vw; bottom: 0.9vw; animation: aniIcon 2.5s linear infinite;}
+.sec5 .pick .aniIcon4 {width: 4vw; position: absolute; left: 0.6vw; bottom: 0.5vw; animation: aniIcon 2.5s linear infinite;}
+.sec5 .pick .anidot1 {width: 1vw; position: absolute; right: 1vw; top: 20vw; animation: anidot1 2.5s linear infinite;}
+.sec5 .pick .anidot2 {width: 1.5vw; position: absolute; left: 5vw; top: 50vw; animation: anidot2 2s linear infinite;}
+.sec5 .pick .anidot3 {width: 1vw; position: absolute; right: 25vw; bottom: 8vw; animation: anidot3 3.5s linear infinite;}
+.sec5 .pick .anidot4 {width: 1.5vw; position: absolute; left: 30vw; top: 25vw; animation: anidot4 2.5s linear infinite;}
+.sec5 .pick .anidot5 {width: 1vw; position: absolute; right: 8vw; top: 57vw; animation: anidot5 1s linear infinite;}
+
+@keyframes aniIcon {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(365deg);}
+}
+@keyframes anidot1 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes anidot2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes anidot3 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes anidot4 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes anidot5 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/* //sec5 */
+
+/* media */
+@media (max-width: 1290px) {
+    .site-wrap .site .container .site-top {height: 240px;}
+    .site-wrap .site .container .site-bom {height: 336px;}
+    .site-wrap .site .box2 h3 {padding-top: 2.5vw;}
+    .site-wrap .site .box3 h3 {padding-top: 2.5vw;}
+    .site-wrap .site .box4 h3 {padding-top: 2.5vw;}
+    .site-wrap .site .box6 h3 {padding: 4vw 0;}
+    .site-wrap .site .box6 div {padding-top: 5vw;}
+    .site-wrap .site .box6 .div3 {padding-top: 5vw;}
+    .site-wrap .site .box6 .div4 {padding-top: 6.5vw;}
+}
+@media (max-width: 1290px) {
+
+}
