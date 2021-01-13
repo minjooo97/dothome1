@@ -574,7 +574,7 @@
                         <div class="ball1"></div>
                         <div class="ball2"></div>
                         <div class="ball3"></div>
-                        <a href="#"><img src="img/scrollTop.png" alt="위로"></a>
+                        <button class="Btn"><img src="img/scrollTop.png" alt="위로"></button>
                     </div>
                 </div>
             </div>
@@ -736,6 +736,15 @@
         $("#someSwitchOptionDefault4").click(function(){
             $(".sec4-4 .hours p").toggleClass("p3");
         });
+
+        //스크롤탑
+        $(document).ready(function(){
+            $(".Btn").click(function(){
+                var offset = $("#section1").offset();
+                $("html").animate({scrollTop:offset.top},3000);
+            });
+        });
+        
     </script>
 </body>
 </html>
