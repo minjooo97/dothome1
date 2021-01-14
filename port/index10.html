@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min's portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style10.css">
+    <link rel="stylesheet" href="assets/css/reset10.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1>Hello, Portfolio</h1>
+    </header>
+    <!-- //header -->
+    <nav id="nav">
+        <a class="menu" href="#"><p>Menu</p><span></span></a>
+    </nav>
+    <!-- //nav -->
+
+    <section id="section">
+        <div id="section1">
+            <div class="sec1">
+                <h1>I can make<br>something Special</h1>
+            </div>
+        </div>
+        <!-- //section1 -->
+        <div id="section2">
+            <div class="sec2">
+                <div class="container">
+                    <h1>Webstandard Site</h1>
+                    <div class="box">
+                        <div class="left">
+                            <h2>
+                                웹표준을 준수한 사이트 입니다.
+                                웹 표준은 월드 와이드 웹의 측면을 
+                                서술하고 정의하는 공식 표준이나 다른 
+                                기술 규격을 가리키는 일반적인 용어입니다.
+                            </h2>
+                            <p>
+                                웹 사이트나 웹 페이지가 웹 표준을 준수한다는 것은 
+                                일반적으로 올바른 HTML, CSS, 자바스크립트를 사이트나 
+                                페이지가 가지고 있다는 것을 뜻합니다. 
+                                HTML은 접근성과 시맨틱 HTML의 가이드라인을 
+                                충족해야 합니다.
+                            </p>
+                            <a class="btn1" href="#">View code</a>
+                            <a class="btn2" href="#">Go to figma</a>
+                        </div>
+                        <div class="right">
+                            <h2>213545651</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        const header = document.getElementById("header");
+        const section1 = document.getElementById("section1");
+        const section2 = document.getElementById("section2");
+
+        window.addEventListener("scroll", ()=>{
+            gsap.to(header, {
+                duration: 1,
+                y: -scrollY  
+            })
+        })
+        window.addEventListener("scroll", ()=>{
+            gsap.to(section2, {
+                duration: 1,
+                y: -scrollY  
+            })
+        })
+    </script>
+</body>
+</html>

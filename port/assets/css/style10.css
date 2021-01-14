@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {background: #555;}
+.container {width: 1500px; margin: 0 auto;}
+#header {width: 100%; height: 90vh; background-color: #000; font-family: 'Noto Sans JP', sans-serif; z-index: 1000;}
+#nav {position: fixed; text-align: right; top: 13%; right: 10%;}
+#section1 {width: 100%; height: 150vh; font-family: 'Noto Sans JP', sans-serif; position: fixed; top: 0; z-index: -1;}
+#section2 {width: 100%; font-family: 'Noto Sans JP', sans-serif; margin-top: 45%;}
+
+/* header */
+#header h1 {color: #fff; font-size: 5vw; font-weight: 300; padding: 18% 0 0 10%;}
+/* //header */
+
+#nav a p {color: #fff; font-size: 0.9vw; display: inline-block;}
+#nav a span::before {content: ''; width: 1.5vw; height: 1px; background: #fff; position: absolute; right: -2vw; top: 13px;}
+#nav a span::after {content: ''; width: 1.5vw; height: 1px; background: #fff; position: absolute; right: -2vw; bottom: 8px;}
+/* //nav */
+
+/* section */
+.sec1 {height: inherit; background: #555;}
+.sec1 h1 {color: #fff; font-size: 6vw; font-weight: 300; text-align: center; padding-top: 15%;}
+/* //sec1 */
+
+.sec2 {height: 100vh; background: #000;}
+.sec2 h1 {color: #fff; font-size: 5vw; font-weight: 300; text-align: center; padding-top: 6%;}
+
+.box {font-family: 'S-CoreDream-4Regular'; display: flex; align-items: center; justify-content: space-around; margin-top: 10%;}
+
+.sec2 .left {flex: 0 0 38%; height: 25vw;}
+.sec2 .left h2 {font-size: 1.2vw; color: #fff; word-break: keep-all; padding-top: 5%;}
+.sec2 .left p {font-family: 'S-CoreDream-1Thin'; font-size: 0.9vw; color: #fff; word-break: keep-all; padding-top: 10%;}
+.sec2 .left a {display: inline-block; width: 260px; height: 77px; border: 1px solid #777; background: #000; color: #fff; font-size: 16px; text-align: center; line-height: 4.5; margin-top: 12%;}
+.sec2 .left .btn1{margin-right: 5%;}
+.sec2 .left .btn2{}
+
+.sec2 .right{flex: 0 0 38%; height: 25vw; border: 1px solid #777;}
+/* //section */
+
+
