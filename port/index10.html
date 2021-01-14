@@ -144,25 +144,23 @@
         const header = document.getElementById("header");
         const section1 = document.getElementById("section1");
         const section2 = document.getElementById("section2");
+        const section3 = document.getElementById("section3");
 
         window.addEventListener("scroll", ()=>{
             gsap.to(header, {
                 duration: 1,
                 y: -scrollY  
-            })
-        });
-        window.addEventListener("scroll", ()=>{
+            });
             gsap.to(section2, {
                 duration: 1,
                 y: -scrollY  
-            })
-        });
-        window.addEventListener("scroll", ()=>{
+            });
             gsap.to(section3, {
                 duration: 1,
                 y: -scrollY  
-            })
+            });
         });
+
     </script>
 </body>
 </html>
