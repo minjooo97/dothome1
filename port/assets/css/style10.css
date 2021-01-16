@@ -14,39 +14,39 @@ body {}
 .container {width: 1500px; margin: 0 auto;}
 #header {width: 100%; height: 90vh; background-color: #000; font-family: 'Noto Sans JP', sans-serif;}
 #nav {position: fixed; text-align: right; top: 13%; right: 10%; z-index: 10000;}
-#section1 {width: 100%; height: 100vh; font-family: 'Noto Sans JP', sans-serif; position: fixed; top: 0; z-index: -1;}
-#section2 {width: 100%; height: 80vh; font-family: 'Noto Sans JP', sans-serif; margin-top: 60%;}
-#section3 {width: 100%; font-family: 'Noto Sans JP', sans-serif;}
+#section1 {width: 100%; height: 100vh; font-family: 'Noto Sans JP', sans-serif; position: fixed; top: 0; z-index: -2;}
+#section2 {width: 100%; height: 100vh; font-family: 'Noto Sans JP', sans-serif; margin-top: 60%;}
+#section3 {width: 100%; height: 90vh; font-family: 'Noto Sans JP', sans-serif;}
 
 /* header */
 #header h1 {color: #fff; font-size: 4vw; font-weight: 300; padding: 18% 0 0 10%;}
 /* //header */
 
-#nav a p {color: #fff; font-size: 0.9vw; display: inline-block;}
+#nav a p {color: #fff; font-size: 0.9vw; display: inline-block; transition: all 0.5s;}
 #nav a span::before {content: ''; width: 1.2vw; height: 1px; background: #fff; position: absolute; right: -2vw; top: 14px;}
 #nav a span::after {content: ''; width: 1.2vw; height: 1px; background: #fff; position: absolute; right: -2vw; bottom: 7px;}
+#nav a p:hover {transform: scale(1.1);}
 /* //nav */
 
 /* section */
 .sec1 {height: inherit; background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);}
-.sec1 h1 {color: #fff; font-size: 6vw; font-weight: 300; text-align: center; padding-top: 15%;}
+.sec1 h1 {color: #fff; font-size: 6vw; font-weight: 300; text-align: center; padding-top: 15%; line-height: 1.2;}
 /* //sec1 */
 
-.sec2 {height: inherit; background: #000;}
-.sec2 h1 {color: #fff; font-size: 5vw; font-weight: 300; text-align: center; padding-top: 10%;}
-
-.box {font-family: 'S-CoreDream-4Regular'; display: flex; align-items: center; justify-content: space-around; margin-top: 10%;}
-
-.sec2 .left {flex: 0 0 38%; height: 25vw;}
-.sec2 .left h2 {font-size: 1.2vw; color: #fff; word-break: keep-all; padding-top: 5%;}
-.sec2 .left p {font-family: 'S-CoreDream-1Thin'; font-size: 0.9vw; color: #fff; word-break: keep-all; padding-top: 10%;}
-.sec2 .left a {display: inline-block; width: 260px; height: 77px; border: 1px solid #777; background: #000; color: #fff; font-size: 16px; text-align: center; line-height: 4.5; margin-top: 12%;}
-.sec2 .left .btn1{margin-right: 5%;}
-.sec2 .left .btn2{}
-.sec2 .right{flex: 0 0 38%; height: 25vw; border: 1px solid #777;}
+.sec2 {height: inherit; background: #000; display: flex; align-items: center; justify-content: center;}
+.sec2 h1 {overflow: hidden; color: #fff; font-size: 8vw; font-weight: 300; display: inline-block; border-bottom: 2px solid #fff; line-height: 1.2;}
+.sec2 h1 span {display: inline-block; transform: translate(0px, 200px); transition: all 0.5s cubic-bezier(0, 0.35, 0, 0.02);}
+.sec2 h1.active span {transform: translate(0, 0);}
+.sec2 h1.active span:nth-child(1) {transition-delay: 0.05s;}
+.sec2 h1.active span:nth-child(2) {transition-delay: 0.1s;}
+.sec2 h1.active span:nth-child(3) {transition-delay: 0.15s;}
+.sec2 h1.active span:nth-child(4) {transition-delay: 0.2s;}
+.sec2 h1.active span:nth-child(5) {transition-delay: 0.25s;}
+.sec2 h1.active span:nth-child(6) {transition-delay: 0.3s;}
+.sec2 h1.active span:nth-child(7) {transition-delay: 0.35s;}
 /* //sec2 */
 
-.sec3 {height: 100vh; background: #555;}
+.sec3 {height: inherit;}
 /* //section */
 
 
