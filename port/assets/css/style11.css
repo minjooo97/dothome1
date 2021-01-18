@@ -13,7 +13,7 @@ body {}
 #section2 {width: 100%; height: 1000px;}
 #section3 {width: 100%; height: 900px;}
 #section4 {width: 100%; height: 900px;}
-#section5 {width: 100%; height: 1000px;}
+#section5 {width: 100%; height: 1100px;}
 
 
 
@@ -118,12 +118,9 @@ body {}
 
 /* section5 */
 .section5 {height: inherit; background: #000; position: relative;}
-.section5 h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif; padding-top: 160px;}
-.section5 h1::before {content: ''; width: 1px; height: 210px; background: #555; position: absolute; left: 50%; top: -100px;}
+.section5 h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif; padding-top: 250px;}
+.section5 h1::before {content: ''; width: 1px; height: 200px; background: #555; position: absolute; left: 50%; top: 40px;}
 
-.section5 .aniBox {width: 1500px; height: 550px; margin: 0 auto; margin-top: 60px; display: flex; justify-content: space-between;}
+.section5 .aniBox {width: 1500px; height: 550px; margin: 0 auto; margin-top: 60px; display: flex; justify-content: space-between; position: relative;}
 .section5 .aniBox > div {width: 350px; height: 500px;}
-.section5 .aniBox .ani1 {}
-.section5 .aniBox .ani2 {}
-.section5 .aniBox .ani3 {}
-.section5 .aniBox .ani4 {}
+.section5 .aniBox > div h2 {font-size: 1.5vw; text-align: right; color: #fff; font-family: 'Crimson Text', serif;}
