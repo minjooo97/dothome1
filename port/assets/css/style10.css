@@ -46,7 +46,7 @@ body {}
 .sec2 h1.active span:nth-child(7) {transition-delay: 0.35s;}
 /* //sec2 */
 
-.sec3 {height: inherit;}
+.sec3 {height: inherit; background: #000;}
 /* //section */
 
 
