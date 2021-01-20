@@ -93,7 +93,7 @@ body {}
 .section3 h1 {font-size: 4vw; text-align: center; color: #fff; font-family: 'Crimson Text', serif; padding-top: 100px;}
 
 .section3 .web2 {width: 1200px; height: 500px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 50px;}
-.section3 .left {width: 590px; height: 500px; background: url(../img11/webstandard.png) no-repeat; background-size: 590px 500px;}
+.section3 .left {width: 590px; height: 500px; background: url(../img11/responsive1.png) no-repeat; background-size: 590px 500px;}
 
 .section3 .right {width: 590px; height: 500px; font-family: 'Chosunilbo_myungjo'; word-break: keep-all; box-sizing: border-box; padding: 0 20px 0 20px; position: relative;}
 .section3 .right h2 {font-size: 1vw; color: #fff; padding-top: 100px; text-align: center;}
@@ -115,7 +115,7 @@ body {}
 .section4 h1 {font-size: 4vw; text-align: center; font-family: 'Crimson Text', serif; padding-top: 100px;}
 
 .section4 .web3 {width: 1200px; height: 500px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 50px;}
-.section4 .left {width: 590px; height: 500px; background: url(../img11/webstandard.png) no-repeat; background-size: 590px 500px;}
+.section4 .left {width: 590px; height: 500px; background: url(../img11/responsive2.png) no-repeat; background-size: 590px 500px;}
 
 .section4 .right {width: 590px; height: 500px; font-family: 'Chosunilbo_myungjo'; word-break: keep-all; box-sizing: border-box; padding: 0 20px 0 20px; position: relative;}
 .section4 .right h2 {font-size: 1vw; padding-top: 100px; text-align: center;}
