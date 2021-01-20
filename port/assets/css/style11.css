@@ -14,6 +14,8 @@ body {}
 #section3 {width: 100%; height: 900px;}
 #section4 {width: 100%; height: 900px;}
 #section5 {width: 100%; height: 1100px;}
+#section6 {width: 100%; height: 1100px;}
+#section7 {width: 100%; height: 1000px;}
 
 
 
@@ -119,7 +121,7 @@ body {}
 /* section5 */
 .section5 {height: inherit; background: #000; position: relative;}
 .section5 p {font-size: 0.9vw; color: #fff; text-align: center; font-family: 'Oxygen', sans-serif; padding-top: 280px;}
-.section5 h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif;}
+.section5 h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif; line-height: 1.2;}
 .section5 h1::before {content: ''; width: 1px; height: 200px; background: #fff; position: absolute; left: 50%; top: 40px;}
 
 .section5 .aniBox {width: 1500px; height: 550px; margin: 0 auto; margin-top: 30px; display: flex; justify-content: space-between; position: relative;}
@@ -129,3 +131,46 @@ body {}
 .section5 .aniBox .ani2::before {content: ''; width: 140px; height: 1px; background: #fff; position: absolute; left: 0; bottom: -26px;}
 .section5 .aniBox .ani3::before {content: ''; width: 145px; height: 1px; background: #fff; position: absolute; left: 0; bottom: -26px;}
 .section5 .aniBox .ani4::before {content: ''; width: 140px; height: 1px; background: #fff; position: absolute; left: 0; bottom: -26px;}
+
+.section5 .aniBox a {color: #fff; display: block; text-align: center; padding-top: 15px;}
+
+.section5 .aniBox .ani1 .aniBtn1 {width: 350px; height: 50px; border: 1px solid #fff; margin-top: 10px; transition: all 0.6s;}
+.section5 .aniBox .ani2 .aniBtn2 {width: 350px; height: 50px; border: 1px solid #fff; margin-top: 10px; transition: all 0.6s;}
+.section5 .aniBox .ani3 .aniBtn3 {width: 350px; height: 50px; border: 1px solid #fff; margin-top: 10px; transition: all 0.6s;}
+.section5 .aniBox .ani4 .aniBtn4 {width: 350px; height: 50px; border: 1px solid #fff; margin-top: 10px; transition: all 0.6s;}
+
+.section5 .aniBox .ani1 .aniBtn1:hover {box-shadow: inset 23rem 0 0 0 #fff;}
+.section5 .aniBox .ani1 .aniBtn1:hover a {color: #000;}
+.section5 .aniBox .ani2 .aniBtn2:hover {box-shadow: inset 23rem 0 0 0 #fff;}
+.section5 .aniBox .ani2 .aniBtn2:hover a {color: #000;}
+.section5 .aniBox .ani3 .aniBtn3:hover {box-shadow: inset 23rem 0 0 0 #fff;}
+.section5 .aniBox .ani3 .aniBtn3:hover a {color: #000;}
+.section5 .aniBox .ani4 .aniBtn4:hover {box-shadow: inset 23rem 0 0 0 #fff;}
+.section5 .aniBox .ani4 .aniBtn4:hover a {color: #000;}
+/* //section5 */
+
+/* section6 */
+.section6 {height: inherit; background: #000; position: relative;}
+.section6 p {font-size: 0.9vw; color: #fff; text-align: center; font-family: 'Oxygen', sans-serif; padding-top: 280px;}
+.section6 h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif; line-height: 1.2;}
+.section6 h1::before {content: ''; width: 1px; height: 200px; background: #fff; position: absolute; left: 50%; top: 40px;}
+
+.section6 .scriptBox1 {width: 1100px; height: 600px; margin: 0 auto; margin-top: 40px; position: relative;}
+.section6 .scriptBox1::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 70px;}
+.section6 .scriptBox1::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 70px;}
+.section6 .scriptBox1 p {color: #fff; padding: 50px 0 0 0; font-family: 'Chosunilbo_myungjo';}
+
+.section6 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -435px; top: 220px;}
+.section6 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -435px; top: 220px; padding: 0;}
+/* //section6 */
+
+/* section7 */
+.section7 {height: inherit; background: #000;}
+
+.section7 .scriptBox2 {width: 1100px; height: 600px; margin: 0 auto; padding-top: 70px;; position: relative;}
+.section7 .scriptBox2::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 130px;}
+.section7 .scriptBox2::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 130px;}
+.section7 .scriptBox2 p {color: #fff; font-size: 0.9vw; text-align: center; padding: 50px 0 0 0; font-family: 'Chosunilbo_myungjo';}
+
+.section7 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -435px; top: 280px;}
+.section7 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -435px; top: 280px; padding: 0;}
