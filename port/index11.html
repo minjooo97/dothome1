@@ -36,7 +36,7 @@
         </div>
     </nav>
     <!-- //nav -->
-
+    
     <section>
         <div id="section1">
             <div class="section1">
@@ -46,6 +46,7 @@
                    프론트엔드 개발자가 되기 위해 항상 노력하고 있습니다!</em>
                 </p>
             </div>
+            <!-- <div class="cursor"></div> -->
         </div>
         <!-- //section1 -->
 
@@ -167,8 +168,10 @@
                 <div class="scriptBox1">
                     <iframe src="https://minjooo97.github.io/dothome1/effect/mouseEffect04-javascript" frameborder="0" width="1100px" height="500px"></iframe>
                     <p>"스크립트를 이용한 <em>'마우스 이펙트'</em> 효과 입니다.커서를 글씨나 이미지에 오버했을 때 이미지를 움직이게 하거나 커서에 애니메이션 효과를 줄 수 있습니다."</p>
-                    <p class="leftText">SCRIPT EFFECT</p>
-                    <p class="rightText">MOUSE EFFECT</p>
+                    <div class="scriptBtn1-1"><a href="#">GO TO SITE</a></div>
+                    <div class="scriptBtn1-2"><a href="#">GO TO FIGMA</a></div>
+                    <h6 class="leftText">SCRIPT EFFECT</h6>
+                    <h6 class="rightText">MOUSE EFFECT</h6>
                 </div>
             </div>
         </div>
@@ -180,17 +183,48 @@
                 <div class="scriptBox2">
                     <iframe src="https://minjooo97.github.io/dothome1/effect/sliderEffect08-jquery" frameborder="0" width="1100px" height="500px"></iframe>
                     <p>"스크립트를 이용한 슬라이드 이펙트 효과 입니다. 버튼을 클릭했을 때 클릭한 버튼에 해당하는 이미지가 나타나게 하는 효과를 줄 수  있습니다."</p>
-                    <p class="leftText">SCRIPT EFFECT</p>
-                    <p class="rightText">SLIDER EFFECT</p>
+                    <div class="scriptBtn2-1"><a href="#">GO TO SITE</a></div>
+                    <div class="scriptBtn2-2"><a href="#">GO TO FIGMA</a></div>
+                    <h6 class="leftText">SCRIPT EFFECT</h6>
+                    <h6 class="rightText">SLIDER EFFECT</h6>
                 </div>
+            </div>
+        </div>
+        <!-- //section7 -->
+
+        <!-- section8 -->
+        <div id="section8">
+            <div class="section8">
+                <div class="scriptBox3">
+                    <iframe src="https://minjooo97.github.io/dothome1/effect/parallax01-jquery" frameborder="0" width="1100px" height="500px"></iframe>
+                    <p>"스크립트를 이용한 패럴럭스 이펙트 효과 입니다. 스크롤을 내렸을 때 페이지의 내용이 나타나거나 사라지게 하는 효과를 줄 수 있습니다."</p>
+                    <div class="scriptBtn3-1"><a href="#">GO TO SITE</a></div>
+                    <div class="scriptBtn3-2"><a href="#">GO TO FIGMA</a></div>
+                    <h6 class="leftText">SCRIPT EFFECT</h6>
+                    <h6 class="rightText">PARALLAX EFFECT</h6>
+                </div>
+            </div>
+        </div>
+        <!-- //section8 -->
+
+        <!-- section9 -->
+        <div id="section9">
+            <div class="section9">
+                <div class="contact"><h1>#Contact</h1></div>
             </div>
         </div>
     </section>
     
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
+        const cursorWidth = $(".cursor").outerWidth()/2;
+        const cursorHeight = $(".cursor").outerHeight()/2;
 
+        $(window).mousemove(function(e){
+            gsap.to(".cursor", {duration: 0.5, left: e.pageX - cursorWidth, top: e.pageY - cursorHeight})
+        });
     </script>
 </body>
 </html>

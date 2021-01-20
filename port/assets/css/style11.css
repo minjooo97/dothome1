@@ -15,9 +15,9 @@ body {}
 #section4 {width: 100%; height: 900px;}
 #section5 {width: 100%; height: 1100px;}
 #section6 {width: 100%; height: 1100px;}
-#section7 {width: 100%; height: 1000px;}
-
-
+#section7 {width: 100%; height: 700px;}
+#section8 {width: 100%; height: 800px;}
+#section9 {width: 100%; height: 830px;}
 
 /* header */
 .header {width: inherit; height: inherit; display: flex; justify-content: space-between; position: fixed; z-index: 1000; background: #fff;} 
@@ -42,8 +42,22 @@ body {}
 .section1 {height: inherit; display: flex; align-items: center; justify-content: center; position: relative;}
 .section1::before {content: ''; width: 33.5vw; height: 1px; background: #000; position: absolute; left: 100px; bottom: -10px;}
 .section1::after {content: ''; width: 33.5vw; height: 1px; background: #000; position: absolute; right: 100px; bottom: -10px;}
-.section1 h1 {font-size: 4.5vw; text-align: center; font-family: 'Crimson Text', serif; line-height: 1;}
-.section1 p {font-size: 0.8vw; text-align: center; line-height: 1.6; font-weight: 600; font-family: 'Chosunilbo_myungjo'; position: absolute; bottom: -30px;}
+.section1 h1 {font-size: 4.5vw; text-align: center; font-family: 'Crimson Text', serif; line-height: 1; z-index: 100;}
+.section1 p {font-size: 0.8vw; text-align: center; line-height: 1.6; font-weight: 600; font-family: 'Chosunilbo_myungjo'; position: absolute; bottom: -30px; z-index: 100;}
+
+.cursor {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    user-select: none;
+    pointer-events: none;
+    background: url(../img11/cursor.jpg) no-repeat;
+    /* 원리 */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
 /* //section1 */
 
 /* section2 */
@@ -158,19 +172,62 @@ body {}
 .section6 .scriptBox1 {width: 1100px; height: 600px; margin: 0 auto; margin-top: 40px; position: relative;}
 .section6 .scriptBox1::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 70px;}
 .section6 .scriptBox1::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 70px;}
-.section6 .scriptBox1 p {color: #fff; padding: 50px 0 0 0; font-family: 'Chosunilbo_myungjo';}
+.section6 .scriptBox1 p {color: #fff; padding: 18px 0 0 0; font-family: 'Chosunilbo_myungjo';}
 
-.section6 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -435px; top: 220px;}
-.section6 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -435px; top: 220px; padding: 0;}
+.section6 .scriptBox1 > div {width: 500px; height: 40px; background: #fff; display: inline-block; margin-top: 30px;}
+.section6 .scriptBox1 > div a {display: block; text-align: center; padding-top: 10px; font-weight: 700;}
+.section6 .scriptBox1 .scriptBtn1-1 {transition: all 0.3s;}
+.section6 .scriptBox1 .scriptBtn1-1:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+.section6 .scriptBox1 .scriptBtn1-2 {margin-left: 95px; position: relative; transition: all 0.3s;}
+.section6 .scriptBox1 .scriptBtn1-2:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+
+.section6 h6 {font-size: 0.9vw; font-family: 'Oxygen', sans-serif;}
+.section6 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -415px; top: 240px;}
+.section6 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -415px; top: 240px;}
 /* //section6 */
 
 /* section7 */
 .section7 {height: inherit; background: #000;}
 
-.section7 .scriptBox2 {width: 1100px; height: 600px; margin: 0 auto; padding-top: 70px;; position: relative;}
-.section7 .scriptBox2::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 130px;}
-.section7 .scriptBox2::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 130px;}
-.section7 .scriptBox2 p {color: #fff; font-size: 0.9vw; text-align: center; padding: 50px 0 0 0; font-family: 'Chosunilbo_myungjo';}
+.section7 .scriptBox2 {width: 1100px; height: 600px; margin: 0 auto; padding-top: 80px;; position: relative;}
+.section7 .scriptBox2::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 140px;}
+.section7 .scriptBox2::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 140px;}
+.section7 .scriptBox2 p {color: #fff; font-size: 0.9vw; text-align: center; padding: 18px 0 0 0; font-family: 'Chosunilbo_myungjo';}
 
-.section7 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -435px; top: 280px;}
-.section7 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -435px; top: 280px; padding: 0;}
+.section7 .scriptBox2 > div {width: 500px; height: 40px; background: #fff; display: inline-block; margin-top: 20px;}
+.section7 .scriptBox2 > div a {display: block; text-align: center; padding-top: 10px; font-weight: 700;}
+.section7 .scriptBox2 .scriptBtn2-1 {transition: all 0.3s;}
+.section7 .scriptBox2 .scriptBtn2-1:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+.section7 .scriptBox2 .scriptBtn2-2 {margin-left: 95px; transition: all 0.3s;}
+.section7 .scriptBox2 .scriptBtn2-2:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+
+.section7 h6 {font-size: 0.9vw; font-family: 'Oxygen', sans-serif;}
+.section7 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -415px; top: 310px;}
+.section7 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -415px; top: 310px;}
+/* //section7 */
+
+/* section8 */
+.section8 {height: inherit; background: #000;}
+
+.section8 .scriptBox3 {width: 1100px; height: 600px; margin: 0 auto; padding-top: 100px;; position: relative;}
+.section8 .scriptBox3::before {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; left: -300px; top: 160px;}
+.section8 .scriptBox3::after {content: ''; width: 1px; height: 360px; background: #fff; position: absolute; right: -300px; top: 160px;}
+.section8 .scriptBox3 p {color: #fff; font-size: 0.9vw; text-align: center; padding: 18px 0 0 0; font-family: 'Chosunilbo_myungjo';}
+
+.section8 .scriptBox3 > div {width: 500px; height: 40px; background: #fff; display: inline-block; margin-top: 20px;}
+.section8 .scriptBox3 > div a {display: block; text-align: center; padding-top: 10px; font-weight: 700;}
+.section8 .scriptBox3 .scriptBtn3-1 {transition: all 0.3s;}
+.section8 .scriptBox3 .scriptBtn3-1:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+.section8 .scriptBox3 .scriptBtn3-2 {margin-left: 95px; transition: all 0.3s;}
+.section8 .scriptBox3 .scriptBtn3-2:hover {transform: scale(1.02); box-shadow: 5px 5px 0 #797979;}
+
+.section8 h6 {font-size: 0.9vw; font-family: 'Oxygen', sans-serif;}
+.section8 .leftText {color: #fff; transform: rotate(-90deg); font-weight: 700; position: absolute; left: -415px; top: 330px;}
+.section8 .rightText {color: #fff; transform: rotate(90deg); font-weight: 700; position: absolute; right: -415px; top: 330px;}
+/* //section8 */
+
+/* section9 */
+.section9 {height: inherit; background: #000; display: flex; align-items: center; justify-content: center;}
+.section9 .contact {width: 1700px; height: 100px; border-top: 2px solid #fff; border-bottom: 2px solid #fff;}
+.section9 .contact h1 {font-size: 5vw; color: #fff; text-align: center; font-family: 'Crimson Text', serif; line-height: 1;}
+
