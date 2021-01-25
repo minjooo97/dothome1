@@ -28,10 +28,10 @@
     <nav id="nav">
         <div class="nav">
             <ul>
-                <li><a href="#">Website</a></li>
-                <li><a href="#">Animation</a></li>
-                <li><a href="#">Script</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section2">Website</a></li>
+                <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section5">Animation</a></li>
+                <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section6">Script</a></li>
+                <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section9">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -46,7 +46,7 @@
                    프론트엔드 개발자가 되기 위해 항상 노력하고 있습니다!</em>
                 </p>
             </div>
-            <!-- <div class="cursor"></div> -->
+            <div class="cursor"></div>
         </div>
         <!-- //section1 -->
 
@@ -224,6 +224,13 @@
 
         $(window).mousemove(function(e){
             gsap.to(".cursor", {duration: 0.5, left: e.pageX - cursorWidth, top: e.pageY - cursorHeight})
+        });
+
+        $("a[href^='#']").click(function(e){
+            e.preventDefault();
+            let target = $($(this).attr("href"));
+            
+            $("html,body").animate({scrollTop:target.offset().top},800)
         });
     </script>
 </body>
