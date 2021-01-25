@@ -19,11 +19,11 @@
             <h1><span>Port@</span><br><span>Folio</span></h1>
             <nav>
                 <ul>
-                    <li><a href="#"><img class="about_1" src="img/about_icon1.png" alt="">ABOUT</a></li>
-                    <li><a href="#"><img class="about_2" src="img/about_icon2.png" alt="">WEBSITE</a></li>
-                    <li><a href="#"><img class="about_3" src="img/about_icon3.png" alt="">ANIMATION</a></li>
-                    <li><a href="#"><img class="about_4" src="img/about_icon4.png" alt="">SCRIPT</a></li>
-                    <li><a href="#"><img class="about_5" src="img/about_icon5.png" alt="">CONTACT</a></li>
+                    <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section2"><img class="about_1" src="img/about_icon1.png" alt="">ABOUT</a></li>
+                    <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section3"><img class="about_2" src="img/about_icon2.png" alt="">WEBSITE</a></li>
+                    <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section5"><img class="about_3" src="img/about_icon3.png" alt="">ANIMATION</a></li>
+                    <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section7"><img class="about_4" src="img/about_icon4.png" alt="">SCRIPT</a></li>
+                    <li><a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section9"><img class="about_5" src="img/about_icon5.png" alt="">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -574,7 +574,7 @@
                         <div class="ball1"></div>
                         <div class="ball2"></div>
                         <div class="ball3"></div>
-                        <button class="Btn"><img src="img/scrollTop.png" alt="위로"></button>
+                        <a class="content-item-scroll" aria-hidden="true" rel="noopener" href="#section1"><img src="img/scrollTop.png" alt="위로"></a>
                     </div>
                 </div>
             </div>
@@ -737,6 +737,13 @@
             $(".sec4-4 .hours p").toggleClass("p3");
         });
         
+        //스크롤
+        $("a[href^='#']").click(function(e){
+            e.preventDefault();
+            let target = $($(this).attr("href"));
+            
+            $("html,body").animate({scrollTop:target.offset().top},700)
+        });
     </script>
 </body>
 </html>
