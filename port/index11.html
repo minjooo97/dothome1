@@ -232,6 +232,42 @@
             
             $("html,body").animate({scrollTop:target.offset().top},700)
         });
+
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector(".header");
+            let nav = document.querySelector(".nav");
+            let section3 = document.querySelector(".section3");
+            let pageYOffset = window.pageYOffset + 160;
+            if(pageYOffset > section3.offsetTop){
+                header.classList.add("black");
+                nav.classList.add("black");
+            } else {
+                header.classList.remove("black");
+                nav.classList.remove("black");
+            }
+        });
+
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector(".header");
+            let nav = document.querySelector(".nav");
+            let section4 = document.querySelector(".section4");
+            let pageYOffset = window.pageYOffset + 160; 
+            if(pageYOffset > section4.offsetTop){
+                header.classList.remove("black");
+                nav.classList.remove("black");
+            }
+        });
+
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector(".header");
+            let nav = document.querySelector(".nav");
+            let section5 = document.querySelector(".section5");
+            let pageYOffset = window.pageYOffset + 160; 
+            if(pageYOffset > section5.offsetTop){
+                header.classList.add("black");
+                nav.classList.add("black");
+            }
+        });
     </script>
 </body>
 </html>

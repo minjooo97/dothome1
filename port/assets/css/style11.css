@@ -27,6 +27,10 @@ body {}
 .header ul li {display: inline-block; padding-left: 40px; transition: all 0.3s;}
 .header ul li a {color: #797979;}
 .header ul li:hover {transform: skewX(-10deg);}
+
+.header.black {background: #000;}
+.header.black::before {background: #fff;}
+.header.black a {color: #fff;}
 /* //header */
 
 /* nav */
@@ -36,6 +40,10 @@ body {}
 .nav ul li {display: inline-block; padding-left: 40px; transition: all 0.3s;}
 .nav ul li a {color: #797979;}
 .nav ul li:hover {transform: skewX(-10deg);}
+
+.nav.black {background: #000;}
+.nav.black::before {background: #fff;}
+.nav.black a {color: #fff;}
 /* //nav */
 
 /* section1 */
