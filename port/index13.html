@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style13.css">
+    <link rel="stylesheet" href="assets/css/reset13.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav"></nav>
+    <section>
+        <div class="scroll">0</div>
+        <div id="section1">
+            <div class="section1">
+                <h1
+                    data-0 = "top: 43%; opacity: 1;"
+                    data-600 = "top: 15%; opacity: 0;"
+                >I CAN MAKE SOMETHING SPECAIAL</h1>
+                <h2
+                    data-400 = "opacity: 0;"
+                    data-1200 = "opacity: 1; transform: scale(1);"
+                    data-1900 = "transform: scale(0);"
+                >안녕하세요!</h2>
+                <div class="ball"
+                    data-1900 = "opacity: 0; transform: scale(1);"
+                    data-2800 = "opacity: 1; transform: scale(45);"
+                ></div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        let s = skrollr.init();
+
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            $(".scroll").text(parseInt(scrollTop));
+        });
+    </script>
+</body>
+</html>
