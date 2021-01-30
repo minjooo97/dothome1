@@ -43,20 +43,14 @@ body {height: 20000px; width: 100vw;}
 .section1 h2 {font-size: 18vw; font-family: 'Crimson Text', serif; color: #FF6C89;}
 .section1 h2 span {white-space: nowrap;}
 .section1 h2 span:nth-child(1) {position: fixed; top: 7%; left: 25%;}
-.section1 h2 span:nth-child(2) {position: fixed; top: 40%; left: 45%;}
+.section1 h2 span:nth-child(2) {position: fixed; top: 40%; left: 45%; color: #F24869;}
 .section1 h2 span:nth-child(3) {position: fixed; top: 75%; left: 60%;}
 /* //section1 */
 
 /* section2 */
 .section2 .backColor2 {width: 1px; height: 1px; background: #552180; transform: rotate(45deg); position: fixed; left: 0; top: 0;}
-.section2 .skillBox {width: 300px; height: 500px; position: fixed; left: 1.5%; top: 18%; font-family: 'Arimo', sans-serif; color: #fff;}
-.section2 .skillBox h3 {font-size: 2vw; color: #fff;}
-.section2 .skillBox ul {font-size: 1.2vw; padding-top: 20px;}
-.section2 .skillBox ul li {padding-bottom: 5px; font-weight: 100;}
-.section2 .skillBox ul li span {padding-left: 15px; color: #FF6C89;}
-.section2 .about {width: 600px; height: 600px; border-radius: 50%; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); font-family: 'Jal_Onuel'; text-align: center; border: 5px dashed #fff;}
-.section2 .about h5 {font-size: 2.5vw; padding-top: 100px;}
-.section2 .about p {font-size: 1vw; word-break: keep-all; padding-top: 100px;}
+.section2 h2 {font-size: 8vw; font-family: 'Crimson Text', serif; color: #FF6C89;}
+.section2 p {font-size: 1vw; font-family: 'Jal_Onuel';}
 /* //section2 */
 
 
