@@ -598,6 +598,21 @@
             elem.setAttribute("aria-label", splitText);
         });
 
+        function loading(){
+            let loader = document.querySelector(".loader");
+            setTimeout(() => {
+                $("body").addClass("active");
+                    //$progress.hide();
+                    gsap.to(loader, {
+                        duration:1.5,
+                        top: "-100%",
+                        ease: "power4.out"
+                });  
+                var tl = gsap.timeline();
+            }, 5000);      
+        }
+        loading();
+
         setTimeout(function(){
             var tl = gsap.timeline();
             tl.to(".sec1 h1 strong span", {opacity: 1, duration: 0.4, y: 0, stagger: 0.05});
@@ -619,7 +634,7 @@
             tl.to(".about_tw12", {opacity: 1, duration: 0.1});
             tl.to(".about_tw13", {opacity: 1, duration: 0.1});
             tl.to(".about_tw14", {opacity: 1, duration: 0.2});
-        },2000);
+        },5000);
         
         //버튼 이미지
         const slider = document.querySelectorAll(".hi");
