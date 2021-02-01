@@ -24,6 +24,6 @@ body {width: 100%; height: 20000px;}
 .section1 {height: inherit; text-align: center; display: flex; align-items: center; justify-content: center;}
 .section1 svg {height: 100vh;}
 .section1 svg text {font-size: 33px; fill: #fff; letter-spacing: 21px; font-family: 'Playfair Display', serif;}
-.section1 .main_pic {width: 350px; height: 350px; background: #555; border-radius: 50%; position: absolute; right: -13%;}
+.section1 .main_pic {width: 350px; height: 350px; background: url(../img12/main_pic.png) no-repeat; background-size: cover; border-radius: 50%; position: absolute; right: -13%;}
 .section1 h1 {font-size: 2vw; color: #fff; font-family: 'Roboto', sans-serif; position: fixed; right: -20%;}
 
