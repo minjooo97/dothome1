@@ -1,65 +1,29 @@
-@font-face {
-    font-family: 'Jal_Onuel';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {height: 20000px; width: 100vw;}
-* {margin: 0; padding: 0; box-sizing: border-box;}
-#header {width: 100%; height: 80px; position: fixed; z-index: 10000;}
-#section1 {}
-#section2 {}
-
-/* header */
-.header {display: flex; align-items: center; justify-content: space-between; font-family: 'Arimo', sans-serif;}
-.header h1 {font-size: 25px; padding-left: 30px; padding-top: 18px;}
-.header ul {padding-right: 30px; padding-top: 18px;}
-.header ul li {display: inline-block; padding-left: 20px; transition: all 0.5s;}
-.header ul li a {font-size: 15px;}
-.header ul li:hover {transform: scale(1.1) skewX(-10deg);}
-/* //header */
-
+body {width: 100%; height: 20000px;}
 /* scroll */
 .scroll {
-    width: 70px; 
-    height: 70px; 
-    background: #D34662; 
+    width: 50px; 
+    height: 50px; 
+    background: #fff; 
     border-radius: 50%; 
-    font-size: 20px; 
-    text-align: center; 
-    line-height: 3.3; 
     position: fixed; 
-    right: 30px; bottom: 30px;
-    box-shadow: 5px 5px 5px #888;
+    left: 1%; top: 2%;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 1vw;
     z-index: 100000;
-    color: #fff;
 }
 /* //scroll */
 
-/* section1 */
-.section1 {}
-.section1 .backColor1 {width: 1px; height: 1px; background: #FFE0C5; transform: rotate(45deg); position: fixed; left: 0; top: 0;}
-.section1 h2 {font-size: 18vw; font-family: 'Crimson Text', serif; color: #FF6C89;}
-.section1 h2 span {white-space: nowrap;}
-.section1 h2 span:nth-child(1) {position: fixed; top: 7%; left: 25%;}
-.section1 h2 span:nth-child(2) {position: fixed; top: 40%; left: 45%; color: #F24869;}
-.section1 h2 span:nth-child(3) {position: fixed; top: 75%; left: 60%;}
-/* //section1 */
 
-/* section2 */
-.section2 .backColor2 {width: 1px; height: 1px; background: #552180; transform: rotate(45deg); position: fixed; left: 0; top: 0;}
-.section2 h2 {font-size: 8vw; font-family: 'Crimson Text', serif; color: #FF6C89;}
-.section2 p {font-size: 1vw; font-family: 'Jal_Onuel';}
-/* //section2 */
+#section1 {width: 100%; height: 100vh; background: #000; position: fixed;}
 
 
 
 
 
-
-
-
-
-
+.section1 {height: inherit; text-align: center; display: flex; align-items: center; justify-content: center;}
+.section1 svg {height: 100vh;}
+.section1 svg text {font-size: 33px; fill: #fff; letter-spacing: 21px; font-family: 'Playfair Display', serif;}
+.section1 .main_pic {width: 350px; height: 350px; background: #555; border-radius: 50%; position: absolute; right: -13%;}
+.section1 h1 {font-size: 2vw; color: #fff; font-family: 'Roboto', sans-serif; position: fixed; right: -20%;}
 
