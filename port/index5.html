@@ -15,6 +15,28 @@
 </head>
 <body>
     <div id="content">
+        <!-- loading -->
+        <div class="loader">
+            <span class="progress-text">0</span>
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //loading -->
         <div id="header">
             <h1><span>Port@</span><br><span>Folio</span></h1>
             <nav>
@@ -587,6 +609,7 @@
     <script src="../assets/js/prism.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://flairgale.cafe24.com/para/js/imagesloaded.pkgd.min.js"></script>
     <script>
         //로딩
         document.querySelectorAll(".split").forEach(elem => {
@@ -599,17 +622,43 @@
         });
 
         function loading(){
-            let loader = document.querySelector(".loader");
-            setTimeout(() => {
-                $("body").addClass("active");
+            let $progress = $(".loader");
+            let $progressText = $(".progress-text");
+
+            let imgLoad = imagesLoaded("body"),
+                imgTotal = imgLoad.images.length,
+                imgLoaded = 0,
+                imgCurrent = 0,
+                progressTimer = setInterval(updateProgress, 1000/60);
+
+            imgLoad.on("progress", function(){
+                imgLoaded++;
+            });
+
+            function updateProgress(){
+                let target = (imgLoaded/imgTotal)*100;
+                imgCurrent += (target - imgCurrent)*0.1
+                $progressText.text(parseInt(imgCurrent));
+
+                if(imgCurrent>=100){
+                    clearInterval(progressTimer);
+
+                    $("body").addClass("active");
                     //$progress.hide();
-                    gsap.to(loader, {
+                    gsap.to($progress, {
                         duration:1.5,
                         top: "-100%",
                         ease: "power4.out"
-                });  
-                var tl = gsap.timeline();
-            }, 5000);      
+                    });
+
+                    //메인 애니메이션
+                    let tl = gsap.timeline();
+                }
+
+                if(imgCurrent>99){
+                    imgCurrent = 100;
+                }
+            }
         }
         loading();
 
