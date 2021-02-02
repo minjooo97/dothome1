@@ -31,15 +31,15 @@ body {width: 100%; height: 20000px;}
 /* section1 */
 .section1 {height: inherit; text-align: center; display: flex; align-items: center; justify-content: center;}
 .section1 svg {height: 100vh;}
-.section1 svg text {font-size: 33px; fill: #fff; letter-spacing: 16px; font-family: 'Playfair Display', serif;}
+.section1 svg text {font-size: 33px; fill: #fff; letter-spacing: 13px; font-family: 'Cinzel', serif;}
 .section1 .main_pic {width: 350px; height: 350px;  background: url(../img12/main_pic.png) no-repeat;  background-size: cover; border-radius: 50%; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-.section1 h1 {font-size: 2vw; color: #fff; white-space: nowrap; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.section1 h1 {font-size: 2vw; color: #fff;  white-space: nowrap; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 /* //section1 */
 
 /* section2 */
 .section2 {height: inherit;}
 .section2 .move {height: 100vh; width: 3950px; background: #fff; position: relative; transition: all 0.1s;}
-.section2 .move h1 {font-size: 10vw; white-space: nowrap; font-family: 'Montserrat', sans-serif; position: absolute; left: 10%; top: 38%; z-index: 100;}
+.section2 .move h1 {font-size: 10vw; white-space: nowrap; font-family: 'Montserrat', sans-serif; position: absolute; left: 12%; top: 50%; transform: translate(0, -50%); z-index: 100;}
 .section2 .move .about1 {width: 440px; height: 280px; background: #fff; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 5%; top: 3%;}
 .section2 .move .about1 .about1_pic {width: 220px; height: 280px; background: #555;}
 .section2 .move .about1 h3 {font-size: 2.2vw; font-family: 'Playfair Display', serif; line-height: 1;}
