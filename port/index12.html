@@ -29,7 +29,8 @@
                     data-0 = "transform: scale(5)" 
                     data-1000 = "transform: scale(1)"
                     data-2699 = "opacity: 1;" 
-                    data-3300 = "opacity: 0;"
+                    data-3000 = "transform: scale(1);"
+                    data-3300 = "opacity: 0; transform: scale(0);"
                     >
                     <defs>
                         <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
@@ -46,7 +47,7 @@
                 </svg>
                 <div class="main_pic"
                     data-0 = "display: none;"
-                    data-1200 = "display: block; left: 110%; transform: translate(-50%, -50%) rotate(0deg) scale(1);"
+                    data-1200 = "display: block; left: 110%; transform: translate(-50%, -50%) rotate(180deg) scale(1);"
                     data-2500 = "left: 50%; transform: translate(-50%, -50%) rotate(360deg) scale(1); opacity: 1;"
                     data-2700 = "left: 50%; transform: translate(-50%, -50%) rotate(360deg) scale(1); opacity: 1;"
                     data-3300 = "opacity: 0; transform: translate(-50%, -50%) rotate(360deg) scale(0);"
@@ -55,7 +56,8 @@
                     data-0 = "display: none;"
                     data-1200 = "display:block; left: 110%;"
                     data-2400 = "left: 50%; opacity: 1;"
-                    data-2700 = "left: 50%; opacity: 1;"
+                    data-2700 = "left: 50%; opacity: 1; transform: translate(-50%, -50%) scale(1);"
+                    data-3200 = "transform: translate(-50%, -50%) scale(0.5);"
                     data-3300 = "opacity: 0;"
                 >I can make something spacial</h1>
             </div>
@@ -106,10 +108,13 @@
         </div>
         <!-- //section2 -->
 
-        <!-- <div id="section3">
+        <div id="section3">
             <div class="section3">
                 <div class="text_box">
-                    <svg viewBox="0 0 500 500">
+                    <svg viewBox="0 0 500 500"
+                        data-10800 = "opacity: 0.2;"
+                        data-11200 = "opacity: 0;"
+                    >
                         <defs>
                             <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top1">
                                 <animateTransform attributeName="transform" begin="0s" dur="30s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
@@ -131,14 +136,23 @@
                         data-9000 = "left: 34%;"
                         data-9700 = "left: -30%;"
                     >Website</p>
-                    <p class="T3">Webstandard</p>
+                    <p class="T3"
+                        data-11600 = "left: 37%;"
+                        data-12300 = "left: -25%;"
+                    >Webstandard</p>
                     <p class="T4"
                         data-9000 = "left: 54%;"
                         data-10000 = "left: -22%;"
+                        data-12400 = "left: -20%;"
+                        data-12900 = "left: 33%;"
+                        data-13500 = "left: -20%;"
                     >Responsive</p>
                     <p class="T5"
                         data-8600 = "left: 68%;"
                         data-9300 = "left: -18%;"
+                        data-13500 = "left: -18%;"
+                        data-14200 = "left: 27%;"
+                        data-14800 = "left: -21%;"
                     >Megabox</p>
                     <p class="T6"
                         data-8900 = "left: 59%;"
@@ -149,35 +163,44 @@
                     <p class="T9">by MINJOO,</p>
                     <p class="T10">WITH CODE</p>
                 </div>
-            </div>
-        </div> -->
-        <!-- //section3 -->
-
-        <div id="section4">
-            <div class="section4">
+                <div class="move_site"
+                data-10500 = "left: 233%;"
+                data-15000 = "left: -100%;"
+            >
                 <div class="webstadard">
                     <div class="site1"></div>
                     <div class="text1">
                         <h1>웹표준을 준수한 사이트입니다.</h1>
-                        <p>웹표준이란 ~~</p>
+                        <p>
+                            웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어입니다. 
+                            최근에 이 용어는 웹 사이트를 작성하는 데 중요도가 높아지고 있으며 웹 디자인, 개발과 관계가 있습니다.
+                        </p>
                     </div>
                 </div>
                 <div class="responsive">
                     <div class="site2"></div>
                     <div class="text2">
                         <h1>반응형 사이트입니다.</h1>
-                        <p>반응형이란 ~~</p>
+                        <p>
+                            반응형 웹 디자인(responsive web design, RWD)이란 하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC 등 접속하는 디스플레이의 
+                            종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법을 말합니다.
+                        </p>
                     </div>
                 </div>
                 <div class="megabox">
                     <div class="site3"></div>
                     <div class="text3">
                         <h1>메가박스 사이트입니다.</h1>
-                        <p>반응형이란 ~~</p>
+                        <p>
+                            반응형 웹 디자인(responsive web design, RWD)이란 하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC 등 접속하는 디스플레이의 
+                            종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법을 말합니다.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- //section3 -->
+
         <!-- //section4 -->
     </section>
 
