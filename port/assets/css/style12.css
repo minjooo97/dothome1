@@ -26,8 +26,8 @@ body {width: 100%; height: 20000px;}
 
 #section1 {width: 100%; height: 100vh; background: #000; position: fixed; z-index: 10;}
 #section2 {width: 100%; height: 100vh; background: #fff; position: fixed; transition: all 0.5s; z-index: 9;}
-#section3 {width: 100%; height: 100vh; background: #000; position: fixed; transition: all 0.5s; z-index: 8;}
-
+#section3 {width: 100%; height: 100vh; background: #000; position: fixed; transition: all 0.5s; z-index: 8; overflow: hidden;}
+#section4 {width: 100%; height: 100vh; background: #000; position: fixed; z-index: 7;}
 
 
 /* section1 */
@@ -98,7 +98,7 @@ body {width: 100%; height: 20000px;}
 .section3 .text_box p.T9 {font-size: 30px; color: #F5AD6D; font-family: 'Cormorant Garamond', serif; position: absolute; left: 12%; top: 90%; transform: translate(-50%, -50%);}
 .section3 .text_box p.T10 {font-size: 30px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 10%; top: 94%; transform: translate(-50%, -50%);}
 
-.section3 .move_site {height: 88vh; width: 4000px; background: #000; position: absolute; left: 220%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: space-around; z-index: -1;}
+.section3 .move_site {height: 88vh; width: 5000px; position: absolute; left: 220%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: space-around; z-index: -1;}
 
 .section3 .move_site .webstadard {width: 915px; height: 600px; background: #fff; display: flex; align-items: center; justify-content: space-between;}
 .section3 .move_site .webstadard .site1 {width: 480px; height: 600px; background: #888;}
@@ -117,6 +117,9 @@ body {width: 100%; height: 20000px;}
 .section3 .move_site .megabox .text3 {width: 400px; height: 600px; font-family: 'Chosunilbo_myungjo'; margin-right: 15px;}
 .section3 .move_site .megabox .text3 h1 {font-size: 27px; padding-top: 180px;}
 .section3 .move_site .megabox .text3 p {font-size: 18px; word-break: keep-all; padding-top: 40px;}
+
+.section3 .move_site .dot_box h3 {position: absolute; left: 97%; top: 50%; transform: translate(-50%, -50%); font-size: 19px; color: #888; font-weight: 100; white-space: nowrap;}
+.section3 .move_site .dot_box .dot {width: 20px; height: 20px; border-radius: 50%; background: #fff; position: absolute; left: 97%; top: 50%; transform: translate(-50%, -50%);}
 /* //section3 */
 
 
