@@ -189,6 +189,32 @@ body {width: 100%; height: 60000px;}
 .section4 .back {width: 100px; height: 100px; border-radius: 50%; background: #fff; position: fixed; left: 1vw; bottom: 1vw;}
 .section4 .back svg {width: 130px; height: 130px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 .section4 .back svg text {font-size: 55px;  fill: #d33519;  letter-spacing: .3em; font-family: 'Cormorant Garamond', serif;}
+
+.circle {width: 250px; height: 250px; border-radius: 50%; background: url(../img12/ani_pic.png); background-size: cover; position: absolute; left: 47%; top: 60%; transform: translate(-50%, -50%);}
+
+.ani1_text {width: 300px; height: 250px; position: absolute; left: 70%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani1_text h2 {font-size: 30px; padding-top: 30px;}
+.ani1_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
+
+.ani2_text {width: 300px; height: 250px; position: absolute; left: 93%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani2_text h2 {font-size: 30px; padding-top: 30px;}
+.ani2_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
+
+.ani3_text {width: 300px; height: 250px; position: absolute; left: 116%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani3_text h2 {font-size: 30px; padding-top: 30px;}
+.ani3_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
+
+.ani4_text {width: 300px; height: 250px; position: absolute; left: 139%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani4_text h2 {font-size: 30px; padding-top: 30px;}
+.ani4_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
+
+.ani5_text {width: 300px; height: 250px; position: absolute; left: 162%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani5_text h2 {font-size: 30px; padding-top: 30px;}
+.ani5_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
+
+.ani6_text {width: 300px; height: 250px; position: absolute; left: 185%; top: 60%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.ani6_text h2 {font-size: 30px; padding-top: 30px;}
+.ani6_text h3 {font-size: 18px; word-break: keep-all; line-height: 1.4; padding-top: 20px;}
 /* //section4 */
 
 
