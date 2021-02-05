@@ -176,7 +176,7 @@ body {width: 100%; height: 60000px;}
 
 .section4 .ani5 {position: absolute; left: 50%; top: 150%; transform: translate(-50%, -50%);}
 .section4 .ani5:hover .ani5_btn {display: block;}
-.section4 .ani5 .ani5_btn {width: 350px; height: 400px; background: #555; opacity: 0.8; position: absolute; left: 0; top: 0; display: none;}
+.section4 .ani5 .ani5_btn {width: 450px; height: 400px; background: #555; opacity: 0.8; position: absolute; left: 0; top: 0; display: none;}
 .section4 .ani5 .ani5_btn .btn5 {width: 100px; height: 100px; border-radius: 50%; background: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 .section4 .ani5 .ani5_btn .btn5 a {font-size: 25px; font-family: 'Chosunilbo_myungjo'; display: block; text-align: center; padding-top: 30px;}
 
