@@ -27,7 +27,8 @@ body {width: 100%; height: 60000px;}
 #section1 {width: 100%; height: 100vh; background: #000; position: fixed; z-index: 10;}
 #section2 {width: 100%; height: 100vh; background: #fff; position: fixed; transition: all 0.5s; z-index: 9;}
 #section3 {width: 100%; height: 100vh; background: #000; position: fixed; transition: all 0.5s; z-index: 8; overflow: hidden;}
-#section4 {width: 100%; height: 100vh; background: #DFD8D0; position: fixed; z-index: 7;}
+#section4 {width: 100%; height: 100vh; background: #DFD8D0; position: fixed; z-index: 7; transition: all 0.5s;}
+#section5 {width: 100%; height: 100vh; background: #000; position: fixed; z-index: 6;}
 
 
 /* section1 */
@@ -147,7 +148,7 @@ body {width: 100%; height: 60000px;}
 
 /* section4 */
 .section4 {height: inherit;}
-.section4 h1 {font-size: 250px; color: #000; font-family: 'Cormorant Garamond', serif; white-space: nowrap; position: fixed; left: 120%; top: 35%; transform: translate(-50%, -50%); z-index: 1;}
+.section4 h1 {font-size: 250px; color: #000; font-family: 'Cormorant Garamond', serif; white-space: nowrap; position: absolute; left: 120%; top: 35%; transform: translate(-50%, -50%); z-index: 1;}
 .section4 p {font-size: 40px; color: #fff; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap;}
 
 .section4 .ani1 {position: absolute; left: 50%; top: 150%; transform: translate(-50%, -50%);}
