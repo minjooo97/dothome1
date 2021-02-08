@@ -18,10 +18,28 @@
 </head>
 <body>
     <section>
-        <!-- <div class="loader">
+        <!-- loading -->
+        <div class="loader">
             <span class="progress-text">0</span>
-        </div> -->
-        <!-- //loading -->
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //loading -->s
 
         <div class="scroll">0</div>
         <!-- scroll -->
@@ -426,7 +444,7 @@
                 >This is the</h1>
                 <h1 class="text2"
                     data-25000 = "left: 30%;"
-                    data-27000 = "left: -21%;"
+                    data-27000 = "left: -26%;"
                 >Section</h1>
                 <h1 class="text3"
                     data-25000 = "left: 63%;"
@@ -478,6 +496,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
     <script src="http://flairgale.cafe24.com/para/js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
         let s = skrollr.init();
 
@@ -485,6 +504,45 @@
             let scrollTop = $(window).scrollTop();
             $(".scroll").text(parseInt(scrollTop));
         });
+
+        //로딩
+        function loading(){
+            let $progress = $(".loader");
+            let $progressText = $(".progress-text");
+
+            let imgLoad = imagesLoaded("body"),
+                imgTotal = imgLoad.images.length,
+                imgLoaded = 0,
+                imgCurrent = 0,
+                progressTimer = setInterval(updateProgress, 1000/60);
+
+            imgLoad.on("progress", function(){
+                imgLoaded++;
+            });
+
+            function updateProgress(){
+                let target = (imgLoaded/imgTotal)*100;
+                imgCurrent += (target - imgCurrent)*0.1
+                $progressText.text(parseInt(imgCurrent));
+
+                if(imgCurrent>=100){
+                    clearInterval(progressTimer);
+
+                    $("body").addClass("active");
+                    //$progress.hide();
+                    gsap.to($progress, {
+                        duration:1.5,
+                        top: "-100%",
+                        ease: "power4.out"
+                    });
+                }
+
+                if(imgCurrent>99){
+                    imgCurrent = 100;
+                }
+            }
+        }
+        loading();
     </script>
 </body>
 </html>
