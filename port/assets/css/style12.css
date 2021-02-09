@@ -252,6 +252,9 @@ body {width: 100%; height: 60000px;}
 .section6 .box3 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 80%; top: 175%; transform: translate(-50%, -50%);}
 .section6 .box3 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center;}
 .section6 .box3 .scriptB p {font-size: 35px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
+
+.section6 .mouse_effect {width: 100%; height: 1000px; background: #D0D1D0; position: absolute; left: 50%; top: 200%; transform: translate(-50%, -50%);}
+.section6 .mouse_effect h2 {font-size: 50px; color: #353535;}
 /* //section6 */
 
 
