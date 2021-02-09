@@ -32,7 +32,7 @@ body {width: 100%; height: 60000px;}
 #section3 {width: 100%; height: 100vh; background: #000; position: fixed; top: 0; transition: all 0.5s; z-index: 8; overflow: hidden;}
 #section4 {width: 100%; height: 100vh; background: #DFD8D0; position: fixed; top: 0; z-index: 7; transition: all 0.5s;}
 #section5 {width: 100%; height: 100vh; background: #C8BBAC; position: fixed; top: 0; z-index: 6; transition: all 0.5s;}
-#section6 {width: 100%; height: 100vh; background: #353535; position: fixed; top: 0; z-index: 5;}
+#section6 {width: 100%; height: 100vh; background: #000; position: fixed; top: 0; z-index: 5;}
 
 /* section1 */
 .section1 {height: inherit; text-align: center; display: flex; align-items: center; justify-content: center;}
@@ -235,26 +235,49 @@ body {width: 100%; height: 60000px;}
 .section5 .text2 {font-size: 200px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 30%; top: 41%; transform: translate(-50%, -50%);}
 .section5 .text3 {font-size: 200px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 63%; top: 56%; transform: translate(-50%, -50%);}
 .section5 .text4 {font-size: 200px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 40%; top: 68%; transform: translate(-50%, -50%);}
+
+.section5 .boxWrap {width: 100%; height: 1020px; position: absolute; left: 50%; top: 200%; transform: translate(-50%, -50%); position: relative;}
+
+.section5 .boxWrap .box1 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 50%; top: 15%; transform: translate(-50%, -50%);}
+.section5 .boxWrap .box1 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center; transition: all 0.3s;}
+.section5 .boxWrap .box1 .scriptB:hover {border-radius: 50%;}
+.section5 .boxWrap .box1 .scriptB:hover h5 {color: #fff;}
+.section5 .boxWrap .box1 .scriptB h5 {font-size: 35px; font-family: 'Bebas Neue', cursive; text-align: center;}
+
+.section5 .boxWrap .box2 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 60%; top: 50%; transform: translate(-50%, -50%);}
+.section5 .boxWrap .box2 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center; transition: all 0.3s;}
+.section5 .boxWrap .box2 .scriptB:hover {border-radius: 50%;}
+.section5 .boxWrap .box2 .scriptB:hover h5 {color: #fff;}
+.section5 .boxWrap .box2 .scriptB h5 {font-size: 35px; font-family: 'Bebas Neue', cursive; text-align: center;}
+
+.section5 .boxWrap .box3 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 90%; top: 85%; transform: translate(-50%, -50%);}
+.section5 .boxWrap .box3 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center; transition: all 0.3s;}
+.section5 .boxWrap .box3 .scriptB:hover {border-radius: 50%;}
+.section5 .boxWrap .box3 .scriptB:hover h5 {color: #fff;}
+.section5 .boxWrap .box3 .scriptB h5 {font-size: 35px; font-family: 'Bebas Neue', cursive; text-align: center;}
+
+.section5 .boxWrap .box1 .ball1 {background: url(../img12/scriptImg1.jpg);}
+.section5 .boxWrap .box1 .ball2 {background: url(../img12/scriptImg2.jpg);}
+.section5 .boxWrap .box1 .ball3 {background: url(../img12/scriptImg3.jpg);}
+.section5 .boxWrap .box1 .ball4 {background: url(../img12/scriptImg4.jpg);}
+.section5 .boxWrap .box1 .ball5 {background: url(../img12/scriptImg5.jpg);}
+
+.section5 .boxWrap .box2 .ball1 {background: url(../img12/scriptImg6.jpg);}
+.section5 .boxWrap .box2 .ball2 {background: url(../img12/scriptImg7.jpg);}
+.section5 .boxWrap .box2 .ball3 {background: url(../img12/scriptImg8.jpg);}
+.section5 .boxWrap .box2 .ball4 {background: url(../img12/scriptImg9.jpg);}
+.section5 .boxWrap .box2 .ball5 {background: url(../img12/scriptImg10.jpg);}
+
+.section5 .boxWrap .box3 .ball1 {background: url(../img12/scriptImg13.jpg);}
+.section5 .boxWrap .box3 .ball2 {background: url(../img12/scriptImg11.jpg);}
+.section5 .boxWrap .box3 .ball3 {background: url(../img12/scriptImg12.jpg);}
+.section5 .boxWrap .box3 .ball4 {background: url(../img12/scriptImg14.jpg);}
+.section5 .boxWrap .box3 .ball5 {background: url(../img12/scriptImg15.jpg);}
 /* //section5 */
 
 /* section6 */
 .section6 {height: inherit;}
-.section6 h1 {font-size: 200px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 30%; top: 20%; transform: translate(-50%, -50%);}
 
-.section6 .box1 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 70%; top: 75%; transform: translate(-50%, -50%);}
-.section6 .box1 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center;}
-.section6 .box1 .scriptB p {font-size: 35px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
-
-.section6 .box2 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 60%; top: 125%; transform: translate(-50%, -50%);}
-.section6 .box2 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center;}
-.section6 .box2 .scriptB p {font-size: 35px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
-
-.section6 .box3 {width: 1700px; height: 300px; display: flex; align-items: center; justify-content: space-between; position: absolute; left: 80%; top: 175%; transform: translate(-50%, -50%);}
-.section6 .box3 .scriptB {width: 300px; height: 300px; background: #fff; display: flex; align-items: center; justify-content: center;}
-.section6 .box3 .scriptB p {font-size: 35px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
-
-.section6 .mouse_effect {width: 100%; height: 1000px; background: #D0D1D0; position: absolute; left: 50%; top: 200%; transform: translate(-50%, -50%);}
-.section6 .mouse_effect h2 {font-size: 50px; color: #353535;}
 /* //section6 */
 
 
