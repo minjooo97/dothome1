@@ -250,7 +250,7 @@ body {width: 100%; height: 60000px;}
 .section5 .boxWrap .box3 .scriptB {width: 300px; height: 300px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s;}
 .section5 .boxWrap .box3 .scriptB h5 {font-size: 35px; color: #fff; font-family: 'Bebas Neue', cursive; text-align: center;}
 
-.section5 .boxWrap .box1 .ball1 {background: url(../img12/scriptImg1.jpg);}
+.section5 .boxWrap .box1 .ball1 {background: url(../img12/scriptImg1.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box1 .ball2 {background: url(../img12/scriptImg2.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box1 .ball3 {background: url(../img12/scriptImg3.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box1 .ball4 {background: url(../img12/scriptImg4.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
@@ -260,13 +260,18 @@ body {width: 100%; height: 60000px;}
 .section5 .boxWrap .box2 .ball2 {background: url(../img12/scriptImg7.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box2 .ball3 {background: url(../img12/scriptImg8.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box2 .ball4 {background: url(../img12/scriptImg9.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
-.section5 .boxWrap .box2 .ball5 {background: url(../img12/scriptImg13.jpg);}
+.section5 .boxWrap .box2 .ball5 {background: url(../img12/scriptImg13.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 
 .section5 .boxWrap .box3 .ball1 {background: url(../img12/scriptImg10.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box3 .ball2 {background: url(../img12/scriptImg11.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 .section5 .boxWrap .box3 .ball3 {background: url(../img12/scriptImg15.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
-.section5 .boxWrap .box3 .ball4 {background: url(../img12/scriptImg14.jpg);}
-.section5 .boxWrap .box3 .ball5 {background: url(../img12/scriptImg15.jpg);}
+.section5 .boxWrap .box3 .ball4 {background: url(../img12/scriptImg14.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
+.section5 .boxWrap .box3 .ball5 {background: url(../img12/scriptImg15.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
+
+.section5 .boxWrap .box1 .ball1_box {position: relative;}
+.section5 .boxWrap .box1 .ball1_box .ball1_back {background: url(../img12/scriptImg1.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball1_box:hover .ball1 {transform: rotateY(180deg);}
+.section5 .boxWrap .box1 .ball1_box:hover .ball1_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box1 .ball2_box {position: relative;}
 .section5 .boxWrap .box1 .ball2_box .ball2_back {background: url(../img12/scriptImg2.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
@@ -308,6 +313,11 @@ body {width: 100%; height: 60000px;}
 .section5 .boxWrap .box2 .ball4_box:hover .ball4 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball4_box:hover .ball4_back {transform: rotateY(0deg);}
 
+.section5 .boxWrap .box2 .ball5_box {position: relative;}
+.section5 .boxWrap .box2 .ball5_box .ball5_back {background: url(../img12/scriptImg13.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball5_box:hover .ball5 {transform: rotateY(180deg);}
+.section5 .boxWrap .box2 .ball5_box:hover .ball5_back {transform: rotateY(0deg);}
+
 .section5 .boxWrap .box3 .ball1_box {position: relative;}
 .section5 .boxWrap .box3 .ball1_box .ball1_back {background: url(../img12/scriptImg10.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball1_box:hover .ball1 {transform: rotateY(180deg);}
@@ -322,6 +332,16 @@ body {width: 100%; height: 60000px;}
 .section5 .boxWrap .box3 .ball3_box .ball3_back {background: url(../img12/scriptImg15.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball3_box:hover .ball3 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball3_box:hover .ball3_back {transform: rotateY(0deg);}
+
+.section5 .boxWrap .box3 .ball4_box {position: relative;}
+.section5 .boxWrap .box3 .ball4_box .ball4_back {background: url(../img12/scriptImg14.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball4_box:hover .ball4 {transform: rotateY(180deg);}
+.section5 .boxWrap .box3 .ball4_box:hover .ball4_back {transform: rotateY(0deg);}
+
+.section5 .boxWrap .box3 .ball5_box {position: relative;}
+.section5 .boxWrap .box3 .ball5_box .ball5_back {background: url(../img12/scriptImg15.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball5_box:hover .ball5 {transform: rotateY(180deg);}
+.section5 .boxWrap .box3 .ball5_box:hover .ball5_back {transform: rotateY(0deg);}
 
 
 /* //section5 */
