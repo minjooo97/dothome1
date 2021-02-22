@@ -97,7 +97,7 @@ body {width: 100%; height: 60000px;}
 .section3 p.T4 {font-size: 140px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 54%; top: 55%; transform: translate(-50%, -50%); z-index: 5; mix-blend-mode: difference;}
 .section3 p.T5 {font-size: 140px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 68%; top: 69%; transform: translate(-50%, -50%); z-index: 5; mix-blend-mode: difference;}
 .section3 p.T6 {font-size: 140px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 60%; top: 83%; transform: translate(-50%, -50%); z-index: 5; mix-blend-mode: difference;}
-.section3 p.T7 {font-size: 40px; color: #F5AD6D; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap;}
+.section3 p.T7 {font-size: 35px; color: #F5AD6D; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap;}
 .section3 p.T8 {font-size: 30px; color: #FFF; font-family: 'Cormorant Garamond', serif; position: absolute; left: 8%; top: 86%; transform: translate(-50%, -50%); z-index: 5;}
 .section3 p.T9 {font-size: 30px; color: #F5AD6D; font-family: 'Cormorant Garamond', serif; position: absolute; left: 12%; top: 90%; transform: translate(-50%, -50%); z-index: 5;}
 .section3 p.T10 {font-size: 30px; color: #fff; font-family: 'Cormorant Garamond', serif; position: absolute; left: 10%; top: 94%; transform: translate(-50%, -50%); z-index: 5;}
@@ -156,7 +156,7 @@ body {width: 100%; height: 60000px;}
 /* section4 */
 .section4 {height: inherit;}
 .section4 h1 {font-size: 250px; color: #000; font-family: 'Cormorant Garamond', serif; white-space: nowrap; position: absolute; left: 120%; top: 35%; transform: translate(-50%, -50%); z-index: 1;}
-.section4 p {font-size: 40px; color: #000; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap; z-index: 1;}
+.section4 p {font-size: 35px; color: #000; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap; z-index: 1;}
 
 .section4 .ani1 {position: absolute; left: 50%; top: 150%; transform: translate(-50%, -50%);}
 .section4 .ani1:hover .ani1_btn {display: block;}
@@ -227,7 +227,7 @@ body {width: 100%; height: 60000px;}
 
 /* section5 */
 .section5 {height: inherit; position: relative;}
-.section5 p {font-size: 40px; color: #FFF; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap; z-index: 3;}
+.section5 p {font-size: 35px; color: #FFF; font-family: 'Cormorant Garamond', serif; position: fixed; right: 1%; top: 0%; white-space: nowrap; z-index: 3;}
 
 .section5 .script_pic img {width: 430px; height: 650px; border-radius: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
@@ -269,77 +269,77 @@ body {width: 100%; height: 60000px;}
 .section5 .boxWrap .box3 .ball5 {background: url(../img12/scriptImg15.jpg); transform: rotateY(0deg); transition: transform 1s; backface-visibility: hidden;}
 
 .section5 .boxWrap .box1 .ball1_box {position: relative;}
-.section5 .boxWrap .box1 .ball1_box .ball1_back {background: url(../img12/scriptImg1.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball1_box .ball1_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box1 .ball1_box:hover .ball1 {transform: rotateY(180deg);}
 .section5 .boxWrap .box1 .ball1_box:hover .ball1_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box1 .ball2_box {position: relative;}
-.section5 .boxWrap .box1 .ball2_box .ball2_back {background: url(../img12/scriptImg2.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball2_box .ball2_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box1 .ball2_box:hover .ball2 {transform: rotateY(180deg);}
 .section5 .boxWrap .box1 .ball2_box:hover .ball2_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box1 .ball3_box {position: relative;}
-.section5 .boxWrap .box1 .ball3_box .ball3_back {background: url(../img12/scriptImg3.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball3_box .ball3_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box1 .ball3_box:hover .ball3 {transform: rotateY(180deg);}
 .section5 .boxWrap .box1 .ball3_box:hover .ball3_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box1 .ball4_box {position: relative;}
-.section5 .boxWrap .box1 .ball4_box .ball4_back {background: url(../img12/scriptImg4.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball4_box .ball4_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box1 .ball4_box:hover .ball4 {transform: rotateY(180deg);}
 .section5 .boxWrap .box1 .ball4_box:hover .ball4_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box1 .ball5_box {position: relative;}
-.section5 .boxWrap .box1 .ball5_box .ball5_back {background: url(../img12/scriptImg5.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box1 .ball5_box .ball5_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box1 .ball5_box:hover .ball5 {transform: rotateY(180deg);}
 .section5 .boxWrap .box1 .ball5_box:hover .ball5_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box2 .ball1_box {position: relative;}
-.section5 .boxWrap .box2 .ball1_box .ball1_back {background: url(../img12/scriptImg6.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball1_box .ball1_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box2 .ball1_box:hover .ball1 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball1_box:hover .ball1_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box2 .ball2_box {position: relative;}
-.section5 .boxWrap .box2 .ball2_box .ball2_back {background: url(../img12/scriptImg7.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball2_box .ball2_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box2 .ball2_box:hover .ball2 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball2_box:hover .ball2_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box2 .ball3_box {position: relative;}
-.section5 .boxWrap .box2 .ball3_box .ball3_back {background: url(../img12/scriptImg8.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball3_box .ball3_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box2 .ball3_box:hover .ball3 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball3_box:hover .ball3_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box2 .ball4_box {position: relative;}
-.section5 .boxWrap .box2 .ball4_box .ball4_back {background: url(../img12/scriptImg9.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball4_box .ball4_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box2 .ball4_box:hover .ball4 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball4_box:hover .ball4_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box2 .ball5_box {position: relative;}
-.section5 .boxWrap .box2 .ball5_box .ball5_back {background: url(../img12/scriptImg13.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box2 .ball5_box .ball5_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box2 .ball5_box:hover .ball5 {transform: rotateY(180deg);}
 .section5 .boxWrap .box2 .ball5_box:hover .ball5_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box3 .ball1_box {position: relative;}
-.section5 .boxWrap .box3 .ball1_box .ball1_back {background: url(../img12/scriptImg10.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball1_box .ball1_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball1_box:hover .ball1 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball1_box:hover .ball1_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box3 .ball2_box {position: relative;}
-.section5 .boxWrap .box3 .ball2_box .ball2_back {background: url(../img12/scriptImg11.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball2_box .ball2_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball2_box:hover .ball2 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball2_box:hover .ball2_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box3 .ball3_box {position: relative;}
-.section5 .boxWrap .box3 .ball3_box .ball3_back {background: url(../img12/scriptImg15.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball3_box .ball3_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball3_box:hover .ball3 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball3_box:hover .ball3_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box3 .ball4_box {position: relative;}
-.section5 .boxWrap .box3 .ball4_box .ball4_back {background: url(../img12/scriptImg14.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball4_box .ball4_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball4_box:hover .ball4 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball4_box:hover .ball4_back {transform: rotateY(0deg);}
 
 .section5 .boxWrap .box3 .ball5_box {position: relative;}
-.section5 .boxWrap .box3 .ball5_box .ball5_back {background: url(../img12/scriptImg15.jpg); position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
+.section5 .boxWrap .box3 .ball5_box .ball5_back {background: #AE9B8A; position: absolute; left: 0; top: 0; z-index: -1; transform: rotateY(-180deg); transition: transform 1s;}
 .section5 .boxWrap .box3 .ball5_box:hover .ball5 {transform: rotateY(180deg);}
 .section5 .boxWrap .box3 .ball5_box:hover .ball5_back {transform: rotateY(0deg);}
 
