@@ -348,6 +348,26 @@ body {width: 100%; height: 60000px;}
 .section5 .button:before {transition: 300ms ease; position: absolute; display: block; content: ""; transform: translateZ(-40px); -webkit-backface-visibility: hidden; backface-visibility: hidden; height: calc(100% - 20px); width: calc(100% - 20px); border-radius: 100px; left: 10px; top: 16px;}
 .section5 .button:hover {transform: translateZ(55px);}
 .section5 .button:hover:before {transform: translateZ(-55px);}
+
+.section5 .ibox {position: absolute; width: 1500px; height: 3000px; background: #999; left: 50%; top: 145%; transform: translate(-50%, -50%);}
+
+.section5 .ibox .script_1 {}
+.section5 .ibox .mouseE {position: absolute; left: 50%; top: 12%; transform: translate(-50%, -50%);}
+.section5 .ibox .script_text1 {width: 1200px; height: 190px; background: #555; position: absolute; left: 50%; top: 25.5%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.section5 .ibox .script_text1 h5 {font-size: 40px; text-align: center;}
+.section5 .ibox .script_text1 h6 {font-size: 18px; text-align: center; padding-top: 5px; word-break: keep-all;}
+
+.section5 .ibox .script_2 {}
+.section5 .ibox .sliderE {position: absolute; left: 50%; top: 44%; transform: translate(-50%, -50%);}
+.section5 .ibox .script_text2 {width: 1200px; height: 190px; background: #555; position: absolute; left: 50%; top: 59.2%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.section5 .ibox .script_text2 h5 {font-size: 40px; text-align: center;}
+.section5 .ibox .script_text2 h6 {font-size: 18px; text-align: center; padding-top: 5px; word-break: keep-all;}
+
+.section5 .ibox .script_3 {}
+.section5 .ibox .parallaxE {position: absolute; left: 50%; top: 76%; transform: translate(-50%, -50%);}
+.section5 .ibox .script_text3 {width: 1200px; height: 190px; background: #555; position: absolute; left: 50%; top: 89.5%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
+.section5 .ibox .script_text3 h5 {font-size: 40px; text-align: center;}
+.section5 .ibox .script_text3 h6 {font-size: 18px; text-align: center; padding-top: 5px; word-break: keep-all;}
 /* //section5 */
 
 /* section6 */
