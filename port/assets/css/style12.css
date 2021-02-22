@@ -349,13 +349,23 @@ body {width: 100%; height: 60000px;}
 .section5 .button:hover {transform: translateZ(55px);}
 .section5 .button:hover:before {transform: translateZ(-55px);}
 
-.section5 .ibox {position: absolute; width: 1500px; height: 3000px; background: #999; left: 50%; top: 145%; transform: translate(-50%, -50%);}
+.section5 .ibox {position: absolute; width: 1500px; height: 3000px; left: 50%; top: 145%; transform: translate(-50%, -50%);}
 
 .section5 .ibox .script_1 {}
 .section5 .ibox .mouseE {position: absolute; left: 50%; top: 12%; transform: translate(-50%, -50%);}
 .section5 .ibox .script_text1 {width: 1200px; height: 190px; background: #555; position: absolute; left: 50%; top: 25.5%; transform: translate(-50%, -50%); font-family: 'Chosunilbo_myungjo';}
 .section5 .ibox .script_text1 h5 {font-size: 40px; text-align: center;}
-.section5 .ibox .script_text1 h6 {font-size: 18px; text-align: center; padding-top: 5px; word-break: keep-all;}
+.section5 .ibox .script_text1 h6 {font-size: 18px; text-align: center; padding: 5px 0 18px 0; word-break: keep-all;}
+
+.section5 .ibox .script_text1 .btn {transition: all 0.4s; display: inline-block; width: 500px; height: 40px; font-size: 20px; text-align: center;}
+.section5 .ibox .script_text1 .btn:after {content: ""; position: absolute; z-index: -1; transition: all 04.s;}
+.section5 .ibox .script_text1 .btn-perspective {perspective: 800px; display: inline-block;}
+.section5 .ibox .script_text1 .btn-3d {color: #fff; display: block; outline: 1px solid transparent; transform-style: preserve-3d;}
+.section5 .ibox .script_text1 .btn-three {background-color: #1ABC9C;}
+.section5 .ibox .script_text1 .btn-three:after {width: 20%; height: 100%; left: -20%; top: 0; background: #16A085; transform-origin:100% 0%; transform: rotateY(-90deg);}
+.section5 .ibox .script_text1 .btn-three:hover {transform: rotateY(25deg);}
+
+
 
 .section5 .ibox .script_2 {}
 .section5 .ibox .sliderE {position: absolute; left: 50%; top: 44%; transform: translate(-50%, -50%);}
